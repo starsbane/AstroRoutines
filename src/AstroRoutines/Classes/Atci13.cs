@@ -23,7 +23,7 @@ namespace AstroRoutines
                                   ref double ri, ref double di, ref double eo)
         {
             /* Star-independent astrometry parameters */
-            ASTROM astrom = default;
+            var astrom = new ASTROM();
 
             /* The transformation parameters. */
             Apci13(date1, date2, ref astrom, out eo);
