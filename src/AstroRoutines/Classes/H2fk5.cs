@@ -19,8 +19,8 @@ namespace AstroRoutines
         /// <param name="rv5">radial velocity (km/s, positive = receding)</param>
         public static void H2fk5(double rh, double dh,
                                  double drh, double ddh, double pxh, double rvh,
-                                 ref double r5, ref double d5,
-                                 ref double dr5, ref double dd5, ref double px5, ref double rv5)
+                                 out double r5, out double d5,
+                                 out double dr5, out double dd5, out double px5, out double rv5)
         {
             int i;
             var pvh = new double[2, 3];

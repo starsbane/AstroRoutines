@@ -12,10 +12,11 @@ namespace AstroRoutines
         /// <param name="height">height above ellipsoid (geodetic)</param>
         /// <param name="xyz">geocentric vector</param>
         /// <returns>status: 0 = OK, -1 = illegal identifier, -2 = illegal case</returns>
-        public static int Gd2gc(int n, double elong, double phi, double height, ref double[] xyz)
+        public static int Gd2gc(int n, double elong, double phi, double height, out double[] xyz)
         {
             int j;
             double a, f;
+            xyz = new double[3];
 
             /* Obtain reference ellipsoid parameters. */
             j = Eform(n, out a, out f);
@@ -23,7 +24,7 @@ namespace AstroRoutines
             /* If OK, transform longitude, geodetic latitude, height to x,y,z. */
             if (j == 0)
             {
-                j = Gd2gce(a, f, elong, phi, height, ref xyz);
+                j = Gd2gce(a, f, elong, phi, height, out xyz);
                 if (j != 0) j = -2;
             }
 

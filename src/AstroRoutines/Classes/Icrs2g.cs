@@ -9,7 +9,7 @@ namespace AstroRoutines
         /// <param name="dd">ICRS declination (radians)</param>
         /// <param name="dl">Galactic longitude (radians)</param>
         /// <param name="db">Galactic latitude (radians)</param>
-        public static void Icrs2g(double dr, double dd, ref double dl, ref double db)
+        public static void Icrs2g(double dr, double dd, out double dl, out double db)
         {
             var v1 = new double[3];
             var v2 = new double[3];

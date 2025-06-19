@@ -26,7 +26,7 @@ namespace AstroRoutines
             double x, y, z, s, c;
 
             // Geodetic to geocentric transformation (WGS84)
-            Gd2gc(1, elong, phi, hm, ref xyzm);
+            Gd2gc(1, elong, phi, hm, out xyzm);
 
             // Polar motion and TIO position
             Pom00(xp, yp, sp, ref rpm);

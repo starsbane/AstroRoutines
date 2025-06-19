@@ -15,7 +15,7 @@ namespace AstroRoutines
         /// <param name="dr5">RA proper motion (rad/year)</param>
         /// <param name="dd5">Dec proper motion (rad/year)</param>
         public static void Hfk5z(double rh, double dh, double date1, double date2,
-                                ref double r5, ref double d5, ref double dr5, ref double dd5)
+                                out double r5, out double d5, out double dr5, out double dd5)
         {
             double t;
             var ph = new double[3];

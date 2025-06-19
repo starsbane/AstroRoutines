@@ -9,7 +9,7 @@ namespace AstroRoutines
 		/// <param name="theta">longitude angle (radians)</param>
 		/// <param name="phi">latitude angle (radians)</param>
 		/// <param name="r">radial distance</param>
-        public static void P2s(double[] p, ref double theta, ref double phi, out double r)
+        public static void P2s(double[] p, out double theta, out double phi, out double r)
         {
             C2s(p, out theta, out phi);
             r = Pm(p);

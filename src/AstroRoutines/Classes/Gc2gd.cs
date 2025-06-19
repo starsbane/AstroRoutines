@@ -12,10 +12,13 @@ namespace AstroRoutines
         /// <param name="phi">latitude (geodetic, radians)</param>
         /// <param name="height">height above ellipsoid (geodetic)</param>
         /// <returns>status: 0 = OK, -1 = illegal identifier, -2 = internal error</returns>
-        public static int Gc2gd(int n, double[] xyz, ref double elong, ref double phi, ref double height)
+        public static int Gc2gd(int n, double[] xyz, out double elong, out double phi, out double height)
         {
             int j;
             double a, f;
+            phi = 0;
+            height = 0;
+            elong = 0;
 
             /* Obtain reference ellipsoid parameters. */
             j = Eform(n, out a, out f);

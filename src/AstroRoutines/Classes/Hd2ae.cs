@@ -11,7 +11,7 @@ namespace AstroRoutines
         /// <param name="phi">site latitude</param>
         /// <param name="az">azimuth</param>
         /// <param name="el">altitude (informally, elevation)</param>
-        public static void Hd2ae(double ha, double dec, double phi, ref double az, ref double el)
+        public static void Hd2ae(double ha, double dec, double phi, out double az, out double el)
         {
             double sh, ch, sd, cd, sp, cp, x, y, z, r, a;
 

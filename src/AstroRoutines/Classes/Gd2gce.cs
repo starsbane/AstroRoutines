@@ -13,9 +13,10 @@ namespace AstroRoutines
         /// <param name="height">height above ellipsoid (geodetic)</param>
         /// <param name="xyz">geocentric vector</param>
         /// <returns>status: 0 = OK, -1 = illegal case</returns>
-        public static int Gd2gce(double a, double f, double elong, double phi, double height, ref double[] xyz)
+        public static int Gd2gce(double a, double f, double elong, double phi, double height, out double[] xyz)
         {
             double sp, cp, w, d, ac, _as, r;
+            xyz = new double[3];
 
             /* Functions of geodetic latitude. */
             sp = Sin(phi);
