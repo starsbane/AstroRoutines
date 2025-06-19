@@ -42,7 +42,7 @@ namespace AstroRoutines
             Rxp(r5h, s5h, ref sh);
 
             /* Accumulated Hipparcos wrt FK5 spin over that interval. */
-            Sxp(t, s5h, vst);
+            Sxp(t, s5h, ref vst);
 
             /* Express the accumulated spin as a rotation matrix. */
             Rv2m(vst, ref rst);
