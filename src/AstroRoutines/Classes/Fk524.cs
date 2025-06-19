@@ -112,8 +112,8 @@ public static partial class AR
 
         /* Direction. */
 		w = Pm(r1.GetRow(0));
-		Sxp(Pdp(r1.GetRow(0),a.GetRow(0)), r1.GetRow(0), p1);
-		Sxp(w, a.GetRow(0), p2);
+		Sxp(Pdp(r1.GetRow(0),a.GetRow(0)), r1.GetRow(0), ref p1);
+		Sxp(w, a.GetRow(0), ref p2);
 		Pmp(p2, p1, ref p1);
 		Ppp(r1.GetRow(0), p1, ref p1);
 
@@ -122,19 +122,19 @@ public static partial class AR
 		w = Pm(p1);
 
 		/* Direction. */
-		Sxp(Pdp(r1.GetRow(0),a.GetRow(0)), r1.GetRow(0), p1);
-		Sxp(w, a.GetRow(0), p2);
+		Sxp(Pdp(r1.GetRow(0),a.GetRow(0)), r1.GetRow(0), ref p1);
+		Sxp(w, a.GetRow(0), ref p2);
 		Pmp(p2, p1, ref p1);
 		Ppp(r1.GetRow(0), p1, ref pv[0]);
 
-		/* Derivative. */
-		Sxp(Pdp(r1.GetRow(0),a[1]), pv[0], p1);
-		Sxp(w, a[1], ref p2);
+        /* Derivative. */
+        Sxp(Pdp(r1.GetRow(0),a.GetRow(1)), pv.GetRow(0), ref p1);
+		Sxp(w, a.GetRow(1), ref p2);
 		Pmp(p2, p1, ref p1);
 		Ppp(r1.GetRow(1), p1, ref pv[1]);
 
-		/* Revert to catalog form. */
-		Pv2s(pv, out r, out d, out w, out ur, out ud, out rd);
+        /* Revert to catalog form. */
+        Pv2s(pv, out r, out d, out w, out ur, out ud, out rd);
 		if ( px > TINY ) {
 		  rv = rd/pxvf;
 		  px = px/w;

@@ -71,7 +71,7 @@ namespace AstroRoutines
             /* Isolate the radial component of the velocity (au/day). */
             Pn(pv.GetRow(0), out w, out pu);
             vsr = Pdp(pu, pv.GetRow(1));
-            Sxp(vsr, pu, usr);
+            Sxp(vsr, pu, ref usr);
 
             /* Isolate the transverse component of the velocity (au/day). */
             Pmp(pv.GetRow(1), usr, ref ust);
@@ -105,10 +105,10 @@ namespace AstroRoutines
             if (i >= IMAX) iwarn += 4;
 
             /* Scale observed tangential velocity vector into inertial (au/d). */
-            Sxp(d, ust, ut);
+            Sxp(d, ust, ref ut);
 
             /* Compute inertial radial velocity vector (au/d). */
-            Sxp(DC * (d * betsr + del), pu, ur);
+            Sxp(DC * (d * betsr + del), pu, ref ur);
 
             /* Combine the two to obtain the inertial space velocity vector. */
             var pvRow1 = new double[3];

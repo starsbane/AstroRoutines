@@ -15,7 +15,7 @@ namespace AstroRoutines
             apsb = new double[3];
 
             // s*b
-            Sxp(s, b, out sb);
+            Sxp(s, b, ref sb);
 
             // a + s*b
             Ppp(a, sb, ref apsb);

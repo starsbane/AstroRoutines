@@ -91,9 +91,14 @@ public static partial class AR
 
         /* Allow for E-terms (cf. Seidelmann 3.591-2). */
 	    Pvmpv(r0, a, ref pv1);
-	    Sxp(Pdp(r0[0], a[0]), r0[0], pv2[0]);
-	    Sxp(Pdp(r0[0], a[1]), r0[0], pv2[1]);
-	    Pvppv(pv1, pv2, ref pv1);
+        var pv2Row0 = pv2.GetRow(0);
+        Sxp(Pdp(r0.GetRow(0), a.GetRow(0)), r0.GetRow(0), ref pv2Row0);
+        pv2.SetRow(0, pv2Row0);
+
+        var pv2Row1 = pv2.GetRow(1);
+        Sxp(Pdp(r0.GetRow(0), a.GetRow(1)), r0.GetRow(0), ref pv2Row1);
+        pv2.SetRow(1, pv2Row1);
+        Pvppv(pv1, pv2, ref pv1);
 
 
         /* Convert pv-vector to Fricke system (cf. Seidelmann 3.591-3). */

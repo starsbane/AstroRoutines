@@ -21,7 +21,7 @@ namespace AstroRoutines
             else
             {
                 /* Unit vector. */
-                Sxp(1.0 / w, p, u);
+                Sxp(1.0 / w, p, ref u);
             }
 
             /* Return the modulus. */
