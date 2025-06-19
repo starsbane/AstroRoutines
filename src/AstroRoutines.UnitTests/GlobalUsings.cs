@@ -5,3 +5,4 @@ global using AstroRoutines.Structs;
 
 global using static System.Math;
 global using static AstroRoutines.AR;
+global using static AstroRoutines.Constants;
