@@ -19,7 +19,7 @@ namespace AstroRoutines.UnitTests
             if (ival != ivalok)
             {
                 status = 1;
-                Assert.True(false, $"{func} failed: {test} want {ivalok} got {ival}");
+                Assert.Fail($"{func} failed: {test} want {ivalok} got {ival}");
             }
             else if (verbose)
             {
@@ -37,7 +37,7 @@ namespace AstroRoutines.UnitTests
             {
                 double f = Abs(valok / a);
                 status = 1;
-                Assert.True(false, $"{func} failed: {test} want {valok:G20} got {val:G20} (1/{f:G3})");
+                Assert.Fail($"{func} failed: {test} want {valok:G20} got {val:G20} (1/{f:G3})");
             }
             else if (verbose)
             {
