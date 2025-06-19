@@ -33,7 +33,7 @@ namespace AstroRoutines
             /* UTC to other time scales. */
             j = Utctai(utc1, utc2, ref tai1, ref tai2);
             if (j < 0) return -1;
-            j = Taitt(tai1, tai2, ref tt1, ref tt2);
+            j = Taitt(tai1, tai2, out tt1, out tt2);
             j = Utcut1(utc1, utc2, dut1, ref ut11, ref ut12);
             if (j < 0) return -1;
 
