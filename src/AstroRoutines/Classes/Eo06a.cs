@@ -8,7 +8,7 @@ namespace AstroRoutines
         /// <param name="date1">TT as a 2-part Julian Date (Note 1)</param>
         /// <param name="date2">TT as a 2-part Julian Date (Note 1)</param>
         /// <returns>the equation of the origins in radians</returns>
-        public static double Eo06a(double date1, ref double date2)
+        public static double Eo06a(double date1, double date2)
         {
             var r = new double[3, 3];
             double x, y, s, eo;
