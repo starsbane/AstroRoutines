@@ -95,7 +95,7 @@ namespace AstroRoutines
 
             /* Miscellaneous local variables */
             int j, i, m;
-            double da, djm0, djm;
+            double da, djm0 = 0, djm = 0;
 
             /* Initialize the result to zero. */
             deltat = da = 0.0;
