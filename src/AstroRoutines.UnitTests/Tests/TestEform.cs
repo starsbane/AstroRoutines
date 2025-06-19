@@ -33,6 +33,8 @@ namespace AstroRoutines.UnitTests
 
             j = Eform(4, out a, out f);
             Viv(j, -1, "Eform", "j4", ref status);
+
+            Assert.Equal(0, status);
         }
     }
 }
