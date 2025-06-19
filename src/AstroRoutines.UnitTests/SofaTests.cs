@@ -1,9 +1,16 @@
-using Xunit;
+using Xunit.Abstractions;
 
 namespace AstroRoutines.UnitTests
 {
     public partial class SofaTests
     {
+        private readonly ITestOutputHelper output;
+
+        public SofaTests(ITestOutputHelper output)
+        {
+            this.output = output;
+        }
+
         /// <summary>
         /// Validate an integer result.
         /// </summary>
@@ -16,7 +23,7 @@ namespace AstroRoutines.UnitTests
             }
             else if (verbose)
             {
-                Console.WriteLine($"{func} passed: {test} want {ivalok} got {ival}");
+                output.WriteLine($"{func} passed: {test} want {ivalok} got {ival}");
             }
         }
 
@@ -34,10 +41,14 @@ namespace AstroRoutines.UnitTests
             }
             else if (verbose)
             {
-                Console.WriteLine($"{func} passed: {test} want {valok:G20} got {val:G20}");
+                output.WriteLine($"{func} passed: {test} want {valok:G20} got {val:G20}");
             }
         }
 
-        private static bool verbose = false;
+#if DEBUG
+        private static readonly bool verbose = true;
+#else
+        private static readonly bool verbose = false;
+#endif
     }
 }
