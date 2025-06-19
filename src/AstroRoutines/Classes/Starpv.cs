@@ -1,0 +1,122 @@
+namespace AstroRoutines
+{
+    public static partial class AR
+    {
+        /// <summary>
+        /// Convert star catalog coordinates to position/velocity vector.
+        /// </summary>
+        /// <param name="ra">right ascension (radians)</param>
+        /// <param name="dec">declination (radians)</param>
+        /// <param name="pmr">RA proper motion (radians/year)</param>
+        /// <param name="pmd">Dec proper motion (radians/year)</param>
+        /// <param name="px">parallax (arcseconds)</param>
+        /// <param name="rv">radial velocity (km/s, +ve = receding)</param>
+        /// <param name="pv">position/velocity vector</param>
+        /// <returns>status: 0 = OK, 1 = warning, 2 = warning, 3 = warning</returns>
+        public static int Starpv(double ra, double dec,
+                                 double pmr, double pmd, double px, double rv,
+                                 ref double[,] pv)
+        {
+            double[] pu = new double[3], usr = new double[3], 
+                ust = new double[3], ur = new double[3], ut = new double[3];
+            int i, iwarn;
+            double w, r, rd, rad, decd, v ,
+            vsr, vst, betst, betsr, bett, betr,
+            dd, ddel, 
+            d = 0.0, del = 0.0,       /* to prevent */
+            odd = 0.0, oddel = 0.0,   /* compiler   */
+            od = 0.0, odel = 0.0;     /* warnings   */
+
+
+            /* Smallest allowed parallax */
+            const double PXMIN = 1e-7;
+
+            /* Largest allowed speed (fraction of c) */
+            const double VMAX = 0.5;
+
+            /* Maximum number of iterations for relativistic solution */
+            const int IMAX = 100;
+
+            /* Distance (au). */
+            if (px >= PXMIN)
+            {
+                w = px;
+                iwarn = 0;
+            }
+            else
+            {
+                w = PXMIN;
+                iwarn = 1;
+            }
+            r = DR2AS / w;
+
+            /* Radial speed (au/day). */
+            rd = DAYSEC * rv * 1e3 / DAU;
+
+            /* Proper motion (radian/day). */
+            rad = pmr / DJY;
+            decd = pmd / DJY;
+
+            /* To pv-vector (au,au/day). */
+            S2pv(ra, dec, r, rad, decd, rd, ref pv);
+
+            /* If excessive velocity, arbitrarily set it to zero. */
+            v = Pm(pv.GetRow(1));
+            if (v / DC > VMAX)
+            {
+                Zp(pv.GetRow(1));
+                iwarn += 2;
+            }
+
+            /* Isolate the radial component of the velocity (au/day). */
+            Pn(pv.GetRow(0), out w, out pu);
+            vsr = Pdp(pu, pv.GetRow(1));
+            Sxp(vsr, pu, usr);
+
+            /* Isolate the transverse component of the velocity (au/day). */
+            Pmp(pv.GetRow(1), usr, ref ust);
+            vst = Pm(ust);
+
+            /* Special-relativity dimensionless parameters. */
+            betsr = vsr / DC;
+            betst = vst / DC;
+
+            /* Determine the observed-to-inertial correction terms. */
+            bett = betst;
+            betr = betsr;
+            for (i = 0; i < IMAX; i++)
+            {
+                d = 1.0 + betr;
+                w = betr * betr + bett * bett;
+                del = -w / (Sqrt(1.0 - w) + 1.0);
+                betr = d * betsr + del;
+                bett = d * betst;
+                if (i > 0)
+                {
+                    dd = Abs(d - od);
+                    ddel = Abs(del - odel);
+                    if ((i > 1) && (dd >= odd) && (ddel >= oddel)) break;
+                    odd = dd;
+                    oddel = ddel;
+                }
+                od = d;
+                odel = del;
+            }
+            if (i >= IMAX) iwarn += 4;
+
+            /* Scale observed tangential velocity vector into inertial (au/d). */
+            Sxp(d, ust, ut);
+
+            /* Compute inertial radial velocity vector (au/d). */
+            Sxp(DC * (d * betsr + del), pu, ur);
+
+            /* Combine the two to obtain the inertial space velocity vector. */
+            var pvRow1 = new double[3];
+            Ppp(ur, ut, ref pvRow1);
+            pv.SetRow(1, pvRow1);
+
+            /* Return the status. */
+            return iwarn;
+        }
+    }
+}

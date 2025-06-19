@@ -1,0 +1,32 @@
+namespace AstroRoutines
+{
+    public static partial class AR
+    {
+		/// <summary>
+		/// IAU 2000A nutation with adjustments to match the IAU 2006 precession.
+		/// </summary>
+		/// <param name="date1">TT as a 2-part Julian Date (Note 1)</param>
+		/// <param name="date2">TT as a 2-part Julian Date (Note 1)</param>
+		/// <param name="dpsi">nutation, luni-solar + planetary (Note 2)</param>
+		/// <param name="deps">nutation, luni-solar + planetary (Note 2)</param>
+        public static void Nut06a(double date1, double date2, out double dpsi, out double deps)
+        {
+            double t, fj2, dp, de;
+
+            /* Interval between fundamental date J2000.0 and given date (JC). */
+            t = ((date1 - DJ00) + date2) / DJC;
+
+            /* Factor correcting for secular variation of J2. */
+            fj2 = -2.7774e-6 * t;
+
+            /* Obtain IAU 2000A nutation. */
+            Nut00a(date1, date2, ref dp, ref de);
+
+            /* Apply P03 adjustments (Wallace & Capitaine, 2006, Eqs.5). */
+            dpsi = dp + dp * (0.4697e-6 + fj2);
+            deps = de + de * fj2;
+
+            /* Finished. */
+        }
+    }
+}

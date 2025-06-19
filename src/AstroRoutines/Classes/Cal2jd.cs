@@ -1,0 +1,59 @@
+// Cal2jd.cs
+
+namespace AstroRoutines
+{
+    public static partial class AR
+    {
+        /// <summary>
+        /// Gregorian Calendar to Julian Date.
+        /// </summary>
+        /// <param name="iy">year, month, day in Gregorian calendar (Note 1)</param>
+        /// <param name="im">year, month, day in Gregorian calendar (Note 1)</param>
+        /// <param name="id">year, month, day in Gregorian calendar (Note 1)</param>
+        /// <param name="djm0">MJD zero-point: always 2400000.5</param>
+        /// <param name="djm">Modified Julian Date for 0 hrs</param>
+        /// <returns>status:
+        /// 0 = OK
+        /// -1 = bad year   (Note 3: JD not computed)
+        /// -2 = bad month  (JD not computed)
+        /// -3 = bad day    (JD computed)</returns>
+        public static int Cal2jd(int iy, int im, int id, ref double djm0, ref double djm)
+        {
+            int j, ly, my;
+            long iypmy;
+
+            /* Earliest year allowed (4800BC) */
+            const int IYMIN = -4799;
+
+            /* Month lengths in days */
+            int[] mtab = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
+            /* Preset status. */
+            j = 0;
+
+            /* Validate year and month. */
+            if (iy < IYMIN) return -1;
+            if (im < 1 || im > 12) return -2;
+
+            /* If February in a leap year, 1, otherwise 0. */
+            ly = ((im == 2) && (iy % 4 == 0) && (iy % 100 != 0 || iy % 400 == 0)) ? 1 : 0;
+
+            /* Validate day, taking into account leap years. */
+            if ((id < 1) || (id > (mtab[im - 1] + ly))) j = -3;
+
+            /* Return result. */
+            my = (im - 14) / 12;
+            iypmy = (long)(iy + my);
+            djm0 = DJM0;
+            djm = (double)((1461L * (iypmy + 4800L)) / 4L
+                          + (367L * (long)(im - 2 - 12 * my)) / 12L
+                          - (3L * ((iypmy + 4900L) / 100L)) / 4L
+                          + (long)id - 2432076L);
+
+            /* Return status. */
+            return j;
+
+            /* Finished. */
+        }
+    }
+}
