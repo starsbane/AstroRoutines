@@ -17,7 +17,7 @@ namespace AstroRoutines
             double[,] ebpv = new double[2, 3];
 
             /* Earth barycentric & heliocentric position/velocity (au, au/d). */
-            Epv00(date1, date2, ehpv, ebpv);
+            Epv00(date1, date2, ref ehpv, ref ebpv);
 
             /* Compute the star-independent astrometry parameters. */
             double[] ehp = new double[3] { ehpv[0, 0], ehpv[0, 1], ehpv[0, 2] };

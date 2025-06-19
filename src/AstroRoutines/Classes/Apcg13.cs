@@ -15,7 +15,7 @@ namespace AstroRoutines
             double[,] ehpv = new double[2, 3];
             double[,] ebpv = new double[2, 3];
 
-            Epv00(date1, date2, ehpv, ebpv);
+            Epv00(date1, date2, ref ehpv, ref ebpv);
 
             double[] ehp = new double[3] { ehpv[0, 0], ehpv[0, 1], ehpv[0, 2] };
             Apcg(date1, date2, ebpv, ehp, ref astrom);

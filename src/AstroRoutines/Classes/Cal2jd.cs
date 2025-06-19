@@ -17,10 +17,12 @@ namespace AstroRoutines
         /// -1 = bad year   (Note 3: JD not computed)
         /// -2 = bad month  (JD not computed)
         /// -3 = bad day    (JD computed)</returns>
-        public static int Cal2jd(int iy, int im, int id, ref double djm0, ref double djm)
+        public static int Cal2jd(int iy, int im, int id, out double djm0, out double djm)
         {
             int j, ly, my;
             long iypmy;
+            djm0 = 0;
+            djm = 0;
 
             /* Earliest year allowed (4800BC) */
             const int IYMIN = -4799;

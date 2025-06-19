@@ -42,7 +42,7 @@ namespace AstroRoutines
             }
 
             /* Barycentric position of observer (au). */
-            Cp(pb, astrom.eb);
+            Cp(pb, ref astrom.eb);
 
             /* Heliocentric direction and distance (unit vector and au). */
             Pn(ph, out astrom.em,out astrom.eh);

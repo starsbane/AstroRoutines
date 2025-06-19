@@ -32,10 +32,10 @@ namespace AstroRoutines
                                int ihr, int imn, double sec, ref double d1, ref double d2)
         {
             int js, iy2, im2, id2;
-            double dj = 0, w = 0, day, seclim, dat0 = 0, dat12 = 0, dat24 = 0, dleap, time;
+            double dj, w, day, seclim, dat0 = 0, dat12 = 0, dat24 = 0, dleap, time;
 
             /* Today's Julian Day Number. */
-            js = Cal2jd(iy, im, id, ref dj, ref w);
+            js = Cal2jd(iy, im, id, out dj, out w);
             if (js != 0) return js;
             dj += w;
 

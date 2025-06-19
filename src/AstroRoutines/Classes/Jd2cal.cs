@@ -21,6 +21,8 @@ namespace AstroRoutines
             long jd, i, l, n, k;
             double dj, f1, f2, d, s, cs, x, t, f;
             double[] v = new double[2];
+            iy = im = id = 0;
+            fd = 0;
 
             /* Verify date is acceptable. */
             dj = dj1 + dj2;

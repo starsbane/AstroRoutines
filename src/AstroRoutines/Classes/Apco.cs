@@ -77,7 +77,7 @@ namespace AstroRoutines
             Pvtob(elong, phi, hm, xp, yp, sp, theta, ref pvc);
 
             /* Rotate into GCRS. */
-            Trxpv(r, pvc, pv);
+            Trxpv(r, pvc, ref pv);
 
             /* ICRS <-> GCRS parameters. */
             Apcs(date1, date2, pv, ebpv, ehp, ref astrom);

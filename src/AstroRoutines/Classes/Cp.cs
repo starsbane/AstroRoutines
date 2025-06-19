@@ -10,7 +10,7 @@ namespace AstroRoutines
         /// </summary>
         /// <param name="p">p-vector to be copied</param>
         /// <param name="c">copy</param>
-        public static void Cp(double[] p, double[] c)
+        public static void Cp(double[] p, ref double[] c)
         {
             c[0] = p[0];
             c[1] = p[1];

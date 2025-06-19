@@ -23,7 +23,7 @@ namespace AstroRoutines
                 wrp[j] = w;
             }
 
-            Cp(wrp, rp);
+            Cp(wrp, ref rp);
         }
     }
 }

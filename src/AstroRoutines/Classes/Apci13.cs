@@ -18,7 +18,7 @@ namespace AstroRoutines
             double[,] r = new double[3, 3];
             double x = 0, y = 0, s;
 
-            Epv00(date1, date2, ehpv, ebpv);
+            Epv00(date1, date2, ref ehpv, ref ebpv);
             Pnm06a(date1, date2, ref r);
             Bpn2xy(r, out x, out y);
             s = S06(date1, date2, x, y);

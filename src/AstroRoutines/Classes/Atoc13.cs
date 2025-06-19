@@ -33,7 +33,7 @@ namespace AstroRoutines
         {
             int j;
             ASTROM astrom = new ASTROM();
-            double eo, ri, di;
+            double eo = 0, ri, di;
 
             /* Star-independent astrometry parameters. */
             j = Apco13(utc1, utc2, dut1, elong, phi, hm, xp, yp,

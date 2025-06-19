@@ -9,8 +9,13 @@ namespace AstroRoutines
 		/// <param name="pv">pv-vector</param>
         public static void P2pv(double[] p, ref double[,] pv)
         {
-            Cp(p, new double[] { pv[0, 0], pv[0, 1], pv[0, 2] });
-            Zp(new double[] { pv[1, 0], pv[1, 1], pv[1, 2] });
+            var pvRow0 = pv.GetRow(0);
+            Cp(p, ref pvRow0);
+            pv.SetRow(0, pvRow0);
+
+            var pvRow1 = pv.GetRow(1);
+            Zp(ref pvRow1);
+            pv.SetRow(1, pvRow1);
 
             /* Finished. */
         }

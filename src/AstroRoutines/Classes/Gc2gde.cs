@@ -18,6 +18,7 @@ namespace AstroRoutines
             double aeps2, e2, e4t, ec2, ec, b, x, y, z, p2, absz, p, s0, pn, zc,
                           c0, c02, c03, s02, s03, a02, a0, a03, d0, f0, b0, s1,
                           cc, s12, cc2;
+            phi = height = elong = 0;
 
             /* ------------- */
             /* Preliminaries */

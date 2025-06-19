@@ -33,7 +33,7 @@ public static partial class AR
         Fk5hip(out r5h, out s5h);
 
         /* Accumulated Hipparcos wrt FK5 spin over that interval. */
-        Sxp(t, s5h, out vst);
+        Sxp(t, s5h, ref vst);
 
         /* Express the accumulated spin as a rotation matrix. */
         Rv2m(vst, ref rst);

@@ -26,13 +26,13 @@ namespace AstroRoutines
             double[] e = new double[3];
 
             /* Star direction prior to deflection. */
-            Cp(sc, sn);
+            Cp(sc, ref sn);
 
             /* Body by body. */
             for (i = 0; i < n; i++)
             {
                 /* Body to observer vector at epoch of observation (au). */
-                Pmp(ob, new double[] { b[i].pv[0, 0], b[i].pv[0, 1], b[i].pv[0, 2] }, ref v);
+                Pmp(ob, b[i].pv.GetRow(0), ref v);
 
                 /* Minus the time since the light passed the body (days). */
                 dt = Pdp(sn, v) * CR;
@@ -41,7 +41,7 @@ namespace AstroRoutines
                 dt = Min(dt, 0.0);
 
                 /* Backtrack the body to the time the light was passing the body. */
-                Ppsp(v, -dt, new double[] { b[i].pv[1, 0], b[i].pv[1, 1], b[i].pv[1, 2] }, out ev);
+                Ppsp(v, -dt, b[i].pv.GetRow(1), out ev);
 
                 /* Body to observer vector as magnitude and direction. */
                 Pn(ev, out em, out e);

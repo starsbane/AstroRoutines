@@ -22,7 +22,8 @@ namespace AstroRoutines
             double[] ppr = new double[3];
             double[] pnat = new double[3];
             double[] pco = new double[3];
-            double w, d;
+            double w;
+            double[] d = new double[3];
             double[] before = new double[3];
             double r2, r;
             double[] after = new double[3];
@@ -34,7 +35,7 @@ namespace AstroRoutines
             Trxp(astrom.bpn, pi, ref ppr);
 
             /* Aberration, giving GCRS natural direction. */
-            Zp(out d);
+            Zp(ref d);
             for (j = 0; j < 2; j++)
             {
                 r2 = 0.0;
@@ -66,7 +67,7 @@ namespace AstroRoutines
             }
 
             /* Light deflection, giving BCRS coordinate direction. */
-            Zp(out d);
+            Zp(ref d);
             for (j = 0; j < 5; j++)
             {
                 r2 = 0.0;

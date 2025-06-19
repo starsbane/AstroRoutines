@@ -12,11 +12,12 @@ namespace AstroRoutines
         {
             /* Obtain the modulus and test for zero. */
             double w = Pm(p);
+            u = new double[3];
 
             if (w == 0.0)
             {
                 /* Null vector. */
-                Zp(u);
+                Zp(ref u);
             }
             else
             {

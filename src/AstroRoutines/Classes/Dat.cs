@@ -95,7 +95,7 @@ namespace AstroRoutines
 
             /* Miscellaneous local variables */
             int j, i, m;
-            double da, djm0 = 0, djm = 0;
+            double da, djm0 , djm;
 
             /* Initialize the result to zero. */
             deltat = da = 0.0;
@@ -104,7 +104,7 @@ namespace AstroRoutines
             if (fd < 0.0 || fd > 1.0) return -4;
 
             /* Convert the date into an MJD. */
-            j = Cal2jd(iy, im, id, ref djm0, ref djm);
+            j = Cal2jd(iy, im, id, out djm0, out djm);
 
             /* If invalid year, month, or day, give up. */
             if (j < 0) return j;

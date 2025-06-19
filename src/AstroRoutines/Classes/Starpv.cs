@@ -26,6 +26,7 @@ namespace AstroRoutines
             d = 0.0, del = 0.0,       /* to prevent */
             odd = 0.0, oddel = 0.0,   /* compiler   */
             od = 0.0, odel = 0.0;     /* warnings   */
+            double[] pvRow1;
 
 
             /* Smallest allowed parallax */
@@ -64,7 +65,10 @@ namespace AstroRoutines
             v = Pm(pv.GetRow(1));
             if (v / DC > VMAX)
             {
-                Zp(pv.GetRow(1));
+                pvRow1 = pv.GetRow(1);
+                Zp(ref pvRow1);
+                pv.SetRow(1, pvRow1);
+
                 iwarn += 2;
             }
 
@@ -111,7 +115,7 @@ namespace AstroRoutines
             Sxp(DC * (d * betsr + del), pu, ref ur);
 
             /* Combine the two to obtain the inertial space velocity vector. */
-            var pvRow1 = new double[3];
+            pvRow1 = new double[3];
             Ppp(ur, ut, ref pvRow1);
             pv.SetRow(1, pvRow1);
 

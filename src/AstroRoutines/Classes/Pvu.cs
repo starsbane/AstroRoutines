@@ -15,7 +15,7 @@ public static partial class AR
         upv.SetRow(0, upvRow0);
 
         double[] upvRow1 = new double[3];
-        Cp(pv.GetRow(1), upvRow1);
+        Cp(pv.GetRow(1), ref upvRow1);
         upv.SetRow(1, upvRow1);
     }
 }
