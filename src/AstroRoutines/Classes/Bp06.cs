@@ -26,7 +26,8 @@ namespace AstroRoutines
 
             /* P matrix. */
             Tr(rb, ref rbt);
-            Rxr(rbpw, rbt, out rp);
+            rp = new double[3, 3];
+            Rxr(rbpw, rbt, ref rp);
 
             /* PxB matrix. */
             rbp = rbpw;

@@ -56,7 +56,8 @@ namespace AstroRoutines
 
             /* Solve for precession matrix. */
             Tr(r1, ref rt);
-            Rxr(r2, rt, rp);
+            rp = new double[3, 3];
+            Rxr(r2, rt, ref rp);
 
             /* Equinox-based bias-precession-nutation matrix. */
             Fw2m(gamb, phib, psib + dpsi, eps + deps, ref r1);
@@ -64,7 +65,8 @@ namespace AstroRoutines
 
             /* Solve for nutation matrix. */
             Tr(r2, ref rt);
-            Rxr(r1, rt, rn);
+            rn = new double[3, 3];
+            Rxr(r1, rt, ref rn);
 
             /* Obliquity, mean of date. */
             epsa = eps;

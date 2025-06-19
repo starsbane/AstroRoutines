@@ -53,8 +53,9 @@ namespace AstroRoutines
             Numat(epsa, dpsi, deps, out rnw);
             Cr(rnw, ref rn);
 
+            rbpn = new double[3, 3];
             /* Bias-precession-nutation matrix (classical). */
-            Rxr(rnw, rbpw, rbpn);
+            Rxr(rnw, rbpw, ref rbpn);
         }
     }
 }

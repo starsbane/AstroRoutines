@@ -12,11 +12,11 @@ namespace AstroRoutines
         /// <param name="c">copy</param>
         public static void Cr(double[,] r, ref double[,] c)
         {
-            double[] r0 = new double[3] { r[0, 0], r[0, 1], r[0, 2] };
+            double[] r0 = r.GetRow(0);
             double[] c0 = new double[3];
-            double[] r1 = new double[3] { r[1, 0], r[1, 1], r[1, 2] };
+            double[] r1 = r.GetRow(1);
             double[] c1 = new double[3];
-            double[] r2 = new double[3] { r[2, 0], r[2, 1], r[2, 2] };
+            double[] r2 = r.GetRow(2);
             double[] c2 = new double[3];
             
             Cp(r0, c0);

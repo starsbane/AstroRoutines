@@ -48,7 +48,7 @@ namespace AstroRoutines
             Rv2m(vst, ref rst);
 
             /* Rotation matrix:  accumulated spin, then FK5 to Hipparcos. */
-            Rxr(r5h, rst, r5ht);
+            Rxr(r5h, rst, ref r5ht);
 
             /* De-orient & de-spin the Hipparcos position into FK5 J2000.0. */
             var pv5eRow0 = pv5e.GetRow(0);

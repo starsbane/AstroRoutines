@@ -25,7 +25,7 @@ namespace AstroRoutines
             Rx(ob, ref e);
 
             /* ICRS to ecliptic coordinates rotation matrix, IAU 2006. */
-            Rxr(e, bp, rm);
+            Rxr(e, bp, ref rm);
 
             /* Finished. */
         }

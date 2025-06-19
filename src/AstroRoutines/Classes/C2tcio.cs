@@ -17,7 +17,8 @@ namespace AstroRoutines
             /* Construct the matrix. */
             Cr(rc2i, ref r);
             Rz(era, ref r);
-            Rxr(rpom, r, out rc2t);
+            rc2t = new double[3, 3];
+            Rxr(rpom, r, ref rc2t);
         }
     }
 }

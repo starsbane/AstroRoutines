@@ -21,7 +21,8 @@ namespace AstroRoutines
             Nutm80(date1, date2, out rmatn);
 
             // Combine the matrices: PN = N x P
-            Rxr(rmatn, rmatp, out rmatpn);
+            rmatpn = new double[3, 3];
+            Rxr(rmatn, rmatp, ref rmatpn);
         }
     }
 }

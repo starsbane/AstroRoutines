@@ -52,7 +52,8 @@ namespace AstroRoutines
             Rz(chia, ref rp);
 
             /* Bias-precession matrix: GCRS to mean of date. */
-            Rxr(rp, rbw, out rbp);
+            rbp = new double[3, 3];
+            Rxr(rp, rbw, ref rbp);
         }
     }
 }

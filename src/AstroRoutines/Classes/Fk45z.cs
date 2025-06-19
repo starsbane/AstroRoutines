@@ -67,7 +67,7 @@ public static partial class AR
 		/* Allow for fictitious proper motion. */
 		Epb2jd(bepoch, out djm0, out djm);
 		w = (Epj(djm0,djm)-2000.0) / PMF;
-		Pvu(w, pv, pv);
+		Pvu(w, pv, ref pv);
 
         /* Revert to spherical coordinates. */
         C2s(p, out w, out d2000);
