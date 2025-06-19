@@ -21,7 +21,7 @@ namespace AstroRoutines
         /// 0 = OK
         /// -1 = unacceptable date (Note 6)</returns>
         public static int D2dtf(string scale, int ndp, double d1, double d2,
-                     ref int iy, ref int im, ref int id, int[] ihmsf)
+                     ref int iy, ref int im, ref int id, ref int[] ihmsf)
         {
             int leap;
             char s;
