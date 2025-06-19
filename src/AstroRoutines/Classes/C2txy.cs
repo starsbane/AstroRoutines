@@ -19,7 +19,7 @@ namespace AstroRoutines
         /// <param name="rc2t">celestial-to-terrestrial matrix (Note 4)</param>
         public static void C2txy(double tta, double ttb, double uta, double utb,
                       double x, double y, double xp, double yp,
-                      double[,] rc2t)
+                      out double[,] rc2t)
         {
             var rc2i = new double[3, 3];
             double era, sp;
