@@ -13,7 +13,7 @@ public static partial class AR
     /// <param name="y">CIP unit vector Y</param>
     public static void Fw2xy(double gamb, double phib, double psi, double eps, out double x, out double y)
     {
-        var r = new double[2, 2];
+        var r = new double[3, 3];
 
         /* Form NxPxB matrix. */
         Fw2m(gamb, phib, psi, eps, ref r);
