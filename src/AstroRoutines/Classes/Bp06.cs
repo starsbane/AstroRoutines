@@ -16,7 +16,7 @@ namespace AstroRoutines
             double gamb, phib, psib, epsa;
             var rbpw = new double[3, 3];
             var rbt = new double[3, 3];
-            rb = new double[2,2];
+            rb = new double[3,3];
             /* B matrix. */
             Pfw06(DJM0, DJM00, out gamb, out phib, out psib, out epsa);
             Fw2m(gamb, phib, psib, epsa, ref rb);
