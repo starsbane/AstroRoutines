@@ -33,7 +33,7 @@ namespace AstroRoutines.UnitTests
             Vvd(pvb[1, 1], -0.1246525461732861538e-1, 1e-15, "Epv00", "vb(y)", ref status);
             Vvd(pvb[1, 2], -0.5404773180966231279e-15, 1e-15, "Epv00", "vb(z)", ref status);
 
-            //Viv(j, 0, "Epv00", "j", ref status);
+            Viv(j, 0, "Epv00", "j", ref status);
 
             Assert.Equal(0, status);
         }
