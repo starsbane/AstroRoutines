@@ -6,6 +6,9 @@ This package is based on SOFA ANSI C Release 19 (2023-10-11) and distributed und
 
 Please refer to https://www.iausofa.org/ for details regarding the SOFA releases.
 
+## Requirements
+.NET 6.0+
+
 # What is SOFA?
 SOFA operates under the auspices of the International Astronomical Union (IAU) to provide algorithms and software for use in astronomical computing. The initiative is managed by an international panel, the SOFA Board, appointed through IAU Division A. The Board obtains the latest IAU-approved models and theories from the fundamental-astronomy community, implements them as computer code and checks them for accuracy. SOFA works closely with all the Commissions of the Division and with the International Earth Rotation and Reference Systems Service (IERS).
 
@@ -29,3 +32,5 @@ Source: https://www.iausofa.org/background.html
 Software Routines from the IAU SOFA Collection were used. Copyright © International Astronomical Union Standards of Fundamental Astronomy (http://www.iausofa.org).
 
 Using SOFA software is free of charge under the terms and conditions of the SOFA licence, whose text is stated in SOFA-LICENSE.md or https://www.iausofa.org/tandc.html.
+
+# FAQ
