@@ -111,27 +111,31 @@ public static partial class AR
         /* Apply E-terms (equivalent to Seidelmann 3.592-3, one iteration). */
 
         /* Direction. */
-		w = Pm(r1.GetRow(0));
+        w = Pm(r1.GetRow(0));
 		Sxp(Pdp(r1.GetRow(0),a.GetRow(0)), r1.GetRow(0), ref p1);
-		Sxp(w, a.GetRow(0), ref p2);
-		Pmp(p2, p1, ref p1);
-		Ppp(r1.GetRow(0), p1, ref p1);
+        Sxp(w, a.GetRow(0), ref p2);
+        Pmp(p2, p1, ref p1);
+        Ppp(r1.GetRow(0), p1, ref p1);
 
 
         /* Recompute the velocity. */
-		w = Pm(p1);
+        w = Pm(p1);
 
-		/* Direction. */
+        /* Direction. */
 		Sxp(Pdp(r1.GetRow(0),a.GetRow(0)), r1.GetRow(0), ref p1);
-		Sxp(w, a.GetRow(0), ref p2);
-		Pmp(p2, p1, ref p1);
-		Ppp(r1.GetRow(0), p1, ref pv[0]);
+        Sxp(w, a.GetRow(0), ref p2);
+        Pmp(p2, p1, ref p1);
+        var pvRow0 = pv.GetRow(0);
+        Ppp(r1.GetRow(0), p1, ref pvRow0);
+        pv.SetRow(0, pvRow0);
 
         /* Derivative. */
         Sxp(Pdp(r1.GetRow(0),a.GetRow(1)), pv.GetRow(0), ref p1);
-		Sxp(w, a.GetRow(1), ref p2);
-		Pmp(p2, p1, ref p1);
-		Ppp(r1.GetRow(1), p1, ref pv[1]);
+        Sxp(w, a.GetRow(1), ref p2);
+        Pmp(p2, p1, ref p1);
+        var pvRow1 = pv.GetRow(1);
+        Ppp(r1.GetRow(1), p1, ref pvRow1);
+        pv.SetRow(1, pvRow1);
 
         /* Revert to catalog form. */
         Pv2s(pv, out r, out d, out w, out ur, out ud, out rd);
