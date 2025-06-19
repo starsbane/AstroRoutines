@@ -5,14 +5,14 @@ public static partial class AR
     /// <summary>
     /// Rotate an r-matrix about the y-axis.
     /// </summary>
-    /// <param name="phi">Angle (radians)</param>
+    /// <param name="theta">Angle (radians)</param>
     /// <param name="r">R-matrix, rotated</param>
-    public static void Ry(double phi, ref double[,] r)
+    public static void Ry(double theta, ref double[,] r)
     {
         double s, c, a00, a01, a02, a20, a21, a22;
 
-        s = Sin(phi);
-        c = Cos(phi);
+        s = Sin(theta);
+        c = Cos(theta);
 
         a00 = c * r[0, 0] - s * r[2, 0];
         a01 = c * r[0, 1] - s * r[2, 1];

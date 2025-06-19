@@ -5,14 +5,14 @@ public static partial class AR
     /// <summary>
     /// Rotate an r-matrix about the z-axis.
     /// </summary>
-    /// <param name="phi">Angle (radians)</param>
+    /// <param name="psi">Angle (radians)</param>
     /// <param name="r">R-matrix, rotated</param>
-    public static void Rz(double phi, ref double[,] r)
+    public static void Rz(double psi, ref double[,] r)
     {
         double s, c, a00, a01, a02, a10, a11, a12;
 
-        s = Sin(phi);
-        c = Cos(phi);
+        s = Sin(psi);
+        c = Cos(psi);
 
         a00 = c * r[0, 0] + s * r[1, 0];
         a01 = c * r[0, 1] + s * r[1, 1];
