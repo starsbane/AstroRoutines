@@ -17,22 +17,24 @@ namespace AstroRoutines.UnitTests
             var status = 0;
             var date1 = 2456165.5;
             var date2 = 0.401182685;
+
             var ebpv = new double[2, 3];
+            ebpv[0, 0] = 0.901310875;
+            ebpv[0, 1] = -0.417402664;
+            ebpv[0, 2] = -0.180982288;
+            ebpv[1, 0] = 0.00742727954;
+            ebpv[1, 1] = 0.0140507459;
+            ebpv[1, 2] = 0.00609045792;
+
             var ehp = new double[3];
+            ehp[0] = 0.903358544;
+            ehp[1] = -0.415395237;
+            ehp[2] = -0.180084014;
+
             var x = 0.0013122272;
             var y = -2.92808623e-5;
             var s = 3.05749468e-8;
             var astrom = new ASTROM();
-
-            ebpv[0, 0] =  0.901310875;
-            ebpv[0, 1] = -0.417402664;
-            ebpv[0, 2] = -0.180982288;
-            ebpv[1, 0] =  0.00742727954;
-            ebpv[1, 1] =  0.0140507459;
-            ebpv[1, 2] =  0.00609045792;
-            ehp[0] =  0.903358544;
-            ehp[1] = -0.415395237;
-            ehp[2] = -0.180084014;
 
             Apci(date1, date2, ebpv, ehp, x, y, s, ref astrom);
 

@@ -17,17 +17,20 @@ namespace AstroRoutines.UnitTests
             var status = 0;
             var date1 = 2456384.5;
             var date2 = 0.970031644;
+
             var ebpv = new double[2, 3];
-            var ehp = new double[3];
-			ebpv[0, 0] = -0.974170438;
+            ebpv[0, 0] = -0.974170438;
             ebpv[0, 1] = -0.211520082;
             ebpv[0, 2] = -0.0917583024;
             ebpv[1, 0] = 0.00364365824;
             ebpv[1, 1] = -0.0154287319;
             ebpv[1, 2] = -0.00668922024;
+
+            var ehp = new double[3];
             ehp[0] = -0.973458265;
             ehp[1] = -0.209215307;
             ehp[2] = -0.0906996477;
+
             var x = 0.0013122272;
             var y = -2.92808623e-5;
             var s = 3.05749468e-8;
