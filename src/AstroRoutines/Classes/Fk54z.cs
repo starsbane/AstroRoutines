@@ -17,9 +17,9 @@ public static partial class AR
                             out double dr1950, out double dd1950)
     {
         double r, d, pr, pd, px, rv;
-        double[] p = new double[3];
+        var p = new double[3];
         double w;
-        double[] v = new double[3];
+        var v = new double[3];
         int i;
 
         /* FK5 equinox J2000.0 to FK4 equinox B1950.0. */

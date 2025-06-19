@@ -15,8 +15,8 @@ namespace AstroRoutines
         /// <param name="amb">a - b</param>
         public static void Pvmpv(double[,] a, double[,] b, ref double[,] amb)
         {
-            double[] ambRow0 = new double[3];
-            double[] ambRow1 = new double[3];
+            var ambRow0 = new double[3];
+            var ambRow1 = new double[3];
 
             Pmp(a.GetRow(0), b.GetRow(0), ref ambRow0);
             Pmp(a.GetRow(1), b.GetRow(1), ref ambRow1);

@@ -20,14 +20,14 @@ namespace AstroRoutines
         public static double S06(double date1, double date2, double x, double y)
         {
             /* Time since J2000.0, in Julian centuries */
-            double t = ((date1 - DJ00) + date2) / DJC;
+            var t = ((date1 - DJ00) + date2) / DJC;
 
             /* Miscellaneous */
             int i, j;
             double a, w0, w1, w2, w3, w4, w5;
 
             /* Fundamental arguments */
-            double[] fa = new double[8];
+            var fa = new double[8];
 
             /* Returned value */
             double s;

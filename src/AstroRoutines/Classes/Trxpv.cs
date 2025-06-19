@@ -10,7 +10,7 @@ namespace AstroRoutines
         /// <param name="trpv">Resulting transposed PV-vector</param>
         public static void Trxpv(double[,] r, double[,] pv, ref double[,] trpv)
         {
-            double[,] tr = new double[3, 3];
+            var tr = new double[3, 3];
 
             // Transpose of matrix r
             Tr(r, ref tr);

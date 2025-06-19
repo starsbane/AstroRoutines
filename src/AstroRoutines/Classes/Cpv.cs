@@ -12,10 +12,10 @@ namespace AstroRoutines
         /// <param name="c">copy</param>
         public static void Cpv(double[,] pv, double[,] c)
         {
-            double[] p0 = new double[3] { pv[0, 0], pv[0, 1], pv[0, 2] };
-            double[] c0 = new double[3];
-            double[] p1 = new double[3] { pv[1, 0], pv[1, 1], pv[1, 2] };
-            double[] c1 = new double[3];
+            var p0 = new double[3] { pv[0, 0], pv[0, 1], pv[0, 2] };
+            var c0 = new double[3];
+            var p1 = new double[3] { pv[1, 0], pv[1, 1], pv[1, 2] };
+            var c1 = new double[3];
             
             Cp(p0, ref c0);
             Cp(p1, ref c1);

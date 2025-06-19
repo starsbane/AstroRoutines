@@ -10,7 +10,7 @@ namespace AstroRoutines
         /// <returns>the equation of the origins in radians</returns>
         public static double Eo06a(double date1, ref double date2)
         {
-            double[,] r = new double[3, 3];
+            var r = new double[3, 3];
             double x, y, s, eo;
 
             /* Classical nutation x precession x bias matrix. */

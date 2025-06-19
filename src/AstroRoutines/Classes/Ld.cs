@@ -17,10 +17,10 @@ namespace AstroRoutines
                              double em, double dlim, ref double[] p1)
         {
             int i;
-            double[] qpe = new double[3];
+            var qpe = new double[3];
             double qdqpe, w;
-            double[] eq = new double[3];
-            double[] peq = new double[3];
+            var eq = new double[3];
+            var peq = new double[3];
 
             /* q . (q + e). */
             for (i = 0; i < 3; i++)

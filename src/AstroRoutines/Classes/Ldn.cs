@@ -19,11 +19,11 @@ namespace AstroRoutines
             const double CR = AULT / DAYSEC;
 
             int i;
-            double[] v = new double[3];
+            var v = new double[3];
             double dt;
-            double[] ev = new double[3];
+            var ev = new double[3];
             double em;
-            double[] e = new double[3];
+            var e = new double[3];
 
             /* Star direction prior to deflection. */
             Cp(sc, ref sn);

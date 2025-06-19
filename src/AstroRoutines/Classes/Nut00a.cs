@@ -1729,10 +1729,10 @@ namespace AstroRoutines
             const double U2R = DAS2R / 1e7;
 
             /* Number of terms in the luni-solar nutation model */
-            int NLS = xls.Length;
+            var NLS = xls.Length;
 
             /* Number of terms in the planetary nutation model */
-            int NPL = xpl.Length;
+            var NPL = xpl.Length;
 
 
             /* ------------------------------------------------------------------ */

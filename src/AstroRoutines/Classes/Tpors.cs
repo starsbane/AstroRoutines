@@ -17,19 +17,19 @@ namespace AstroRoutines
         public static int Tpors(double xi, double eta, double a, double b, out double a01, out double b01, out double a02, out double b02)
         {
             a01 = 0; b01 = 0; a02 = 0; b02 = 0;
-            double xi2 = xi * xi;
-            double r = Sqrt(1.0 + xi2 + eta * eta);
-            double sb = Sin(b);
-            double cb = Cos(b);
-            double rsb = r * sb;
-            double rcb = r * cb;
-            double w2 = rcb * rcb - xi2;
+            var xi2 = xi * xi;
+            var r = Sqrt(1.0 + xi2 + eta * eta);
+            var sb = Sin(b);
+            var cb = Cos(b);
+            var rsb = r * sb;
+            var rcb = r * cb;
+            var w2 = rcb * rcb - xi2;
 
             if (w2 >= 0.0)
             {
-                double w = Sqrt(w2);
-                double s = rsb - eta * w;
-                double c = rsb * eta + w;
+                var w = Sqrt(w2);
+                var s = rsb - eta * w;
+                var c = rsb * eta + w;
                 if (xi == 0.0 && w == 0.0) w = 1.0;
                 a01 = Anp(a - Atan2(xi, w));
                 b01 = Atan2(s, c);

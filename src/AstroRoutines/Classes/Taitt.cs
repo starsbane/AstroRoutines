@@ -13,7 +13,7 @@ namespace AstroRoutines
         public static int Taitt(double tai1, double tai2, out double tt1, out double tt2)
         {
             tt1 = 0; tt2 = 0;
-            double dtat = TTMTAI / DAYSEC;
+            var dtat = TTMTAI / DAYSEC;
 
             if (Abs(tai1) > Abs(tai2))
             {

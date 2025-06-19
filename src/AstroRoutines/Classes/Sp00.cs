@@ -11,10 +11,10 @@ namespace AstroRoutines
         public static double Sp00(double date1, double date2)
         {
             /* Interval between fundamental epoch J2000.0 and current date (JC). */
-            double t = ((date1 - DJ00) + date2) / DJC;
+            var t = ((date1 - DJ00) + date2) / DJC;
 
             /* Approximate s'. */
-            double sp = -47e-6 * t * DAS2R;
+            var sp = -47e-6 * t * DAS2R;
 
             return sp;
         }

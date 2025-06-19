@@ -11,10 +11,10 @@ namespace AstroRoutines
         public static double Pap(double[] a, double[] b)
         {
             double am, au0, au1, au2, bm, st, ct, xa, ya, za, eta0, eta1, eta2, xi0, xi1, xi2, a2b0, a2b1, a2b2, pa;
-            double[] au = new double[3];
-            double[] eta = new double[3];
-            double[] xi = new double[3];
-            double[] a2b = new double[3];
+            var au = new double[3];
+            var eta = new double[3];
+            var xi = new double[3];
+            var a2b = new double[3];
 
             /* Modulus and direction of the a vector. */
             Pn(a, out am, out au);

@@ -11,7 +11,7 @@ namespace AstroRoutines
         /// <param name="p">Cartesian coordinates</param>
         public static void S2p(double theta, double phi, double r, ref double[] p)
         {
-            double[] u = new double[3];
+            var u = new double[3];
 
             S2c(theta, phi, ref u);
             Sxp(r, u, ref p);

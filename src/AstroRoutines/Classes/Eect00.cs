@@ -34,7 +34,7 @@ namespace AstroRoutines
             double a, s0, s1;
 
             /* Fundamental arguments */
-            double[] fa = new double[14];
+            var fa = new double[14];
 
             /* Returned value. */
             double eect;
@@ -45,7 +45,7 @@ namespace AstroRoutines
 
 
             /* Terms of order t^0 */
-            Eect00_TERM[] e0 =
+            var e0 =
                 new[]
                 {
                     /* 1-10 */
@@ -91,12 +91,12 @@ namespace AstroRoutines
                 };
 
             /* Terms of order t^1 */
-            Eect00_TERM[] e1 =
+            var e1 =
                 new[] { new Eect00_TERM(new[] { 0, 0, 0, 0, 1, 0, 0, 0 }, -0.87e-6, 0.00e-6) };
 
             /* Number of terms in the series */
-            int NE0 = e0.Length;
-            int NE1 = e1.Length;
+            var NE0 = e0.Length;
+            var NE1 = e1.Length;
 
             /* ------------------------------------------------------------------ */
 

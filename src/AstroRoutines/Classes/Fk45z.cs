@@ -16,9 +16,9 @@ public static partial class AR
         const double PMF = 100.0 * DR2AS;
 
         /* Position and position+velocity vectors */
-        double[] r0 = new double[3];
-        double[] p = new double[3];
-        double[,] pv = new double[2, 3];
+        var r0 = new double[3];
+        var p = new double[3];
+        var pv = new double[2, 3];
 
         /* Miscellaneous */
         double w, djm0, djm;
@@ -33,7 +33,7 @@ public static partial class AR
         double[] ad = { +1.245e-3, -1.580e-3, -0.659e-3 };
 
         /* 3x2 matrix of p-vectors (cf. Seidelmann 3.591-4, matrix M) */
-        double[,,] em = new double[2, 3, 3] {
+        var em = new double[2, 3, 3] {
             { { +0.9999256782, -0.0111820611, -0.0048579477 },
                 { +0.0111820610, +0.9999374784, -0.0000271765 },
                 { +0.0048579479, -0.0000271474, +0.9999881997 } },

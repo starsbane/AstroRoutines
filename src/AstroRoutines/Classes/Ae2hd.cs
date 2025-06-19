@@ -12,18 +12,18 @@ namespace AstroRoutines
         /// <param name="dec">declination</param>
         public static void Ae2hd(double az, double el, double phi, out double ha, out double dec)
         {
-            double sa = Sin(az);
-            double ca = Cos(az);
-            double se = Sin(el);
-            double ce = Cos(el);
-            double sp = Sin(phi);
-            double cp = Cos(phi);
+            var sa = Sin(az);
+            var ca = Cos(az);
+            var se = Sin(el);
+            var ce = Cos(el);
+            var sp = Sin(phi);
+            var cp = Cos(phi);
 
-            double x = -ca * ce * sp + se * cp;
-            double y = -sa * ce;
-            double z = ca * ce * cp + se * sp;
+            var x = -ca * ce * sp + se * cp;
+            var y = -sa * ce;
+            var z = ca * ce * cp + se * sp;
 
-            double r = Sqrt(x * x + y * y);
+            var r = Sqrt(x * x + y * y);
             ha = (r != 0.0) ? Atan2(y, x) : 0.0;
             dec = Atan2(z, r);
         }

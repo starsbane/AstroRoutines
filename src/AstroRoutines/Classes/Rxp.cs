@@ -11,12 +11,12 @@ namespace AstroRoutines
         public static void Rxp(double[,] r, double[] p, ref double[] rp)
         {
             double w;
-            double[] wrp = new double[3];
+            var wrp = new double[3];
 
-            for (int j = 0; j < 3; j++)
+            for (var j = 0; j < 3; j++)
             {
                 w = 0.0;
-                for (int i = 0; i < 3; i++)
+                for (var i = 0; i < 3; i++)
                 {
                     w += r[j, i] * p[i];
                 }

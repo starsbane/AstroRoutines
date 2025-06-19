@@ -23,7 +23,7 @@ namespace AstroRoutines
             const double CELMIN = 1e-6;
             const double SELMIN = 0.05;
 
-            double[] v = new double[3];
+            var v = new double[3];
             double x, y, z, sx, cx, sy, cy, xhd, yhd, zhd, f,
                    xhdt, yhdt, zhdt, xaet, yaet, zaet, azobs, r, tz, w, del,
                    cosdel, xaeo, yaeo, zaeo, zdobs, hmobs, dcobs, raobs;

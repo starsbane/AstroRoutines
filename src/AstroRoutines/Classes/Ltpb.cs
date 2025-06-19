@@ -15,7 +15,7 @@ namespace AstroRoutines
             const double dr = -0.0146 * DAS2R;
 
             int i;
-            double[,] rp = new double[3, 3];
+            var rp = new double[3, 3];
 
             /* Precession matrix. */
             Ltp(epj, ref rp);

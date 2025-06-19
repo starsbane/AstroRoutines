@@ -11,7 +11,7 @@ namespace AstroRoutines
         public static void Pmat76(double date1, double date2, ref double[,] rmatp)
         {
             double zeta = 0, z = 0, theta = 0;
-            double[,] wmat = new double[3, 3];
+            var wmat = new double[3, 3];
 
             /* Precession Euler angles, J2000.0 to specified date. */
             Prec76(DJ00, 0.0, date1, date2, out zeta, out z, out theta);

@@ -13,9 +13,9 @@ namespace AstroRoutines
         public static int Tcbtdb(double tcb1, double tcb2, out double tdb1, out double tdb2)
         {
             tdb1 = 0; tdb2 = 0;
-            double t77td = DJM0 + DJM77;
-            double t77tf = TTMTAI / DAYSEC;
-            double tdb0 = TDB0 / DAYSEC;
+            var t77td = DJM0 + DJM77;
+            var t77tf = TTMTAI / DAYSEC;
+            var tdb0 = TDB0 / DAYSEC;
             double d;
 
             if (Abs(tcb1) > Abs(tcb2))

@@ -12,8 +12,8 @@ namespace AstroRoutines
         /// <returns>Angular separation (radians)</returns>
         public static double Seps(double al, double ap, double bl, double bp)
         {
-            double[] ac = new double[3];
-            double[] bc = new double[3];
+            var ac = new double[3];
+            var bc = new double[3];
             double s;
 
             /* Spherical to Cartesian. */

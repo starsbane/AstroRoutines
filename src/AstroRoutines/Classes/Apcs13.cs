@@ -13,14 +13,14 @@ namespace AstroRoutines
         /// <param name="astrom">star-independent astrometry parameters</param>
         public static void Apcs13(double date1, double date2, double[,] pv, ref ASTROM astrom)
         {
-            double[,] ehpv = new double[2, 3];
-            double[,] ebpv = new double[2, 3];
+            var ehpv = new double[2, 3];
+            var ebpv = new double[2, 3];
 
             /* Earth barycentric & heliocentric position/velocity (au, au/d). */
             Epv00(date1, date2, ref ehpv, ref ebpv);
 
             /* Compute the star-independent astrometry parameters. */
-            double[] ehp = new double[3] { ehpv[0, 0], ehpv[0, 1], ehpv[0, 2] };
+            var ehp = new double[3] { ehpv[0, 0], ehpv[0, 1], ehpv[0, 2] };
             Apcs(date1, date2, pv, ebpv, ehp, ref astrom);
 
             /* Finished. */

@@ -36,10 +36,10 @@ namespace AstroRoutines
             px2 = 0.0;
             rv2 = 0.0;
 
-            double[,] pv1 = new double[2, 3];
+            var pv1 = new double[2, 3];
             double tl1, dt, r2, rdv, v2, c2mv2, tl2;
-            double[,] pv = new double[2, 3];
-            double[,] pv2 = new double[2, 3];
+            var pv = new double[2, 3];
+            var pv2 = new double[2, 3];
             int j1, j2, j;
 
             /* RA,Dec etc. at the "before" epoch to space motion pv-vector. */

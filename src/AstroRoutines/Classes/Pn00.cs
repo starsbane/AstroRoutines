@@ -34,8 +34,8 @@ namespace AstroRoutines
                                 out double[,] rn, out double[,] rbpn)
         {
             double dpsipr, depspr;
-            double[,] rbpw = new double[3, 3];
-            double[,] rnw = new double[3, 3];
+            var rbpw = new double[3, 3];
+            var rnw = new double[3, 3];
             rbp = new double[3, 3];
             rn = new double[3, 3];
 

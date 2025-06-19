@@ -18,7 +18,7 @@ namespace AstroRoutines
 
             double t, dpsibi, depsbi, dra0, psia77, oma77, chia,
                    dpsipr, depspr, psia, oma;
-            double[,] rbw = new double[3, 3];
+            var rbw = new double[3, 3];
 
             /* Interval between fundamental epoch J2000.0 and current date (JC). */
             t = ((date1 - DJ00) + date2) / DJC;

@@ -24,7 +24,7 @@ namespace AstroRoutines
             const int IYV = 2023;
 
             /* Reference dates (MJD) and drift rates (s/day), pre leap seconds */
-            double[,] drift = new double[,] {
+            var drift = new double[,] {
                 { 37300.0, 0.0012960 },
                 { 37300.0, 0.0012960 },
                 { 37300.0, 0.0012960 },

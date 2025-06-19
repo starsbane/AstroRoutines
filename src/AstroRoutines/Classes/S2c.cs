@@ -10,7 +10,7 @@ namespace AstroRoutines
         /// <param name="c">direction cosines</param>
         public static void S2c(double theta, double phi, ref double[] c)
         {
-            double cp = Cos(phi);
+            var cp = Cos(phi);
             c[0] = Cos(theta) * cp;
             c[1] = Sin(theta) * cp;
             c[2] = Sin(phi);

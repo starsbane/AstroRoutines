@@ -15,9 +15,9 @@ namespace AstroRoutines
         public static void C2t00b(double tta, double ttb, double uta, double utb,
             double xp, double yp, out double[,] rc2t)
         {
-            double[,] rc2i = new double[3, 3];
+            var rc2i = new double[3, 3];
             double era;
-            double[,] rpom = new double[3, 3];
+            var rpom = new double[3, 3];
 
             /* Form the celestial-to-intermediate matrix for this TT (IAU 2000B). */
             C2i00b(tta, ttb, out rc2i);

@@ -22,7 +22,7 @@ namespace AstroRoutines
 
             int c;
             double c1, c2, sphi, cphi, ce, xaeo, yaeo, zaeo;
-            double[] v = new double[3];
+            var v = new double[3];
             double xmhdo, ymhdo, zmhdo, az, sz, zdo, refa, refb, tz, dref,
                    zdt, xaet, yaet, zaet, xmhda, ymhda, zmhda,
                    f, xhd, yhd, zhd, sx, cx, sy, cy, hma;

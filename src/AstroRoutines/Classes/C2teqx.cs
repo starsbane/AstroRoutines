@@ -12,7 +12,7 @@ namespace AstroRoutines
         public static void C2teqx(double[,] rbpn, double gst, double[,] rpom,
             out double[,] rc2t)
         {
-            double[,] r = new double[3, 3];
+            var r = new double[3, 3];
 
             /* Construct the matrix. */
             Cr(rbpn, ref r);

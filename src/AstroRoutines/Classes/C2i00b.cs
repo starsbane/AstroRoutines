@@ -10,7 +10,7 @@ namespace AstroRoutines
         /// <param name="rc2i">celestial-to-intermediate matrix</param>
         public static void C2i00b(double date1, double date2, out double[,] rc2i)
         {
-            double[,] rbpn = new double[3, 3];
+            var rbpn = new double[3, 3];
             rc2i = new double[3, 3];
 
             /* Obtain the celestial-to-true matrix (IAU 2000B). */

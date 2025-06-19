@@ -11,8 +11,8 @@ public static partial class AR
     /// <param name="dd">ICRS declination</param>
     public static void G2icrs(double dl, double db, out double dr, out double dd)
     {
-        double[] v1 = new double[3];
-        double[] v2 = new double[3];
+        var v1 = new double[3];
+        var v2 = new double[3];
 
         /*
         **  L2,B2 system of Galactic coordinates in the form presented in the
@@ -26,7 +26,7 @@ public static partial class AR
         **  ICRS to Galactic rotation matrix, obtained by computing
         **  R_3(-R) R_1(pi/2-Q) R_3(pi/2+P) to the full precision shown:
         */
-        double[,] r = new double[,] {
+        var r = new double[,] {
             { -0.054875560416215368492398900454,
               -0.873437090234885048760383168409,
               -0.483835015548713226831774175116 },

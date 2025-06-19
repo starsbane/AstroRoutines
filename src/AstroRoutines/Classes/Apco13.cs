@@ -29,9 +29,9 @@ namespace AstroRoutines
         {
             int j;
             double tai1 = 0, tai2 = 0, tt1 = 0, tt2 = 0, ut11 = 0, ut12 = 0;
-            double[,] ehpv = new double[2, 3];
-            double[,] ebpv = new double[2, 3];
-            double[,] r = new double[3, 3];
+            var ehpv = new double[2, 3];
+            var ebpv = new double[2, 3];
+            var r = new double[3, 3];
             double x = 0, y = 0, s, theta, sp, refa = 0, refb = 0;
 
             /* UTC to other time scales. */
@@ -63,7 +63,7 @@ namespace AstroRoutines
             Refco(phpa, tc, rh, wl, out refa, out refb);
 
             /* Compute the star-independent astrometry parameters. */
-            double[] ehp = new double[3] { ehpv[0, 0], ehpv[0, 1], ehpv[0, 2] };
+            var ehp = new double[3] { ehpv[0, 0], ehpv[0, 1], ehpv[0, 2] };
             Apco(tt1, tt2, ebpv, ehp, x, y, s, theta,
                  elong, phi, hm, xp, yp, sp, refa, refb, ref astrom);
 

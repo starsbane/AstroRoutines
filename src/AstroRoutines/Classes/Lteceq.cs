@@ -13,9 +13,9 @@ namespace AstroRoutines
         /// <param name="dd">ICRS declination (radians)</param>
         public static void Lteceq(double epj, double dl, double db, ref double dr, ref double dd)
         {
-            double[,] rm = new double[3, 3];
-            double[] v1 = new double[3];
-            double[] v2 = new double[3];
+            var rm = new double[3, 3];
+            var v1 = new double[3];
+            var v2 = new double[3];
             double a, b;
 
             /* Spherical to Cartesian. */

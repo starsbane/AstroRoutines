@@ -35,7 +35,7 @@ namespace AstroRoutines
             out double dob, out double rob)
         {
             int j;
-            ASTROM astrom = new ASTROM();
+            var astrom = new ASTROM();
 
             /* Star-independent astrometry parameters for CIRS->observed. */
             j = Apio13(utc1, utc2, dut1, elong, phi, hm, xp, yp,

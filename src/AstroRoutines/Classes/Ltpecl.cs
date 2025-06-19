@@ -36,7 +36,7 @@ namespace AstroRoutines
                 { 882.00,  -87.676083, 198.296701, -185.138669,  -34.744450},
                 { 547.00,   46.140315, 101.135679, -120.972830,   22.885731}
             };
-            int NPER = pqper.GetLength(0);
+            var NPER = pqper.GetLength(0);
 
             /* Miscellaneous */
             int i;

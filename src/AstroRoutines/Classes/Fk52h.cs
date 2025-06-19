@@ -21,12 +21,12 @@ public static partial class AR
                             out double rh, out double dh, out double drh, out double ddh, out double pxh, out double rvh)
     {
         int i;
-        double[,] pv5 = new double[2, 3];
-        double[,] r5h = new double[3, 3];
-        double[] s5h = new double[3];
-        double[] wxp = new double[3];
-        double[] vv = new double[3];
-        double[,] pvh = new double[2, 3];
+        var pv5 = new double[2, 3];
+        var r5h = new double[3, 3];
+        var s5h = new double[3];
+        var wxp = new double[3];
+        var vv = new double[3];
+        var pvh = new double[2, 3];
 
         /* FK5 barycentric position/velocity pv-vector (normalized). */
         Starpv(r5, d5, dr5, dd5, px5, rv5, ref pv5);
@@ -41,9 +41,9 @@ public static partial class AR
         }
 
         /* Orient the FK5 position into the Hipparcos system. */
-        double[] pv5_0 = new double[3];
+        var pv5_0 = new double[3];
         for (i = 0; i < 3; i++) pv5_0[i] = pv5[0, i];
-        double[] pvh_0 = new double[3];
+        var pvh_0 = new double[3];
         Rxp(r5h, pv5_0, ref pvh_0);
         for (i = 0; i < 3; i++) pvh[0, i] = pvh_0[i];
 
@@ -51,12 +51,12 @@ public static partial class AR
         Pxp(pv5_0, s5h, ref wxp);
 
         /* Add this component to the FK5 space motion. */
-        double[] pv5_1 = new double[3];
+        var pv5_1 = new double[3];
         for (i = 0; i < 3; i++) pv5_1[i] = pv5[1, i];
         Ppp(wxp, pv5_1, ref vv);
 
         /* Orient the FK5 space motion into the Hipparcos system. */
-        double[] pvh_1 = new double[3];
+        var pvh_1 = new double[3];
         Rxp(r5h, vv, ref pvh_1);
         for (i = 0; i < 3; i++) pvh[1, i] = pvh_1[i];
 

@@ -162,7 +162,7 @@ namespace AstroRoutines
                 new {nd = 2,  nem = 0,  nemp = -1, nf = -2, coefl = 0.000000, coefr = 8752.0}
             };
 
-            int NLR = tlr.Length;
+            var NLR = tlr.Length;
 
             /*
             ** Coefficients for Moon latitude series
@@ -231,7 +231,7 @@ namespace AstroRoutines
                 new {nd = 2,  nem = -2, nemp = 0,  nf = 1,  coefb = 0.000107}
             };
 
-            int NB = tb.Length;
+            var NB = tb.Length;
 
             /* Miscellaneous */
             int n, i;
@@ -239,7 +239,7 @@ namespace AstroRoutines
                    da1pf, dlpmp, slpmp, vb, vdb, v, dv, emn, empn, dn, fn, en,
                    den, arg, darg, farg, coeff, el, del, r, dr, b, db, gamb = 0,
                    phib = 0, psib = 0, epsa = 0;
-            double[,] rm = new double[3, 3];
+            var rm = new double[3, 3];
 
             /* ------------------------------------------------------------------ */
 

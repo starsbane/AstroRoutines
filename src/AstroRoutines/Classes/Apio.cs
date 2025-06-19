@@ -20,7 +20,7 @@ namespace AstroRoutines
         public static void Apio(double sp, double theta, double elong, double phi, double hm,
                                double xp, double yp, double refa, double refb, ref ASTROM astrom)
         {
-            double[,] r = new double[3, 3];
+            var r = new double[3, 3];
             double a, b, eral, c;
 
             /* Form the rotation matrix, CIRS to apparent [HA,Dec]. */
@@ -52,11 +52,11 @@ namespace AstroRoutines
             astrom.cphi = Cos(phi);
 
             /* Observer's geocentric position and velocity (m, m/s, CIRS). */
-            double[,] pvc = new double[2, 3];
+            var pvc = new double[2, 3];
             Pvtob(elong, phi, hm, xp, yp, sp, theta, ref pvc);
 
             /* Magnitude of diurnal aberration vector. */
-            double diurab = Sqrt(pvc[1, 0] * pvc[1, 0] + pvc[1, 1] * pvc[1, 1]) / CMPS;
+            var diurab = Sqrt(pvc[1, 0] * pvc[1, 0] + pvc[1, 1] * pvc[1, 1]) / CMPS;
             astrom.diurab = diurab;
 
             /* Refraction constants. */

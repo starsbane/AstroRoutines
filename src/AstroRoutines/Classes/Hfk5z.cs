@@ -18,15 +18,15 @@ namespace AstroRoutines
                                 ref double r5, ref double d5, ref double dr5, ref double dd5)
         {
             double t;
-            double[] ph = new double[3];
-            double[,] r5h = new double[3, 3];
-            double[] s5h = new double[3];
-            double[] sh = new double[3];
-            double[] vst = new double[3];
-            double[,] rst = new double[3, 3];
-            double[,] r5ht = new double[3, 3];
-            double[,] pv5e = new double[2, 3];
-            double[] vv = new double[3];
+            var ph = new double[3];
+            var r5h = new double[3, 3];
+            var s5h = new double[3];
+            var sh = new double[3];
+            var vst = new double[3];
+            var rst = new double[3, 3];
+            var r5ht = new double[3, 3];
+            var pv5e = new double[2, 3];
+            var vv = new double[3];
             double w, r, v;
 
             /* Time interval from fundamental epoch J2000.0 to given date (JY). */

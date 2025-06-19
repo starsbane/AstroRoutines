@@ -26,7 +26,7 @@ namespace AstroRoutines
             int leap;
             char s;
             int iy1, im1, id1, js, iy2, im2, id2;
-            int[] ihmsf1 = new int[4];
+            var ihmsf1 = new int[4];
             int i;
             double a1, b1, fd, dat0, dat12, w, dat24, dleap;
 

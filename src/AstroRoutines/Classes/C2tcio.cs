@@ -12,7 +12,7 @@ namespace AstroRoutines
         public static void C2tcio(double[,] rc2i, double era, double[,] rpom,
             out double[,] rc2t)
         {
-            double[,] r = new double[3, 3];
+            var r = new double[3, 3];
 
             /* Construct the matrix. */
             Cr(rc2i, ref r);

@@ -15,7 +15,7 @@ namespace AstroRoutines
         public static void Pb06(double date1, double date2,
                                out double bzeta, out double bz, out double btheta)
         {
-            double[,] r = new double[3, 3];
+            var r = new double[3, 3];
             double y, x;
 
             /* Precession matrix via Fukushima-Williams angles. */

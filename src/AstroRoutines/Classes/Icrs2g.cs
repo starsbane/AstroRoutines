@@ -11,8 +11,8 @@ namespace AstroRoutines
         /// <param name="db">Galactic latitude (radians)</param>
         public static void Icrs2g(double dr, double dd, ref double dl, ref double db)
         {
-            double[] v1 = new double[3];
-            double[] v2 = new double[3];
+            var v1 = new double[3];
+            var v2 = new double[3];
 
             /*
             **  L2,B2 system of Galactic coordinates in the form presented in the
@@ -26,7 +26,7 @@ namespace AstroRoutines
             **  ICRS to Galactic rotation matrix, obtained by computing
             **  R_3(-R) R_1(pi/2-Q) R_3(pi/2+P) to the full precision shown:
             */
-            double[,] r = new double[,] { { -0.054875560416215368492398900454,
+            var r = new double[,] { { -0.054875560416215368492398900454,
                                            -0.873437090234885048760383168409,
                                            -0.483835015548713226831774175116 },
                                          { +0.494109427875583673525222371358,

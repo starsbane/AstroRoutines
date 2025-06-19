@@ -32,7 +32,7 @@ namespace AstroRoutines
             out double rc, out double dc)
         {
             int j;
-            ASTROM astrom = new ASTROM();
+            var astrom = new ASTROM();
             double eo = 0, ri, di;
 
             /* Star-independent astrometry parameters. */

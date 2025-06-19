@@ -821,7 +821,7 @@ namespace AstroRoutines
             };
 
             // Number of frequencies: luni-solar
-            int NFLS = mfals.Length;
+            var NFLS = mfals.Length;
 
             // Fundamental-argument multipliers: planetary terms
             int[,] mfapl = {
@@ -1614,7 +1614,7 @@ namespace AstroRoutines
             };
 
             // Number of frequencies: planetary
-            int NFPL = mfapl.Length; // Actual count from original source
+            var NFPL = mfapl.Length; // Actual count from original source
 
             // Pointers into amplitudes array, one pointer per frequency
             int[] nc = {
@@ -2458,7 +2458,7 @@ namespace AstroRoutines
             };
 
             /* Number of amplitude coefficients */
-            int NA = a.Length;
+            var NA = a.Length;
 
             /* Amplitude usage: X or Y, sin or cos, power of T. */
             int[] jaxy = { 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1 };
@@ -2466,21 +2466,21 @@ namespace AstroRoutines
             int[] japt = { 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4 };
 
             /* Miscellaneous */
-            double[] pt = new double[MAXPT + 1];
-            double[] fa = new double[14];
-            double[] xypr = new double[2];
-            double[] xypl = new double[2];
-            double[] xyls = new double[2];
-            double[] sc = new double[2];
+            var pt = new double[MAXPT + 1];
+            var fa = new double[14];
+            var xypr = new double[2];
+            var xypl = new double[2];
+            var xyls = new double[2];
+            var sc = new double[2];
 
             /* ------------------------------------------------------------------ */
 
             /* Interval between fundamental date J2000.0 and given date (JC). */
-            double t = ((date1 - DJ00) + date2) / DJC;
+            var t = ((date1 - DJ00) + date2) / DJC;
 
             /* Powers of T. */
-            double w = 1.0;
-            for (int jpt = 0; jpt <= MAXPT; jpt++)
+            var w = 1.0;
+            for (var jpt = 0; jpt <= MAXPT; jpt++)
             {
                 pt[jpt] = w;
                 w *= t;
@@ -2522,9 +2522,9 @@ namespace AstroRoutines
             /* Polynomial part of precession-nutation */
             /* -------------------------------------- */
 			
-            for (int jxy = 0; jxy < 2; jxy++)
+            for (var jxy = 0; jxy < 2; jxy++)
             {
-                for (int j = MAXPT; j >= 0; j--)
+                for (var j = MAXPT; j >= 0; j--)
                 {
                     xypr[jxy] += xyp[jxy, j] * pt[j];
                 }
@@ -2534,34 +2534,34 @@ namespace AstroRoutines
             /* Nutation periodic terms, planetary */
             /* ---------------------------------- */
 			
-            int ialast = NA;
-            for (int ifreq = NFPL - 1; ifreq >= 0; ifreq--)
+            var ialast = NA;
+            for (var ifreq = NFPL - 1; ifreq >= 0; ifreq--)
             {
                 // Obtain the argument functions
-                double arg = 0.0;
-                for (int i = 0; i < 14; i++)
+                var arg = 0.0;
+                for (var i = 0; i < 14; i++)
                 {
-                    int m = mfapl[ifreq, i];
+                    var m = mfapl[ifreq, i];
                     if (m != 0) arg += m * fa[i];
                 }
                 sc[0] = Sin(arg);
                 sc[1] = Cos(arg);
 
                 // Work backwards through the amplitudes at this frequency
-                int ia = nc[ifreq + NFLS];
-                for (int i = ialast; i >= ia; i--)
+                var ia = nc[ifreq + NFLS];
+                for (var i = ialast; i >= ia; i--)
                 {
                     // Coefficient number (0 = 1st)
-                    int j = i - ia;
+                    var j = i - ia;
 
                     // X or Y
-                    int jxy = jaxy[j];
+                    var jxy = jaxy[j];
 
                     // Sin or cos
-                    int jsc = jasc[j];
+                    var jsc = jasc[j];
 
                     // Power of T
-                    int jpt = japt[j];
+                    var jpt = japt[j];
 
                     // Accumulate the component
                     xypl[jxy] += a[i - 1] * sc[jsc] * pt[jpt];
@@ -2573,33 +2573,33 @@ namespace AstroRoutines
             /* Nutation periodic terms, luni-solar */
             /* ----------------------------------- */
 			
-            for (int ifreq = NFLS - 1; ifreq >= 0; ifreq--)
+            for (var ifreq = NFLS - 1; ifreq >= 0; ifreq--)
             {
                 // Obtain the argument functions
-                double arg = 0.0;
-                for (int i = 0; i < 5; i++)
+                var arg = 0.0;
+                for (var i = 0; i < 5; i++)
                 {
-                    int m = mfals[ifreq, i];
+                    var m = mfals[ifreq, i];
                     if (m != 0) arg += (double)m * fa[i];
                 }
                 sc[0] = Sin(arg);
                 sc[1] = Cos(arg);
 
                 // Work backwards through the amplitudes at this frequency
-                int ia = nc[ifreq];
-                for (int i = ialast; i >= ia; i--)
+                var ia = nc[ifreq];
+                for (var i = ialast; i >= ia; i--)
                 {
                     // Coefficient number (0 = 1st)
-                    int j = i - ia;
+                    var j = i - ia;
 
                     // X or Y
-                    int jxy = jaxy[j];
+                    var jxy = jaxy[j];
 
                     // Sin or cos
-                    int jsc = jasc[j];
+                    var jsc = jasc[j];
 
                     // Power of T
-                    int jpt = japt[j];
+                    var jpt = japt[j];
 
                     // Accumulate the component
                     xyls[jxy] += a[i - 1] * sc[jsc] * pt[jpt];

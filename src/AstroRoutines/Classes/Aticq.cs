@@ -16,15 +16,15 @@ namespace AstroRoutines
             out double rc, out double dc)
         {
             int j, i;
-            double[] pi = new double[3];
-            double[] ppr = new double[3];
-            double[] pnat = new double[3];
-            double[] pco = new double[3];
+            var pi = new double[3];
+            var ppr = new double[3];
+            var pnat = new double[3];
+            var pco = new double[3];
             double w;
-            double[] d = new double[3];
-            double[] before = new double[3];
+            var d = new double[3];
+            var before = new double[3];
             double r2, r;
-            double[] after = new double[3];
+            var after = new double[3];
 
             /* CIRS RA,Dec to Cartesian. */
             S2c(ri, di, ref pi);

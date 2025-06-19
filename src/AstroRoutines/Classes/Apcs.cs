@@ -24,9 +24,9 @@ namespace AstroRoutines
 
             int i;
             double dp, dv, v2, w;
-            double[] pb = new double[3];
-            double[] vb = new double[3];
-            double[] ph = new double[3];
+            var pb = new double[3];
+            var vb = new double[3];
+            var ph = new double[3];
 
             /* Time since reference epoch, years (for proper motion calculation). */
             astrom.pmt = ((date1 - DJ00) + date2) / DJY;

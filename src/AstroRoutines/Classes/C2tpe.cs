@@ -19,13 +19,13 @@ namespace AstroRoutines
             out double[,] rc2t)
         {
             double epsa;
-            double[,] rb = new double[3, 3];
-            double[,] rp = new double[3, 3];
-            double[,] rbp = new double[3, 3];
-            double[,] rn = new double[3, 3];
-            double[,] rbpn = new double[3, 3];
+            var rb = new double[3, 3];
+            var rp = new double[3, 3];
+            var rbp = new double[3, 3];
+            var rn = new double[3, 3];
+            var rbpn = new double[3, 3];
             double gmst, ee, sp;
-            double[,] rpom = new double[3, 3];
+            var rpom = new double[3, 3];
 
             /* Form the celestial-to-true matrix for this TT. */
             Pn00(tta, ttb, dpsi, deps, out epsa, out rb, out rp, out rbp, out rn, out rbpn);

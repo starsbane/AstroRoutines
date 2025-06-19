@@ -206,7 +206,7 @@ namespace AstroRoutines
             };
 
             /* Number of terms in the series */
-            int NLS = x.Length;
+            var NLS = x.Length;
 
             /* ------------------------------------------------------------------ */
 

@@ -14,7 +14,7 @@ namespace AstroRoutines
         public static int Tdbtt(double tdb1, double tdb2, double dtr, out double tt1, out double tt2)
         {
             tt1 = 0; tt2 = 0;
-            double dtrd = dtr / DAYSEC;
+            var dtrd = dtr / DAYSEC;
 
             if (Abs(tdb1) > Abs(tdb2))
             {

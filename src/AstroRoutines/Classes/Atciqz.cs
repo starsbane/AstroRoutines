@@ -15,10 +15,10 @@ namespace AstroRoutines
         public static void Atciqz(double rc, double dc, ref ASTROM astrom,
             out double ri, out double di)
         {
-            double[] pco = new double[3];
-            double[] pnat = new double[3];
-            double[] ppr = new double[3];
-            double[] pi = new double[3];
+            var pco = new double[3];
+            var pnat = new double[3];
+            var ppr = new double[3];
+            var pi = new double[3];
             double w;
 
             /* BCRS coordinate direction (unit vector). */

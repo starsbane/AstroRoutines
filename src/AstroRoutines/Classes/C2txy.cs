@@ -21,9 +21,9 @@ namespace AstroRoutines
                       double x, double y, double xp, double yp,
                       double[,] rc2t)
         {
-            double[,] rc2i = new double[3, 3];
+            var rc2i = new double[3, 3];
             double era, sp;
-            double[,] rpom = new double[3, 3];
+            var rpom = new double[3, 3];
 
             /* Form the celestial-to-intermediate matrix for this TT. */
             C2ixy(tta, ttb, x, y, ref rc2i);

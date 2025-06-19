@@ -10,11 +10,11 @@ namespace AstroRoutines
         public static void Ltp(double epj, ref double[,] rp)
         {
             int i;
-            double[] peqr = new double[3];
-            double[] pecl = new double[3];
-            double[] v = new double[3];
+            var peqr = new double[3];
+            var pecl = new double[3];
+            var v = new double[3];
             double w;
-            double[] eqx = new double[3];
+            var eqx = new double[3];
 
             /* Equator pole (bottom row of matrix). */
             Ltpequ(epj, ref peqr);

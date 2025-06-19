@@ -14,12 +14,12 @@ namespace AstroRoutines
             const double de = -0.0068192 * DAS2R;
             const double dr = -0.0146 * DAS2R;
 
-            double[] p = new double[3];
-            double[] z = new double[3];
-            double[] w = new double[3];
+            var p = new double[3];
+            var z = new double[3];
+            var w = new double[3];
             double s;
-            double[] x = new double[3];
-            double[] y = new double[3];
+            var x = new double[3];
+            var y = new double[3];
 
             /* Equator pole. */
             Ltpequ(epj, ref p);

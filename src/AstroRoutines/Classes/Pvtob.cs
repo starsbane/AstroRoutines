@@ -20,9 +20,9 @@ namespace AstroRoutines
             // Earth rotation rate in radians per UT1 second
             const double OM = 1.00273781191135448 * D2PI / DAYSEC;
 
-            double[] xyzm = new double[3];
-            double[,] rpm = new double[3,3];
-            double[] xyz = new double[3];
+            var xyzm = new double[3];
+            var rpm = new double[3,3];
+            var xyz = new double[3];
             double x, y, z, s, c;
 
             // Geodetic to geocentric transformation (WGS84)

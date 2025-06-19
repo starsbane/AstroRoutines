@@ -19,7 +19,7 @@ namespace AstroRoutines
         public static void Atccq(double rc, double dc, double pr, double pd, double px, double rv,
                                 ref ASTROM astrom, ref double ra, ref double da)
         {
-            double[] pco = new double[3];
+            var pco = new double[3];
             double w;
 
             /* Proper motion and parallax, giving BCRS coordinate direction. */

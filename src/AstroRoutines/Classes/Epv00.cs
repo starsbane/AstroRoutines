@@ -2316,8 +2316,8 @@ namespace AstroRoutines
                 /* ------------------------------------------------ */
 
                 /* Sun to Earth, T^0 terms. */
-                double[] coeffs = ce0[i];
-                int nterms = ne0[i];
+                var coeffs = ce0[i];
+                var nterms = ne0[i];
                 for (j = 0; j < nterms; j++)
                 {
                     a = coeffs[j * 3];

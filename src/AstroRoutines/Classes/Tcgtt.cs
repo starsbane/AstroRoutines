@@ -13,7 +13,7 @@ namespace AstroRoutines
         public static int Tcgtt(double tcg1, double tcg2, out double tt1, out double tt2)
         {
             tt1 = 0; tt2 = 0;
-            double t77t = DJM77 + TTMTAI / DAYSEC;
+            var t77t = DJM77 + TTMTAI / DAYSEC;
 
             if (Abs(tcg1) > Abs(tcg2))
             {

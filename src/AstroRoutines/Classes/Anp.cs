@@ -9,7 +9,7 @@ namespace AstroRoutines
         /// <returns>angle in range 0-2pi</returns>
         public static double Anp(double a)
         {
-            double w = a % D2PI;
+            var w = a % D2PI;
             if (w < 0) w += D2PI;
             return w;
         }

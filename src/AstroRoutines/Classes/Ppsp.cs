@@ -11,7 +11,7 @@ namespace AstroRoutines
         /// <param name="apsb">a + s*b</param>
         public static void Ppsp(double[] a, double s, double[] b, out double[] apsb)
         {
-            double[] sb = new double[3];
+            var sb = new double[3];
             apsb = new double[3];
 
             // s*b

@@ -30,10 +30,10 @@ namespace AstroRoutines
                                double xp, double yp, double sp,
                                double refa, double refb, ref ASTROM astrom)
         {
-            double[,] r = new double[3, 3];
+            var r = new double[3, 3];
             double a, b, eral, c;
-            double[,] pvc = new double[2, 3];
-            double[,] pv = new double[2, 3];
+            var pvc = new double[2, 3];
+            var pv = new double[2, 3];
 
             /* Form the rotation matrix, CIRS to apparent [HA,Dec]. */
             Ir(ref r);

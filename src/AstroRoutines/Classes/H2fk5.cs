@@ -23,13 +23,13 @@ namespace AstroRoutines
                                  ref double dr5, ref double dd5, ref double px5, ref double rv5)
         {
             int i;
-            double[,] pvh = new double[2, 3];
-            double[,] r5h = new double[3, 3];
-            double[] s5h = new double[3];
-            double[] sh = new double[3];
-            double[] wxp = new double[3];
-            double[] vv = new double[3];
-            double[,] pv5 = new double[2, 3];
+            var pvh = new double[2, 3];
+            var r5h = new double[3, 3];
+            var s5h = new double[3];
+            var sh = new double[3];
+            var wxp = new double[3];
+            var vv = new double[3];
+            var pv5 = new double[2, 3];
 
             /* Hipparcos barycentric position/velocity pv-vector (normalized). */
             Starpv(rh, dh, drh, ddh, pxh, rvh, ref pvh);

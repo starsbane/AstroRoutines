@@ -41,7 +41,7 @@ namespace AstroRoutines
             ref double dob, ref double rob, ref double eo)
         {
             int j;
-            ASTROM astrom = new ASTROM();
+            var astrom = new ASTROM();
             double ri, di;
 
             /* Star-independent astrometry parameters. */

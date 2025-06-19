@@ -9,7 +9,7 @@ public static partial class AR
     /// <param name="s5h">r-vector: FK5 spin wrt Hipparcos</param>
     public static void Fk5hip(out double[,] r5h, out double[] s5h)
     {
-        double[] v = new double[3];
+        var v = new double[3];
         r5h = new double[3, 3];
 
         /* FK5 wrt Hipparcos orientation and spin (radians, radians/year) */

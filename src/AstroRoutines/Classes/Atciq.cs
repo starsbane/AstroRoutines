@@ -20,10 +20,10 @@ namespace AstroRoutines
             double pr, double pd, double px, double rv,
             ref ASTROM astrom, out double ri, out double di)
         {
-            double[] pco = new double[3];
-            double[] pnat = new double[3];
-            double[] ppr = new double[3];
-            double[] pi = new double[3];
+            var pco = new double[3];
+            var pnat = new double[3];
+            var ppr = new double[3];
+            var pi = new double[3];
             double w;
 
             /* Proper motion and parallax, giving BCRS coordinate direction. */

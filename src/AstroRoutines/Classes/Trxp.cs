@@ -10,7 +10,7 @@ namespace AstroRoutines
         /// <param name="trp">result of r^T * p</param>
         public static void Trxp(double[,] r, double[] p, ref double[] trp)
         {
-            double[,] tr = new double[3, 3];
+            var tr = new double[3, 3];
 
             /* Transpose of matrix r. */
             Tr(r, ref tr);

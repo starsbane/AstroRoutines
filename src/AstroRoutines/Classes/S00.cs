@@ -27,7 +27,7 @@ namespace AstroRoutines
 			double a, w0, w1, w2, w3, w4, w5;
 
 			/* Fundamental arguments */
-			double[] fa = new double[8];
+			var fa = new double[8];
 
 			/* Returned value */
 			double s;

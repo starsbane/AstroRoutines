@@ -14,7 +14,7 @@ namespace AstroRoutines
         public static void Xys00a(double date1, double date2, 
                                   ref double x, ref double y, ref double s)
         {
-            double[,] rbpn = new double[3, 3];
+            var rbpn = new double[3, 3];
 
             // Form the bias-precession-nutation matrix, IAU 2000A
             Pnm00a(date1, date2, out rbpn);

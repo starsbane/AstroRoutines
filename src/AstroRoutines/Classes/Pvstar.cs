@@ -24,13 +24,13 @@ namespace AstroRoutines
             rv = 0;
 
             double r;
-            double[] pu = new double[3];
+            var pu = new double[3];
             double vr, vt;
-            double[] ur = new double[3];
-            double[] ut = new double[3];
+            var ur = new double[3];
+            var ut = new double[3];
             double bett, betr, d, w, del;
-            double[] usr = new double[3];
-            double[] ust = new double[3];
+            var usr = new double[3];
+            var ust = new double[3];
             double a, rad, decd, rd;
 
             // Isolate the radial component of the velocity (au/day, inertial)
@@ -58,7 +58,7 @@ namespace AstroRoutines
             // Compute observed radial velocity vector (au/d)
             Sxp(DC * (betr - del) / d, pu, ref usr);
 
-            double[] pvRow1 = pv.GetRow(1);
+            var pvRow1 = pv.GetRow(1);
             // Combine the two to obtain the observed velocity vector
             Ppp(usr, ust, ref pvRow1);
             pv.SetRow(1, pvRow1);

@@ -9,7 +9,7 @@ namespace AstroRoutines
         /// <returns>angle in range +/-pi</returns>
         public static double Anpm(double a)
         {
-            double w = a % D2PI;
+            var w = a % D2PI;
             if (Abs(w) >= DPI) w -= Sign(w) * D2PI;
             return w;
         }

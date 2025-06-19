@@ -11,7 +11,7 @@ namespace AstroRoutines
         public static void Pn(double[] p, out double r, out double[] u)
         {
             /* Obtain the modulus and test for zero. */
-            double w = Pm(p);
+            var w = Pm(p);
             u = new double[3];
 
             if (w == 0.0)

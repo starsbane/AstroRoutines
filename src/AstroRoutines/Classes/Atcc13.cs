@@ -20,7 +20,7 @@ namespace AstroRoutines
         public static void Atcc13(double rc, double dc, double pr, double pd, double px, double rv,
                                  double date1, double date2, ref double ra, ref double da)
         {
-            ASTROM astrom = new ASTROM();
+            var astrom = new ASTROM();
             double eo = 0;
 
             /* Star-independent astrometry parameters */

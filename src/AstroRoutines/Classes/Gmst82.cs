@@ -11,10 +11,10 @@ namespace AstroRoutines
         public static double Gmst82(double dj1, double dj2)
         {
             /* Coefficients of IAU 1982 GMST-UT1 model */
-            double A = 24110.54841 - DAYSEC / 2.0;
-            double B = 8640184.812866;
-            double C = 0.093104;
-            double D = -6.2e-6;
+            var A = 24110.54841 - DAYSEC / 2.0;
+            var B = 8640184.812866;
+            var C = 0.093104;
+            var D = -6.2e-6;
 
             /* The first constant, A, has to be adjusted by 12 hours because the */
             /* UT1 is supplied as a Julian date, which begins at noon.           */

@@ -37,7 +37,7 @@ public static partial class AR
         /* Vectors, p and pv */
         double[,] r0 = new double[2, 3], r1 = new double[2, 3];
         double[] p1 = new double[3], p2 = new double[3];
-        double[,] pv = new double[2, 3];
+        var pv = new double[2, 3];
 
         /*
         ** CANONICAL CONSTANTS (Seidelmann 1992)

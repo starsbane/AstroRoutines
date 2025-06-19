@@ -39,7 +39,7 @@ namespace AstroRoutines
                 { 220.30,  179.516345, -165.405086, -210.157124, -171.330180},
                 {1200.00,   -9.814756,    9.344131,  -44.919798,  -22.899655}
             };
-            int NPER = xyper.GetLength(0);
+            var NPER = xyper.GetLength(0);
 
             /* Miscellaneous */
             int i;

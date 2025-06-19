@@ -11,8 +11,8 @@ namespace AstroRoutines
         public static void Ecm06(double date1, double date2, ref double[,] rm)
         {
             double ob;
-            double[,] bp = new double[3, 3];
-            double[,] e = new double[3, 3];
+            var bp = new double[3, 3];
+            var e = new double[3, 3];
 
             /* Obliquity, IAU 2006. */
             ob = Obl06(date1, date2);

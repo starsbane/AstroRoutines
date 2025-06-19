@@ -12,10 +12,10 @@ namespace AstroRoutines
         public static void Pnm00a(double date1, double date2, out double[,] rbpn)
         {
             double dpsi, deps, epsa;
-            double[,] rb = new double[3,3];
-            double[,] rp = new double[3,3];
-            double[,] rbp = new double[3,3];
-            double[,] rn = new double[3,3];
+            var rb = new double[3,3];
+            var rp = new double[3,3];
+            var rbp = new double[3,3];
+            var rn = new double[3,3];
 
             /* Obtain the required matrix (discarding other results). */
             Pn00a(date1, date2, out dpsi, out deps, out epsa, out rb, out rp, out rbp, out rn, out rbpn);

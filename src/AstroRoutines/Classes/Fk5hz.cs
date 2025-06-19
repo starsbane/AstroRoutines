@@ -14,13 +14,13 @@ public static partial class AR
     public static void Fk5hz(double r5, double d5, double date1, double date2, out double rh, out double dh)
     {
         double t;
-        double[] p5e = new double[3];
-        double[,] r5h = new double[3, 3];
-        double[] s5h = new double[3];
-        double[] vst = new double[3];
-        double[,] rst = new double[3, 3];
-        double[] p5 = new double[3];
-        double[] ph = new double[3];
+        var p5e = new double[3];
+        var r5h = new double[3, 3];
+        var s5h = new double[3];
+        var vst = new double[3];
+        var rst = new double[3, 3];
+        var p5 = new double[3];
+        var ph = new double[3];
         double w;
 
         /* Interval from given date to fundamental epoch J2000.0 (JY). */

@@ -11,10 +11,10 @@ namespace AstroRoutines
         public static void Num00b(double date1, double date2, ref double[,] rmatn)
         {
             double dpsi = 0, deps = 0, epsa;
-            double[,] rb = new double[3, 3];
-            double[,] rp = new double[3, 3];
-            double[,] rbp = new double[3, 3];
-            double[,] rbpn = new double[3, 3];
+            var rb = new double[3, 3];
+            var rp = new double[3, 3];
+            var rbp = new double[3, 3];
+            var rbpn = new double[3, 3];
 
             /* Obtain the required matrix (discarding other results). */
             Pn00b(date1, date2,

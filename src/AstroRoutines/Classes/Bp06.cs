@@ -14,8 +14,8 @@ namespace AstroRoutines
             out double[,] rb, out double[,] rp, out double[,] rbp)
         {
             double gamb, phib, psib, epsa;
-            double[,] rbpw = new double[3, 3];
-            double[,] rbt = new double[3, 3];
+            var rbpw = new double[3, 3];
+            var rbt = new double[3, 3];
             rb = new double[2,2];
             /* B matrix. */
             Pfw06(DJM0, DJM00, out gamb, out phib, out psib, out epsa);

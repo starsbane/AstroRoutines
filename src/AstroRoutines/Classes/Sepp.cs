@@ -10,7 +10,7 @@ namespace AstroRoutines
         /// <returns>Angular separation (radians, always positive)</returns>
         public static double Sepp(double[] a, double[] b)
         {
-            double[] axb = new double[3];
+            var axb = new double[3];
             double ss, cs, s;
 
             /* Sine of angle between the vectors, multiplied by the two moduli. */

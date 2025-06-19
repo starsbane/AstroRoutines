@@ -15,9 +15,9 @@ namespace AstroRoutines
         public static void Eceq06(double date1, double date2, double dl, double db,
                        ref double dr, ref double dd)
         {
-            double[,] rm = new double[3, 3];
-            double[] v1 = new double[3];
-            double[] v2 = new double[3];
+            var rm = new double[3, 3];
+            var v1 = new double[3];
+            var v2 = new double[3];
             double a, b;
 
             /* Spherical to Cartesian. */

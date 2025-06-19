@@ -10,7 +10,7 @@ namespace AstroRoutines
         /// <returns>The CIO locator s in radians</returns>
         public static double S06a(double date1, double date2)
         {
-            double[,] rnpb = new double[3, 3];
+            var rnpb = new double[3, 3];
             double x, y, s;
 
             /* Bias-precession-nutation-matrix, IAU 2006/2000A. */

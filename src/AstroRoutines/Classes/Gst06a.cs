@@ -13,7 +13,7 @@ namespace AstroRoutines
         /// <returns>Greenwich apparent sidereal time (radians)</returns>
         public static double Gst06a(double uta, double utb, double tta, double ttb)
         {
-            double[,] rnpb = new double[3, 3];
+            var rnpb = new double[3, 3];
             double gst;
 
             /* Classical nutation x precession x bias matrix, IAU 2000A. */

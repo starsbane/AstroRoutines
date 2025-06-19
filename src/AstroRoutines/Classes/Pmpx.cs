@@ -25,9 +25,9 @@ namespace AstroRoutines
             const double AULTY = AULT / DAYSEC / DJY;
 
             double sr, cr, sd, cd, x, y, z;
-            double[] p = new double[3];
+            var p = new double[3];
             double dt, pxr, w, pdz;
-            double[] pm = new double[3];
+            var pm = new double[3];
 
             /* Spherical coordinates to unit vector (and useful functions). */
             sr = Sin(rc);
@@ -50,7 +50,7 @@ namespace AstroRoutines
             pm[2] = pd * cd + w * z;
 
             /* Coordinate direction of star (unit vector, BCRS). */
-            for (int i = 0; i < 3; i++)
+            for (var i = 0; i < 3; i++)
             {
                 p[i] += dt * pm[i] - pxr * pob[i];
             }
