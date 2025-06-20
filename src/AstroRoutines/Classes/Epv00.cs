@@ -2309,11 +2309,11 @@ namespace AstroRoutines
 
 			/* Miscellaneous */
 			int i, j;
-            double xyz, xyzd, a, b, c, ct, p, cp,
-                ph0 = 0, ph1 = 0, ph2 = 0,
-                vh0 = 0, vh1 = 0, vh2 = 0,
-                pb0 = 0, pb1 = 0, pb2 = 0,
-                vb0 = 0, vb1 = 0, vb2 = 0;
+            double xyz, xyzd, a, b, c, ct, p, cp;
+            var ph = new double[3];
+            var vh = new double[3];
+            var pb = new double[3];
+            var vb = new double[3];
             /* ------------------------------------------------------------------ */
             /* Time since reference epoch, Julian years. */
             var t = ((date1 - DJ00) + date2) / DJY;
@@ -2377,12 +2377,8 @@ namespace AstroRoutines
                 }
 
                 /* Heliocentric Earth position and velocity component. */
-                switch (i)
-                {
-                    case 0: ph0 = xyz; vh0 = xyzd / DJY; break;
-                    case 1: ph1 = xyz; vh1 = xyzd / DJY; break;
-                    case 2: ph2 = xyz; vh2 = xyzd / DJY; break;
-                }
+                ph[i] = xyz;
+                vh[i] = xyzd / DJY;
 
                 /* ------------------------------------------------ */
                 /* Obtain component of SSB to Earth ecliptic vector */
@@ -2432,39 +2428,35 @@ namespace AstroRoutines
                 }
 
                 /* Barycentric Earth position and velocity component. */
-                switch (i)
-                {
-                    case 0: pb0 = xyz; vb0 = xyzd / DJY; break;
-                    case 1: pb1 = xyz; vb1 = xyzd / DJY; break;
-                    case 2: pb2 = xyz; vb2 = xyzd / DJY; break;
-                }
+                pb[i] = xyz;
+                vb[i] = xyzd / DJY;
             }
 
             /* Rotate from ecliptic to BCRS coordinates. */
-            var x = ph0;
-            var y = ph1;
-            var z = ph2;
+            var x = ph[0];
+            var y = ph[1];
+            var z = ph[2];
             pvh[0, 0] = x + am12 * y + am13 * z;
             pvh[0, 1] = am21 * x + am22 * y + am23 * z;
             pvh[0, 2] = am32 * y + am33 * z;
 
-            x = vh0;
-            y = vh1;
-            z = vh2;
+            x = vh[0];
+            y = vh[1];
+            z = vh[2];
             pvh[1, 0] = x + am12 * y + am13 * z;
             pvh[1, 1] = am21 * x + am22 * y + am23 * z;
             pvh[1, 2] = am32 * y + am33 * z;
 
-            x = pb0;
-            y = pb1;
-            z = pb2;
+            x = pb[0];
+            y = pb[1];
+            z = pb[2];
             pvb[0, 0] = x + am12 * y + am13 * z;
             pvb[0, 1] = am21 * x + am22 * y + am23 * z;
             pvb[0, 2] = am32 * y + am33 * z;
 
-            x = vb0;
-            y = vb1;
-            z = vb2;
+            x = vb[0];
+            y = vb[1];
+            z = vb[2];
             pvb[1, 0] = x + am12 * y + am13 * z;
             pvb[1, 1] = am21 * x + am22 * y + am23 * z;
             pvb[1, 2] = am32 * y + am33 * z;
