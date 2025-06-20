@@ -1,0 +1,2736 @@
+<assemblies timestamp="06/20/2025 16:26:25">
+  <assembly name="E:\Source\AstroRoutines\src\AstroRoutines.UnitTests\bin\RELEASE\net8.0\AstroRoutines.UnitTests.dll" run-date="2025-06-20" run-time="16:26:25" total="247" passed="247" failed="0" skipped="0" time="0.549" errors="0">
+    <errors />
+    <collection total="247" passed="247" failed="0" skipped="0" name="Test collection for AstroRoutines.UnitTests.RATests" time="0.118">
+      <test name="AstroRoutines.UnitTests.RATests.TestD2tf" type="AstroRoutines.UnitTests.RATests" method="TestD2tf" time="0.0129784" result="Pass">
+        <output>D2tf passed: s want 45 got 45
+D2tf passed: 0 want 23 got 23
+D2tf passed: 1 want 42 got 42
+D2tf passed: 2 want 13 got 13
+D2tf passed: 3 want 3333 got 3333
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAf2a" type="AstroRoutines.UnitTests.RATests" method="TestAf2a" time="0.0013116" result="Pass">
+        <output>Af2a passed: a want -0.78931157943136442956 got -0.78931157943136454058
+Af2a passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPvmpv" type="AstroRoutines.UnitTests.RATests" method="TestPvmpv" time="0.0005331" result="Pass">
+        <output>Pvmpv passed: 11 want 1 got 1
+Pvmpv passed: 21 want -1 got -1
+Pvmpv passed: 31 want -1 got -1
+Pvmpv passed: 12 want 2 got 2
+Pvmpv passed: 22 want 4 got 4
+Pvmpv passed: 32 want 2 got 2
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLteceq" type="AstroRoutines.UnitTests.RATests" method="TestLteceq" time="0.0010101" result="Pass">
+        <output>Lteceq passed: dr want 1.2751560218619211184 got 1.2751560218619211184
+Lteceq passed: dd want 0.99665735435192048808 got 0.99665735435192048808
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtciqn" type="AstroRoutines.UnitTests.RATests" method="TestAtciqn" time="0.0526103" result="Pass">
+        <output>Atciqn passed: ri want 2.7101220081049834931 got 2.710122008104983049
+Atciqn passed: di want 0.17293719164927678911 got 0.17293719164927676135
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestRy" type="AstroRoutines.UnitTests.RATests" method="TestRy" time="0.0001933" result="Pass">
+        <output>Ry passed: 11 want 0.86518478189781600207 got 0.86518478189781578003
+Ry passed: 12 want 1.4671949205393166604 got 1.4671949205393162163
+Ry passed: 13 want 0.18751379112744573363 got 0.18751379112744559485
+Ry passed: 21 want 3 got 3
+Ry passed: 22 want 2 got 2
+Ry passed: 23 want 3 got 3
+Ry passed: 31 want 3.500207892850427438 got 3.5002078928504269939
+Ry passed: 32 want 4.7798890222622985036 got 4.7798890222622976154
+Ry passed: 33 want 5.3818991609037984958 got 5.3818991609037984958
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEe00" type="AstroRoutines.UnitTests.RATests" method="TestEe00" time="0.0009753" result="Pass">
+        <output>Ee00 passed:  want -8.8341932353679656953E-06 got -8.8341932353679656953E-06
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEpj" type="AstroRoutines.UnitTests.RATests" method="TestEpj" time="0.0000792" result="Pass">
+        <output>Epj passed:  want 1979.7604380561258495 got 1979.7604380561258495
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestIr" type="AstroRoutines.UnitTests.RATests" method="TestIr" time="0.0001153" result="Pass">
+        <output>Ir passed: 11 want 1 got 1
+Ir passed: 12 want 0 got 0
+Ir passed: 13 want 0 got 0
+Ir passed: 21 want 0 got 0
+Ir passed: 22 want 1 got 1
+Ir passed: 23 want 0 got 0
+Ir passed: 31 want 0 got 0
+Ir passed: 32 want 0 got 0
+Ir passed: 33 want 1 got 1
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLteqec" type="AstroRoutines.UnitTests.RATests" method="TestLteqec" time="0.0000816" result="Pass">
+        <output>Lteqec passed: dl want 0.50394836490471150992 got 0.50394836490471150992
+Lteqec passed: db want 0.58485344597262245436 got 0.58485344597262245436
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFk5hip" type="AstroRoutines.UnitTests.RATests" method="TestFk5hip" time="0.0003247" result="Pass">
+        <output>Fk5hip passed: 11 want 0.99999999999999289457 got 0.99999999999999289457
+Fk5hip passed: 12 want 1.1102233510229197099E-07 got 1.1102233509835494861E-07
+Fk5hip passed: 13 want 4.411803962536558392E-08 got 4.4118039635273010667E-08
+Fk5hip passed: 21 want -1.1102233084587464867E-07 got -1.1102233084981164458E-07
+Fk5hip passed: 22 want 0.99999999999998923084 got 0.99999999999998923084
+Fk5hip passed: 23 want -9.6477924989841419365E-08 got -9.6477924985310891593E-08
+Fk5hip passed: 31 want -4.4118050336569621342E-08 got -4.4118050326662194596E-08
+Fk5hip passed: 32 want 9.6477920091753149658E-08 got 9.647792009628367743E-08
+Fk5hip passed: 33 want 0.99999999999999433786 got 0.99999999999999433786
+Fk5hip passed: s1 want -1.4544410433286079498E-09 got -1.454441043328607743E-09
+Fk5hip passed: s2 want 2.9088820866572158997E-09 got 2.9088820866572154861E-09
+Fk5hip passed: s3 want 3.3936957677667520897E-09 got 3.3936957677667516761E-09
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEpv00" type="AstroRoutines.UnitTests.RATests" method="TestEpv00" time="0.0002075" result="Pass">
+        <output>Epv00 passed: ph(x) want -0.77572388092977062612 got -0.77572388092976607421
+Epv00 passed: ph(y) want 0.55980522413633404533 got 0.55980522413634070666
+Epv00 passed: ph(z) want 0.24269984664816871001 got 0.24269984664817156883
+Epv00 passed: vh(x) want -0.010918918241473138039 got -0.010918918241473212632
+Epv00 passed: vh(y) want -0.012471872684408450219 got -0.012471872684408373891
+Epv00 passed: vh(z) want -0.0054075694180650392753 got -0.0054075694180650054482
+Epv00 passed: pb(x) want -0.77141044404911118804 got -0.77141044404910685817
+Epv00 passed: pb(y) want 0.5598412061824171726 got 0.55984120618242405598
+Epv00 passed: pb(z) want 0.2425996277722452521 got 0.2425996277722482497
+Epv00 passed: vb(x) want -0.010918742681168233308 got -0.010918742681168306166
+Epv00 passed: vb(y) want -0.012465254617328615575 got -0.012465254617328537512
+Epv00 passed: vb(z) want -0.0054047731809662314523 got -0.0054047731809661967578
+Epv00 passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFave03" type="AstroRoutines.UnitTests.RATests" method="TestFave03" time="0.0000453" result="Pass">
+        <output>Fave03 passed:  want 3.4249004605337578511 got 3.4249004605338342344
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2t00b" type="AstroRoutines.UnitTests.RATests" method="TestC2t00b" time="0.0023641" result="Pass">
+        <output>C2t00b passed: 11 want -0.18103321284396789448 got -0.18103321284396428625
+C2t00b passed: 12 want 0.98347698069138722587 got 0.98347698069138778099
+C2t00b passed: 13 want 6.5555650824584158149E-05 got 6.5555650824551876029E-05
+C2t00b passed: 21 want -0.98347681341154358226 got -0.98347681341154435941
+C2t00b passed: 22 want -0.18103322037840019476 got -0.18103322037839658654
+C2t00b passed: 23 want 0.00057497939220300172281 got 0.00057497939220300746908
+C2t00b passed: 31 want 0.00057734674718635343657 got 0.00057734674718635343657
+C2t00b passed: 32 want 3.9617904115499450834E-05 got 3.9617904115530120203E-05
+C2t00b passed: 33 want 0.99999983255056357212 got 0.99999983255056357212
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtci13" type="AstroRoutines.UnitTests.RATests" method="TestAtci13" time="0.0002814" result="Pass">
+        <output>Atci13 passed: ri want 2.7101215729686969347 got 2.7101215729686969347
+Atci13 passed: di want 0.17293713672195390463 got 0.17293713672195396014
+Atci13 passed: eo want -0.0029006187126573755933 got -0.002900618712657376027
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestXy06" type="AstroRoutines.UnitTests.RATests" method="TestXy06" time="0.0049604" result="Pass">
+        <output>Xy06 passed: x want 0.00057913084867060109998 got 0.00057913084867060077472
+Xy06 passed: y want 4.0205798167329578311E-05 got 4.0205798167329476667E-05
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPn06" type="AstroRoutines.UnitTests.RATests" method="TestPn06" time="0.0004750" result="Pass">
+        <output>Pn06 passed: epsa want 0.40907897633565099005 got 0.40907897633565104556
+Pn06 passed: rb11 want 0.99999999999999422684 got 0.99999999999999411582
+Pn06 passed: rb12 want -7.0783689609715574511E-08 got -7.0783689609715561276E-08
+Pn06 passed: rb13 want 8.0562139776131860839E-08 got 8.0562139776131860839E-08
+Pn06 passed: rb21 want 7.0783686946376749448E-08 got 7.0783686946376762683E-08
+Pn06 passed: rb22 want 0.9999999999999970024 got 0.99999999999999689138
+Pn06 passed: rb23 want 3.3059437429891338317E-08 got 3.3059437354321374869E-08
+Pn06 passed: rb31 want -8.0562142116200561582E-08 got -8.0562142116200574817E-08
+Pn06 passed: rb32 want -3.3059431727405868863E-08 got -3.3059431692183949281E-08
+Pn06 passed: rb33 want 0.99999999999999622524 got 0.99999999999999622524
+Pn06 passed: rp11 want 0.99999893005368545307 got 0.99999893005368523102
+Pn06 passed: rp12 want -0.0013416468862044437539 got -0.0013416468862044437539
+Pn06 passed: rp13 want -0.00058298809334886281513 got -0.00058298809334886292355
+Pn06 passed: rp21 want 0.0013416468905697821398 got 0.0013416468905697821398
+Pn06 passed: rp22 want 0.99999909999133196337 got 0.99999909999133196337
+Pn06 passed: rp23 want -3.8359442163744772599E-07 got -3.8359442172701939552E-07
+Pn06 passed: rp31 want 0.00058298808330278675642 got 0.000582988083302786648
+Pn06 passed: rp32 want -3.9857015146869760149E-07 got -3.9857015143348130673E-07
+Pn06 passed: rp33 want 0.9999998300623534897 got 0.9999998300623534897
+Pn06 passed: rbp11 want 0.99999893000567974255 got 0.99999893000567974255
+Pn06 passed: rbp12 want -0.0013417176505450595283 got -0.0013417176505450597451
+Pn06 passed: rbp13 want -0.00058290757564937291726 got -0.00058290757564937291726
+Pn06 passed: rbp21 want 0.0013417176742239180984 got 0.0013417176742239180984
+Pn06 passed: rbp22 want 0.99999909989637481011 got 0.99999909989637492114
+Pn06 passed: rbp23 want -3.5042692801700690821E-07 got -3.5042692814180043115E-07
+Pn06 passed: rbp31 want 0.00058290752114614546517 got 0.00058290752114614557359
+Pn06 passed: rbp32 want -4.3167084362559491141E-07 got -4.3167084351480866644E-07
+Pn06 passed: rbp33 want 0.9999998301093032671 got 0.9999998301093032671
+Pn06 passed: rn11 want 0.99999999995360699945 got 0.99999999995360688843
+Pn06 passed: rn12 want 8.8377469211498811604E-06 got 8.8377469211496236624E-06
+Pn06 passed: rn13 want 3.8314870476829683774E-06 got 3.8314870476829302609E-06
+Pn06 passed: rn21 want -8.8375912329836918158E-06 got -8.8375912329837849894E-06
+Pn06 passed: rn22 want 0.9999999991354692197 got 0.99999999913546933072
+Pn06 passed: rn23 want -4.0631987985589313719E-05 got -4.0631987985528428991E-05
+Pn06 passed: rn31 want -3.831846139597250628E-06 got -3.8318461395973370254E-06
+Pn06 passed: rn32 want 4.0631954122587928273E-05 got 4.0631954122577567366E-05
+Pn06 passed: rn33 want 0.99999999916718063098 got 0.99999999916718063098
+Pn06 passed: rbpn11 want 0.99999894405045064438 got 0.99999894405045064438
+Pn06 passed: rbpn12 want -0.0013328799131704927028 got -0.0013328799131704929196
+Pn06 passed: rbpn13 want -0.00057907609232256559116 got -0.00057907609232256559116
+Pn06 passed: rbpn21 want 0.0013328564065957547793 got 0.0013328564065957549962
+Pn06 passed: rbpn22 want 0.99999911090693671678 got 0.99999911090693671678
+Pn06 passed: rbpn23 want -4.0977256511426416016E-05 got -4.0977256511476323197E-05
+Pn06 passed: rbpn31 want 0.00057913019523212969086 got 0.00057913019523212979928
+Pn06 passed: rbpn32 want 4.0205387961952303386E-05 got 4.0205387962066740926E-05
+Pn06 passed: rbpn33 want 0.99999983149585769393 got 0.99999983149585769393
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTaiutc" type="AstroRoutines.UnitTests.RATests" method="TestTaiutc" time="0.0008247" result="Pass">
+        <output>Taiutc passed: u1 want 2453750.5 got 2453750.5
+Taiutc passed: u2 want 0.89210069455555551787 got 0.8921006945555556289
+Taiutc passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtoiq" type="AstroRoutines.UnitTests.RATests" method="TestAtoiq" time="0.0007737" result="Pass">
+        <output>Atoiq passed: R/ri want 2.7101215744475406488 got 2.7101215744475410929
+Atoiq passed: R/di want 0.17293718391166088 got 0.17293718391166071346
+Atoiq passed: H/ri want 2.710121574448138837 got 2.7101215744481264025
+Atoiq passed: H/di want 0.17293718391166088 got 0.17293718391166085224
+Atoiq passed: A/ri want 2.710121574448138837 got 2.7101215744481264025
+Atoiq passed: A/di want 0.17293718391166088 got 0.17293718391166107429
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPas" type="AstroRoutines.UnitTests.RATests" method="TestPas" time="0.0000852" result="Pass">
+        <output>Pas passed:  want -2.7245449229322704632 got -2.7245449229322704632
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestUtctai" type="AstroRoutines.UnitTests.RATests" method="TestUtctai" time="0.0000465" result="Pass">
+        <output>Utctai passed: u1 want 2453750.5 got 2453750.5
+Utctai passed: u2 want 0.8924826384444444205 got 0.8924826384444444205
+Utctai passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAb" type="AstroRoutines.UnitTests.RATests" method="TestAb" time="0.0000669" result="Pass">
+        <output>Ab passed: 1 want -0.76316310942195564326 got -0.76316310942195564326
+Ab passed: 2 want -0.60875530825055912398 got -0.60875530825055912398
+Ab passed: 3 want -0.21679262693684711594 got -0.21679262693684711594
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestJd2cal" type="AstroRoutines.UnitTests.RATests" method="TestJd2cal" time="0.0000482" result="Pass">
+        <output>Jd2cal passed: y want 1996 got 1996
+Jd2cal passed: m want 2 got 2
+Jd2cal passed: d want 10 got 10
+Jd2cal passed: fd want 0.99990000000000001101 got 0.99990000000252621248
+Jd2cal passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestS2pv" type="AstroRoutines.UnitTests.RATests" method="TestS2pv" time="0.0001394" result="Pass">
+        <output>S2pv passed: x want -0.45149646738801652024 got -0.45149646738801652024
+S2pv passed: y want 0.030933942773425867484 got 0.030933942773425850137
+S2pv passed: z want 0.055946681051087791825 got 0.055946681051087791825
+S2pv passed: vx want 1.2922708506632602429E-05 got 1.2922708506632602429E-05
+S2pv passed: vy want 2.6528141820606914183E-06 got 2.6528141820606918419E-06
+S2pv passed: vz want 2.5684318539302921326E-06 got 2.5684318539302921326E-06
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEe06a" type="AstroRoutines.UnitTests.RATests" method="TestEe06a" time="0.0001729" result="Pass">
+        <output>Ee06a passed:  want -8.8341950720437898743E-06 got -8.8341950723602735707E-06
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGd2gce" type="AstroRoutines.UnitTests.RATests" method="TestGd2gce" time="0.0000553" result="Pass">
+        <output>Gd2gce passed: j want 0 got 0
+Gd2gce passed: 1 want -5598999.6665116325021 got -5598999.6665116334334
+Gd2gce passed: 2 want 233011.63514630572172 got 233011.63514630525606
+Gd2gce passed: 3 want -3040909.0517314132303 got -3040909.0517314132303
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTttdb" type="AstroRoutines.UnitTests.RATests" method="TestTttdb" time="0.0000640" result="Pass">
+        <output>Tttdb passed: b1 want 2453750.5 got 2453750.5
+Tttdb passed: b2 want 0.89285513667361116052 got 0.89285513667361116052
+Tttdb passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestSepp" type="AstroRoutines.UnitTests.RATests" method="TestSepp" time="0.0000744" result="Pass">
+        <output>Sepp passed:  want 2.8603919190246607229 got 2.8603919190246607229
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtoi13" type="AstroRoutines.UnitTests.RATests" method="TestAtoi13" time="0.0001553" result="Pass">
+        <output>Atoi13 passed: R/ri want 2.7101215744475406488 got 2.7101215744475410929
+Atoi13 passed: R/di want 0.17293718391166088 got 0.17293718391166071346
+Atoi13 passed: R/J want 0 got 0
+Atoi13 passed: H/ri want 2.710121574448138837 got 2.7101215744481264025
+Atoi13 passed: H/di want 0.17293718391166088 got 0.17293718391166085224
+Atoi13 passed: H/J want 0 got 0
+Atoi13 passed: A/ri want 2.710121574448138837 got 2.7101215744481264025
+Atoi13 passed: A/di want 0.17293718391166088 got 0.17293718391166107429
+Atoi13 passed: A/J want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPb06" type="AstroRoutines.UnitTests.RATests" method="TestPb06" time="0.0001332" result="Pass">
+        <output>Pb06 passed: bzeta want -0.00050926340163264785434 got -0.00050926340198051336244
+Pb06 passed: bz want -0.0003602772060566044438 got -0.00036027720570873747203
+Pb06 passed: btheta want -0.00037797355371678112044 got -0.00037797355371678046992
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestS06" type="AstroRoutines.UnitTests.RATests" method="TestS06" time="0.0000458" result="Pass">
+        <output>S06 passed:  want -1.2200322130764630545E-08 got -1.2200322130764642125E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestS00b" type="AstroRoutines.UnitTests.RATests" method="TestS00b" time="0.0000687" result="Pass">
+        <output>S00b passed:  want -1.3406957829510265902E-08 got -1.3406957829522031719E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestS2c" type="AstroRoutines.UnitTests.RATests" method="TestS2c" time="0.0000480" result="Pass">
+        <output>S2c passed: 1 want -0.53662676672605236217 got -0.53662676672605247319
+S2c passed: 2 want 0.069771110976514533197 got 0.069771110976514436053
+S2c passed: 3 want -0.84093026185662145267 got -0.84093026185662145267
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtoc13" type="AstroRoutines.UnitTests.RATests" method="TestAtoc13" time="0.0009252" result="Pass">
+        <output>Atoc13 passed: R/rc want 2.709956744659136163 got 2.709956744659136163
+Atoc13 passed: R/dc want 0.17416965008984713892 got 0.1741696500898470279
+Atoc13 passed: R/j want 0 got 0
+Atoc13 passed: H/rc want 2.7099567446597339071 got 2.7099567446597219167
+Atoc13 passed: H/dc want 0.17416965008984713892 got 0.17416965008984747199
+Atoc13 passed: H/j want 0 got 0
+Atoc13 passed: A/rc want 2.7099567446597339071 got 2.7099567446597219167
+Atoc13 passed: A/dc want 0.17416965008984713892 got 0.17416965008984772179
+Atoc13 passed: A/j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestRv2m" type="AstroRoutines.UnitTests.RATests" method="TestRv2m" time="0.0001496" result="Pass">
+        <output>Rv2m passed: 11 want -0.70710677822211198684 got -0.7071067782221117648
+Rv2m passed: 12 want -0.56568542768091301109 got -0.56568542768091323314
+Rv2m passed: 13 want -0.42426407001042110156 got -0.4242640700104212681
+Rv2m passed: 21 want 0.56568542768091301109 got 0.56568542768091323314
+Rv2m passed: 22 want -0.09254833945322742117 got -0.092548339453227157492
+Rv2m passed: 23 want -0.81941125314088336662 got -0.8194112531408832556
+Rv2m passed: 31 want 0.42426407001042110156 got 0.4242640700104212681
+Rv2m passed: 32 want -0.81941125314088336662 got -0.8194112531408832556
+Rv2m passed: 33 want 0.38544156123111544821 got 0.38544156123111561474
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestDtf2d" type="AstroRoutines.UnitTests.RATests" method="TestDtf2d" time="0.0001482" result="Pass">
+        <output>Dtf2d passed: u want 2449534.4999899999239 got 2449534.4999899999239
+Dtf2d passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestS00" type="AstroRoutines.UnitTests.RATests" method="TestS00" time="0.0000459" result="Pass">
+        <output>S00 passed:  want -1.2200362632709057216E-08 got -1.2200362632709068797E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEpb" type="AstroRoutines.UnitTests.RATests" method="TestEpb" time="0.0000391" result="Pass">
+        <output>Epb passed:  want 1982.4184241592786293 got 1982.4184241592790841
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestNumat" type="AstroRoutines.UnitTests.RATests" method="TestNumat" time="0.0000854" result="Pass">
+        <output>Numat passed: 11 want 0.99999999995362276461 got 0.99999999995362276461
+Numat passed: 12 want 8.8362393202362507299E-06 got 8.8362393202362507299E-06
+Numat passed: 13 want 3.8308334474582521459E-06 got 3.8308334474582521459E-06
+Numat passed: 21 want -8.8360836570166894006E-06 got -8.8360836570166894006E-06
+Numat passed: 22 want 0.99999999913546544494 got 0.99999999913546533392
+Numat passed: 23 want -4.0632408653624997564E-05 got -4.0632408653651364006E-05
+Numat passed: 31 want -3.8311924818333855427E-06 got -3.8311924818333855427E-06
+Numat passed: 32 want 4.0632374802169342039E-05 got 4.0632374802174187067E-05
+Numat passed: 33 want 0.99999999916716608706 got 0.99999999916716597603
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLd" type="AstroRoutines.UnitTests.RATests" method="TestLd" time="0.0000686" result="Pass">
+        <output>Ld passed: 1 want -0.76327625489681594217 got -0.76327625489681594217
+Ld passed: 2 want -0.60863376708237626467 got -0.60863376708237626467
+Ld passed: 3 want -0.21673554313205470323 got -0.21673554313205470323
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPnm00b" type="AstroRoutines.UnitTests.RATests" method="TestPnm00b" time="0.0001074" result="Pass">
+        <output>Pnm00b passed: 11 want 0.99999958327762084043 got 0.99999958327762095145
+Pnm00b passed: 12 want 0.00083724012644296552741 got 0.00083724012644296476847
+Pnm00b passed: 13 want 0.00036396916814502715569 got 0.00036396916814502693885
+Pnm00b passed: 21 want -0.00083725522341471377789 got -0.00083725522341471291052
+Pnm00b passed: 22 want 0.99999964864776857976 got 0.99999964864776846873
+Pnm00b passed: 23 want 4.1328321909460528536E-05 got 4.1328321909421944491E-05
+Pnm00b passed: 31 want -0.00036393443853418661407 got -0.00036393443853418628881
+Pnm00b passed: 32 want -4.1633039774215224965E-05 got -4.1633039774223634308E-05
+Pnm00b passed: 33 want 0.99999993290920496936 got 0.99999993290920496936
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestP06e" type="AstroRoutines.UnitTests.RATests" method="TestP06e" time="0.0002313" result="Pass">
+        <output>P06e passed: eps0 want 0.40909260060058288966 got 0.40909260060058288966
+P06e passed: psia want 0.00066643696301916133685 got 0.00066643696301916133685
+P06e passed: oma want 0.40909259737832559534 got 0.40909259737832559534
+P06e passed: bpa want 5.561149371265209244E-07 got 5.5611493712652081852E-07
+P06e passed: bqa want -6.1915171932906211719E-06 got -6.1915171932906194779E-06
+P06e passed: pia want 6.2164417518843826963E-06 got 6.2164417518843818493E-06
+P06e passed: bpia want 3.0520141800237796659 got 3.0520141800237796659
+P06e passed: epsa want 0.40908640549224317695 got 0.40908640549224312144
+P06e passed: chia want 1.3877033795309153217E-06 got 1.3877033795309153217E-06
+P06e passed: za want 0.00029217898466517907164 got 0.00029217898466517907164
+P06e passed: zetaa want 0.0003178773290332009057 got 0.0003178773290332009057
+P06e passed: thetaa want 0.00026509327016574973446 got 0.00026509327016574968025
+P06e passed: pa want 0.00066516376813810160207 got 0.00066516376813810160207
+P06e passed: gam want 1.39807711596375504E-06 got 1.3980771159637548282E-06
+P06e passed: phi want 0.40908640908374627188 got 0.40908640908374627188
+P06e passed: psi want 0.00066644648074809206047 got 0.00066644648074809206047
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPmat00" type="AstroRoutines.UnitTests.RATests" method="TestPmat00" time="0.0001983" result="Pass">
+        <output>Pmat00 passed: 11 want 0.99999955051750877288 got 0.99999955051750877288
+Pmat00 passed: 12 want 0.00086954058836178846088 got 0.00086954058836178705141
+Pmat00 passed: 13 want 0.00037797347222390069704 got 0.00037797347222390015493
+Pmat00 passed: 21 want -0.00086954059904108640163 got -0.00086954059904108499217
+Pmat00 passed: 22 want 0.99999962194949254535 got 0.99999962194949254535
+Pmat00 passed: 23 want -1.3607758204049820865E-07 got -1.3607758204411514521E-07
+Pmat00 passed: 31 want -0.00037797344765581848214 got -0.00037797344765581788583
+Pmat00 passed: 32 want -1.925857585832024042E-07 got -1.925857585841862065E-07
+Pmat00 passed: 33 want 0.99999992856801533936 got 0.99999992856801533936
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestRxpv" type="AstroRoutines.UnitTests.RATests" method="TestRxpv" time="0.0001041" result="Pass">
+        <output>Rxpv passed: p1 want 5.0999999999999996447 got 5.1000000000000005329
+Rxpv passed: v1 want 3.7999999999999998224 got 3.8000000000000002665
+Rxpv passed: p2 want 3.8999999999999999112 got 3.9000000000000003553
+Rxpv passed: v2 want 5.2000000000000001776 got 5.2000000000000001776
+Rxpv passed: p3 want 7.0999999999999996447 got 7.0999999999999996447
+Rxpv passed: v3 want 5.7999999999999998224 got 5.7999999999999998224
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTf2d" type="AstroRoutines.UnitTests.RATests" method="TestTf2d" time="0.0000807" result="Pass">
+        <output>Tf2d passed: d want 0.99665393518518519134 got 0.99665393518518508031
+Tf2d passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTaitt" type="AstroRoutines.UnitTests.RATests" method="TestTaitt" time="0.0001491" result="Pass">
+        <output>Taitt passed: t1 want 2453750.5 got 2453750.5
+Taitt passed: t2 want 0.89285513900000001986 got 0.89285513900000001986
+Taitt passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApci13" type="AstroRoutines.UnitTests.RATests" method="TestApci13" time="0.0003719" result="Pass">
+        <output>Apci13 passed: pmt want 12.651337940273785776 got 12.651337940273785776
+Apci13 passed: eb(1) want 0.90131087473406445998 got 0.90131087473406645838
+Apci13 passed: eb(2) want -0.41740266404061199257 got -0.41740266404059817029
+Apci13 passed: eb(3) want -0.18098228778678177031 got -0.18098228778677577511
+Apci13 passed: eh(1) want 0.89400254292554992563 got 0.89400254292555625391
+Apci13 passed: eh(2) want -0.41109302683318965643 got -0.41109302683317811011
+Apci13 passed: eh(3) want -0.17821890060197498329 got -0.17821890060196998729
+Apci13 passed: em want 1.0104652959646642785 got 1.0104652959646591714
+Apci13 passed: v(1) want 4.2896389129413408476E-05 got 4.289638912941289348E-05
+Apci13 passed: v(2) want 8.1150340324050415143E-05 got 8.1150340324051052111E-05
+Apci13 passed: v(3) want 3.517555135536470592E-05 got 3.5175551355364976971E-05
+Apci13 passed: bm1 want 0.99999999516860127446 got 0.99999999516860127446
+Apci13 passed: bpn(1,1) want 0.99999920603767622485 got 0.9999992060376760028
+Apci13 passed: bpn(2,1) want 4.1242448601060373129E-08 got 4.1242448598627357015E-08
+Apci13 passed: bpn(3,1) want 0.0012601285710517097245 got 0.0012601285710517097245
+Apci13 passed: bpn(1,2) want -1.2822919872221307354E-08 got -1.2822919871757765264E-08
+Apci13 passed: bpn(2,2) want 0.99999999974568354322 got 0.9999999997456834322
+Apci13 passed: bpn(3,2) want -2.2552888294205248562E-05 got -2.2552888294224964101E-05
+Apci13 passed: bpn(1,3) want -0.0012601285716613746038 got -0.001260128571661374387
+Apci13 passed: bpn(2,3) want 2.2552854229533954723E-05 got 2.2552854229553670262E-05
+Apci13 passed: bpn(3,3) want 0.9999992057833604342 got 0.9999992057833604342
+Apci13 passed: eo want -0.0029006187126573755933 got -0.002900618712657376027
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEpj2jd" type="AstroRoutines.UnitTests.RATests" method="TestEpj2jd" time="0.0001444" result="Pass">
+        <output>Epj2jd passed: djm0 want 2400000.5 got 2400000.5
+Epj2jd passed: mjd want 50375.69999999999709 got 50375.699999999982538
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPvup" type="AstroRoutines.UnitTests.RATests" method="TestPvup" time="0.0001482" result="Pass">
+        <output>Pvup passed: 1 want 126656.75986053170345 got 126656.75986053170345
+Pvup passed: 2 want 2118.5312711557262446 got 2118.5312711557262446
+Pvup passed: 3 want -245216.50485906560789 got -245216.50485906560789
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestUt1tt" type="AstroRoutines.UnitTests.RATests" method="TestUt1tt" time="0.0000788" result="Pass">
+        <output>Ut1tt passed: t1 want 2453750.5 got 2453750.5
+Ut1tt passed: t2 want 0.89285513854629627861 got 0.89285513854629627861
+Ut1tt passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestDtdb" type="AstroRoutines.UnitTests.RATests" method="TestDtdb" time="0.0003248" result="Pass">
+        <output>Dtdb passed:  want -0.0012803680059369989836 got -0.0012803680059370024531
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestBi00" type="AstroRoutines.UnitTests.RATests" method="TestBi00" time="0.0000618" result="Pass">
+        <output>Bi00 passed: dpsibi want -2.0253091528350866224E-07 got -2.0253091528350866224E-07
+Bi00 passed: depsbi want -3.3060414542221476614E-08 got -3.3060414542221476614E-08
+Bi00 passed: dra want -7.0782797441992258108E-08 got -7.0782797441992258108E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAe2hd" type="AstroRoutines.UnitTests.RATests" method="TestAe2hd" time="0.0000953" result="Pass">
+        <output>Ae2hd passed: h want 0.59332911155073098097 got 0.59332911155073075893
+Ae2hd passed: d want 0.96139347616478176839 got 0.96139347616478176839
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGmst06" type="AstroRoutines.UnitTests.RATests" method="TestGmst06" time="0.0000370" result="Pass">
+        <output>Gmst06 passed:  want 1.7541749718700911931 got 1.7541749718700876404
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGst06" type="AstroRoutines.UnitTests.RATests" method="TestGst06" time="0.0000766" result="Pass">
+        <output>Gst06 passed:  want 1.7541661380181676755 got 1.7541661380181639007
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEpb2jd" type="AstroRoutines.UnitTests.RATests" method="TestEpb2jd" time="0.0001020" result="Pass">
+        <output>Epb2jd passed: djm0 want 2400000.5 got 2400000.5
+Epb2jd passed: mjd want 35948.191510151300463 got 35948.191510151285911
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestJdcalf" type="AstroRoutines.UnitTests.RATests" method="TestJdcalf" time="0.0001475" result="Pass">
+        <output>Jdcalf passed: y want 1996 got 1996
+Jdcalf passed: m want 2 got 2
+Jdcalf passed: d want 10 got 10
+Jdcalf passed: f want 9999 got 9999
+Jdcalf passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTpxes" type="AstroRoutines.UnitTests.RATests" method="TestTpxes" time="0.0001253" result="Pass">
+        <output>Tpxes passed: xi want -0.017532009832369806202 got -0.017532009832369764568
+Tpxes passed: eta want 0.05962940005778712832 got 0.059629400057787156075
+Tpxes passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestNut80" type="AstroRoutines.UnitTests.RATests" method="TestNut80" time="0.0010044" result="Pass">
+        <output>Nut80 passed: dpsi want -9.6436583532265632133E-06 got -9.6436583532266851861E-06
+Nut80 passed: deps want 4.0600510068797133383E-05 got 4.0600510068797106278E-05
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtioq" type="AstroRoutines.UnitTests.RATests" method="TestAtioq" time="0.0002609" result="Pass">
+        <output>Atioq passed: aob want 0.092339522248951227956 got 0.092339522248963343265
+Atioq passed: zob want 1.4077587045135500077 got 1.4077587045135502297
+Atioq passed: hob want -0.092476198798816980351 got -0.092476198798829123415
+Atioq passed: dob want 0.17176534357562348032 got 0.17176534357562356359
+Atioq passed: rob want 2.7100851079884806794 got 2.7100851079884806794
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAnpm" type="AstroRoutines.UnitTests.RATests" method="TestAnpm" time="0.0000390" result="Pass">
+        <output>Anpm passed:  want 2.2831853071795866761 got 2.283185307179586232
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestCr" type="AstroRoutines.UnitTests.RATests" method="TestCr" time="0.0001074" result="Pass">
+        <output>Cr passed: 11 want 2 got 2
+Cr passed: 12 want 3 got 3
+Cr passed: 13 want 2 got 2
+Cr passed: 21 want 3 got 3
+Cr passed: 22 want 2 got 2
+Cr passed: 23 want 3 got 3
+Cr passed: 31 want 3 got 3
+Cr passed: 32 want 4 got 4
+Cr passed: 33 want 5 got 5
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFk5hz" type="AstroRoutines.UnitTests.RATests" method="TestFk5hz" time="0.0001027" result="Pass">
+        <output>Fk5hz passed: ra want 1.7677941914644239585 got 1.7677941914644239585
+Fk5hz passed: dec want -0.2917516001679884563 got -0.2917516001679884563
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestStarpv" type="AstroRoutines.UnitTests.RATests" method="TestStarpv" time="0.0002676" result="Pass">
+        <output>Starpv passed: 11 want 126668.59127431605884 got 126668.59127431608795
+Starpv passed: 12 want 2136.7927168399351103 got 2136.7927168399355651
+Starpv passed: 13 want -245251.23398768302286 got -245251.23398768302286
+Starpv passed: 21 want -0.0040518540089556596973 got -0.004051854008955661432
+Starpv passed: 22 want -0.0062539197544147781885 got -0.0062539197544147799232
+Starpv passed: 23 want 0.011893537145881092829 got 0.011893537145881096298
+Starpv passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFane03" type="AstroRoutines.UnitTests.RATests" method="TestFane03" time="0.0000347" result="Pass">
+        <output>Fane03 passed:  want 2.0793438308604135223 got 2.0793438308604130782
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2s" type="AstroRoutines.UnitTests.RATests" method="TestC2s" time="0.0000521" result="Pass">
+        <output>C2s passed: theta want -0.46364760900080609352 got -0.46364760900080609352
+C2s passed: phi want 0.21998797739545944419 got 0.21998797739545944419
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestObl80" type="AstroRoutines.UnitTests.RATests" method="TestObl80" time="0.0000284" result="Pass">
+        <output>Obl80 passed:  want 0.40907513476438162048 got 0.40907513476438162048
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGc2gd" type="AstroRoutines.UnitTests.RATests" method="TestGc2gd" time="0.0005458" result="Pass">
+        <output>Gc2gd passed: j0 want -1 got -1
+Gc2gd passed: j1 want 0 got 0
+Gc2gd passed: e1 want 0.98279372324732905408 got 0.98279372324732905408
+Gc2gd passed: p1 want 0.97160184819075456897 got 0.97160184819075456897
+Gc2gd passed: h1 want 331.41724614260596127 got 331.41724614159392104
+Gc2gd passed: j2 want 0 got 0
+Gc2gd passed: e2 want 0.98279372324732905408 got 0.98279372324732905408
+Gc2gd passed: p2 want 0.97160184820607853329 got 0.97160184820607842227
+Gc2gd passed: h2 want 331.41731754844346369 got 331.4173175497882653
+Gc2gd passed: j3 want 0 got 0
+Gc2gd passed: e3 want 0.98279372324732905408 got 0.98279372324732905408
+Gc2gd passed: p3 want 0.97160181811015122744 got 0.97160181811015111641
+Gc2gd passed: h3 want 333.2770726130318053 got 333.27707261209320677
+Gc2gd passed: j4 want -1 got -1
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestS2xpv" type="AstroRoutines.UnitTests.RATests" method="TestS2xpv" time="0.0001371" result="Pass">
+        <output>S2xpv passed: p1 want 0.5999999999999999778 got 0.5999999999999999778
+S2xpv passed: p2 want 2.3999999999999999112 got 2.3999999999999999112
+S2xpv passed: p3 want -5 got -5
+S2xpv passed: v1 want 1.5 got 1.5
+S2xpv passed: v2 want 6.9000000000000003553 got 6.8999999999999994671
+S2xpv passed: v3 want -1.1999999999999999556 got -1.2000000000000001776
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGst94" type="AstroRoutines.UnitTests.RATests" method="TestGst94" time="0.0001332" result="Pass">
+        <output>Gst94 passed:  want 1.7541661360206453057 got 1.7541661360206419751
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestUt1utc" type="AstroRoutines.UnitTests.RATests" method="TestUt1utc" time="0.0001762" result="Pass">
+        <output>Ut1utc passed: u1 want 2453750.5 got 2453750.5
+Ut1utc passed: u2 want 0.89210069410185188765 got 0.89210069410185188765
+Ut1utc passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestNutm80" type="AstroRoutines.UnitTests.RATests" method="TestNutm80" time="0.0001257" result="Pass">
+        <output>Nutm80 passed: 11 want 0.99999999995349997395 got 0.99999999995349997395
+Nutm80 passed: 12 want 8.8479357896364323275E-06 got 8.8479357896365424418E-06
+Nutm80 passed: 13 want 3.8359065021640195248E-06 got 3.8359065021640669586E-06
+Nutm80 passed: 21 want -8.847780042583436758E-06 got -8.8477800425835468722E-06
+Nutm80 passed: 22 want 0.99999999913665704732 got 0.99999999913665704732
+Nutm80 passed: 23 want -4.0600527027271309096E-05 got -4.0600527027256916313E-05
+Nutm80 passed: 31 want -3.8362657297084792136E-06 got -3.8362657297085274945E-06
+Nutm80 passed: 32 want 4.0600493086126384105E-05 got 4.0600493086129230136E-05
+Nutm80 passed: 33 want 0.99999999916844151127 got 0.99999999916844151127
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFk54z" type="AstroRoutines.UnitTests.RATests" method="TestFk54z" time="0.0006512" result="Pass">
+        <output>Fk54z passed: r1950 want 0.016020155883900655258 got 0.016020155883900648319
+Fk54z passed: d1950 want -0.11643971011107653868 got -0.1164397101110765248
+Fk54z passed: dr1950 want -1.1757126484710907685E-08 got -1.1757126484710906031E-08
+Fk54z passed: dd1950 want 2.1081090513164310817E-08 got 2.1081090513164310817E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestS06a" type="AstroRoutines.UnitTests.RATests" method="TestS06a" time="0.0001446" result="Pass">
+        <output>S06a passed:  want -1.3406804372918124344E-08 got -1.3406804372909804562E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGmst82" type="AstroRoutines.UnitTests.RATests" method="TestGmst82" time="0.0000363" result="Pass">
+        <output>Gmst82 passed:  want 1.7541749818606751088 got 1.7541749818606717781
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestCp" type="AstroRoutines.UnitTests.RATests" method="TestCp" time="0.0000619" result="Pass">
+        <output>Cp passed: 1 want 0.2999999999999999889 got 0.2999999999999999889
+Cp passed: 2 want 1.1999999999999999556 got 1.1999999999999999556
+Cp passed: 3 want -2.5 got -2.5
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEect00" type="AstroRoutines.UnitTests.RATests" method="TestEect00" time="0.0000326" result="Pass">
+        <output>Eect00 passed:  want 2.0460850048851251824E-09 got 2.0460850048851375901E-09
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestA2tf" type="AstroRoutines.UnitTests.RATests" method="TestA2tf" time="0.0000754" result="Pass">
+        <output>A2tf passed: s want 45 got 45
+A2tf passed: 0 want 11 got 11
+A2tf passed: 1 want 30 got 30
+A2tf passed: 2 want 22 got 22
+A2tf passed: 3 want 6484 got 6484
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtcc13" type="AstroRoutines.UnitTests.RATests" method="TestAtcc13" time="0.0002293" result="Pass">
+        <output>Atcc13 passed: ra want 2.7101265045313724933 got 2.7101265045313724933
+Atcc13 passed: da want 0.17406325376283501849 got 0.17406325376283499073
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestXys00a" type="AstroRoutines.UnitTests.RATests" method="TestXys00a" time="0.0006720" result="Pass">
+        <output>Xys00a passed: x want 0.000579130847216815332 got 0.0005791308472168147899
+Xys00a passed: y want 4.0205956615915000531E-05 got 4.0205956615911199047E-05
+Xys00a passed: s want -1.2200408484715496842E-08 got -1.2200408484714396692E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGd2gc" type="AstroRoutines.UnitTests.RATests" method="TestGd2gc" time="0.0001428" result="Pass">
+        <output>Gd2gc passed: j0 want -1 got -1
+Gd2gc passed: j1 want 0 got 0
+Gd2gc passed: 1/1 want -5599000.557704994455 got -5599000.557704994455
+Gd2gc passed: 2/1 want 233011.67223479202949 got 233011.67223479153472
+Gd2gc passed: 3/1 want -3040909.4706983361393 got -3040909.4706983361393
+Gd2gc passed: j2 want 0 got 0
+Gd2gc passed: 1/2 want -5599000.5577260982245 got -5599000.5577260991558
+Gd2gc passed: 2/2 want 233011.67223567029578 got 233011.67223566980101
+Gd2gc passed: 3/2 want -3040909.4706095475703 got -3040909.4706095471047
+Gd2gc passed: j3 want 0 got 0
+Gd2gc passed: 1/3 want -5598998.7626301487908 got -5598998.7626301497221
+Gd2gc passed: 2/3 want 233011.59752978221513 got 233011.59752978174947
+Gd2gc passed: 3/3 want -3040908.6861467109993 got -3040908.6861467119306
+Gd2gc passed: j4 want -1 got -1
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFal03" type="AstroRoutines.UnitTests.RATests" method="TestFal03" time="0.0000354" result="Pass">
+        <output>Fal03 passed:  want 5.1323697511086843193 got 5.1323697511091053158
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPpsp" type="AstroRoutines.UnitTests.RATests" method="TestPpsp" time="0.0000961" result="Pass">
+        <output>Ppsp passed: 0 want 7 got 7
+Ppsp passed: 1 want 17 got 17
+Ppsp passed: 2 want 23 got 23
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestNut00a" type="AstroRoutines.UnitTests.RATests" method="TestNut00a" time="0.0000992" result="Pass">
+        <output>Nut00a passed: dpsi want -9.6309091071155180183E-06 got -9.6309091071164243435E-06
+Nut00a passed: deps want 4.0632391740016788261E-05 got 4.063239174001664596E-05
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2tpe" type="AstroRoutines.UnitTests.RATests" method="TestC2tpe" time="0.0002188" result="Pass">
+        <output>C2tpe passed: 11 want -0.18136779957630294602 got -0.1813677995762993933
+C2tpe passed: 12 want 0.90234822068916831217 got 0.90234822068916853421
+C2tpe passed: 13 want -0.39099029386410855125 got -0.39099029386410888431
+C2tpe passed: 21 want -0.98341476414768047576 got -0.98341476414768091985
+C2tpe passed: 22 want -0.16598836354349952305 got -0.16598836354349624789
+C2tpe passed: 23 want 0.073097638980428203404 got 0.073097638980426815625
+C2tpe passed: 31 want 0.0010596854306732152867 got 0.001059685430673214853
+C2tpe passed: 32 want 0.39776318556050788144 got 0.3977631855605076594
+C2tpe passed: 33 want 0.91748750687927349556 got 0.91748750687927338454
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApco" type="AstroRoutines.UnitTests.RATests" method="TestApco" time="0.0002981" result="Pass">
+        <output>Apco passed: pmt want 13.252484686225873389 got 13.252484686225873389
+Apco passed: eb(1) want -0.97418271106303222506 got -0.97418271106303233609
+Apco passed: eb(2) want -0.21151301901353447565 got -0.21151301901353447565
+Apco passed: eb(3) want -0.091798401869495324656 got -0.091798401869495324656
+Apco passed: eh(1) want -0.97364255716897385451 got -0.97364255716897385451
+Apco passed: eh(2) want -0.20924521258493308795 got -0.2092452125849330602
+Apco passed: eh(3) want -0.090755781522432729669 got -0.090755781522432715791
+Apco passed: em want 0.99982332417099573085 got 0.99982332417099573085
+Apco passed: v(1) want 2.0787049929167285988E-05 got 2.0787049929167285988E-05
+Apco passed: v(2) want -8.9553601071519516909E-05 got -8.9553601071519516909E-05
+Apco passed: v(3) want -3.8633389942889509385E-05 got -3.8633389942889509385E-05
+Apco passed: bm1 want 0.99999999502775616111 got 0.99999999502775616111
+Apco passed: bpn(1,1) want 0.99999913902951587108 got 0.99999913902951587108
+Apco passed: bpn(2,1) want 4.9786500725050171294E-08 got 4.9786500727622140516E-08
+Apco passed: bpn(3,1) want 0.0013122272000000000797 got 0.0013122272000000002965
+Apco passed: bpn(1,2) want -1.1363366537716095716E-08 got -1.1363366539396402288E-08
+Apco passed: bpn(2,2) want 0.99999999957131546768 got 0.99999999957131557871
+Apco passed: bpn(3,2) want -2.9280862300000000349E-05 got -2.9280862300000003737E-05
+Apco passed: bpn(1,3) want -0.0013122272008952602911 got -0.0013122272008952602911
+Apco passed: bpn(2,3) want 2.9280822178723158475E-05 got 2.9280822178723155087E-05
+Apco passed: bpn(3,3) want 0.99999913860083233796 got 0.99999913860083233796
+Apco passed: along want -0.52780080602959955627 got -0.52780080602960000036
+Apco passed: xpl want 1.1334274181307530445E-06 got 1.1334274181307530445E-06
+Apco passed: ypl want 1.4533475957806461958E-06 got 1.4533475957806461958E-06
+Apco passed: sphi want -0.94401156790032114685 got -0.94401156790032114685
+Apco passed: cphi want 0.32991235149714748243 got 0.32991235149714753794
+Apco passed: diurab want 0 got 0
+Apco passed: eral want 2.6176089039704004691 got 2.617608903970400025
+Apco passed: refa want 0.00020141877900000000612 got 0.00020141877900000000612
+Apco passed: refb want -2.361408309999999925E-07 got -2.361408309999999925E-07
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFaur03" type="AstroRoutines.UnitTests.RATests" method="TestFaur03" time="0.0000330" result="Pass">
+        <output>Faur03 passed:  want 5.1806364501804136324 got 5.1806364501804136324
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestNum00a" type="AstroRoutines.UnitTests.RATests" method="TestNum00a" time="0.0001797" result="Pass">
+        <output>Num00a passed: 11 want 0.99999999995362276461 got 0.99999999995362276461
+Num00a passed: 12 want 8.8362385440908724972E-06 got 8.8362385440917042836E-06
+Num00a passed: 13 want 3.8308352377224009932E-06 got 3.8308352377227609822E-06
+Num00a passed: 21 want -8.8360828807985696725E-06 got -8.8360828807994014588E-06
+Num00a passed: 22 want 0.99999999913546555597 got 0.99999999913546555597
+Num00a passed: 23 want -4.0632408653624997564E-05 got -4.0632408653595852854E-05
+Num00a passed: 31 want -3.8311942720659959653E-06 got -3.8311942720663559543E-06
+Num00a passed: 32 want 4.0632374802162918141E-05 got 4.0632374802118675916E-05
+Num00a passed: 33 want 0.99999999916716608706 got 0.99999999916716608706
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestRm2v" type="AstroRoutines.UnitTests.RATests" method="TestRm2v" time="0.0001461" result="Pass">
+        <output>Rm2v passed: 1 want 0 got 0
+Rm2v passed: 2 want 1.4137166941154069022 got 1.4137166941154069022
+Rm2v passed: 3 want -1.8849555921538758696 got -1.8849555921538758696
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtco13" type="AstroRoutines.UnitTests.RATests" method="TestAtco13" time="0.0002661" result="Pass">
+        <output>Atco13 passed: aob want 0.092517744854855157866 got 0.092517744854867370319
+Atco13 passed: zob want 1.4076614052564992985 got 1.4076614052564997426
+Atco13 passed: hob want -0.092651544315297248988 got -0.092651544315309475319
+Atco13 passed: dob want 0.17166265600725261198 got 0.17166265600725277851
+Atco13 passed: rob want 2.7102604535049610313 got 2.7102604535049610313
+Atco13 passed: eo want -0.0030205483548024127799 got -0.0030205483548024123462
+Atco13 passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFk425" type="AstroRoutines.UnitTests.RATests" method="TestFk425" time="0.0002862" result="Pass">
+        <output>Fk425 passed: r2000 want 0.087579899335564453944 got 0.087579899335564467822
+Fk425 passed: d2000 want -1.1322791130420919448 got -1.1322791130420919448
+Fk425 passed: dr2000 want 1.9536706144743959965E-05 got 1.9536706144743959965E-05
+Fk425 passed: dd2000 want 5.6376866786596400299E-06 got 5.6376866786596400299E-06
+Fk425 passed: p2000 want 0.13399199505827677492 got 0.13399199505827680268
+Fk425 passed: v2000 want 8.7369996691835289937 got 8.7369996691835307701
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestSp00" type="AstroRoutines.UnitTests.RATests" method="TestSp00" time="0.0000326" result="Pass">
+        <output>Sp00 passed:  want -6.2166984699810189124E-12 got -6.2166984699810189124E-12
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestRz" type="AstroRoutines.UnitTests.RATests" method="TestRz" time="0.0001027" result="Pass">
+        <output>Rz passed: 11 want 2.8981977542089265576 got 2.8981977542089270017
+Rz passed: 12 want 3.500207892850427438 got 3.5002078928504269939
+Rz passed: 13 want 2.8981977542089265576 got 2.8981977542089270017
+Rz passed: 21 want 2.1448659113096866236 got 2.1448659113096866236
+Rz passed: 22 want 0.86518478189781600207 got 0.86518478189781578003
+Rz passed: 23 want 2.1448659113096866236 got 2.1448659113096866236
+Rz passed: 31 want 3 got 3
+Rz passed: 32 want 4 got 4
+Rz passed: 33 want 5 got 5
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtciqz" type="AstroRoutines.UnitTests.RATests" method="TestAtciqz" time="0.0022229" result="Pass">
+        <output>Atciqz passed: ri want 2.7099948992472571163 got 2.7099948992472566722
+Atciqz passed: di want 0.17287407209849317558 got 0.17287407209849317558
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestObl06" type="AstroRoutines.UnitTests.RATests" method="TestObl06" time="0.0000471" result="Pass">
+        <output>Obl06 passed:  want 0.40907492293872582678 got 0.40907492293872582678
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPap" type="AstroRoutines.UnitTests.RATests" method="TestPap" time="0.0001154" result="Pass">
+        <output>Pap passed:  want 0.36715142678411138988 got 0.36715142678411138988
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGst06a" type="AstroRoutines.UnitTests.RATests" method="TestGst06a" time="0.0001077" result="Pass">
+        <output>Gst06a passed:  want 1.7541661376750190549 got 1.7541661376750155021
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApio" type="AstroRoutines.UnitTests.RATests" method="TestApio" time="0.0001167" result="Pass">
+        <output>Apio passed: along want -0.52780080602959955627 got -0.52780080602960000036
+Apio passed: xpl want 1.1334274181307530445E-06 got 1.1334274181307530445E-06
+Apio passed: ypl want 1.4533475957806461958E-06 got 1.4533475957806461958E-06
+Apio passed: sphi want -0.94401156790032114685 got -0.94401156790032114685
+Apio passed: cphi want 0.32991235149714748243 got 0.32991235149714753794
+Apio passed: diurab want 5.1358436616999133913E-07 got 5.1358436616999144501E-07
+Apio passed: eral want 2.6176089039704004691 got 2.617608903970400025
+Apio passed: refa want 0.00020141877900000000612 got 0.00020141877900000000612
+Apio passed: refb want -2.361408309999999925E-07 got -2.361408309999999925E-07
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestRxr" type="AstroRoutines.UnitTests.RATests" method="TestRxr" time="0.0001299" result="Pass">
+        <output>Rxr passed: 11 want 20 got 20
+Rxr passed: 12 want 7 got 7
+Rxr passed: 13 want 9 got 9
+Rxr passed: 21 want 20 got 20
+Rxr passed: 22 want 8 got 8
+Rxr passed: 23 want 11 got 11
+Rxr passed: 31 want 34 got 34
+Rxr passed: 32 want 10 got 10
+Rxr passed: 33 want 15 got 15
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPvdpv" type="AstroRoutines.UnitTests.RATests" method="TestPvdpv" time="0.0001071" result="Pass">
+        <output>Pvdpv passed: 1 want 20 got 20
+Pvdpv passed: 2 want 50 got 50
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAnp" type="AstroRoutines.UnitTests.RATests" method="TestAnp" time="0.0000343" result="Pass">
+        <output>Anp passed:  want 6.1831853071795865873 got 6.1831853071795865873
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPnm00a" type="AstroRoutines.UnitTests.RATests" method="TestPnm00a" time="0.0001429" result="Pass">
+        <output>Pnm00a passed: 11 want 0.99999958327931337543 got 0.99999958327931359747
+Pnm00a passed: 12 want 0.00083723842541378093972 got 0.00083723842541378018078
+Pnm00a passed: 13 want 0.00036396843064071508636 got 0.00036396843064071481531
+Pnm00a passed: 21 want -0.00083725352265703943504 got -0.0008372535226570386761
+Pnm00a passed: 22 want 0.99999964864915824592 got 0.99999964864915813489
+Pnm00a passed: 23 want 4.1329152626640726744E-05 got 4.1329152626609874416E-05
+Pnm00a passed: 31 want -0.00036393370040543177295 got -0.00036393370040543144769
+Pnm00a passed: 32 want -4.1633869254617761552E-05 got -4.1633869254619916404E-05
+Pnm00a passed: 33 want 0.99999993290943911539 got 0.99999993290943922641
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestNut00b" type="AstroRoutines.UnitTests.RATests" method="TestNut00b" time="0.0000401" result="Pass">
+        <output>Nut00b passed: dpsi want -9.6325522911483634836E-06 got -9.6325522911483177439E-06
+Nut00b passed: deps want 4.0631971066211590318E-05 got 4.0631971066211617423E-05
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestSxpv" type="AstroRoutines.UnitTests.RATests" method="TestSxpv" time="0.0000916" result="Pass">
+        <output>Sxpv passed: p1 want 0.5999999999999999778 got 0.5999999999999999778
+Sxpv passed: p2 want 2.3999999999999999112 got 2.3999999999999999112
+Sxpv passed: p3 want -5 got -5
+Sxpv passed: v1 want 1 got 1
+Sxpv passed: v2 want 6.4000000000000003553 got 6.4000000000000003553
+Sxpv passed: v3 want -1.3999999999999999112 got -1.3999999999999999112
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTrxp" type="AstroRoutines.UnitTests.RATests" method="TestTrxp" time="0.0000761" result="Pass">
+        <output>Trxp passed: 1 want 5.2000000000000001776 got 5.2000000000000001776
+Trxp passed: 2 want 4 got 4
+Trxp passed: 3 want 5.4000000000000003553 got 5.4000000000000003553
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestIcrs2g" type="AstroRoutines.UnitTests.RATests" method="TestIcrs2g" time="0.0000745" result="Pass">
+        <output>Icrs2g passed: L want 5.5850536063818543298 got 5.5850536063818543298
+Icrs2g passed: B want -0.785398163397448279 got -0.78539816339744816798
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFae03" type="AstroRoutines.UnitTests.RATests" method="TestFae03" time="0.0000321" result="Pass">
+        <output>Fae03 passed:  want 1.7447137389130817908 got 1.7447137389131057716
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTr" type="AstroRoutines.UnitTests.RATests" method="TestTr" time="0.0000910" result="Pass">
+        <output>Tr passed: 11 want 2 got 2
+Tr passed: 12 want 3 got 3
+Tr passed: 13 want 3 got 3
+Tr passed: 21 want 3 got 3
+Tr passed: 22 want 2 got 2
+Tr passed: 23 want 4 got 4
+Tr passed: 31 want 2 got 2
+Tr passed: 32 want 3 got 3
+Tr passed: 33 want 5 got 5
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPvppv" type="AstroRoutines.UnitTests.RATests" method="TestPvppv" time="0.0000915" result="Pass">
+        <output>Pvppv passed: p1 want 3 got 3
+Pvppv passed: p2 want 5 got 5
+Pvppv passed: p3 want 7 got 7
+Pvppv passed: v1 want 8 got 8
+Pvppv passed: v2 want 8 got 8
+Pvppv passed: v3 want 4 got 4
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAticqn" type="AstroRoutines.UnitTests.RATests" method="TestAticqn" time="0.0005218" result="Pass">
+        <output>Aticqn passed: rc want 2.7099995750330272415 got 2.7099995750330272415
+Aticqn passed: dc want 0.17399996563164699115 got 0.17399996563164710217
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPdp" type="AstroRoutines.UnitTests.RATests" method="TestPdp" time="0.0000562" result="Pass">
+        <output>Pdp passed:  want 20 got 20
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2i06a" type="AstroRoutines.UnitTests.RATests" method="TestC2i06a" time="0.0002070" result="Pass">
+        <output>C2i06a passed: 11 want 0.99999983230371591869 got 0.99999983230371591869
+C2i06a passed: 12 want 5.5811213295876138478E-10 got 5.5811215371459610424E-10
+C2i06a passed: 13 want -0.00057913084877405296078 got -0.00057913084877405274394
+C2i06a passed: 21 want -2.3842531694523066863E-08 got -2.3842531698958779884E-08
+C2i06a passed: 22 want 0.99999999919174675789 got 0.99999999919174675789
+C2i06a passed: 23 want -4.0205793928956823336E-05 got -4.0205793929035963318E-05
+C2i06a passed: 31 want 0.00057913084828352921502 got 0.0005791308482835291066
+C2i06a passed: 32 want 4.0205800994540205108E-05 got 4.020580099461934509E-05
+C2i06a passed: 33 want 0.99999983149546289862 got 0.99999983149546289862
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApco13" type="AstroRoutines.UnitTests.RATests" method="TestApco13" time="0.0003911" result="Pass">
+        <output>Apco13 passed: pmt want 13.252484686224757837 got 13.252484686224757837
+Apco13 passed: eb(1) want -0.97418271073208750899 got -0.97418271073208551059
+Apco13 passed: eb(2) want -0.21151301904897165662 got -0.2115130190489862283
+Apco13 passed: eb(3) want -0.091798401894967560088 got -0.091798401894973846726
+Apco13 passed: eh(1) want -0.97364255725869353064 got -0.97364255725868986691
+Apco13 passed: eh(2) want -0.20924521216033362125 got -0.20924521216034788762
+Apco13 passed: eh(3) want -0.09075578153885664745 got -0.090755781538862823066
+Apco13 passed: em want 0.99982332409138985341 got 0.99982332409139185181
+Apco13 passed: v(1) want 2.0787049945204892615E-05 got 2.0787049945205505867E-05
+Apco13 passed: v(2) want -8.9553601332388683347E-05 got -8.9553601332388371638E-05
+Apco13 passed: v(3) want -3.8633389930558871301E-05 got -3.8633389930558728999E-05
+Apco13 passed: bm1 want 0.99999999502775605009 got 0.99999999502775605009
+Apco13 passed: bpn(1,1) want 0.99999913902951476086 got 0.99999913902951476086
+Apco13 passed: bpn(2,1) want 4.9786500753155293584E-08 got 4.9786500755377716132E-08
+Apco13 passed: bpn(3,1) want 0.0013122272008502934397 got 0.0013122272008502932229
+Apco13 passed: bpn(1,2) want -1.1363366528124865376E-08 got -1.1363366528988061432E-08
+Apco13 passed: bpn(2,2) want 0.99999999957131546768 got 0.99999999957131546768
+Apco13 passed: bpn(3,2) want -2.9280862309753672828E-05 got -2.9280862309744030205E-05
+Apco13 passed: bpn(1,3) want -0.0013122272017455536511 got -0.0013122272017455534343
+Apco13 passed: bpn(2,3) want 2.9280822188476790296E-05 got 2.9280822188467147673E-05
+Apco13 passed: bpn(3,3) want 0.99999913860083122774 got 0.99999913860083122774
+Apco13 passed: along want -0.52780080602959955627 got -0.52780080602960000036
+Apco13 passed: xpl want 1.1334274181307530445E-06 got 1.1334274181307530445E-06
+Apco13 passed: ypl want 1.4533475957806461958E-06 got 1.4533475957806461958E-06
+Apco13 passed: sphi want -0.94401156790032114685 got -0.94401156790032114685
+Apco13 passed: cphi want 0.32991235149714748243 got 0.32991235149714753794
+Apco13 passed: diurab want 0 got 0
+Apco13 passed: eral want 2.617608909189664157 got 2.6176089091896517225
+Apco13 passed: refa want 0.00020141877859403969301 got 0.00020141877859403969301
+Apco13 passed: refb want -2.3614083149436963396E-07 got -2.3614083149436963396E-07
+Apco13 passed: eo want -0.0030205483548024127799 got -0.0030205483548024123462
+Apco13 passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTttcg" type="AstroRoutines.UnitTests.RATests" method="TestTttcg" time="0.0000876" result="Pass">
+        <output>Tttcg passed: g1 want 2453750.5 got 2453750.5
+Tttcg passed: g2 want 0.89249003125085868415 got 0.89249003125085868415
+Tttcg passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLtpecl" type="AstroRoutines.UnitTests.RATests" method="TestLtpecl" time="0.0000542" result="Pass">
+        <output>Ltpecl passed: vec1 want 0.00047686256764770964221 got 0.00047686256764771164799
+Ltpecl passed: vec2 want -0.40522595330918753653 got -0.40522595330918753653
+Ltpecl passed: vec3 want 0.9142164401096447568 got 0.9142164401096447568
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApcg" type="AstroRoutines.UnitTests.RATests" method="TestApcg" time="0.0002020" result="Pass">
+        <output>Apcg passed: pmt want 12.651337940273785776 got 12.651337940273785776
+Apcg passed: eb(1) want 0.90131087499999995583 got 0.90131087499999995583
+Apcg passed: eb(2) want -0.41740266399999997882 got -0.41740266399999997882
+Apcg passed: eb(3) want -0.18098228799999999117 got -0.18098228799999999117
+Apcg passed: eh(1) want 0.89400254293241432357 got 0.89400254293241432357
+Apcg passed: eh(2) want -0.41109302686798177007 got -0.41109302686798177007
+Apcg passed: eh(3) want -0.17821890048728702971 got -0.17821890048728700195
+Apcg passed: em want 1.0104652958110131866 got 1.0104652958110131866
+Apcg passed: v(1) want 4.2896389135976938035E-05 got 4.2896389135976931259E-05
+Apcg passed: v(2) want 8.115034051581319918E-05 got 8.115034051581319918E-05
+Apcg passed: v(3) want 3.5175551363805633185E-05 got 3.5175551363805633185E-05
+Apcg passed: bm1 want 0.99999999516860127446 got 0.99999999516860127446
+Apcg passed: bpn(1,1) want 1 got 1
+Apcg passed: bpn(1,2) want 0 got 0
+Apcg passed: bpn(1,3) want 0 got 0
+Apcg passed: bpn(2,1) want 0 got 0
+Apcg passed: bpn(2,2) want 1 got 1
+Apcg passed: bpn(2,3) want 0 got 0
+Apcg passed: bpn(3,1) want 0 got 0
+Apcg passed: bpn(3,2) want 0 got 0
+Apcg passed: bpn(3,3) want 1 got 1
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPxp" type="AstroRoutines.UnitTests.RATests" method="TestPxp" time="0.0000567" result="Pass">
+        <output>Pxp passed: 1 want -1 got -1
+Pxp passed: 2 want -5 got -5
+Pxp passed: 3 want 4 got 4
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPnm80" type="AstroRoutines.UnitTests.RATests" method="TestPnm80" time="0.0001892" result="Pass">
+        <output>Pnm80 passed: 11 want 0.9999995831934611612 got 0.9999995831934611612
+Pnm80 passed: 12 want 0.00083736540457281238847 got 0.00083736540457281152111
+Pnm80 passed: 13 want 0.00036391219169331062017 got 0.00036391219169331029491
+Pnm80 passed: 21 want -0.00083738048961183011911 got -0.00083738048961182936017
+Pnm80 passed: 22 want 0.99999964854396738989 got 0.99999964854396738989
+Pnm80 passed: 23 want 4.1302025104215498612E-05 got 4.1302025104203985741E-05
+Pnm80 passed: 31 want -0.0003638774789072144215 got -0.00036387747890721393361
+Pnm80 passed: 32 want -4.1606740858517221907E-05 got -4.1606740858550574677E-05
+Pnm80 passed: 33 want 0.99999993293102751313 got 0.99999993293102751313
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestD2dtf" type="AstroRoutines.UnitTests.RATests" method="TestD2dtf" time="0.0005046" result="Pass">
+        <output>D2dtf passed: y want 1994 got 1994
+D2dtf passed: mo want 6 got 6
+D2dtf passed: d want 30 got 30
+D2dtf passed: h want 23 got 23
+D2dtf passed: m want 59 got 59
+D2dtf passed: s want 60 got 60
+D2dtf passed: f want 13599 got 13599
+D2dtf passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEe00a" type="AstroRoutines.UnitTests.RATests" method="TestEe00a" time="0.0001590" result="Pass">
+        <output>Ee00a passed:  want -8.8341924592225874627E-06 got -8.834192459223419249E-06
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestSxp" type="AstroRoutines.UnitTests.RATests" method="TestSxp" time="0.0000682" result="Pass">
+        <output>Sxp passed: 1 want 0.5999999999999999778 got 0.5999999999999999778
+Sxp passed: 2 want 2.3999999999999999112 got 2.3999999999999999112
+Sxp passed: 3 want -5 got -5
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPv2s" type="AstroRoutines.UnitTests.RATests" method="TestPv2s" time="0.0000839" result="Pass">
+        <output>Pv2s passed: theta want 3.0731853071795867116 got 3.0731853071795867116
+Pv2s passed: phi want 0.12299999999999999822 got 0.12299999999999999822
+Pv2s passed: r want 0.45599999999999996092 got 0.45600000000000001643
+Pv2s passed: td want -7.7999999999999998588E-06 got -7.7999999999999981647E-06
+Pv2s passed: pd want 9.0100000000000018263E-06 got 9.0100000000000001323E-06
+Pv2s passed: rd want -1.2299999999999999126E-05 got -1.2299999999999999126E-05
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTaiut1" type="AstroRoutines.UnitTests.RATests" method="TestTaiut1" time="0.0000377" result="Pass">
+        <output>Taiut1 passed: u1 want 2453750.5 got 2453750.5
+Taiut1 passed: u2 want 0.89210456145370364833 got 0.89210456145370375935
+Taiut1 passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2t00a" type="AstroRoutines.UnitTests.RATests" method="TestC2t00a" time="0.0002220" result="Pass">
+        <output>C2t00a passed: 11 want -0.18103321283071827086 got -0.18103321283071463488
+C2t00a passed: 12 want 0.98347698069384581476 got 0.98347698069384636987
+C2t00a passed: 13 want 6.5555356386883415561E-05 got 6.5555356386884946996E-05
+C2t00a passed: 21 want -0.98347681341359849405 got -0.98347681341359904916
+C2t00a passed: 22 want -0.18103322036495206326 got -0.18103322036494845504
+C2t00a passed: 23 want 0.00057498011161410565381 got 0.00057498011161410467803
+C2t00a passed: 31 want 0.00057734740140814064073 got 0.00057734740140814020705
+C2t00a passed: 32 want 3.9618323917701633863E-05 got 3.9618323917697832379E-05
+C2t00a passed: 33 want 0.9999998325501692209 got 0.9999998325501692209
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPmsafe" type="AstroRoutines.UnitTests.RATests" method="TestPmsafe" time="0.0003659" result="Pass">
+        <output>Pmsafe passed: ra2 want 1.234087484501017018 got 1.234087484501017018
+Pmsafe passed: dec2 want 0.78882499824504681563 got 0.78882499824504703767
+Pmsafe passed: pmr2 want 9.9964576635860741396E-06 got 9.9964576635861588429E-06
+Pmsafe passed: pmd2 want -2.0000400851067547266E-05 got -2.0000400851067543878E-05
+Pmsafe passed: px2 want 0.0099999972953568310591 got 0.0099999972953568310591
+Pmsafe passed: rv2 want 10.384683802939200348 got 10.384683802939251862
+Pmsafe passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFapa03" type="AstroRoutines.UnitTests.RATests" method="TestFapa03" time="0.0000348" result="Pass">
+        <output>Fapa03 passed:  want 0.019508847622399998895 got 0.019508847622400002364
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGc2gde" type="AstroRoutines.UnitTests.RATests" method="TestGc2gde" time="0.0000621" result="Pass">
+        <output>Gc2gde passed: j want 0 got 0
+Gc2gde passed: e want 0.98279372324732905408 got 0.98279372324732905408
+Gc2gde passed: p want 0.97160183775704112019 got 0.97160183775704112019
+Gc2gde passed: h want 332.36862495764398773 got 332.36862495798646933
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPn00a" type="AstroRoutines.UnitTests.RATests" method="TestPn00a" time="0.0004740" result="Pass">
+        <output>Pn00a passed: dpsi want -9.6309091071155180183E-06 got -9.6309091071164243435E-06
+Pn00a passed: deps want 4.0632391740016788261E-05 got 4.063239174001664596E-05
+Pn00a passed: epsa want 0.409079178940423005 got 0.409079178940423005
+Pn00a passed: rb11 want 0.99999999999999422684 got 0.99999999999999422684
+Pn00a passed: rb12 want -7.078279744199196694E-08 got -7.0782797441991980175E-08
+Pn00a passed: rb13 want 8.0562171469761337802E-08 got 8.0562171469761337802E-08
+Pn00a passed: rb21 want 7.0782794778573375197E-08 got 7.0782794778573375197E-08
+Pn00a passed: rb22 want 0.9999999999999970024 got 0.99999999999999689138
+Pn00a passed: rb23 want 3.3060414542221364117E-08 got 3.3060414542221364117E-08
+Pn00a passed: rb31 want -8.0562173809869716745E-08 got -8.0562173809869716745E-08
+Pn00a passed: rb32 want -3.3060408839805523418E-08 got -3.3060408839805516801E-08
+Pn00a passed: rb33 want 0.99999999999999622524 got 0.99999999999999622524
+Pn00a passed: rp11 want 0.99999893005322892936 got 0.99999893005322892936
+Pn00a passed: rp12 want -0.001341647226791824318 got -0.0013416472267918238843
+Pn00a passed: rp13 want -0.00058298809271902960697 got -0.00058298809271902949855
+Pn00a passed: rp21 want 0.0013416472310697590952 got 0.0013416472310697584447
+Pn00a passed: rp22 want 0.99999909999087499557 got 0.99999909999087488455
+Pn00a passed: rp23 want -3.8374444415837154437E-07 got -3.837444441778292676E-07
+Pn00a passed: rp31 want 0.00058298808287409581951 got 0.00058298808287409571108
+Pn00a passed: rp32 want -3.9842032677088347583E-07 got -3.9842032673043092927E-07
+Pn00a passed: rp33 want 0.99999983006235382277 got 0.99999983006235371175
+Pn00a passed: rbp11 want 0.99999893000522444009 got 0.99999893000522432907
+Pn00a passed: rbp12 want -0.0013417179902397036867 got -0.001341717990239703253
+Pn00a passed: rbp13 want -0.00058290757498916838733 got -0.00058290757498916827891
+Pn00a passed: rbp21 want 0.0013417180138317399973 got 0.0013417180138317393468
+Pn00a passed: rbp22 want 0.99999909989591917459 got 0.99999909989591884152
+Pn00a passed: rbp23 want -3.5057597335654211785E-07 got -3.5057597337599989401E-07
+Pn00a passed: rbp31 want 0.00058290752068577175553 got 0.00058290752068577175553
+Pn00a passed: rbp32 want -4.3152199551986088571E-07 got -4.3152199547940833916E-07
+Pn00a passed: rbp33 want 0.99999983010930360017 got 0.99999983010930360017
+Pn00a passed: rn11 want 0.99999999995362276461 got 0.99999999995362276461
+Pn00a passed: rn12 want 8.8362385440908724972E-06 got 8.8362385440917042836E-06
+Pn00a passed: rn13 want 3.8308352377224009932E-06 got 3.8308352377227609822E-06
+Pn00a passed: rn21 want -8.8360828807985696725E-06 got -8.8360828807994014588E-06
+Pn00a passed: rn22 want 0.99999999913546555597 got 0.99999999913546555597
+Pn00a passed: rn23 want -4.0632408653624997564E-05 got -4.0632408653595852854E-05
+Pn00a passed: rn31 want -3.8311942720659959653E-06 got -3.8311942720663559543E-06
+Pn00a passed: rn32 want 4.0632374802162918141E-05 got 4.0632374802118675916E-05
+Pn00a passed: rn33 want 0.99999999916716608706 got 0.99999999916716608706
+Pn00a passed: rbpn11 want 0.99999894404761036082 got 0.99999894404761013877
+Pn00a passed: rbpn12 want -0.0013328817612400117344 got -0.0013328817612400104334
+Pn00a passed: rbpn13 want -0.00057907674347300861807 got -0.00057907674347300807597
+Pn00a passed: rbpn21 want 0.0013328582543089546701 got 0.0013328582543089533691
+Pn00a passed: rbpn22 want 0.99999911090445059436 got 0.99999911090445026129
+Pn00a passed: rbpn23 want -4.0977827103965806267E-05 got -4.0977827103956109434E-05
+Pn00a passed: rbpn31 want 0.000579130847216815332 got 0.0005791308472168147899
+Pn00a passed: rbpn32 want 4.0205956615915000531E-05 got 4.0205956615911199047E-05
+Pn00a passed: rbpn33 want 0.99999983149545723649 got 0.99999983149545723649
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFad03" type="AstroRoutines.UnitTests.RATests" method="TestFad03" time="0.0000396" result="Pass">
+        <output>Fad03 passed:  want 1.9467092053969257126 got 1.9467092053972077093
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFaju03" type="AstroRoutines.UnitTests.RATests" method="TestFaju03" time="0.0000309" result="Pass">
+        <output>Faju03 passed:  want 5.2757116652024809156 got 5.2757116652024862447
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPmpx" type="AstroRoutines.UnitTests.RATests" method="TestPmpx" time="0.0000704" result="Pass">
+        <output>Pmpx passed: 1 want 0.23281376239603085443 got 0.23281376239603082667
+Pmpx passed: 2 want 0.66510970853978557127 got 0.66510970853978546025
+Pmpx passed: 3 want 0.7095257765896360036 got 0.70952577658963611462
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestZpv" type="AstroRoutines.UnitTests.RATests" method="TestZpv" time="0.0001023" result="Pass">
+        <output>Zpv passed: p1 want 0 got 0
+Zpv passed: p2 want 0 got 0
+Zpv passed: p3 want 0 got 0
+Zpv passed: v1 want 0 got 0
+Zpv passed: v2 want 0 got 0
+Zpv passed: v3 want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestHfk5z" type="AstroRoutines.UnitTests.RATests" method="TestHfk5z" time="0.0001162" result="Pass">
+        <output>Hfk5z passed: ra want 1.7677944905355811311 got 1.7677944905355809091
+Hfk5z passed: dec want -0.29175136953201141754 got -0.29175136953201141754
+Hfk5z passed: dr5 want 4.3358909835392430337E-09 got 4.3358909835392422065E-09
+Hfk5z passed: dd5 want -8.5696488412377455851E-10 got -8.569648841237749721E-10
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestXys00b" type="AstroRoutines.UnitTests.RATests" method="TestXys00b" time="0.0000883" result="Pass">
+        <output>Xys00b passed: x want 0.00057913019299502086368 got 0.00057913019299502086368
+Xys00b passed: y want 4.0205536813737205275E-05 got 4.020553681376788142E-05
+Xys00b passed: s want -1.2200273772850831801E-08 got -1.2200273772859725647E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPpp" type="AstroRoutines.UnitTests.RATests" method="TestPpp" time="0.0000565" result="Pass">
+        <output>Ppp passed: 0 want 3 got 3
+Ppp passed: 1 want 5 got 5
+Ppp passed: 2 want 7 got 7
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTtut1" type="AstroRoutines.UnitTests.RATests" method="TestTtut1" time="0.0000766" result="Pass">
+        <output>Ttut1 passed: u1 want 2453750.5 got 2453750.5
+Ttut1 passed: u2 want 0.89210456145370364833 got 0.89210456145370375935
+Ttut1 passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFame03" type="AstroRoutines.UnitTests.RATests" method="TestFame03" time="0.0000260" result="Pass">
+        <output>Fame03 passed:  want 5.4173381842972894162 got 5.417338184297676662
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestA2af" type="AstroRoutines.UnitTests.RATests" method="TestA2af" time="0.0000648" result="Pass">
+        <output>A2af passed: s want 43 got 43
+A2af passed: 0 want 134 got 134
+A2af passed: 1 want 21 got 21
+A2af passed: 2 want 30 got 30
+A2af passed: 3 want 9706 got 9706
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestUtcut1" type="AstroRoutines.UnitTests.RATests" method="TestUtcut1" time="0.0000402" result="Pass">
+        <output>Utcut1 passed: u1 want 2453750.5 got 2453750.5
+Utcut1 passed: u2 want 0.89210456089814815783 got 0.89210456089814815783
+Utcut1 passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTcbtdb" type="AstroRoutines.UnitTests.RATests" method="TestTcbtdb" time="0.0000676" result="Pass">
+        <output>Tcbtdb passed: b1 want 2453750.5 got 2453750.5
+Tcbtdb passed: b2 want 0.89285513627463430897 got 0.89285513627463441999
+Tcbtdb passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGst00a" type="AstroRoutines.UnitTests.RATests" method="TestGst00a" time="0.0001076" result="Pass">
+        <output>Gst00a passed:  want 1.7541661380182813623 got 1.7541661380182778096
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPvtob" type="AstroRoutines.UnitTests.RATests" method="TestPvtob" time="0.0000801" result="Pass">
+        <output>Pvtob passed: p(1) want 4225081.367071159184 got 4225081.3670711601153
+Pvtob passed: p(2) want 3681943.2158561982214 got 3681943.2158561986871
+Pvtob passed: p(3) want 3041149.3992412607186 got 3041149.3992412607186
+Pvtob passed: v(1) want -268.49153893659985215 got -268.49153893659996584
+Pvtob passed: v(2) want 308.09779832889029194 got 308.09779832889040563
+Pvtob passed: v(3) want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApio13" type="AstroRoutines.UnitTests.RATests" method="TestApio13" time="0.0001096" result="Pass">
+        <output>Apio13 passed: along want -0.52780080602959955627 got -0.52780080602960000036
+Apio13 passed: xpl want 1.1334274181307530445E-06 got 1.1334274181307530445E-06
+Apio13 passed: ypl want 1.4533475957806461958E-06 got 1.4533475957806461958E-06
+Apio13 passed: sphi want -0.94401156790032114685 got -0.94401156790032114685
+Apio13 passed: cphi want 0.32991235149714748243 got 0.32991235149714753794
+Apio13 passed: diurab want 5.1358436616999133913E-07 got 5.1358436616999144501E-07
+Apio13 passed: eral want 2.617608909189664157 got 2.6176089091896517225
+Apio13 passed: refa want 0.00020141877859403969301 got 0.00020141877859403969301
+Apio13 passed: refb want -2.3614083149436963396E-07 got -2.3614083149436963396E-07
+Apio13 passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTporv" type="AstroRoutines.UnitTests.RATests" method="TestTporv" time="0.0001648" result="Pass">
+        <output>Tporv passed: x1 want -0.022062528223668886884 got -0.022062528223668904231
+Tporv passed: y1 want 0.1318251060359645066 got 0.13182510603596445109
+Tporv passed: z1 want 0.99102743971445439453 got 0.99102743971445439453
+Tporv passed: x2 want -0.0037122117638019682707 got -0.003712211763801976077
+Tporv passed: y2 want -0.0043415199562998364746 got -0.0043415199562998451482
+Tporv passed: z2 want 0.99998368521105873707 got 0.99998368521105862605
+Tporv passed: n want 2 got 2
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLdn" type="AstroRoutines.UnitTests.RATests" method="TestLdn" time="0.0001792" result="Pass">
+        <output>Ldn passed: 1 want -0.76327625796933340485 got -0.76327625796933340485
+Ldn passed: 2 want -0.60863376360930021569 got -0.60863376360930032671
+Ldn passed: 3 want -0.21673554206463280236 got -0.21673554206463283012
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPvu" type="AstroRoutines.UnitTests.RATests" method="TestPvu" time="0.0000943" result="Pass">
+        <output>Pvu passed: p1 want 126656.75986053170345 got 126656.75986053170345
+Pvu passed: p2 want 2118.5312711557262446 got 2118.5312711557262446
+Pvu passed: p3 want -245216.50485906560789 got -245216.50485906560789
+Pvu passed: v1 want -0.0040518540357407130392 got -0.0040518540357407130392
+Pvu passed: v2 want -0.0062539197548661757883 got -0.0062539197548661757883
+Pvu passed: v3 want 0.01189353719774107615 got 0.01189353719774107615
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestStarpm" type="AstroRoutines.UnitTests.RATests" method="TestStarpm" time="0.0000766" result="Pass">
+        <output>Starpm passed: ra want 0.016689190694142562454 got 0.016689190694142558985
+Starpm passed: dec want -1.0939664542171279038 got -1.0939664542171279038
+Starpm passed: pmr want -1.783662682153176583E-05 got -1.783662682153176583E-05
+Starpm passed: pmd want 2.3380929159839896319E-06 got 2.3380929159839925965E-06
+Starpm passed: px want 0.74735338353177194204 got 0.74735338353177194204
+Starpm passed: rv want -21.599051704764171689 got -21.599051704764178794
+Starpm passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLtpequ" type="AstroRoutines.UnitTests.RATests" method="TestLtpequ" time="0.0000503" result="Pass">
+        <output>Ltpequ passed: veq1 want -0.35866525602373267034 got -0.35866525602373267034
+Ltpequ passed: veq2 want -0.19969789107711286014 got -0.19969789107711283238
+Ltpequ passed: veq3 want 0.91185524422508201781 got 0.91185524422508190678
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTpxev" type="AstroRoutines.UnitTests.RATests" method="TestTpxev" time="0.0001120" result="Pass">
+        <output>Tpxev passed: xi want -0.017532009832369806202 got -0.017532009832369764568
+Tpxev passed: eta want 0.05962940005778712832 got 0.059629400057787149136
+Tpxev passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2ixy" type="AstroRoutines.UnitTests.RATests" method="TestC2ixy" time="0.0001820" result="Pass">
+        <output>C2ixy passed: 11 want 0.99999983230371569665 got 0.99999983230371558562
+C2ixy passed: 12 want 5.5815263490322414203E-10 got 5.5815263522163149901E-10
+C2ixy passed: 13 want -0.00057913084916112636362 got -0.00057913084916112647204
+C2ixy passed: 21 want -2.3842570574698430297E-08 got -2.384257058452021738E-08
+C2ixy passed: 22 want 0.99999999919174686891 got 0.99999999919174675789
+C2ixy passed: 23 want -4.0205791101723245334E-05 got -4.0205791101723245334E-05
+C2ixy passed: 31 want 0.00057913084867060109998 got 0.0005791308486706012084
+C2ixy passed: 32 want 4.0205798167329612192E-05 got 4.0205798167329612192E-05
+C2ixy passed: 33 want 0.9999998314954627876 got 0.9999998314954627876
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEors" type="AstroRoutines.UnitTests.RATests" method="TestEors" time="0.0000712" result="Pass">
+        <output>Eors passed:  want -0.0013328827151307446296 got -0.0013328827151307448464
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPmat76" type="AstroRoutines.UnitTests.RATests" method="TestPmat76" time="0.0000894" result="Pass">
+        <output>Pmat76 passed: 11 want 0.9999995504328350604 got 0.9999995504328350604
+Pmat76 passed: 12 want 0.00086966322094809609365 got 0.00086966322094809457577
+Pmat76 passed: 13 want 0.00037791534749598884157 got 0.00037791534749598819105
+Pmat76 passed: 21 want -0.00086966322094851123466 got -0.0008696632209485098252
+Pmat76 passed: 22 want 0.99999962184285606792 got 0.99999962184285606792
+Pmat76 passed: 23 want -1.6432847761118863772E-07 got -1.6432847761118805539E-07
+Pmat76 passed: 31 want -0.00037791534749503349682 got -0.00037791534749503279209
+Pmat76 passed: 32 want -1.6433067461473670212E-07 got -1.6433067461473611979E-07
+Pmat76 passed: 33 want 0.99999992858997899248 got 0.99999992858997899248
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEra00" type="AstroRoutines.UnitTests.RATests" method="TestEra00" time="0.0000266" result="Pass">
+        <output>Era00 passed:  want 0.40228372400281581234 got 0.40228372400281386945
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestXys06a" type="AstroRoutines.UnitTests.RATests" method="TestXys06a" time="0.0001391" result="Pass">
+        <output>Xys06a passed: x want 0.00057913084828352921502 got 0.0005791308482835291066
+Xys06a passed: y want 4.0205800994540205108E-05 got 4.020580099461934509E-05
+Xys06a passed: s want -1.2200322941645799674E-08 got -1.2200322941668725812E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLdsun" type="AstroRoutines.UnitTests.RATests" method="TestLdsun" time="0.0000774" result="Pass">
+        <output>Ldsun passed: 1 want -0.76327625807314136708 got -0.76327625807314125606
+Ldsun passed: 2 want -0.6086337635262647483 got -0.60863376352626485932
+Ldsun passed: 3 want -0.2167355419322321286 got -0.2167355419322321286
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestZr" type="AstroRoutines.UnitTests.RATests" method="TestZr" time="0.0001242" result="Pass">
+        <output>Zr passed: 00 want 0 got 0
+Zr passed: 01 want 0 got 0
+Zr passed: 02 want 0 got 0
+Zr passed: 10 want 0 got 0
+Zr passed: 11 want 0 got 0
+Zr passed: 12 want 0 got 0
+Zr passed: 20 want 0 got 0
+Zr passed: 21 want 0 got 0
+Zr passed: 22 want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFw2xy" type="AstroRoutines.UnitTests.RATests" method="TestFw2xy" time="0.0000576" result="Pass">
+        <output>Fw2xy passed: x want -0.0003779734957034082605 got -0.0003779734957034082605
+Fw2xy passed: y want -1.9248808480876157323E-07 got -1.9248808486027613185E-07
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFaf03" type="AstroRoutines.UnitTests.RATests" method="TestFaf03" time="0.0000259" result="Pass">
+        <output>Faf03 passed:  want 0.25977113667454992951 got 0.25977113667514467599
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestBp00" type="AstroRoutines.UnitTests.RATests" method="TestBp00" time="0.0003449" result="Pass">
+        <output>Bp00 passed: rb11 want 0.99999999999999422684 got 0.99999999999999422684
+Bp00 passed: rb12 want -7.078279744199196694E-08 got -7.0782797441991980175E-08
+Bp00 passed: rb13 want 8.0562171469761337802E-08 got 8.0562171469761337802E-08
+Bp00 passed: rb21 want 7.0782794778573375197E-08 got 7.0782794778573375197E-08
+Bp00 passed: rb22 want 0.9999999999999970024 got 0.99999999999999689138
+Bp00 passed: rb23 want 3.3060414542221364117E-08 got 3.3060414542221364117E-08
+Bp00 passed: rb31 want -8.0562173809869716745E-08 got -8.0562173809869716745E-08
+Bp00 passed: rb32 want -3.3060408839805523418E-08 got -3.3060408839805516801E-08
+Bp00 passed: rb33 want 0.99999999999999622524 got 0.99999999999999622524
+Bp00 passed: rp11 want 0.99999955048640487565 got 0.99999955048640487565
+Bp00 passed: rp12 want 0.00086961138362070839348 got 0.00086961138362070709244
+Bp00 passed: rp13 want 0.0003778928813389333184 got 0.0003778928813389327763
+Bp00 passed: rp21 want -0.00086961138182272659965 got -0.00086961138182272519018
+Bp00 passed: rp22 want 0.99999962188793656281 got 0.99999962188793656281
+Bp00 passed: rp23 want -1.6906792630092421575E-07 got -1.6906792630454112585E-07
+Bp00 passed: rp31 want -0.00037789288547646949796 got -0.00037789288547646890165
+Bp00 passed: rp32 want -1.5955210041952865943E-07 got -1.595521004205124882E-07
+Bp00 passed: rp33 want 0.99999992859846831283 got 0.99999992859846831283
+Bp00 passed: rbp11 want 0.99999955051750877288 got 0.99999955051750877288
+Bp00 passed: rbp12 want 0.00086954058836178846088 got 0.00086954058836178705141
+Bp00 passed: rbp13 want 0.00037797347222390069704 got 0.00037797347222390015493
+Bp00 passed: rbp21 want -0.00086954059904108640163 got -0.00086954059904108499217
+Bp00 passed: rbp22 want 0.99999962194949254535 got 0.99999962194949254535
+Bp00 passed: rbp23 want -1.3607758204049820865E-07 got -1.3607758204411514521E-07
+Bp00 passed: rbp31 want -0.00037797344765581848214 got -0.00037797344765581788583
+Bp00 passed: rbp32 want -1.925857585832024042E-07 got -1.925857585841862065E-07
+Bp00 passed: rbp33 want 0.99999992856801533936 got 0.99999992856801533936
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestMoon98" type="AstroRoutines.UnitTests.RATests" method="TestMoon98" time="0.0013241" result="Pass">
+        <output>Moon98 passed: x 4 want -0.0026012959599710440591 got -0.0026012959599712595984
+Moon98 passed: y 4 want 0.00061397509443027425795 got 0.00061397509442925521633
+Moon98 passed: z 4 want 0.00026407945282298290373 got 0.00026407945282254727129
+Moon98 passed: xd 4 want -0.00012443215066498949451 got -0.0001244321505370710396
+Moon98 passed: yd 4 want -0.00052190769426781191687 got -0.00052190769379403790205
+Moon98 passed: zd 4 want -0.00017161322143784620725 got -0.00017161322128177820476
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFama03" type="AstroRoutines.UnitTests.RATests" method="TestFama03" time="0.0000444" result="Pass">
+        <output>Fama03 passed:  want 3.2755068402777816061 got 3.2755068402778348968
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtio13" type="AstroRoutines.UnitTests.RATests" method="TestAtio13" time="0.0001326" result="Pass">
+        <output>Atio13 passed: aob want 0.092339522248951227956 got 0.092339522248963343265
+Atio13 passed: zob want 1.4077587045135500077 got 1.4077587045135502297
+Atio13 passed: hob want -0.092476198798816980351 got -0.092476198798829123415
+Atio13 passed: dob want 0.17176534357562348032 got 0.17176534357562356359
+Atio13 passed: rob want 2.7100851079884806794 got 2.7100851079884806794
+Atio13 passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2txy" type="AstroRoutines.UnitTests.RATests" method="TestC2txy" time="0.0001544" result="Pass">
+        <output>C2txy passed: 11 want -0.18103321283062792646 got -0.18103321283062429048
+C2txy passed: 12 want 0.98347698069385203201 got 0.9834769806938524761
+C2txy passed: 13 want 6.5555512480576657273E-05 got 6.5555512480574543079E-05
+C2txy passed: 21 want -0.98347681341361425922 got -0.98347681341361470331
+C2txy passed: 22 want -0.18103322036495292369 got -0.18103322036494928771
+C2txy passed: 23 want 0.00057498008435941398622 got 0.00057498008435941431148
+C2txy passed: 31 want 0.00057734740286192640871 got 0.00057734740286192651713
+C2txy passed: 32 want 3.9618165469116245524E-05 got 3.9618165469116245524E-05
+C2txy passed: 33 want 0.99999983255017466099 got 0.99999983255017466099
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtic13" type="AstroRoutines.UnitTests.RATests" method="TestAtic13" time="0.0001796" result="Pass">
+        <output>Atic13 passed: rc want 2.7101265045317166624 got 2.7101265045317166624
+Atic13 passed: dc want 0.17406325376270345706 got 0.17406325376270345706
+Atic13 passed: eo want -0.0029006187126573755933 got -0.002900618712657376027
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPn" type="AstroRoutines.UnitTests.RATests" method="TestPn" time="0.0000676" result="Pass">
+        <output>Pn passed: r want 2.7892651361962705892 got 2.7892651361962705892
+Pn passed: u1 want 0.10755521090731121059 got 0.10755521090731121059
+Pn passed: u2 want 0.43022084362924484235 got 0.43022084362924484235
+Pn passed: u3 want -0.89629342422759339382 got -0.89629342422759339382
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPom00" type="AstroRoutines.UnitTests.RATests" method="TestPom00" time="0.0001017" result="Pass">
+        <output>Pom00 passed: 11 want 0.99999999999996747047 got 0.99999999999996747047
+Pom00 passed: 12 want -1.3671745807288470313E-11 got -1.3671745807288470313E-11
+Pom00 passed: 13 want 2.5506023799999721936E-07 got 2.550602379999972723E-07
+Pom00 passed: 21 want 1.4146249479570297213E-11 got 1.4146249479570297213E-11
+Pom00 passed: 22 want 0.99999999999826949537 got 0.99999999999826949537
+Pom00 passed: 23 want -1.8603592469988663377E-06 got -1.8603592469988663377E-06
+Pom00 passed: 31 want -2.550602379741215275E-07 got -2.5506023797412158044E-07
+Pom00 passed: 32 want 1.8603592470024139234E-06 got 1.8603592470024139234E-06
+Pom00 passed: 33 want 0.99999999999823696584 got 0.99999999999823696584
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAper13" type="AstroRoutines.UnitTests.RATests" method="TestAper13" time="0.0000686" result="Pass">
+        <output>Aper13 passed: eral want 3.3162366617896950061 got 3.3162366617896932297
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTdbtt" type="AstroRoutines.UnitTests.RATests" method="TestTdbtt" time="0.0000690" result="Pass">
+        <output>Tdbtt passed: t1 want 2453750.5 got 2453750.5
+Tdbtt passed: t2 want 0.89285513932638893575 got 0.89285513932638882473
+Tdbtt passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPmat06" type="AstroRoutines.UnitTests.RATests" method="TestPmat06" time="0.0000964" result="Pass">
+        <output>Pmat06 passed: 11 want 0.99999955051760069935 got 0.99999955051760069935
+Pmat06 passed: 12 want 0.00086954046173482086885 got 0.00086954046173481924255
+Pmat06 passed: 13 want 0.0003779735201865589019 got 0.00037797352018655825138
+Pmat06 passed: 21 want -0.0008695404723772031351 got -0.00086954047237720161721
+Pmat06 passed: 22 want 0.99999962194960267947 got 0.99999962194960267947
+Pmat06 passed: 23 want -1.3617524970802702217E-07 got -1.3617524957654225659E-07
+Pmat06 passed: 31 want -0.00037797349570340896523 got -0.0003779734957034082605
+Pmat06 passed: 32 want -1.9248808478944570155E-07 got -1.9248808486027613185E-07
+Pmat06 passed: 33 want 0.99999992856799724272 got 0.99999992856799724272
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestH2fk5" type="AstroRoutines.UnitTests.RATests" method="TestH2fk5" time="0.0001707" result="Pass">
+        <output>H2fk5 passed: ra want 1.7677944557000655479 got 1.7677944557000653258
+H2fk5 passed: dec want -0.29175136264696388544 got -0.29175136264696388544
+H2fk5 passed: dr5 want -2.7597945024511204211E-06 got -2.7597945024511221152E-06
+H2fk5 passed: dd5 want -5.9308014093262834024E-06 got -5.9308014093262825553E-06
+H2fk5 passed: px want 0.37920999999999999153 got 0.37920999999999993602
+H2fk5 passed: rv want -7.6000001309071123501 got -7.6000001309071105737
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTf2a" type="AstroRoutines.UnitTests.RATests" method="TestTf2a" time="0.0000836" result="Pass">
+        <output>Tf2a passed: a want 1.3017392781895373854 got 1.3017392781895373854
+Tf2a passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApcg13" type="AstroRoutines.UnitTests.RATests" method="TestApcg13" time="0.0002540" result="Pass">
+        <output>Apcg13 passed: pmt want 12.651337940273785776 got 12.651337940273785776
+Apcg13 passed: eb(1) want 0.90131087473406445998 got 0.90131087473406645838
+Apcg13 passed: eb(2) want -0.41740266404061199257 got -0.41740266404059817029
+Apcg13 passed: eb(3) want -0.18098228778678177031 got -0.18098228778677577511
+Apcg13 passed: eh(1) want 0.89400254292554992563 got 0.89400254292555625391
+Apcg13 passed: eh(2) want -0.41109302683318965643 got -0.41109302683317811011
+Apcg13 passed: eh(3) want -0.17821890060197498329 got -0.17821890060196998729
+Apcg13 passed: em want 1.0104652959646642785 got 1.0104652959646591714
+Apcg13 passed: v(1) want 4.2896389129413408476E-05 got 4.289638912941289348E-05
+Apcg13 passed: v(2) want 8.1150340324050415143E-05 got 8.1150340324051052111E-05
+Apcg13 passed: v(3) want 3.517555135536470592E-05 got 3.5175551355364976971E-05
+Apcg13 passed: bm1 want 0.99999999516860127446 got 0.99999999516860127446
+Apcg13 passed: bpn(1,1) want 1 got 1
+Apcg13 passed: bpn(1,2) want 0 got 0
+Apcg13 passed: bpn(1,3) want 0 got 0
+Apcg13 passed: bpn(2,1) want 0 got 0
+Apcg13 passed: bpn(2,2) want 1 got 1
+Apcg13 passed: bpn(2,3) want 0 got 0
+Apcg13 passed: bpn(3,1) want 0 got 0
+Apcg13 passed: bpn(3,2) want 0 got 0
+Apcg13 passed: bpn(3,3) want 1 got 1
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPm" type="AstroRoutines.UnitTests.RATests" method="TestPm" time="0.0000449" result="Pass">
+        <output>Pm passed:  want 2.7892651361962705892 got 2.7892651361962705892
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPnm06a" type="AstroRoutines.UnitTests.RATests" method="TestPnm06a" time="0.0001494" result="Pass">
+        <output>Pnm06a passed: 11 want 0.99999958327942051195 got 0.99999958327942051195
+Pnm06a passed: 12 want 0.00083723827726309618582 got 0.00083723827726309531846
+Pnm06a passed: 13 want 0.00036396847711406228381 got 0.00036396847711406195855
+Pnm06a passed: 21 want -0.0008372533744743683318 got -0.00083725337447436757286
+Pnm06a passed: 22 want 0.99999964864928614361 got 0.99999964864928614361
+Pnm06a passed: 23 want 4.1329059446110194814E-05 got 4.1329059446149063461E-05
+Pnm06a passed: 31 want -0.00036393374696294650663 got -0.00036393374696294612716
+Pnm06a passed: 32 want -4.1633776059106638798E-05 got -4.1633776059257776581E-05
+Pnm06a passed: 33 want 0.99999993290942601476 got 0.99999993290942601476
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestHd2ae" type="AstroRoutines.UnitTests.RATests" method="TestHd2ae" time="0.0001265" result="Pass">
+        <output>Hd2ae passed: a want 5.9168892437300657505 got 5.9168892437300657505
+Hd2ae passed: e want 0.44721863049904864162 got 0.44721863049904858611
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFk52h" type="AstroRoutines.UnitTests.RATests" method="TestFk52h" time="0.0002231" result="Pass">
+        <output>Fk52h passed: ra want 1.7677942262999475354 got 1.7677942262999477574
+Fk52h passed: dec want -0.29175160705303915254 got -0.29175160705303920805
+Fk52h passed: dr5 want -1.9618741256057211607E-07 got -1.9618741256057195725E-07
+Fk52h passed: dd5 want -5.84599051766939132E-06 got -5.8459905176693921671E-06
+Fk52h passed: px want 0.37920999999999999153 got 0.37921000000000004704
+Fk52h passed: rv want -7.6000000940000251859 got -7.6000000940000242977
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPlan94" type="AstroRoutines.UnitTests.RATests" method="TestPlan94" time="0.0006569" result="Pass">
+        <output>Plan94 passed: x 1 want 0 got 0
+Plan94 passed: y 1 want 0 got 0
+Plan94 passed: z 1 want 0 got 0
+Plan94 passed: xd 1 want 0 got 0
+Plan94 passed: yd 1 want 0 got 0
+Plan94 passed: zd 1 want 0 got 0
+Plan94 passed: j 1 want -1 got -1
+Plan94 passed: j 2 want -1 got -1
+Plan94 passed: x 3 want 0.93080386668329762045 got 0.93080386668270331807
+Plan94 passed: y 3 want 0.32583190402613460002 got 0.32583190402749223624
+Plan94 passed: z 3 want 0.14227945444811404552 got 0.1422794544487063495
+Plan94 passed: xd 3 want -0.0064294589582551704005 got -0.0064294589582809084927
+Plan94 passed: yd 3 want 0.014685706577042377183 got 0.014685706577033368764
+Plan94 passed: zd 3 want 0.0064069964262709810585 got 0.0064069964262670467056
+Plan94 passed: j 3 want 1 got 1
+Plan94 passed: x 4 want 0.29452939592574306493 got 0.29452939592574717276
+Plan94 passed: y 4 want -0.24522041766010496677 got -0.24522041766009930464
+Plan94 passed: z 4 want -0.16154277005719780425 got -0.16154277005719519522
+Plan94 passed: xd 4 want 0.014138678714046145138 got 0.014138678714045794724
+Plan94 passed: yd 4 want 0.019465483011047064743 got 0.019465483011047363116
+Plan94 passed: zd 4 want 0.0089298097838989044794 got 0.0089298097838990987685
+Plan94 passed: j 4 want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestBp06" type="AstroRoutines.UnitTests.RATests" method="TestBp06" time="0.0002936" result="Pass">
+        <output>Bp06 passed: rb11 want 0.99999999999999422684 got 0.99999999999999411582
+Bp06 passed: rb12 want -7.0783689609715574511E-08 got -7.0783689609715561276E-08
+Bp06 passed: rb13 want 8.0562139776131860839E-08 got 8.0562139776131860839E-08
+Bp06 passed: rb21 want 7.0783686946376749448E-08 got 7.0783686946376762683E-08
+Bp06 passed: rb22 want 0.9999999999999970024 got 0.99999999999999689138
+Bp06 passed: rb23 want 3.3059437429891338317E-08 got 3.3059437354321374869E-08
+Bp06 passed: rb31 want -8.0562142116200561582E-08 got -8.0562142116200574817E-08
+Bp06 passed: rb32 want -3.3059431727405868863E-08 got -3.3059431692183949281E-08
+Bp06 passed: rb33 want 0.99999999999999622524 got 0.99999999999999622524
+Bp06 passed: rp11 want 0.99999955048649602496 got 0.99999955048649580291
+Bp06 passed: rp12 want 0.00086961125788554045641 got 0.00086961125788553883011
+Bp06 passed: rp13 want 0.00037789292933413900144 got 0.00037789292933413840513
+Bp06 passed: rp21 want -0.00086961125605101866412 got -0.00086961125605101703782
+Bp06 passed: rp22 want 0.99999962188804591978 got 0.99999962188804569774
+Bp06 passed: rp23 want -1.6916461689418963028E-07 got -1.6916461672748298482E-07
+Bp06 passed: rp31 want -0.00037789293355576031785 got -0.00037789293355575961312
+Bp06 passed: rp32 want -1.5945540407864950115E-07 got -1.5945540422504985519E-07
+Bp06 passed: rp33 want 0.99999992859845010518 got 0.9999999285984502162
+Bp06 passed: rbp11 want 0.99999955051760069935 got 0.99999955051760069935
+Bp06 passed: rbp12 want 0.00086954046173482086885 got 0.00086954046173481924255
+Bp06 passed: rbp13 want 0.0003779735201865589019 got 0.00037797352018655825138
+Bp06 passed: rbp21 want -0.0008695404723772031351 got -0.00086954047237720161721
+Bp06 passed: rbp22 want 0.99999962194960267947 got 0.99999962194960267947
+Bp06 passed: rbp23 want -1.3617524970802702217E-07 got -1.3617524957654225659E-07
+Bp06 passed: rbp31 want -0.00037797349570340896523 got -0.0003779734957034082605
+Bp06 passed: rbp32 want -1.9248808478944570155E-07 got -1.9248808486027613185E-07
+Bp06 passed: rbp33 want 0.99999992856799724272 got 0.99999992856799724272
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTttai" type="AstroRoutines.UnitTests.RATests" method="TestTttai" time="0.0000726" result="Pass">
+        <output>Tttai passed: a1 want 2453750.5 got 2453750.5
+Tttai passed: a2 want 0.89211013900000002419 got 0.89211013900000002419
+Tttai passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2tcio" type="AstroRoutines.UnitTests.RATests" method="TestC2tcio" time="0.0001391" result="Pass">
+        <output>C2tcio passed: 11 want -0.18103321283071105441 got -0.18103321283071113768
+C2tcio passed: 12 want 0.98347698069384703601 got 0.98347698069384692499
+C2tcio passed: 13 want 6.5555356386854670651E-05 got 6.5555356386854711308E-05
+C2tcio passed: 21 want -0.9834768134135997153 got -0.98347681341359960427
+C2tcio passed: 22 want -0.18103322036494484681 got -0.18103322036494493008
+C2tcio passed: 23 want 0.00057498011161411064114 got 0.00057498011161411064114
+C2tcio passed: 31 want 0.00057734740140814074915 got 0.00057734740140814074915
+C2tcio passed: 32 want 3.9618323917726590842E-05 got 3.9618323917726584065E-05
+C2tcio passed: 33 want 0.9999998325501692209 got 0.9999998325501692209
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestRx" type="AstroRoutines.UnitTests.RATests" method="TestRx" time="0.0000982" result="Pass">
+        <output>Rx passed: 11 want 2 got 2
+Rx passed: 12 want 3 got 3
+Rx passed: 13 want 2 got 2
+Rx passed: 21 want 3.8390433882356123085 got 3.8390433882356123085
+Rx passed: 22 want 3.2370332495941118722 got 3.2370332495941118722
+Rx passed: 23 want 4.5167143790059824937 got 4.5167143790059824937
+Rx passed: 31 want 1.806030415924501753 got 1.8060304159245013089
+Rx passed: 32 want 3.0857115453363723745 got 3.0857115453363723745
+Rx passed: 33 want 3.6877216839778732549 got 3.6877216839778723667
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestZp" type="AstroRoutines.UnitTests.RATests" method="TestZp" time="0.0000508" result="Pass">
+        <output>Zp passed: 1 want 0 got 0
+Zp passed: 2 want 0 got 0
+Zp passed: 3 want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestS00a" type="AstroRoutines.UnitTests.RATests" method="TestS00a" time="0.0038594" result="Pass">
+        <output>S00a passed:  want -1.3406844489191635203E-08 got -1.3406844489205477244E-08
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPmp" type="AstroRoutines.UnitTests.RATests" method="TestPmp" time="0.0000931" result="Pass">
+        <output>Pmp passed: 0 want 1 got 1
+Pmp passed: 1 want -1 got -1
+Pmp passed: 2 want -1 got -1
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApcs" type="AstroRoutines.UnitTests.RATests" method="TestApcs" time="0.0002389" result="Pass">
+        <output>Apcs passed: pmt want 13.252484686225873389 got 13.252484686225873389
+Apcs passed: eb(1) want -0.97418271106298814921 got -0.97418271106298826023
+Apcs passed: eb(2) want -0.21151301901364161218 got -0.21151301901364158442
+Apcs passed: eb(3) want -0.091798401869544118958 got -0.091798401869544132836
+Apcs passed: eh(1) want -0.9736425571689454328 got -0.97364255716894532178
+Apcs passed: eh(2) want -0.2092452125850435829 got -0.20924521258504352739
+Apcs passed: eh(3) want -0.090755781522482995016 got -0.090755781522482981138
+Apcs passed: em want 0.99982332417097963262 got 0.99982332417097974364
+Apcs passed: v(1) want 2.0787049932826854568E-05 got 2.0787049932826854568E-05
+Apcs passed: v(2) want -8.9553601069894053907E-05 got -8.9553601069894053907E-05
+Apcs passed: v(3) want -3.8633389942894090139E-05 got -3.8633389942894090139E-05
+Apcs passed: bm1 want 0.99999999502775616111 got 0.99999999502775616111
+Apcs passed: bpn(1,1) want 1 got 1
+Apcs passed: bpn(1,2) want 0 got 0
+Apcs passed: bpn(1,3) want 0 got 0
+Apcs passed: bpn(2,1) want 0 got 0
+Apcs passed: bpn(2,2) want 1 got 1
+Apcs passed: bpn(2,3) want 0 got 0
+Apcs passed: bpn(3,1) want 0 got 0
+Apcs passed: bpn(3,2) want 0 got 0
+Apcs passed: bpn(3,3) want 1 got 1
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGmst00" type="AstroRoutines.UnitTests.RATests" method="TestGmst00" time="0.0000370" result="Pass">
+        <output>Gmst00 passed:  want 1.7541749722107407017 got 1.7541749722107369269
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApci" type="AstroRoutines.UnitTests.RATests" method="TestApci" time="0.0002126" result="Pass">
+        <output>Apci passed: pmt want 12.651337940273785776 got 12.651337940273785776
+Apci passed: eb(1) want 0.90131087499999995583 got 0.90131087499999995583
+Apci passed: eb(2) want -0.41740266399999997882 got -0.41740266399999997882
+Apci passed: eb(3) want -0.18098228799999999117 got -0.18098228799999999117
+Apci passed: eh(1) want 0.89400254293241432357 got 0.89400254293241432357
+Apci passed: eh(2) want -0.41109302686798177007 got -0.41109302686798177007
+Apci passed: eh(3) want -0.17821890048728702971 got -0.17821890048728700195
+Apci passed: em want 1.0104652958110131866 got 1.0104652958110131866
+Apci passed: v(1) want 4.2896389135976938035E-05 got 4.2896389135976931259E-05
+Apci passed: v(2) want 8.115034051581319918E-05 got 8.115034051581319918E-05
+Apci passed: v(3) want 3.5175551363805633185E-05 got 3.5175551363805633185E-05
+Apci passed: bm1 want 0.99999999516860127446 got 0.99999999516860127446
+Apci passed: bpn(1,1) want 0.99999913902951587108 got 0.99999913902951587108
+Apci passed: bpn(2,1) want 4.9786500725050171294E-08 got 4.9786500727622140516E-08
+Apci passed: bpn(3,1) want 0.0013122272000000000797 got 0.0013122272000000002965
+Apci passed: bpn(1,2) want -1.1363366537716095716E-08 got -1.1363366539396402288E-08
+Apci passed: bpn(2,2) want 0.99999999957131546768 got 0.99999999957131557871
+Apci passed: bpn(3,2) want -2.9280862300000000349E-05 got -2.9280862300000003737E-05
+Apci passed: bpn(1,3) want -0.0013122272008952602911 got -0.0013122272008952602911
+Apci passed: bpn(2,3) want 2.9280822178723158475E-05 got 2.9280822178723155087E-05
+Apci passed: bpn(3,3) want 0.99999913860083233796 got 0.99999913860083233796
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2i00a" type="AstroRoutines.UnitTests.RATests" method="TestC2i00a" time="0.0002022" result="Pass">
+        <output>C2i00a passed: 11 want 0.99999983230371658482 got 0.99999983230371658482
+C2i00a passed: 12 want 5.5815263489921397042E-10 got 5.5815263522163149901E-10
+C2i00a passed: 13 want -0.00057913084770734439034 got -0.00057913084770734384824
+C2i00a passed: 21 want -2.384266227870752437E-08 got -2.3842662288942051418E-08
+C2i00a passed: 22 want 0.99999999919174054064 got 0.99999999919174054064
+C2i00a passed: 23 want -4.0205949550282097825E-05 got -4.0205949550278282788E-05
+C2i00a passed: 31 want 0.000579130847216815332 got 0.0005791308472168147899
+C2i00a passed: 32 want 4.0205956615915000531E-05 got 4.0205956615911192271E-05
+C2i00a passed: 33 want 0.99999983149545723649 got 0.99999983149545723649
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestG2icrs" type="AstroRoutines.UnitTests.RATests" method="TestG2icrs" time="0.0000909" result="Pass">
+        <output>G2icrs passed: R want 5.9338074302227186152 got 5.9338074302227195034
+G2icrs passed: D want -1.1784870613579945253 got -1.1784870613579945253
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLtpb" type="AstroRoutines.UnitTests.RATests" method="TestLtpb" time="0.0002345" result="Pass">
+        <output>Ltpb passed: rpb11 want 0.99670441677232723965 got 0.99670441677232712863
+Ltpb passed: rpb12 want 0.07437794731203339893 got 0.074377947312033440563
+Ltpb passed: rpb13 want 0.032376326848416257798 got 0.032376326848416285553
+Ltpb passed: rpb21 want -0.074377956634371772404 got -0.074377956634371814038
+Ltpb passed: rpb22 want 0.99722939475000138554 got 0.99722939475000127452
+Ltpb passed: rpb23 want -0.0012057418659112432904 got -0.0012057418659112645407
+Ltpb passed: rpb31 want -0.032376305432246649252 got -0.032376305432246677007
+Ltpb passed: rpb32 want -0.0012063167910764853799 got -0.0012063167910764669485
+Ltpb passed: rpb33 want 0.99947502202224391965 got 0.99947502202224380863
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPvxpv" type="AstroRoutines.UnitTests.RATests" method="TestPvxpv" time="0.0001842" result="Pass">
+        <output>Pvxpv passed: p1 want -1 got -1
+Pvxpv passed: p2 want -5 got -5
+Pvxpv passed: p3 want 4 got 4
+Pvxpv passed: v1 want -2 got -2
+Pvxpv passed: v2 want -36 got -36
+Pvxpv passed: v3 want 22 got 22
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestRxp" type="AstroRoutines.UnitTests.RATests" method="TestRxp" time="0.0000800" result="Pass">
+        <output>Rxp passed: 1 want 5.0999999999999996447 got 5.1000000000000005329
+Rxp passed: 2 want 3.8999999999999999112 got 3.9000000000000003553
+Rxp passed: 3 want 7.0999999999999996447 got 7.0999999999999996447
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2ixys" type="AstroRoutines.UnitTests.RATests" method="TestC2ixys" time="0.0000903" result="Pass">
+        <output>C2ixys passed: 11 want 0.99999983230371569665 got 0.99999983230371569665
+C2ixys passed: 12 want 5.5819848691684989951E-10 got 5.5819848743254851797E-10
+C2ixys passed: 13 want -0.00057913084916112820676 got -0.00057913084916112831518
+C2ixys passed: 21 want -2.3842616426704401739E-08 got -2.3842616436731134399E-08
+C2ixys passed: 22 want 0.99999999919174686891 got 0.99999999919174686891
+C2ixys passed: 23 want -4.0205791101696689157E-05 got -4.0205791101696689157E-05
+C2ixys passed: 31 want 0.00057913084867060109998 got 0.0005791308486706012084
+C2ixys passed: 32 want 4.0205798167329612192E-05 got 4.0205798167329612192E-05
+C2ixys passed: 33 want 0.9999998314954627876 got 0.9999998314954627876
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestGst00b" type="AstroRoutines.UnitTests.RATests" method="TestGst00b" time="0.0000745" result="Pass">
+        <output>Gst00b passed:  want 1.7541661365106806514 got 1.7541661365106768766
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFw2m" type="AstroRoutines.UnitTests.RATests" method="TestFw2m" time="0.0001264" result="Pass">
+        <output>Fw2m passed: 11 want 0.99999955051760069935 got 0.99999955051760069935
+Fw2m passed: 12 want 0.00086954046173481924255 got 0.00086954046173481924255
+Fw2m passed: 13 want 0.00037797352018655825138 got 0.00037797352018655825138
+Fw2m passed: 21 want -0.00086954047237720161721 got -0.00086954047237720161721
+Fw2m passed: 22 want 0.99999962194960267947 got 0.99999962194960267947
+Fw2m passed: 23 want -1.361752496887100123E-07 got -1.3617524957654225659E-07
+Fw2m passed: 31 want -0.0003779734957034082605 got -0.0003779734957034082605
+Fw2m passed: 32 want -1.9248808480876157323E-07 got -1.9248808486027613185E-07
+Fw2m passed: 33 want 0.99999992856799724272 got 0.99999992856799724272
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestUt1tai" type="AstroRoutines.UnitTests.RATests" method="TestUt1tai" time="0.0000766" result="Pass">
+        <output>Ut1tai passed: a1 want 2453750.5 got 2453750.5
+Ut1tai passed: a2 want 0.89248263854629628078 got 0.89248263854629628078
+Ut1tai passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2i00b" type="AstroRoutines.UnitTests.RATests" method="TestC2i00b" time="0.0001096" result="Pass">
+        <output>C2i00b passed: 11 want 0.99999983230409539292 got 0.99999983230409550394
+C2i00b passed: 12 want 5.5815263491318236263E-10 got 5.5815264909941930682E-10
+C2i00b passed: 13 want -0.00057913019348553940527 got -0.00057913019348553940527
+C2i00b passed: 21 want -2.3842392854991756741E-08 got -2.3842392851691762701E-08
+C2i00b passed: 22 want 0.99999999919175741603 got 0.99999999919175730501
+C2i00b passed: 23 want -4.020552974819030013E-05 got -4.0205529748220969499E-05
+C2i00b passed: 31 want 0.00057913019299502086368 got 0.00057913019299502086368
+C2i00b passed: 32 want 4.0205536813737205275E-05 got 4.0205536813767874644E-05
+C2i00b passed: 33 want 0.99999983149585303099 got 0.99999983149585303099
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEceq06" type="AstroRoutines.UnitTests.RATests" method="TestEceq06" time="0.0001014" result="Pass">
+        <output>Eceq06 passed: dr want 5.5334597336136281953 got 5.5334597336136273071
+Eceq06 passed: dd want -1.246542932554480565 got -1.246542932554480787
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEqec06" type="AstroRoutines.UnitTests.RATests" method="TestEqec06" time="0.0000662" result="Pass">
+        <output>Eqec06 passed: dl want 1.3425099189946545497 got 1.3425099189946545497
+Eqec06 passed: db want 0.59262152597046080515 got 0.59262152597046080515
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestBpn2xy" type="AstroRoutines.UnitTests.RATests" method="TestBpn2xy" time="0.0000555" result="Pass">
+        <output>Bpn2xy passed: x want 0.0010934655102154790859 got 0.0010934655102154790859
+Bpn2xy passed: y want -4.2813372290631507939E-05 got -4.2813372290631507939E-05
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLtecm" type="AstroRoutines.UnitTests.RATests" method="TestLtecm" time="0.0000852" result="Pass">
+        <output>Ltecm passed: rm11 want 0.35641056448597890904 got 0.35641056448597902007
+Ltecm passed: rm12 want 0.85305757386176828128 got 0.85305757386176828128
+Ltecm passed: rm13 want 0.38113552077950602071 got 0.38113552077950602071
+Ltecm passed: rm21 want -0.93432834696407096597 got -0.93432834696407096597
+Ltecm passed: rm22 want 0.32478305976817462009 got 0.32478305976817473111
+Ltecm passed: rm23 want 0.14678727515359407674 got 0.14678727515359413225
+Ltecm passed: rm31 want 0.0014316361912011677654 got 0.0014316361912011686328
+Ltecm passed: rm32 want -0.40842225669605991545 got -0.40842225669605997096
+Ltecm passed: rm33 want 0.91279198651890314231 got 0.91279198651890314231
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAticq" type="AstroRoutines.UnitTests.RATests" method="TestAticq" time="0.0001631" result="Pass">
+        <output>Aticq passed: rc want 2.7101265045317166624 got 2.7101265045317166624
+Aticq passed: dc want 0.17406325376270345706 got 0.17406325376270345706
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestS2p" type="AstroRoutines.UnitTests.RATests" method="TestS2p" time="0.0000682" result="Pass">
+        <output>S2p passed: x want -0.45149646738801652024 got -0.45149646738801652024
+S2p passed: y want 0.030933942773425867484 got 0.030933942773425853606
+S2p passed: z want 0.055946681051087791825 got 0.055946681051087791825
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestNum06a" type="AstroRoutines.UnitTests.RATests" method="TestNum06a" time="0.0001661" result="Pass">
+        <output>Num06a passed: 11 want 0.99999999995362276461 got 0.99999999995362276461
+Num06a passed: 12 want 8.8362419981115350546E-06 got 8.8362419981123651469E-06
+Num06a passed: 13 want 3.8308346084152875406E-06 got 3.8308346084156483767E-06
+Num06a passed: 21 want -8.8360863348707403034E-06 got -8.8360863348715720897E-06
+Num06a passed: 22 want 0.99999999913546577801 got 0.99999999913546577801
+Num06a passed: 23 want -4.0632401882484552621E-05 got -4.0632401882456647968E-05
+Num06a passed: 31 want -3.8311936428393980766E-06 got -3.8311936428397589126E-06
+Num06a passed: 32 want 4.0632368031014795692E-05 got 4.063236803097947103E-05
+Num06a passed: 33 want 0.9999999991671663091 got 0.99999999916716642012
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPrec76" type="AstroRoutines.UnitTests.RATests" method="TestPrec76" time="0.0000482" result="Pass">
+        <output>Prec76 passed: zeta want 0.0055889616420001612951 got 0.0055889616420001612951
+Prec76 passed: z want 0.0055899223658706807469 got 0.0055899223658706807469
+Prec76 passed: theta want 0.004858945471687296791 got 0.0048589454716872959236
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestP2s" type="AstroRoutines.UnitTests.RATests" method="TestP2s" time="0.0000624" result="Pass">
+        <output>P2s passed: theta want -0.46364760900080609352 got -0.46364760900080609352
+P2s passed: phi want 0.21998797739545944419 got 0.21998797739545944419
+P2s passed: r want 114.56439237389599839 got 114.56439237389599839
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPvm" type="AstroRoutines.UnitTests.RATests" method="TestPvm" time="0.0000669" result="Pass">
+        <output>Pvm passed: r want 2.7892651361962705892 got 2.7892651361962705892
+Pvm passed: s want 1.2144957801491118587 got 1.2144957801491118587
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2teqx" type="AstroRoutines.UnitTests.RATests" method="TestC2teqx" time="0.0001302" result="Pass">
+        <output>C2teqx passed: 11 want -0.18103321285286858022 got -0.18103321285286855247
+C2teqx passed: 12 want 0.9834769806897685207 got 0.98347698068976840968
+C2teqx passed: 13 want 6.5555356399826350045E-05 got 6.5555356399826350045E-05
+C2teqx passed: 21 want -0.98347681340952108897 got -0.98347681340952108897
+C2teqx passed: 22 want -0.18103322038710237263 got -0.18103322038710240038
+C2teqx passed: 23 want 0.00057498011161264393244 got 0.00057498011161264393244
+C2teqx passed: 31 want 0.00057734740140815397642 got 0.00057734740140815397642
+C2teqx passed: 32 want 3.9618323917686407599E-05 got 3.9618323917686407599E-05
+C2teqx passed: 33 want 0.9999998325501692209 got 0.9999998325501692209
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPn00" type="AstroRoutines.UnitTests.RATests" method="TestPn00" time="0.0003355" result="Pass">
+        <output>Pn00 passed: epsa want 0.409079178940423005 got 0.409079178940423005
+Pn00 passed: rb11 want 0.99999999999999422684 got 0.99999999999999422684
+Pn00 passed: rb12 want -7.078279744199196694E-08 got -7.0782797441991980175E-08
+Pn00 passed: rb13 want 8.0562171469761337802E-08 got 8.0562171469761337802E-08
+Pn00 passed: rb21 want 7.0782794778573375197E-08 got 7.0782794778573375197E-08
+Pn00 passed: rb22 want 0.9999999999999970024 got 0.99999999999999689138
+Pn00 passed: rb23 want 3.3060414542221364117E-08 got 3.3060414542221364117E-08
+Pn00 passed: rb31 want -8.0562173809869716745E-08 got -8.0562173809869716745E-08
+Pn00 passed: rb32 want -3.3060408839805523418E-08 got -3.3060408839805516801E-08
+Pn00 passed: rb33 want 0.99999999999999622524 got 0.99999999999999622524
+Pn00 passed: rp11 want 0.99999893005322892936 got 0.99999893005322892936
+Pn00 passed: rp12 want -0.001341647226791824318 got -0.0013416472267918238843
+Pn00 passed: rp13 want -0.00058298809271902960697 got -0.00058298809271902949855
+Pn00 passed: rp21 want 0.0013416472310697590952 got 0.0013416472310697584447
+Pn00 passed: rp22 want 0.99999909999087499557 got 0.99999909999087488455
+Pn00 passed: rp23 want -3.8374444415837154437E-07 got -3.837444441778292676E-07
+Pn00 passed: rp31 want 0.00058298808287409581951 got 0.00058298808287409571108
+Pn00 passed: rp32 want -3.9842032677088347583E-07 got -3.9842032673043092927E-07
+Pn00 passed: rp33 want 0.99999983006235382277 got 0.99999983006235371175
+Pn00 passed: rbp11 want 0.99999893000522444009 got 0.99999893000522432907
+Pn00 passed: rbp12 want -0.0013417179902397036867 got -0.001341717990239703253
+Pn00 passed: rbp13 want -0.00058290757498916838733 got -0.00058290757498916827891
+Pn00 passed: rbp21 want 0.0013417180138317399973 got 0.0013417180138317393468
+Pn00 passed: rbp22 want 0.99999909989591917459 got 0.99999909989591884152
+Pn00 passed: rbp23 want -3.5057597335654211785E-07 got -3.5057597337599989401E-07
+Pn00 passed: rbp31 want 0.00058290752068577175553 got 0.00058290752068577175553
+Pn00 passed: rbp32 want -4.3152199551986088571E-07 got -4.3152199547940833916E-07
+Pn00 passed: rbp33 want 0.99999983010930360017 got 0.99999983010930360017
+Pn00 passed: rn11 want 0.99999999995360699945 got 0.99999999995360699945
+Pn00 passed: rn12 want 8.8377461448721404772E-06 got 8.8377461448721404772E-06
+Pn00 passed: rn13 want 3.8314888382525903398E-06 got 3.8314888382525903398E-06
+Pn00 passed: rn21 want -8.8375904566331977787E-06 got -8.8375904566331977787E-06
+Pn00 passed: rn22 want 0.9999999991354692197 got 0.99999999913546933072
+Pn00 passed: rn23 want -4.0631987985595737617E-05 got -4.0631987985539907982E-05
+Pn00 passed: rn31 want -3.8318479301353282365E-06 got -3.8318479301353282365E-06
+Pn00 passed: rn32 want 4.0631954122581504375E-05 got 4.0631954122571922738E-05
+Pn00 passed: rn33 want 0.99999999916718063098 got 0.99999999916718063098
+Pn00 passed: rbpn11 want 0.9999989440499982285 got 0.9999989440499982285
+Pn00 passed: rbpn12 want -0.0013328802536408483875 got -0.0013328802536408479538
+Pn00 passed: rbpn13 want -0.00057907608987310872119 got -0.00057907608987310861277
+Pn00 passed: rbpn21 want 0.0013328567469799487005 got 0.00133285674697994805
+Pn00 passed: rbpn22 want 0.9999991109064768624 got 0.99999911090647675138
+Pn00 passed: rbpn23 want -4.0977405557230638371E-05 got -4.0977405557194263388E-05
+Pn00 passed: rbpn31 want 0.00057913019299502053842 got 0.00057913019299502043
+Pn00 passed: rbpn32 want 4.0205536813737029092E-05 got 4.020553681376788142E-05
+Pn00 passed: rbpn33 want 0.99999983149585303099 got 0.99999983149585291997
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFk524" type="AstroRoutines.UnitTests.RATests" method="TestFk524" time="0.0000782" result="Pass">
+        <output>Fk524 passed: r1950 want 0.86363596597996039606 got 0.86363596597996039606
+Fk524 passed: d1950 want -0.75502817331608429452 got -0.75502817331608429452
+Fk524 passed: dr1950 want 2.0236281927471725241E-05 got 2.0236281927471725241E-05
+Fk524 passed: dd1950 want 3.6244597549353345427E-06 got 3.6244597549353370838E-06
+Fk524 passed: p1950 want 0.15600799632993903043 got 0.15600799632993905819
+Fk524 passed: v1950 want 86.796063534691640484 got 86.796063534691654695
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestP2pv" type="AstroRoutines.UnitTests.RATests" method="TestP2pv" time="0.0001282" result="Pass">
+        <output>P2pv passed: p1 want 0.25 got 0.25
+P2pv passed: p2 want 1.1999999999999999556 got 1.1999999999999999556
+P2pv passed: p3 want 3 got 3
+P2pv passed: v1 want 0 got 0
+P2pv passed: v2 want 0 got 0
+P2pv passed: v3 want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFalp03" type="AstroRoutines.UnitTests.RATests" method="TestFalp03" time="0.0000324" result="Pass">
+        <output>Falp03 passed:  want 6.2267979735055076773 got 6.22679797350553077
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEform" type="AstroRoutines.UnitTests.RATests" method="TestEform" time="0.0000772" result="Pass">
+        <output>Eform passed: j0 want -1 got -1
+Eform passed: j1 want 0 got 0
+Eform passed: a1 want 6378137 got 6378137
+Eform passed: f1 want 0.0033528106647474809239 got 0.0033528106647474804902
+Eform passed: j2 want 0 got 0
+Eform passed: a2 want 6378137 got 6378137
+Eform passed: f2 want 0.0033528106811823187895 got 0.0033528106811823187895
+Eform passed: j3 want 0 got 0
+Eform passed: a3 want 6378135 got 6378135
+Eform passed: f3 want 0.0033527794541675049952 got 0.0033527794541675049952
+Eform passed: j4 want -1 got -1
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestSeps" type="AstroRoutines.UnitTests.RATests" method="TestSeps" time="0.0000286" result="Pass">
+        <output>Seps passed:  want 2.3467220169969986721 got 2.3467220169969991161
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTpors" type="AstroRoutines.UnitTests.RATests" method="TestTpors" time="0.0001268" result="Pass">
+        <output>Tpors passed: az1 want 1.736621577783208803 got 1.736621577783208803
+Tpors passed: bz1 want 1.4367365618440903763 got 1.4367365618440903763
+Tpors passed: az2 want 4.0049710758065844018 got 4.0049710758065844018
+Tpors passed: bz2 want 1.5650840884764178895 got 1.5650840884764178895
+Tpors passed: n want 2 got 2
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestDat" type="AstroRoutines.UnitTests.RATests" method="TestDat" time="0.0000589" result="Pass">
+        <output>Dat passed: d1 want 32 got 32
+Dat passed: j1 want 0 got 0
+Dat passed: d2 want 33 got 33
+Dat passed: j2 want 0 got 0
+Dat passed: d3 want 37 got 37
+Dat passed: j3 want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPv2p" type="AstroRoutines.UnitTests.RATests" method="TestPv2p" time="0.0000892" result="Pass">
+        <output>Pv2p passed: 1 want 0.2999999999999999889 got 0.2999999999999999889
+Pv2p passed: 2 want 1.1999999999999999556 got 1.1999999999999999556
+Pv2p passed: 3 want -2.5 got -2.5
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFaom03" type="AstroRoutines.UnitTests.RATests" method="TestFaom03" time="0.0000276" result="Pass">
+        <output>Faom03 passed:  want -5.9736184409513022331 got -5.9736184409513013449
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestLtp" type="AstroRoutines.UnitTests.RATests" method="TestLtp" time="0.0000881" result="Pass">
+        <output>Ltp passed: rp11 want 0.9967044141159213666 got 0.9967044141159213666
+Ltp passed: rp12 want 0.074378018931932105007 got 0.07437801893193214664
+Ltp passed: rp13 want 0.032376244093456033046 got 0.032376244093456060802
+Ltp passed: rp21 want -0.074378027318196177076 got -0.074378027318196218709
+Ltp passed: rp22 want 0.99722938944545336248 got 0.99722938944545325146
+Ltp passed: rp23 want -0.0012057688427235932396 got -0.0012057688427236147068
+Ltp passed: rp31 want -0.032376224827665757433 got -0.03237622482766577825
+Ltp passed: rp32 want -0.0012062860396976089056 got -0.001206286039697590691
+Ltp passed: rp33 want 0.99947502467040105767 got 0.99947502467040105767
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2ibpn" type="AstroRoutines.UnitTests.RATests" method="TestC2ibpn" time="0.0001192" result="Pass">
+        <output>C2ibpn passed: 11 want 0.9999994021664090349 got 0.9999994021664090349
+C2ibpn passed: 12 want -3.8691959480175038661E-09 got -3.8691959358683192249E-09
+C2ibpn passed: 13 want -0.0010934655113832851721 got -0.0010934655113832849552
+C2ibpn passed: 21 want 5.0684139657154458599E-08 got 5.0684139649148640672E-08
+C2ibpn passed: 22 want 0.9999999990835075625 got 0.9999999990835075625
+C2ibpn passed: 23 want 4.2813342464527092085E-05 got 4.2813342464527078533E-05
+C2ibpn passed: 31 want 0.0010934655102154790859 got 0.0010934655102154790859
+C2ibpn passed: 32 want -4.2813372290631507939E-05 got -4.2813372290631501163E-05
+C2ibpn passed: 33 want 0.99999940124991726353 got 0.99999940124991726353
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPn00b" type="AstroRoutines.UnitTests.RATests" method="TestPn00b" time="0.0003738" result="Pass">
+        <output>Pn00b passed: dpsi want -9.6325522911483634836E-06 got -9.6325522911483177439E-06
+Pn00b passed: deps want 4.0631971066211590318E-05 got 4.0631971066211617423E-05
+Pn00b passed: epsa want 0.409079178940423005 got 0.409079178940423005
+Pn00b passed: rb11 want 0.99999999999999422684 got 0.99999999999999422684
+Pn00b passed: rb12 want -7.078279744199196694E-08 got -7.0782797441991980175E-08
+Pn00b passed: rb13 want 8.0562171469761337802E-08 got 8.0562171469761337802E-08
+Pn00b passed: rb21 want 7.0782794778573375197E-08 got 7.0782794778573375197E-08
+Pn00b passed: rb22 want 0.9999999999999970024 got 0.99999999999999689138
+Pn00b passed: rb23 want 3.3060414542221364117E-08 got 3.3060414542221364117E-08
+Pn00b passed: rb31 want -8.0562173809869716745E-08 got -8.0562173809869716745E-08
+Pn00b passed: rb32 want -3.3060408839805523418E-08 got -3.3060408839805516801E-08
+Pn00b passed: rb33 want 0.99999999999999622524 got 0.99999999999999622524
+Pn00b passed: rp11 want 0.99999893005322892936 got 0.99999893005322892936
+Pn00b passed: rp12 want -0.001341647226791824318 got -0.0013416472267918238843
+Pn00b passed: rp13 want -0.00058298809271902960697 got -0.00058298809271902949855
+Pn00b passed: rp21 want 0.0013416472310697590952 got 0.0013416472310697584447
+Pn00b passed: rp22 want 0.99999909999087499557 got 0.99999909999087488455
+Pn00b passed: rp23 want -3.8374444415837154437E-07 got -3.837444441778292676E-07
+Pn00b passed: rp31 want 0.00058298808287409581951 got 0.00058298808287409571108
+Pn00b passed: rp32 want -3.9842032677088347583E-07 got -3.9842032673043092927E-07
+Pn00b passed: rp33 want 0.99999983006235382277 got 0.99999983006235371175
+Pn00b passed: rbp11 want 0.99999893000522444009 got 0.99999893000522432907
+Pn00b passed: rbp12 want -0.0013417179902397036867 got -0.001341717990239703253
+Pn00b passed: rbp13 want -0.00058290757498916838733 got -0.00058290757498916827891
+Pn00b passed: rbp21 want 0.0013417180138317399973 got 0.0013417180138317393468
+Pn00b passed: rbp22 want 0.99999909989591917459 got 0.99999909989591884152
+Pn00b passed: rbp23 want -3.5057597335654211785E-07 got -3.5057597337599989401E-07
+Pn00b passed: rbp31 want 0.00058290752068577175553 got 0.00058290752068577175553
+Pn00b passed: rbp32 want -4.3152199551986088571E-07 got -4.3152199547940833916E-07
+Pn00b passed: rbp33 want 0.99999983010930360017 got 0.99999983010930360017
+Pn00b passed: rn11 want 0.99999999995360699945 got 0.99999999995360699945
+Pn00b passed: rn12 want 8.8377461448712477045E-06 got 8.8377461448712070469E-06
+Pn00b passed: rn13 want 3.8314888382522032458E-06 got 3.8314888382521854581E-06
+Pn00b passed: rn21 want -8.837590456632305006E-06 got -8.8375904566322626544E-06
+Pn00b passed: rn22 want 0.9999999991354692197 got 0.99999999913546933072
+Pn00b passed: rn23 want -4.06319879855959138E-05 got -4.0631987985539907982E-05
+Pn00b passed: rn31 want -3.8318479301349411424E-06 got -3.8318479301349233547E-06
+Pn00b passed: rn32 want 4.0631954122581680558E-05 got 4.0631954122571922738E-05
+Pn00b passed: rn33 want 0.99999999916718063098 got 0.99999999916718063098
+Pn00b passed: rbpn11 want 0.9999989440499982285 got 0.9999989440499982285
+Pn00b passed: rbpn12 want -0.0013328802536408492548 got -0.0013328802536408488211
+Pn00b passed: rbpn13 want -0.00057907608987310915487 got -0.00057907608987310904645
+Pn00b passed: rbpn21 want 0.0013328567469799495679 got 0.0013328567469799491342
+Pn00b passed: rbpn22 want 0.9999991109064768624 got 0.99999911090647675138
+Pn00b passed: rbpn23 want -4.097740555723082133E-05 got -4.0977405557194263388E-05
+Pn00b passed: rbpn31 want 0.00057913019299502086368 got 0.00057913019299502086368
+Pn00b passed: rbpn32 want 4.0205536813737205275E-05 got 4.020553681376788142E-05
+Pn00b passed: rbpn33 want 0.99999983149585303099 got 0.99999983149585291997
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestNut06a" type="AstroRoutines.UnitTests.RATests" method="TestNut06a" time="0.0001048" result="Pass">
+        <output>Nut06a passed: dpsi want -9.6309120258203093551E-06 got -9.6309120258212139863E-06
+Nut06a passed: deps want 4.0632384968872501177E-05 got 4.0632384968872358876E-05
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestCal2jd" type="AstroRoutines.UnitTests.RATests" method="TestCal2jd" time="0.0000392" result="Pass">
+        <output>Cal2jd passed: djm0 want 2400000.5 got 2400000.5
+Cal2jd passed: djm want 52791 got 52791
+Cal2jd passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAper" type="AstroRoutines.UnitTests.RATests" method="TestAper" time="0.0000417" result="Pass">
+        <output>Aper passed: eral want 6.9119999999999999218 got 6.9119999999999999218
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestApcs13" type="AstroRoutines.UnitTests.RATests" method="TestApcs13" time="0.0002511" result="Pass">
+        <output>Apcs13 passed: pmt want 12.651337940273785776 got 12.651337940273785776
+Apcs13 passed: eb(1) want 0.90126915290252507251 got 0.90126915290252707091
+Apcs13 passed: eb(2) want -0.41739998120231941447 got -0.4173999812023055922
+Apcs13 passed: eb(3) want -0.18099065111464296418 got -0.18099065111463696898
+Apcs13 passed: eh(1) want 0.89399391017601304021 got 0.89399391017601936849
+Apcs13 passed: eh(2) want -0.41110538917340216925 got -0.41110538917339056741
+Apcs13 passed: eh(3) want -0.17823368806369974116 got -0.1782336880636947174
+Apcs13 passed: em want 1.0104283843734911397 got 1.0104283843734862547
+Apcs13 passed: v(1) want 4.2798772941216977738E-05 got 4.2798772941216455966E-05
+Apcs13 passed: v(2) want 7.9632550870521208583E-05 got 7.9632550870521845551E-05
+Apcs13 passed: v(3) want 3.5175640133846918347E-05 got 3.5175640133847189397E-05
+Apcs13 passed: bm1 want 0.99999999529479810523 got 0.99999999529479810523
+Apcs13 passed: bpn(1,1) want 1 got 1
+Apcs13 passed: bpn(1,2) want 0 got 0
+Apcs13 passed: bpn(1,3) want 0 got 0
+Apcs13 passed: bpn(2,1) want 0 got 0
+Apcs13 passed: bpn(2,2) want 1 got 1
+Apcs13 passed: bpn(2,3) want 0 got 0
+Apcs13 passed: bpn(3,1) want 0 got 0
+Apcs13 passed: bpn(3,2) want 0 got 0
+Apcs13 passed: bpn(3,3) want 1 got 1
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTpstv" type="AstroRoutines.UnitTests.RATests" method="TestTpstv" time="0.0001222" result="Pass">
+        <output>Tpstv passed: x want 0.021700304549073765742 got 0.021700304549073793497
+Tpstv passed: y want 0.02060909590535367486 got 0.020609095905353657513
+Tpstv passed: z want 0.99955208065835232656 got 0.9995520806583525486
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPvstar" type="AstroRoutines.UnitTests.RATests" method="TestPvstar" time="0.0000894" result="Pass">
+        <output>Pvstar passed: ra want 0.016867560000000000192 got 0.016867560000000000192
+Pvstar passed: dec want -1.0939898279999999975 got -1.0939898279999999975
+Pvstar passed: pmr want -1.7832351600004727626E-05 got -1.7832351600004727626E-05
+Pvstar passed: pmd want 2.3360240470006194383E-06 got 2.3360240470006194383E-06
+Pvstar passed: px want 0.7472299999999999498 got 0.7472299999999999498
+Pvstar passed: rv want -21.600000101073060677 got -21.600000101073050018
+Pvstar passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEo06a" type="AstroRoutines.UnitTests.RATests" method="TestEo06a" time="0.0001307" result="Pass">
+        <output>Eo06a passed:  want -0.0013328823719418337462 got -0.0013328823719418330957
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTcgtt" type="AstroRoutines.UnitTests.RATests" method="TestTcgtt" time="0.0000779" result="Pass">
+        <output>Tcgtt passed: t1 want 2453750.5 got 2453750.5
+Tcgtt passed: t2 want 0.89285513874888167152 got 0.89285513874888167152
+Tcgtt passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestC2t06a" type="AstroRoutines.UnitTests.RATests" method="TestC2t06a" time="0.0001983" result="Pass">
+        <output>C2t06a passed: 11 want -0.18103321283058973479 got -0.18103321283058609881
+C2t06a passed: 12 want 0.98347698069385924846 got 0.98347698069385980357
+C2t06a passed: 13 want 6.5555509629984363594E-05 got 6.5555509629904363026E-05
+C2t06a passed: 21 want -0.98347681341362147567 got -0.98347681341362203078
+C2t06a passed: 22 want -0.18103322036491309444 got -0.18103322036490948621
+C2t06a passed: 23 want 0.00057498008449055940626 got 0.00057498008449057382615
+C2t06a passed: 31 want 0.00057734740247485463217 got 0.00057734740247485441533
+C2t06a passed: 32 want 3.9618168296326906203E-05 got 3.9618168296406052961E-05
+C2t06a passed: 33 want 0.99999983255017477202 got 0.99999983255017477202
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTrxpv" type="AstroRoutines.UnitTests.RATests" method="TestTrxpv" time="0.0001023" result="Pass">
+        <output>Trxpv passed: p1 want 5.2000000000000001776 got 5.2000000000000001776
+Trxpv passed: p1 want 4 got 4
+Trxpv passed: p1 want 5.4000000000000003553 got 5.4000000000000003553
+Trxpv passed: v1 want 3.8999999999999999112 got 3.9000000000000003553
+Trxpv passed: v2 want 5.2999999999999998224 got 5.3000000000000007105
+Trxpv passed: v3 want 4.0999999999999996447 got 4.0999999999999996447
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEe00b" type="AstroRoutines.UnitTests.RATests" method="TestEe00b" time="0.0000401" result="Pass">
+        <output>Ee00b passed:  want -8.8357000600030321266E-06 got -8.835700060002991469E-06
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestHd2pa" type="AstroRoutines.UnitTests.RATests" method="TestHd2pa" time="0.0000626" result="Pass">
+        <output>Hd2pa passed: q want 1.9062274280019955164 got 1.9062274280019955164
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEcm06" type="AstroRoutines.UnitTests.RATests" method="TestEcm06" time="0.0000864" result="Pass">
+        <output>Ecm06 passed: rm11 want 0.99999524277087015189 got 0.99999524277087015189
+Ecm06 passed: rm12 want -0.002829062057663042553 got -0.0028290620576630421193
+Ecm06 passed: rm13 want -0.0012291637411000176389 got -0.0012291637411000176389
+Ecm06 passed: rm21 want 0.003084546876908653406 got 0.003084546876908653406
+Ecm06 passed: rm22 want 0.91748918715503924304 got 0.91748918715503924304
+Ecm06 passed: rm23 want 0.39774876118493379673 got 0.39774876118493385224
+Ecm06 passed: rm31 want 2.4885129515274059627E-06 got 2.4885129515275338646E-06
+Ecm06 passed: rm32 want -0.39775066041611956136 got -0.39775066041611961687
+Ecm06 passed: rm33 want 0.91749354882328626459 got 0.91749354882328637562
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTdbtcb" type="AstroRoutines.UnitTests.RATests" method="TestTdbtcb" time="0.0000738" result="Pass">
+        <output>Tdbtcb passed: b1 want 2453750.5 got 2453750.5
+Tdbtcb passed: b2 want 0.8930195997253657092 got 0.89301959972536559818
+Tdbtcb passed: j want 0 got 0
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPr00" type="AstroRoutines.UnitTests.RATests" method="TestPr00" time="0.0000407" result="Pass">
+        <output>Pr00 passed: dpsipr want -8.7164651726683479862E-08 got -8.7164651726683479862E-08
+Pr00 passed: depspr want -7.3420183867228128894E-09 got -7.3420183867228120622E-09
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtciq" type="AstroRoutines.UnitTests.RATests" method="TestAtciq" time="0.0001569" result="Pass">
+        <output>Atciq passed: ri want 2.7101215729686969347 got 2.7101215729686969347
+Atciq passed: di want 0.17293713672195390463 got 0.17293713672195396014
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFk45z" type="AstroRoutines.UnitTests.RATests" method="TestFk45z" time="0.0003416" result="Pass">
+        <output>Fk45z passed: r2000 want 0.027192959116068622649 got 0.027192959116068622649
+Fk45z passed: d2000 want -0.11157660015659269515 got -0.11157660015659269515
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestNum00b" type="AstroRoutines.UnitTests.RATests" method="TestNum00b" time="0.0001520" result="Pass">
+        <output>Num00b passed: 11 want 0.99999999995360699945 got 0.99999999995360699945
+Num00b passed: 12 want 8.8377461448712477045E-06 got 8.8377461448712070469E-06
+Num00b passed: 13 want 3.8314888382522032458E-06 got 3.8314888382521854581E-06
+Num00b passed: 21 want -8.837590456632305006E-06 got -8.8375904566322626544E-06
+Num00b passed: 22 want 0.9999999991354692197 got 0.99999999913546933072
+Num00b passed: 23 want -4.06319879855959138E-05 got -4.0631987985539907982E-05
+Num00b passed: 31 want -3.8318479301349411424E-06 got -3.8318479301349233547E-06
+Num00b passed: 32 want 4.0631954122581680558E-05 got 4.0631954122571922738E-05
+Num00b passed: 33 want 0.99999999916718063098 got 0.99999999916718063098
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestEqeq94" type="AstroRoutines.UnitTests.RATests" method="TestEqeq94" time="0.0000468" result="Pass">
+        <output>Eqeq94 passed:  want 5.3577582546092567277E-05 got 5.3577582546091489851E-05
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPfw06" type="AstroRoutines.UnitTests.RATests" method="TestPfw06" time="0.0000452" result="Pass">
+        <output>Pfw06 passed: gamb want -2.2433876709979957565E-06 got -2.2433876709979919448E-06
+Pfw06 passed: phib want 0.4091014602391312982 got 0.4091014602391312982
+Pfw06 passed: psib want -0.00095019541780130313546 got -0.00095019541780130150916
+Pfw06 passed: epsa want 0.4091014316587367472 got 0.4091014316587367472
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestCpv" type="AstroRoutines.UnitTests.RATests" method="TestCpv" time="0.0000786" result="Pass">
+        <output>Cpv passed: p1 want 0.2999999999999999889 got 0.2999999999999999889
+Cpv passed: p2 want 1.1999999999999999556 got 1.1999999999999999556
+Cpv passed: p3 want -2.5 got -2.5
+Cpv passed: v1 want -0.5 got -0.5
+Cpv passed: v2 want 3.1000000000000000888 got 3.1000000000000000888
+Cpv passed: v3 want 0.9000000000000000222 got 0.9000000000000000222
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestTpsts" type="AstroRoutines.UnitTests.RATests" method="TestTpsts" time="0.0000733" result="Pass">
+        <output>Tpsts passed: ra want 0.75961271673596297838 got 0.75961271673596231224
+Tpsts passed: dec want 1.5408646451092631313 got 1.5408646451092631313
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestAtccq" type="AstroRoutines.UnitTests.RATests" method="TestAtccq" time="0.0001621" result="Pass">
+        <output>Atccq passed: ra want 2.7101265045313724933 got 2.7101265045313724933
+Atccq passed: da want 0.17406325376283501849 got 0.17406325376283499073
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestFasa03" type="AstroRoutines.UnitTests.RATests" method="TestFasa03" time="0.0000269" result="Pass">
+        <output>Fasa03 passed:  want 5.3715745394408269675 got 5.3715745394408287439
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestPn06a" type="AstroRoutines.UnitTests.RATests" method="TestPn06a" time="0.0004311" result="Pass">
+        <output>Pn06a passed: dpsi want -9.6309120258203093551E-06 got -9.6309120258212139863E-06
+Pn06a passed: deps want 4.0632384968872501177E-05 got 4.0632384968872358876E-05
+Pn06a passed: epsa want 0.40907897633565099005 got 0.40907897633565104556
+Pn06a passed: rb11 want 0.99999999999999422684 got 0.99999999999999411582
+Pn06a passed: rb12 want -7.0783689609715574511E-08 got -7.0783689609715561276E-08
+Pn06a passed: rb13 want 8.0562139776131860839E-08 got 8.0562139776131860839E-08
+Pn06a passed: rb21 want 7.0783686946376749448E-08 got 7.0783686946376762683E-08
+Pn06a passed: rb22 want 0.9999999999999970024 got 0.99999999999999689138
+Pn06a passed: rb23 want 3.3059437429891338317E-08 got 3.3059437354321374869E-08
+Pn06a passed: rb31 want -8.0562142116200561582E-08 got -8.0562142116200574817E-08
+Pn06a passed: rb32 want -3.3059431727405868863E-08 got -3.3059431692183949281E-08
+Pn06a passed: rb33 want 0.99999999999999622524 got 0.99999999999999622524
+Pn06a passed: rp11 want 0.99999893005368545307 got 0.99999893005368523102
+Pn06a passed: rp12 want -0.0013416468862044437539 got -0.0013416468862044437539
+Pn06a passed: rp13 want -0.00058298809334886281513 got -0.00058298809334886292355
+Pn06a passed: rp21 want 0.0013416468905697821398 got 0.0013416468905697821398
+Pn06a passed: rp22 want 0.99999909999133196337 got 0.99999909999133196337
+Pn06a passed: rp23 want -3.8359442163744772599E-07 got -3.8359442172701939552E-07
+Pn06a passed: rp31 want 0.00058298808330278675642 got 0.000582988083302786648
+Pn06a passed: rp32 want -3.9857015146869760149E-07 got -3.9857015143348130673E-07
+Pn06a passed: rp33 want 0.9999998300623534897 got 0.9999998300623534897
+Pn06a passed: rbp11 want 0.99999893000567974255 got 0.99999893000567974255
+Pn06a passed: rbp12 want -0.0013417176505450595283 got -0.0013417176505450597451
+Pn06a passed: rbp13 want -0.00058290757564937291726 got -0.00058290757564937291726
+Pn06a passed: rbp21 want 0.0013417176742239180984 got 0.0013417176742239180984
+Pn06a passed: rbp22 want 0.99999909989637481011 got 0.99999909989637492114
+Pn06a passed: rbp23 want -3.5042692801700690821E-07 got -3.5042692814180043115E-07
+Pn06a passed: rbp31 want 0.00058290752114614546517 got 0.00058290752114614557359
+Pn06a passed: rbp32 want -4.3167084362559491141E-07 got -4.3167084351480866644E-07
+Pn06a passed: rbp33 want 0.9999998301093032671 got 0.9999998301093032671
+Pn06a passed: rn11 want 0.99999999995362276461 got 0.99999999995362276461
+Pn06a passed: rn12 want 8.8362419981115350546E-06 got 8.8362419981121720233E-06
+Pn06a passed: rn13 want 3.8308346084152875406E-06 got 3.8308346084154959107E-06
+Pn06a passed: rn21 want -8.8360863348707403034E-06 got -8.8360863348714213178E-06
+Pn06a passed: rn22 want 0.99999999913546577801 got 0.99999999913546577801
+Pn06a passed: rn23 want -4.0632401882484552621E-05 got -4.0632401882375163398E-05
+Pn06a passed: rn31 want -3.8311936428393980766E-06 got -3.8311936428397572185E-06
+Pn06a passed: rn32 want 4.0632368031014795692E-05 got 4.063236803096915078E-05
+Pn06a passed: rn33 want 0.9999999991671663091 got 0.99999999916716642012
+Pn06a passed: rbpn11 want 0.99999894404806699555 got 0.99999894404806699555
+Pn06a passed: rbpn12 want -0.0013328814180919160755 got -0.001332881418091915425
+Pn06a passed: rbpn13 want -0.00057907674476120429667 got -0.00057907674476120397141
+Pn06a passed: rbpn21 want 0.0013328579112509891715 got 0.0013328579112509887378
+Pn06a passed: rbpn22 want 0.9999991109049142235 got 0.9999991109049142235
+Pn06a passed: rbpn23 want -4.0977671285467849951E-05 got -4.0977671285469252638E-05
+Pn06a passed: rbpn31 want 0.00057913084828352921502 got 0.0005791308482835291066
+Pn06a passed: rbpn32 want 4.0205800994540205108E-05 got 4.020580099461934509E-05
+Pn06a passed: rbpn33 want 0.99999983149546289862 got 0.99999983149546300965
+
+</output>
+        <traits />
+      </test>
+      <test name="AstroRoutines.UnitTests.RATests.TestRefco" type="AstroRoutines.UnitTests.RATests" method="TestRefco" time="0.0000412" result="Pass">
+        <output>Refco passed: refa want 0.00022649499562414149778 got 0.00022649499562414149778
+Refco passed: refb want -2.5986582617293438558E-07 got -2.5986582617293438558E-07
+
+</output>
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
