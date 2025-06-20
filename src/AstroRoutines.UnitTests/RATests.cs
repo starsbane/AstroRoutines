@@ -45,7 +45,7 @@ namespace AstroRoutines.UnitTests
             }
         }
 
-#if DEBUG
+#if VERBOSE
         private static readonly bool verbose = true;
 #else
         private static readonly bool verbose = false;
