@@ -21,7 +21,7 @@ namespace AstroRoutines.UnitTests
 			b[1] = 3.0;
 			b[2] = 4.0;
 
-            Ppp(a, b, apb);
+            Ppp(a, b, ref apb);
 
             Vvd(apb[0], 3.0, 1e-12, "Ppp", "0", ref status);
             Vvd(apb[1], 5.0, 1e-12, "Ppp", "1", ref status);

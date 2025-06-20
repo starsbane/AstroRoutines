@@ -15,7 +15,7 @@ namespace AstroRoutines.UnitTests
             var sp = -0.1367174580728891460e-10;
             var rpom = new double[3, 3];
 
-            Pom00(xp, yp, sp, rpom);
+            Pom00(xp, yp, sp, ref rpom);
 
             Vvd(rpom[0, 0], 0.9999999999999674721, 1e-12, "Pom00", "11", ref status);
             Vvd(rpom[0, 1], -0.1367174580728846989e-10, 1e-16, "Pom00", "12", ref status);
