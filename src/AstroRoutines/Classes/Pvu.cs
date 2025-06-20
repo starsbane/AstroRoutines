@@ -1,21 +1,22 @@
-namespace AstroRoutines;
-
-public static partial class AR
+namespace AstroRoutines
 {
-    /// <summary>
-    /// Update a pv-vector.
-    /// </summary>
-    /// <param name="dt">Time interval</param>
-    /// <param name="pv">PV-vector</param>
-    /// <param name="upv">Updated PV-vector</param>
-    public static void Pvu(double dt, double[,] pv, ref double[,] upv)
+    public static partial class AR
     {
-        var upvRow0 = new double[3];
-        Ppsp(pv.GetRow(0), dt, pv.GetRow(1), out upvRow0);
-        upv.SetRow(0, upvRow0);
+        /// <summary>
+        /// Update a pv-vector.
+        /// </summary>
+        /// <param name="dt">Time interval</param>
+        /// <param name="pv">PV-vector</param>
+        /// <param name="upv">Updated PV-vector</param>
+        public static void Pvu(double dt, double[,] pv, ref double[,] upv)
+        {
+            var upvRow0 = new double[3];
+            Ppsp(pv.GetRow(0), dt, pv.GetRow(1), out upvRow0);
+            upv.SetRow(0, upvRow0);
 
-        var upvRow1 = new double[3];
-        Cp(pv.GetRow(1), ref upvRow1);
-        upv.SetRow(1, upvRow1);
+            var upvRow1 = new double[3];
+            Cp(pv.GetRow(1), ref upvRow1);
+            upv.SetRow(1, upvRow1);
+        }
     }
 }

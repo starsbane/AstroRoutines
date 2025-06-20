@@ -1,3 +1,6 @@
+using System;
+using static System.Math;
+
 namespace AstroRoutines
 {
     public static class Constants

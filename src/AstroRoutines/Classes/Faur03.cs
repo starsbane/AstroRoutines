@@ -1,19 +1,22 @@
-namespace AstroRoutines;
+using static AstroRoutines.Constants;
 
-public static partial class AR
+namespace AstroRoutines
 {
-    /// <summary>
-    /// Fundamental argument, IERS Conventions (2003): mean longitude of Uranus.
-    /// </summary>
-    /// <param name="t">TDB, Julian centuries since J2000.0</param>
-    /// <returns>Mean longitude of Uranus, radians</returns>
-    public static double Faur03(double t)
+    public static partial class AR
     {
-        double a;
+        /// <summary>
+        /// Fundamental argument, IERS Conventions (2003): mean longitude of Uranus.
+        /// </summary>
+        /// <param name="t">TDB, Julian centuries since J2000.0</param>
+        /// <returns>Mean longitude of Uranus, radians</returns>
+        public static double Faur03(double t)
+        {
+            double a;
 
-        /* Mean longitude of Uranus (IERS Conventions 2003). */
-        a = (5.481293872 + 7.4781598567 * t) % D2PI;
+            /* Mean longitude of Uranus (IERS Conventions 2003). */
+            a = (5.481293872 + 7.4781598567 * t) % D2PI;
 
-        return a;
+            return a;
+        }
     }
 }

@@ -27,6 +27,12 @@ namespace AstroRoutines.UnitTests
 
             Apci13(date1, date2, ref astrom, out eo);
 
+            // resolve NullReferenceException
+            for (var i = 0; i < b.Length; i++)
+            {
+                b[i] = new LDBODY();
+            }
+
             b[0].bm = 0.00028574;
             b[0].dl = 3e-10;
             b[0].pv = new double[2, 3];

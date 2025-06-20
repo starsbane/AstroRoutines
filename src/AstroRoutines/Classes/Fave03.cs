@@ -1,19 +1,22 @@
-namespace AstroRoutines;
+using static AstroRoutines.Constants;
 
-public static partial class AR
+namespace AstroRoutines
 {
-    /// <summary>
-    /// Fundamental argument, IERS Conventions (2003): mean longitude of Venus.
-    /// </summary>
-    /// <param name="t">TDB, Julian centuries since J2000.0</param>
-    /// <returns>Mean longitude of Venus, radians</returns>
-    public static double Fave03(double t)
+    public static partial class AR
     {
-        double a;
+        /// <summary>
+        /// Fundamental argument, IERS Conventions (2003): mean longitude of Venus.
+        /// </summary>
+        /// <param name="t">TDB, Julian centuries since J2000.0</param>
+        /// <returns>Mean longitude of Venus, radians</returns>
+        public static double Fave03(double t)
+        {
+            double a;
 
-        /* Mean longitude of Venus (IERS Conventions 2003). */
-        a = (3.176146697 + 1021.3285546211 * t) % D2PI;
+            /* Mean longitude of Venus (IERS Conventions 2003). */
+            a = (3.176146697 + 1021.3285546211 * t) % D2PI;
 
-        return a;
+            return a;
+        }
     }
 }

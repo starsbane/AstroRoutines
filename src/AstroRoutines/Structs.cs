@@ -1,7 +1,7 @@
 namespace AstroRoutines.Structs
 {
     /* Star-independent astrometry parameters */
-    public struct ASTROM
+    public class ASTROM
     {
         public double pmt;        /* PM time interval (SSB, Julian years) */
         public double[] eb;       /* SSB to observer (vector, au) */
@@ -44,7 +44,7 @@ namespace AstroRoutines.Structs
     }
 
     /* Body parameters for light deflection */
-    public struct LDBODY
+    public class LDBODY
     {
         public double bm;         /* mass of the body (solar masses) */
         public double dl;         /* deflection limiter (radians^2/2) */

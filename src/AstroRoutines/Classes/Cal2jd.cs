@@ -1,5 +1,7 @@
 // Cal2jd.cs
 
+using static AstroRoutines.Constants;
+
 namespace AstroRoutines
 {
     public static partial class AR

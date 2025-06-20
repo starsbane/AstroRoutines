@@ -1,3 +1,5 @@
+using static System.Math;
+
 namespace AstroRoutines
 {
     public static partial class AR
