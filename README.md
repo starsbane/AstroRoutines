@@ -1,7 +1,7 @@
 # AstroRoutines
 An unoffical .NET Core clone of C Library of the Standards of Fundamental Astronomy (SOFA) software libraries from International Astronomical Union (IAU), provides a collection of subroutines that implement official IAU algorithms for astronomical computations.
 
-This package is based on SOFA ANSI C Release 19 (2023-10-11) and distributed under GPLv3 license. 
+This package is based on SOFA ANSI C Release 19 (2023-10-11) and distributed under Apache-2.0 license. 
 
 
 Please refer to https://www.iausofa.org/ for details regarding the SOFA releases.
