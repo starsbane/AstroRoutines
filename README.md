@@ -4,7 +4,9 @@ An unoffical .NET Standard 2.0 clone of C Library of the Standards of Fundamenta
 This package is based on SOFA ANSI C Release 19 (2023-10-11) and distributed under Apache-2.0 license and SOFA. 
 Please refer to https://www.iausofa.org/ for details regarding the SOFA releases.
 
-This package is also available in NuGet: (https://www.nuget.org/packages/AstroRoutines/).
+## Packages
+[![Static Badge](https://img.shields.io/nuget/v/AstroRoutines.svg)](https://www.nuget.org/packages/AstroRoutines/)
+
 
 ## Features
 - Native managed C# implementation
