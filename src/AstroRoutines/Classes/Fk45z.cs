@@ -70,7 +70,7 @@ public static partial class AR
 		Pvu(w, pv, ref pv);
 
         /* Revert to spherical coordinates. */
-        C2s(p, out w, out d2000);
+        C2s(pv.GetRow(0), out w, out d2000);
         r2000 = Anp(w);
     }
 }
