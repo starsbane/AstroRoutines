@@ -1,5 +1,3 @@
-using AstroRoutines.Structs;
-
 namespace AstroRoutines
 {
     public static partial class AR

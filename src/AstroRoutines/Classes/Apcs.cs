@@ -1,5 +1,3 @@
-using AstroRoutines.Structs;
-
 using static System.Math;
 using static AstroRoutines.Constants;
 

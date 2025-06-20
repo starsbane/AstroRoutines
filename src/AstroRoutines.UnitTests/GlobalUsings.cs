@@ -1,7 +1,6 @@
 global using System;
 global using Xunit;
 global using AstroRoutines;
-global using AstroRoutines.Structs;
 
 global using static System.Math;
 global using static AstroRoutines.AR;
