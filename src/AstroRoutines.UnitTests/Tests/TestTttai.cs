@@ -11,9 +11,8 @@ namespace AstroRoutines.UnitTests
             var status = 0;
 
             double a1 = 0, a2 = 0;
-            int j;
 
-            j = Tttai(2453750.5, 0.892482639, ref a1, ref a2);
+            var j = Tttai(2453750.5, 0.892482639, ref a1, ref a2);
 
             Vvd(a1, 2453750.5, 1e-6, "Tttai", "a1", ref status);
             Vvd(a2, 0.892110139, 1e-12, "Tttai", "a2", ref status);

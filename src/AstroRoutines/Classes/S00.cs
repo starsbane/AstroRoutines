@@ -23,19 +23,17 @@ namespace AstroRoutines
 		public static double S00(double date1, double date2, double x, double y)
 		{
 			/* Time since J2000.0, in Julian centuries */
-			double t;
 
-			/* Miscellaneous */
+            /* Miscellaneous */
 			int i, j;
-			double a, w0, w1, w2, w3, w4, w5;
+			double a;
 
 			/* Fundamental arguments */
 			var fa = new double[8];
 
 			/* Returned value */
-			double s;
 
-			/* Polynomial coefficients */
+            /* Polynomial coefficients */
 			double[] sp = {
 				/* 1-6 */
 					94.00e-6,
@@ -147,11 +145,11 @@ namespace AstroRoutines
 				new S00_TERM() { nfa = new[] { 0,  0,  0,  0,  1,  0,  0,  0}, s = -0.26e-6, c = -0.01e-6 }
 			};
 
-			/* Interval between fundamental epoch J2000.0 and current date (JC). */
-			t = ((date1 - DJ00) + date2) / DJC;
+            /* Interval between fundamental epoch J2000.0 and current date (JC). */
+            var t = ((date1 - DJ00) + date2) / DJC;
 
-			/* Fundamental Arguments (from IERS Conventions 2003) */
-			fa[0] = Fal03(t);
+            /* Fundamental Arguments (from IERS Conventions 2003) */
+            fa[0] = Fal03(t);
 			fa[1] = Falp03(t);
 			fa[2] = Faf03(t);
 			fa[3] = Fad03(t);
@@ -160,13 +158,13 @@ namespace AstroRoutines
 			fa[6] = Fae03(t);
 			fa[7] = Fapa03(t);
 
-			/* Evaluate s. */
-			w0 = sp[0];
-			w1 = sp[1];
-			w2 = sp[2];
-			w3 = sp[3];
-			w4 = sp[4];
-			w5 = sp[5];
+            /* Evaluate s. */
+            var w0 = sp[0];
+			var w1 = sp[1];
+			var w2 = sp[2];
+			var w3 = sp[3];
+			var w4 = sp[4];
+			var w5 = sp[5];
 
 			for (i = s0.Length - 1; i >= 0; i--) {
 				a = 0.0;
@@ -208,12 +206,12 @@ namespace AstroRoutines
 				w4 += s4[i].s * Sin(a) + s4[i].c * Cos(a);
 			}
 
-			s = (w0 +
-				(w1 +
-				(w2 +
-				(w3 +
-				(w4 +
-				 w5 * t) * t) * t) * t) * t) * DAS2R - x*y/2.0;
+			var s = (w0 +
+                     (w1 +
+                      (w2 +
+                       (w3 +
+                        (w4 +
+                         w5 * t) * t) * t) * t) * t) * DAS2R - x*y/2.0;
 
 			return s;
 		}

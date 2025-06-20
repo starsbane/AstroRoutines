@@ -31,7 +31,6 @@ namespace AstroRoutines
                                double refa, double refb, ref ASTROM astrom)
         {
             var r = new double[3, 3];
-            double a, b, eral, c;
             var pvc = new double[2, 3];
             var pv = new double[2, 3];
 
@@ -43,14 +42,14 @@ namespace AstroRoutines
             Rz(elong, ref r);
 
             /* Solve for local Earth rotation angle. */
-            a = r[0, 0];
-            b = r[0, 1];
-            eral = (a != 0.0 || b != 0.0) ? Atan2(b, a) : 0.0;
+            var a = r[0, 0];
+            var b = r[0, 1];
+            var eral = (a != 0.0 || b != 0.0) ? Atan2(b, a) : 0.0;
             astrom.eral = eral;
 
             /* Solve for polar motion [X,Y] with respect to local meridian. */
             a = r[0, 0];
-            c = r[0, 2];
+            var c = r[0, 2];
             astrom.xpl = Atan2(c, Sqrt(a * a + b * b));
             a = r[1, 2];
             b = r[2, 2];

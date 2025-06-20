@@ -13,17 +13,16 @@ namespace AstroRoutines
         public static double Sepp(double[] a, double[] b)
         {
             var axb = new double[3];
-            double ss, cs, s;
 
             /* Sine of angle between the vectors, multiplied by the two moduli. */
             Pxp(a, b, ref axb);
-            ss = Pm(axb);
+            var ss = Pm(axb);
 
             /* Cosine of the angle, multiplied by the two moduli. */
-            cs = Pdp(a, b);
+            var cs = Pdp(a, b);
 
             /* The angle. */
-            s = ((ss != 0.0) || (cs != 0.0)) ? Math.Atan2(ss, cs) : 0.0;
+            var s = ((ss != 0.0) || (cs != 0.0)) ? Math.Atan2(ss, cs) : 0.0;
 
             return s;
         }

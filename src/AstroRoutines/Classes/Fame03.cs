@@ -11,10 +11,9 @@ namespace AstroRoutines
         /// <returns>Mean longitude of Mercury, radians</returns>
         public static double Fame03(double t)
         {
-            double a;
-
-            /* Mean longitude of Mercury (IERS Conventions 2003). */
-            a = (4.402608842 + 2608.7903141574 * t) % D2PI;
+            var a =
+                /* Mean longitude of Mercury (IERS Conventions 2003). */
+                (4.402608842 + 2608.7903141574 * t) % D2PI;
 
             return a;
         }

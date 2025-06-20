@@ -40,19 +40,17 @@ namespace AstroRoutines
             rv2 = 0.0;
 
             var pv1 = new double[2, 3];
-            double tl1, dt, r2, rdv, v2, c2mv2, tl2;
             var pv = new double[2, 3];
             var pv2 = new double[2, 3];
-            int j1, j2, j;
 
             /* RA,Dec etc. at the "before" epoch to space motion pv-vector. */
-            j1 = Starpv(ra1, dec1, pmr1, pmd1, px1, rv1, ref pv1);
+            var j1 = Starpv(ra1, dec1, pmr1, pmd1, px1, rv1, ref pv1);
 
             /* Light time when observed (days). */
-            tl1 = Pm(pv1.GetRow(0)) / DC;
+            var tl1 = Pm(pv1.GetRow(0)) / DC;
 
             /* Time interval, "before" to "after" (days). */
-            dt = (ep2a - ep1a) + (ep2b - ep1b);
+            var dt = (ep2a - ep1a) + (ep2b - ep1b);
 
             /* Move star along track from the "before" observed position to the */
             /* "after" geometric position. */
@@ -60,22 +58,22 @@ namespace AstroRoutines
 
             /* From this geometric position, deduce the observed light time (days) */
             /* at the "after" epoch (with theoretically unneccessary error check). */
-            r2 = Pdp(pv.GetRow(0), pv.GetRow(0));
-            rdv = Pdp(pv.GetRow(0), pv.GetRow(1));
-            v2 = Pdp(pv.GetRow(1), pv.GetRow(1));
-            c2mv2 = DC * DC - v2;
+            var r2 = Pdp(pv.GetRow(0), pv.GetRow(0));
+            var rdv = Pdp(pv.GetRow(0), pv.GetRow(1));
+            var v2 = Pdp(pv.GetRow(1), pv.GetRow(1));
+            var c2mv2 = DC * DC - v2;
             if (c2mv2 <= 0.0) return -1;
-            tl2 = (-rdv + Sqrt(rdv * rdv + c2mv2 * r2)) / c2mv2;
+            var tl2 = (-rdv + Sqrt(rdv * rdv + c2mv2 * r2)) / c2mv2;
 
             /* Move the position along track from the observed place at the */
             /* "before" epoch to the observed place at the "after" epoch. */
             Pvu(dt + (tl1 - tl2), pv1, ref pv2);
 
             /* Space motion pv-vector to RA,Dec etc. at the "after" epoch. */
-            j2 = Pvstar(pv2, out ra2, out dec2, out pmr2, out pmd2, out px2, out rv2);
+            var j2 = Pvstar(pv2, out ra2, out dec2, out pmr2, out pmd2, out px2, out rv2);
 
             /* Final status. */
-            j = (j2 == 0) ? j1 : -1;
+            var j = (j2 == 0) ? j1 : -1;
 
             return j;
         }

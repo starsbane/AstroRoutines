@@ -9,10 +9,9 @@ namespace AstroRoutines.UnitTests
         public void TestLtpecl()
         {
             var status = 0;
-            double epj;
             var vec = new double[3];
 			
-			epj = -1500.0;
+			var epj = -1500.0;
 			
             Ltpecl(epj, ref vec);
 

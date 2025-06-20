@@ -2290,22 +2290,19 @@ namespace AstroRoutines
                   ns2 = { Epv00_s2x.Length / 3, Epv00_s2y.Length / 3, Epv00_s2z.Length / 3 };
 
 			/* Miscellaneous */
-			int jstat, i, j;
-            double t, t2, xyz, xyzd, a, b, c, ct, p, cp,
+			int i, j;
+            double xyz, xyzd, a, b, c, ct, p, cp,
                 ph0 = 0, ph1 = 0, ph2 = 0,
                 vh0 = 0, vh1 = 0, vh2 = 0,
                 pb0 = 0, pb1 = 0, pb2 = 0,
-                vb0 = 0, vb1 = 0, vb2 = 0,
-                x, y, z;
-
+                vb0 = 0, vb1 = 0, vb2 = 0;
             /* ------------------------------------------------------------------ */
-
             /* Time since reference epoch, Julian years. */
-            t = ((date1 - DJ00) + date2) / DJY;
-			t2 = t*t;
+            var t = ((date1 - DJ00) + date2) / DJY;
+			var t2 = t*t;
 
-			/* Set status. */
-			jstat = Abs(t) <= 100.0 ? 0 : 1;
+            /* Set status. */
+            var jstat = Abs(t) <= 100.0 ? 0 : 1;
 
             /* X then Y then Z. */
             for (i = 0; i < 3; i++)
@@ -2426,9 +2423,9 @@ namespace AstroRoutines
             }
 
             /* Rotate from ecliptic to BCRS coordinates. */
-            x = ph0;
-            y = ph1;
-            z = ph2;
+            var x = ph0;
+            var y = ph1;
+            var z = ph2;
             pvh[0, 0] = x + am12 * y + am13 * z;
             pvh[0, 1] = am21 * x + am22 * y + am23 * z;
             pvh[0, 2] = am32 * y + am33 * z;

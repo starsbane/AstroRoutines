@@ -15,10 +15,9 @@ namespace AstroRoutines
         /// <returns>equation of the equinoxes (Note 4)</returns>
         public static double Ee00(double date1, double date2, double epsa, double dpsi)
         {
-            double ee;
-
-            /* Equation of the equinoxes. */
-            ee = dpsi * Cos(epsa) + Eect00(date1, date2);
+            var ee =
+                /* Equation of the equinoxes. */
+                dpsi * Cos(epsa) + Eect00(date1, date2);
 
             return ee;
 

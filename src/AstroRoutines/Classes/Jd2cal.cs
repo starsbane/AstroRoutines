@@ -20,27 +20,27 @@ namespace AstroRoutines
             const double DJMIN = -68569.5;
             const double DJMAX = 1e9;
 
-            long jd, i, l, n, k;
-            double dj, f1, f2, d, s, cs, x, t, f;
+            long i;
+            double x, t;
             var v = new double[2];
             iy = im = id = 0;
             fd = 0;
 
             /* Verify date is acceptable. */
-            dj = dj1 + dj2;
+            var dj = dj1 + dj2;
             if (dj < DJMIN || dj > DJMAX) return -1;
 
             /* Separate day and fraction (where -0.5 <= fraction < 0.5). */
-            d = Round(dj1);
-            f1 = dj1 - d;
-            jd = (long)d;
+            var d = Round(dj1);
+            var f1 = dj1 - d;
+            var jd = (long)d;
             d = Round(dj2);
-            f2 = dj2 - d;
+            var f2 = dj2 - d;
             jd += (long)d;
 
             /* Compute f1+f2+0.5 using compensated summation (Klein 2006). */
-            s = 0.5;
-            cs = 0.0;
+            var s = 0.5;
+            var cs = 0.0;
             v[0] = f1;
             v[1] = f2;
             for (i = 0; i < 2; i++)
@@ -55,7 +55,7 @@ namespace AstroRoutines
                     s -= 1.0;
                 }
             }
-            f = s + cs;
+            var f = s + cs;
             cs = f - s;
 
             /* Deal with negative f. */
@@ -86,12 +86,12 @@ namespace AstroRoutines
             }
 
             /* Express day in Gregorian calendar. */
-            l = jd + 68569L;
-            n = (4L * l) / 146097L;
+            var l = jd + 68569L;
+            var n = (4L * l) / 146097L;
             l -= (146097L * n + 3L) / 4L;
             i = (4000L * (l + 1L)) / 1461001L;
             l -= (1461L * i) / 4L - 31L;
-            k = (80L * l) / 2447L;
+            var k = (80L * l) / 2447L;
             id = (int)(l - (2447L * k) / 80L);
             l = k / 11L;
             im = (int)(k + 2L - 12L * l);

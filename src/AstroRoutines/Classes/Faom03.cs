@@ -11,10 +11,9 @@ namespace AstroRoutines
         /// <returns>Omega, radians</returns>
         public static double Faom03(double t)
         {
-            double a;
-
-            /* Mean longitude of the Moon's ascending node (IERS Conventions 2003). */
-            a = (450160.398036 + t * (-6962890.5431 + t * (7.4722 + t * (0.007702 + t * (-0.00005939))))) % TURNAS * DAS2R;
+            var a =
+                /* Mean longitude of the Moon's ascending node (IERS Conventions 2003). */
+                (450160.398036 + t * (-6962890.5431 + t * (7.4722 + t * (0.007702 + t * (-0.00005939))))) % TURNAS * DAS2R;
 
             return a;
         }

@@ -11,17 +11,15 @@ namespace AstroRoutines
         /// <param name="r">R-matrix, rotated</param>
         public static void Rx(double phi, ref double[,] r)
         {
-            double s, c, a10, a11, a12, a20, a21, a22;
+            var s = Sin(phi);
+            var c = Cos(phi);
 
-            s = Sin(phi);
-            c = Cos(phi);
-
-            a10 = c * r[1, 0] + s * r[2, 0];
-            a11 = c * r[1, 1] + s * r[2, 1];
-            a12 = c * r[1, 2] + s * r[2, 2];
-            a20 = -s * r[1, 0] + c * r[2, 0];
-            a21 = -s * r[1, 1] + c * r[2, 1];
-            a22 = -s * r[1, 2] + c * r[2, 2];
+            var a10 = c * r[1, 0] + s * r[2, 0];
+            var a11 = c * r[1, 1] + s * r[2, 1];
+            var a12 = c * r[1, 2] + s * r[2, 2];
+            var a20 = -s * r[1, 0] + c * r[2, 0];
+            var a21 = -s * r[1, 1] + c * r[2, 1];
+            var a22 = -s * r[1, 2] + c * r[2, 2];
 
             r[1, 0] = a10;
             r[1, 1] = a11;

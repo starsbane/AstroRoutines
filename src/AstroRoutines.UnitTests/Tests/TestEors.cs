@@ -11,7 +11,6 @@ namespace AstroRoutines.UnitTests
             var status = 0;
             var rnpb = new double[3, 3];
             var s = -0.1220040848472271978e-7;
-            double eo;
 
             // Initialize rnpb matrix
             rnpb[0, 0] =  0.9999989440476103608;
@@ -26,7 +25,7 @@ namespace AstroRoutines.UnitTests
             rnpb[2, 1] =  0.4020595661593994396e-4;
             rnpb[2, 2] =  0.9999998314954572365;
 
-            eo = Eors(rnpb, s);
+            var eo = Eors(rnpb, s);
 
             Vvd(eo, -0.1332882715130744606e-2, 1e-14, "Eors", "", ref status);
 

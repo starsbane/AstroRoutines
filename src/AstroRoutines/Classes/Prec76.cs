@@ -18,17 +18,15 @@ namespace AstroRoutines
                                   double date11, double date12,
                                   out double zeta, out double z, out double theta)
         {
-            double t0, t, tas2r, w;
-
             // Interval between fundamental epoch J2000.0 and start date (JC)
-            t0 = ((date01 - DJ00) + date02) / DJC;
+            var t0 = ((date01 - DJ00) + date02) / DJC;
 
             // Interval over which precession required (JC)
-            t = ((date11 - date01) + (date12 - date02)) / DJC;
+            var t = ((date11 - date01) + (date12 - date02)) / DJC;
 
             // Euler angles
-            tas2r = t * DAS2R;
-            w = 2306.2181 + (1.39656 - 0.000139 * t0) * t0;
+            var tas2r = t * DAS2R;
+            var w = 2306.2181 + (1.39656 - 0.000139 * t0) * t0;
 
             zeta = (w + ((0.30188 - 0.000344 * t0) + 0.017998 * t) * t) * tas2r;
 

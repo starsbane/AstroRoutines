@@ -16,19 +16,18 @@ namespace AstroRoutines
         public static void Pfw06(double date1, double date2,
                                 out double gamb, out double phib, out double psib, out double epsa)
         {
-            double t;
-
-            /* Interval between fundamental date J2000.0 and given date (JC). */
-            t = ((date1 - DJ00) + date2) / DJC;
+            var t =
+                /* Interval between fundamental date J2000.0 and given date (JC). */
+                ((date1 - DJ00) + date2) / DJC;
 
             /* P03 bias+precession angles. */
             gamb = (-0.052928 +
-                   (10.556378 +
-                   (0.4932044 +
-                   (-0.00031238 +
-                   (-0.000002788 +
-                   (0.0000000260)
-                   * t) * t) * t) * t) * t) * DAS2R;
+                    (10.556378 +
+                     (0.4932044 +
+                      (-0.00031238 +
+                       (-0.000002788 +
+                        (0.0000000260)
+                        * t) * t) * t) * t) * t) * DAS2R;
             phib = (84381.412819 +
                    (-46.811016 +
                    (0.0511268 +

@@ -1723,10 +1723,8 @@ namespace AstroRoutines
         public static void Nut00a(double date1, double date2, out double dpsi, out double deps)
         {
             int i;
-            double t, el, elp, f, d, om, arg, dp, de, sarg, carg,
-                   al, af, ad, aom, alme, alve, alea, alma,
-                   alju, alsa, alur, alne, apa, dpsils, depsls,
-                   dpsipl, depspl;
+            double arg,
+                sarg, carg;
 
             // Units of 0.1 microarcsecond to radians
             const double U2R = DAS2R / 1e7;
@@ -1739,43 +1737,40 @@ namespace AstroRoutines
 
 
             /* ------------------------------------------------------------------ */
-
             /* Interval between fundamental date J2000.0 and given date (JC). */
-            t = ((date1 - DJ00) + date2) / DJC;
+            var t = ((date1 - DJ00) + date2) / DJC;
 
             /* ------------------- */
             /* LUNI-SOLAR NUTATION */
             /* ------------------- */
-
             /* Fundamental (Delaunay) arguments */
-
             /* Mean anomaly of the Moon (IERS 2003). */
-            el = Fal03(t);
+            var el = Fal03(t);
 
             /* Mean anomaly of the Sun (MHB2000). */
-            elp = (1287104.79305 +
-                     t * (129596581.0481 +
-                     t * (-0.5532 +
-                     t * (0.000136 +
-                     t * (-0.00001149))))) % TURNAS * DAS2R;
+            var elp = (1287104.79305 +
+                       t * (129596581.0481 +
+                            t * (-0.5532 +
+                                 t * (0.000136 +
+                                      t * (-0.00001149))))) % TURNAS * DAS2R;
 
             /* Mean longitude of the Moon minus that of the ascending node */
             /* (IERS 2003). */
-            f = Faf03(t);
+            var f = Faf03(t);
 
             /* Mean elongation of the Moon from the Sun (MHB2000). */
-            d = (1072260.70369 +
-                   t * (1602961601.2090 +
-                   t * (-6.3706 +
-                   t * (0.006593 +
-                   t * (-0.00003169))))) % TURNAS * DAS2R;
+            var d = (1072260.70369 +
+                     t * (1602961601.2090 +
+                          t * (-6.3706 +
+                               t * (0.006593 +
+                                    t * (-0.00003169))))) % TURNAS * DAS2R;
 
             /* Mean longitude of the ascending node of the Moon (IERS 2003). */
-            om = Faom03(t);
+            var om = Faom03(t);
 
             /* Initialize the nutation values. */
-            dp = 0.0;
-            de = 0.0;
+            var dp = 0.0;
+            var de = 0.0;
 
             /* Summation of luni-solar nutation series (in reverse order). */
             for (i = NLS - 1; i >= 0; i--)
@@ -1796,47 +1791,44 @@ namespace AstroRoutines
             }
 
             /* Convert from 0.1 microarcsec units to radians. */
-            dpsils = dp * U2R;
-            depsls = de * U2R;
-
+            var dpsils = dp * U2R;
+            var depsls = de * U2R;
             /* ------------------ */
             /* PLANETARY NUTATION */
             /* ------------------ */
-
             /* n.b.  The MHB2000 code computes the luni-solar and planetary nutation */
             /* in different functions, using slightly different Delaunay */
             /* arguments in the two cases.  This behaviour is faithfully */
             /* reproduced here.  Use of the IERS 2003 expressions for both */
             /* cases leads to negligible changes, well below */
             /* 0.1 microarcsecond. */
-
             /* Mean anomaly of the Moon (MHB2000). */
-            al = (2.35555598 + 8328.6914269554 * t) % D2PI;
+            var al = (2.35555598 + 8328.6914269554 * t) % D2PI;
 
             /* Mean longitude of the Moon minus that of the ascending node */
             /*(MHB2000). */
-            af = (1.627905234 + 8433.466158131 * t) % D2PI;
+            var af = (1.627905234 + 8433.466158131 * t) % D2PI;
 
             /* Mean elongation of the Moon from the Sun (MHB2000). */
-            ad = (5.198466741 + 7771.3771468121 * t) % D2PI;
+            var ad = (5.198466741 + 7771.3771468121 * t) % D2PI;
 
             /* Mean longitude of the ascending node of the Moon (MHB2000). */
-            aom = (2.18243920 - 33.757045 * t) % D2PI;
+            var aom = (2.18243920 - 33.757045 * t) % D2PI;
 
             /* General accumulated precession in longitude (IERS 2003). */
-            apa = Fapa03(t);
+            var apa = Fapa03(t);
 
             /* Planetary longitudes, Mercury through Uranus (IERS 2003). */
-            alme = Fame03(t);
-            alve = Fave03(t);
-            alea = Fae03(t);
-            alma = Fama03(t);
-            alju = Faju03(t);
-            alsa = Fasa03(t);
-            alur = Faur03(t);
+            var alme = Fame03(t);
+            var alve = Fave03(t);
+            var alea = Fae03(t);
+            var alma = Fama03(t);
+            var alju = Faju03(t);
+            var alsa = Fasa03(t);
+            var alur = Faur03(t);
 
             /* Neptune longitude (MHB2000). */
-            alne = (5.321159000 + 3.8127774000 * t) % D2PI;
+            var alne = (5.321159000 + 3.8127774000 * t) % D2PI;
 
             /* Initialize the nutation values. */
             dp = 0.0;
@@ -1870,13 +1862,11 @@ namespace AstroRoutines
             }
 
             /* Convert from 0.1 microarcsec units to radians. */
-            dpsipl = dp * U2R;
-            depspl = de * U2R;
-
+            var dpsipl = dp * U2R;
+            var depspl = de * U2R;
             /* ------- */
             /* RESULTS */
             /* ------- */
-
             /* Add luni-solar and planetary components. */
             dpsi = dpsils + dpsipl;
             deps = depsls + depspl;

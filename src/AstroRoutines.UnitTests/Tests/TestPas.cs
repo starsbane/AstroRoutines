@@ -9,13 +9,12 @@ namespace AstroRoutines.UnitTests
         public void TestPas()
         {
             var status = 0;
-            double al, ap, bl, bp, theta;
-			al =  1.0;
-			ap =  0.1;
-			bl =  0.2;
-			bp = -1.0;
+            var al = 1.0;
+			var ap = 0.1;
+			var bl = 0.2;
+			var bp = -1.0;
 
-            theta = Pas(al, ap, bl, bp);
+            var theta = Pas(al, ap, bl, bp);
 
             Vvd(theta, -2.724544922932270424, 1e-12, "Pas", "", ref status);
 

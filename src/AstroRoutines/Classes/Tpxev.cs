@@ -24,19 +24,18 @@ namespace AstroRoutines
         {
             const double TINY = 1e-6;
             int j;
-            double x, y, z, x0, y0, z0, r2, r, w, d;
 
             // Star and tangent point
-            x = v[0];
-            y = v[1];
-            z = v[2];
-            x0 = v0[0];
-            y0 = v0[1];
-            z0 = v0[2];
+            var x = v[0];
+            var y = v[1];
+            var z = v[2];
+            var x0 = v0[0];
+            var y0 = v0[1];
+            var z0 = v0[2];
 
             // Deal with polar case
-            r2 = x0 * x0 + y0 * y0;
-            r = Sqrt(r2);
+            var r2 = x0 * x0 + y0 * y0;
+            var r = Sqrt(r2);
             if (r == 0.0)
             {
                 r = 1e-20;
@@ -44,8 +43,8 @@ namespace AstroRoutines
             }
 
             // Reciprocal of star vector length to tangent plane
-            w = x * x0 + y * y0;
-            d = w + z * z0;
+            var w = x * x0 + y * y0;
+            var d = w + z * z0;
 
             // Check for error cases
             if (d > TINY)

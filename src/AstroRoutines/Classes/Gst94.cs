@@ -11,11 +11,9 @@ namespace AstroRoutines
         /// <returns>Greenwich apparent sidereal time (radians)</returns>
         public static double Gst94(double uta, double utb)
         {
-            double gmst82, eqeq94, gst;
-
-            gmst82 = Gmst82(uta, utb);
-            eqeq94 = Eqeq94(uta, utb);
-            gst = Anp(gmst82 + eqeq94);
+            var gmst82 = Gmst82(uta, utb);
+            var eqeq94 = Eqeq94(uta, utb);
+            var gst = Anp(gmst82 + eqeq94);
 
             return gst;
 

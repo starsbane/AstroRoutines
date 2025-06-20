@@ -21,8 +21,6 @@ namespace AstroRoutines
         public static double Dtdb(double date1, double date2,
             double ut, double elong, double u, double v)
         {
-            double t, tsol, w, elsun, emsun, d, elj, els, wt, w0, w1, w2, w3, w4,
-                   wf, wj;
             int j;
 
             /* Fairhead et al. model coefficients */
@@ -904,76 +902,76 @@ namespace AstroRoutines
             };
 
             /* Time since J2000.0 in Julian millennia. */
-            t = ((date1 - DJ00) + date2) / DJM;
+            var t = ((date1 - DJ00) + date2) / DJM;
 
             /* Convert UT to local solar time in radians. */
-            tsol = (ut % 1.0) * D2PI + elong;
+            var tsol = (ut % 1.0) * D2PI + elong;
 
             /* FUNDAMENTAL ARGUMENTS:  Simon et al. 1994. */
-            w = t / 3600.0;
+            var w = t / 3600.0;
 
             /* Sun Mean Longitude (use modulus without sign adjustment) */
-            elsun = (280.46645683 + 1296027711.03429 * w) % 360.0 * DD2R;
+            var elsun = (280.46645683 + 1296027711.03429 * w) % 360.0 * DD2R;
 
             /* Sun Mean Anomaly */
-            emsun = (357.52910918 + 1295965810.481 * w) % 360.0 * DD2R;
+            var emsun = (357.52910918 + 1295965810.481 * w) % 360.0 * DD2R;
 
             /* Mean Elongation of Moon from Sun */
-            d = (297.85019547 + 16029616012.090 * w) % 360.0 * DD2R;
+            var d = (297.85019547 + 16029616012.090 * w) % 360.0 * DD2R;
 
             /* Mean Longitude of Jupiter */
-            elj = (34.35151874 + 109306899.89453 * w) % 360.0 * DD2R;
+            var elj = (34.35151874 + 109306899.89453 * w) % 360.0 * DD2R;
 
             /* Mean Longitude of Saturn */
-            els = (50.07744430 + 44046398.47038 * w) % 360.0 * DD2R;
+            var els = (50.07744430 + 44046398.47038 * w) % 360.0 * DD2R;
 
             /* TOPOCENTRIC TERMS:  Moyer 1981 and Murray 1983. */
-            wt =   +  0.00029e-10 * u * Sin(tsol + elsun - els)
-                   +  0.00100e-10 * u * Sin(tsol - 2.0 * emsun)
-                   +  0.00133e-10 * u * Sin(tsol - d)
-                   +  0.00133e-10 * u * Sin(tsol + elsun - elj)
-                   -  0.00229e-10 * u * Sin(tsol + 2.0 * elsun + emsun)
-                   -  0.02200e-10 * v * Cos(elsun + emsun)
-                   +  0.05312e-10 * u * Sin(tsol - emsun)
-                   -  0.13677e-10 * u * Sin(tsol + 2.0 * elsun)
-                   -  1.31840e-10 * v * Cos(elsun)
-                   +  3.17679e-10 * u * Sin(tsol);
+            var wt = +  0.00029e-10 * u * Sin(tsol + elsun - els)
+                     +  0.00100e-10 * u * Sin(tsol - 2.0 * emsun)
+                     +  0.00133e-10 * u * Sin(tsol - d)
+                     +  0.00133e-10 * u * Sin(tsol + elsun - elj)
+                     -  0.00229e-10 * u * Sin(tsol + 2.0 * elsun + emsun)
+                     -  0.02200e-10 * v * Cos(elsun + emsun)
+                     +  0.05312e-10 * u * Sin(tsol - emsun)
+                     -  0.13677e-10 * u * Sin(tsol + 2.0 * elsun)
+                     -  1.31840e-10 * v * Cos(elsun)
+                     +  3.17679e-10 * u * Sin(tsol);
 
             /* Fairhead et al. model */
-            w0 = 0;
+            double w0 = 0;
             for (j = 473; j >= 0; j--) {
                w0 += fairhd[j, 0] * Sin(fairhd[j, 1] * t + fairhd[j, 2]);
             }
 
-            w1 = 0;
+            double w1 = 0;
             for (j = 678; j >= 474; j--) {
                w1 += fairhd[j, 0] * Sin(fairhd[j, 1] * t + fairhd[j, 2]);
             }
 
-            w2 = 0;
+            double w2 = 0;
             for (j = 763; j >= 679; j--) {
                w2 += fairhd[j, 0] * Sin(fairhd[j, 1] * t + fairhd[j, 2]);
             }
 
-            w3 = 0;
+            double w3 = 0;
             for (j = 783; j >= 764; j--) {
                w3 += fairhd[j, 0] * Sin(fairhd[j, 1] * t + fairhd[j, 2]);
             }
 
-            w4 = 0;
+            double w4 = 0;
             for (j = 786; j >= 784; j--) {
                w4 += fairhd[j, 0] * Sin(fairhd[j, 1] * t + fairhd[j, 2]);
             }
 
             /* Multiply by powers of T and combine */
-            wf = t * (t * (t * (t * w4 + w3) + w2) + w1) + w0;
+            var wf = t * (t * (t * (t * w4 + w3) + w2) + w1) + w0;
 
             /* Adjustments for JPL planetary masses */
-            wj =   0.00065e-6 * Sin(6069.776754 * t + 4.021194)
-                 + 0.00033e-6 * Sin(213.299095 * t + 5.543132)
-                 - 0.00196e-6 * Sin(6208.294251 * t + 5.696701)
-                 - 0.00173e-6 * Sin(74.781599 * t + 2.435900)
-                 + 0.03638e-6 * t * t;
+            var wj = 0.00065e-6 * Sin(6069.776754 * t + 4.021194)
+                     + 0.00033e-6 * Sin(213.299095 * t + 5.543132)
+                     - 0.00196e-6 * Sin(6208.294251 * t + 5.696701)
+                     - 0.00173e-6 * Sin(74.781599 * t + 2.435900)
+                     + 0.03638e-6 * t * t;
 
             /* TDB-TT in seconds */
             return wt + wf + wj;

@@ -11,9 +11,8 @@ namespace AstroRoutines.UnitTests
             var status = 0;
             var a = new double[3];
             var b = new double[3];
-            double theta;
-			
-			a[0] =  1.0;
+
+            a[0] =  1.0;
 			a[1] =  0.1;
 			a[2] =  0.2;
 
@@ -21,7 +20,7 @@ namespace AstroRoutines.UnitTests
 			b[1] = 1e-3;
 			b[2] =  0.2;
 			
-            theta = Pap(a, b);
+            var theta = Pap(a, b);
 
             Vvd(theta, 0.3671514267841113674, 1e-12, "Pap", "", ref status);
 

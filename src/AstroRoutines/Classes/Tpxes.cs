@@ -27,19 +27,18 @@ namespace AstroRoutines
         {
             const double TINY = 1e-6;
             int j;
-            double sb0, sb, cb0, cb, da, sda, cda, d;
 
             // Functions of the spherical coordinates
-            sb0 = Sin(b0);
-            sb = Sin(b);
-            cb0 = Cos(b0);
-            cb = Cos(b);
-            da = a - a0;
-            sda = Sin(da);
-            cda = Cos(da);
+            var sb0 = Sin(b0);
+            var sb = Sin(b);
+            var cb0 = Cos(b0);
+            var cb = Cos(b);
+            var da = a - a0;
+            var sda = Sin(da);
+            var cda = Cos(da);
 
             // Reciprocal of star vector length to tangent plane
-            d = sb * sb0 + cb * cb0 * cda;
+            var d = sb * sb0 + cb * cb0 * cda;
 
             // Check for error cases
             if (d > TINY)

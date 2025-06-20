@@ -14,7 +14,6 @@ namespace AstroRoutines.UnitTests
             var status = 0;
             var pnat = new double[3];
             var v = new double[3];
-            double s, bm1;
             var ppr = new double[3];
 
             pnat[0] = -0.76321968546737951;
@@ -23,8 +22,8 @@ namespace AstroRoutines.UnitTests
             v[0] =  2.1044018893653786e-5;
             v[1] = -8.9108923304429319e-5;
             v[2] = -3.8633714797716569e-5;
-            s = 0.99980921395708788;
-            bm1 = 0.99999999506209258;
+            var s = 0.99980921395708788;
+            var bm1 = 0.99999999506209258;
 
             Ab(pnat, v, s, bm1, ref ppr);
 

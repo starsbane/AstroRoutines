@@ -21,8 +21,6 @@ namespace AstroRoutines
         /// -3 = bad day    (JD computed)</returns>
         public static int Cal2jd(int iy, int im, int id, out double djm0, out double djm)
         {
-            int j, ly, my;
-            long iypmy;
             djm0 = 0;
             djm = 0;
 
@@ -33,21 +31,21 @@ namespace AstroRoutines
             int[] mtab = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
             /* Preset status. */
-            j = 0;
+            var j = 0;
 
             /* Validate year and month. */
             if (iy < IYMIN) return -1;
             if (im < 1 || im > 12) return -2;
 
             /* If February in a leap year, 1, otherwise 0. */
-            ly = ((im == 2) && (iy % 4 == 0) && (iy % 100 != 0 || iy % 400 == 0)) ? 1 : 0;
+            var ly = ((im == 2) && (iy % 4 == 0) && (iy % 100 != 0 || iy % 400 == 0)) ? 1 : 0;
 
             /* Validate day, taking into account leap years. */
             if ((id < 1) || (id > (mtab[im - 1] + ly))) j = -3;
 
             /* Return result. */
-            my = (im - 14) / 12;
-            iypmy = (long)(iy + my);
+            var my = (im - 14) / 12;
+            var iypmy = (long)(iy + my);
             djm0 = DJM0;
             djm = (double)((1461L * (iypmy + 4800L)) / 4L
                           + (367L * (long)(im - 2 - 12 * my)) / 12L

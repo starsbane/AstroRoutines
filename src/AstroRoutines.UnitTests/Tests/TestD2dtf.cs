@@ -10,10 +10,10 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
             var ihmsf = new int[4];
-            int j, iy = 0, im = 0, id = 0;
+            int iy = 0, im = 0, id = 0;
 
             // Call the D2dtf function with test values
-            j = D2dtf("UTC", 5, 2400000.5, 49533.99999, ref iy, ref im, ref id, ref ihmsf);
+            var j = D2dtf("UTC", 5, 2400000.5, 49533.99999, ref iy, ref im, ref id, ref ihmsf);
 
             // Check the year
             Viv(iy, 1994, "D2dtf", "y", ref status);

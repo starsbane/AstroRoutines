@@ -14,13 +14,12 @@ namespace AstroRoutines
         public static double Gst06a(double uta, double utb, double tta, double ttb)
         {
             var rnpb = new double[3, 3];
-            double gst;
 
             /* Classical nutation x precession x bias matrix, IAU 2000A. */
             Pnm06a(tta, ttb, ref rnpb);
 
             /* Greenwich apparent sidereal time. */
-            gst = Gst06(uta, utb, tta, ttb, rnpb);
+            var gst = Gst06(uta, utb, tta, ttb, rnpb);
 
             return gst;
 

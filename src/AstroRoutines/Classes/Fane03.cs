@@ -11,10 +11,9 @@ namespace AstroRoutines
         /// <returns>Mean longitude of Neptune, radians</returns>
         public static double Fane03(double t)
         {
-            double a;
-
-            /* Mean longitude of Neptune (IERS Conventions 2003). */
-            a = (5.311886287 + 3.8133035638 * t) % D2PI;
+            var a =
+                /* Mean longitude of Neptune (IERS Conventions 2003). */
+                (5.311886287 + 3.8133035638 * t) % D2PI;
 
             return a;
         }

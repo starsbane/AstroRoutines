@@ -10,16 +10,14 @@ namespace AstroRoutines
         /// <param name="adb">Dot product result</param>
         public static void Pvdpv(double[,] a, double[,] b, ref double[] adb)
         {
-            double adbd, addb;
-
             // a . b = constant part of result
             adb[0] = Pdp(a.GetRow(0), b.GetRow(0));
 
             // a . bdot
-            adbd = Pdp(a.GetRow(0), b.GetRow(1));
+            var adbd = Pdp(a.GetRow(0), b.GetRow(1));
 
             // adot . b
-            addb = Pdp(a.GetRow(1), b.GetRow(0));
+            var addb = Pdp(a.GetRow(1), b.GetRow(0));
 
             // Velocity part of result
             adb[1] = adbd + addb;

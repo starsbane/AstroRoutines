@@ -11,10 +11,9 @@ namespace AstroRoutines
         /// <returns>Mean longitude of Earth, radians</returns>
         public static double Fae03(double t)
         {
-            double a;
-
-            /* Mean longitude of Earth (IERS Conventions 2003). */
-            a = (1.753470314 + 628.3075849991 * t) % D2PI;
+            var a =
+                /* Mean longitude of Earth (IERS Conventions 2003). */
+                (1.753470314 + 628.3075849991 * t) % D2PI;
 
             return a;
         }

@@ -11,7 +11,6 @@ namespace AstroRoutines.UnitTests
             var status = 0;
             var p = new double[3];
             var e = new double[3];
-			double em;
             var p1 = new double[3];
 
 			p[0] = -0.763276255;
@@ -20,7 +19,7 @@ namespace AstroRoutines.UnitTests
 			e[0] = -0.973644023;
 			e[1] = -0.20925523;
 			e[2] = -0.0907169552;
-			em = 0.999809214;
+			var em = 0.999809214;
 			
             Ldsun(p, e, em, ref p1);
 

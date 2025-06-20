@@ -9,15 +9,12 @@ namespace AstroRoutines.UnitTests
         public void TestLd()
         {
             var status = 0;
-            double bm;
             var p = new double[3];
             var q = new double[3];
             var e = new double[3];
-            double em;
-            double dlim;
             var p1 = new double[3];
 			
-			bm = 0.00028574;
+			var bm = 0.00028574;
 			p[0] = -0.763276255;
 			p[1] = -0.608633767;
 			p[2] = -0.216735543;
@@ -27,8 +24,8 @@ namespace AstroRoutines.UnitTests
 			e[0] = 0.76700421;
 			e[1] = 0.605629598;
 			e[2] = 0.211937094;
-			em = 8.91276983;
-			dlim = 3e-10;
+			var em = 8.91276983;
+			var dlim = 3e-10;
 
             Ld(bm, p, q, e, em, dlim, ref p1);
 

@@ -18,7 +18,7 @@ namespace AstroRoutines
         /// <returns>status: 0 = OK, -1 = illegal f, -2 = illegal a</returns>
         public static int Gc2gde(double a, double f, double[] xyz, out double elong, out double phi, out double height)
         {
-            double aeps2, e2, e4t, ec2, ec, b, x, y, z, p2, absz, p, s0, pn, zc,
+            double p, s0, pn, zc,
                           c0, c02, c03, s02, s03, a02, a0, a03, d0, f0, b0, s1,
                           cc, s12, cc2;
             phi = height = elong = 0;
@@ -32,27 +32,27 @@ namespace AstroRoutines
             if (a <= 0.0) return -2;
 
             /* Functions of ellipsoid parameters (with further validation of f). */
-            aeps2 = a * a * 1e-32;
-            e2 = (2.0 - f) * f;
-            e4t = e2 * e2 * 1.5;
-            ec2 = 1.0 - e2;
+            var aeps2 = a * a * 1e-32;
+            var e2 = (2.0 - f) * f;
+            var e4t = e2 * e2 * 1.5;
+            var ec2 = 1.0 - e2;
             if (ec2 <= 0.0) return -1;
-            ec = Sqrt(ec2);
-            b = a * ec;
+            var ec = Sqrt(ec2);
+            var b = a * ec;
 
             /* Cartesian components. */
-            x = xyz[0];
-            y = xyz[1];
-            z = xyz[2];
+            var x = xyz[0];
+            var y = xyz[1];
+            var z = xyz[2];
 
             /* Distance from polar axis squared. */
-            p2 = x * x + y * y;
+            var p2 = x * x + y * y;
 
             /* Longitude. */
             elong = p2 > 0.0 ? Atan2(y, x) : 0.0;
 
             /* Unsigned z-coordinate. */
-            absz = Abs(z);
+            var absz = Abs(z);
 
             /* Proceed unless polar case. */
             if (p2 > aeps2)

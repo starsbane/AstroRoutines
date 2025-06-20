@@ -12,12 +12,10 @@ namespace AstroRoutines
         /// <param name="phi">latitude angle (radians)</param>
         public static void C2s(double[] p, out double theta, out double phi)
         {
-            double x, y, z, d2;
-
-            x = p[0];
-            y = p[1];
-            z = p[2];
-            d2 = x * x + y * y;
+            var x = p[0];
+            var y = p[1];
+            var z = p[2];
+            var d2 = x * x + y * y;
 
             theta = (d2 == 0.0) ? 0.0 : Atan2(y, x);
             phi = (z == 0.0) ? 0.0 : Atan2(z, Sqrt(d2));

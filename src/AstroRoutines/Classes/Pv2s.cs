@@ -18,27 +18,25 @@ namespace AstroRoutines
                                 out double theta, out double phi, out double r,
                                 out double td, out double pd, out double rd)
         {
-            double x, y, z, xd, yd, zd, rxy2, rxy, r2, rtrue, rw, xyp;
-
             // Components of position/velocity vector
-            x = pv[0, 0];
-            y = pv[0, 1];
-            z = pv[0, 2];
-            xd = pv[1, 0];
-            yd = pv[1, 1];
-            zd = pv[1, 2];
+            var x = pv[0, 0];
+            var y = pv[0, 1];
+            var z = pv[0, 2];
+            var xd = pv[1, 0];
+            var yd = pv[1, 1];
+            var zd = pv[1, 2];
 
             // Component of r in XY plane squared
-            rxy2 = x * x + y * y;
+            var rxy2 = x * x + y * y;
 
             // Modulus squared
-            r2 = rxy2 + z * z;
+            var r2 = rxy2 + z * z;
 
             // Modulus
-            rtrue = Sqrt(r2);
+            var rtrue = Sqrt(r2);
 
             // If null vector, move the origin along the direction of movement
-            rw = rtrue;
+            var rw = rtrue;
             if (rtrue == 0.0)
             {
                 x = xd;
@@ -50,8 +48,8 @@ namespace AstroRoutines
             }
 
             // Position and velocity in spherical coordinates
-            rxy = Sqrt(rxy2);
-            xyp = x * xd + y * yd;
+            var rxy = Sqrt(rxy2);
+            var xyp = x * xd + y * yd;
 
             if (rxy2 != 0.0)
             {

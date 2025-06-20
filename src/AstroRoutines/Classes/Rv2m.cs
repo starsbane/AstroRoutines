@@ -11,16 +11,14 @@ namespace AstroRoutines
         /// <param name="r">Rotation matrix</param>
         public static void Rv2m(double[] w, ref double[,] r)
         {
-            double x, y, z, phi, s, c, f;
-
             // Euler angle (magnitude of rotation vector) and functions
-            x = w[0];
-            y = w[1];
-            z = w[2];
-            phi = Sqrt(x * x + y * y + z * z);
-            s = Sin(phi);
-            c = Cos(phi);
-            f = 1.0 - c;
+            var x = w[0];
+            var y = w[1];
+            var z = w[2];
+            var phi = Sqrt(x * x + y * y + z * z);
+            var s = Sin(phi);
+            var c = Cos(phi);
+            var f = 1.0 - c;
 
             // Euler axis (direction of rotation vector), perhaps null
             if (phi > 0.0)

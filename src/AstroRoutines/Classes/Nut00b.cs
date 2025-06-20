@@ -14,8 +14,8 @@ namespace AstroRoutines
 		/// <param name="deps">nutation, luni-solar + planetary (Note 2)</param>
         public static void Nut00b(double date1, double date2, out double dpsi, out double deps)
         {
-            double t, el, elp, f, d, om, arg, dp, de, sarg, carg,
-                   dpsils, depsls, dpsipl, depspl;
+            double arg,
+                sarg, carg;
             int i;
 
             /* Units of 0.1 microarcsecond to radians */
@@ -210,36 +210,32 @@ namespace AstroRoutines
 
             /* Number of terms in the series */
             var NLS = x.Length;
-
             /* ------------------------------------------------------------------ */
-
             /* Interval between fundamental epoch J2000.0 and given date (JC). */
-            t = ((date1 - DJ00) + date2) / DJC;
+            var t = ((date1 - DJ00) + date2) / DJC;
 
             /* --------------------*/
             /* LUNI-SOLAR NUTATION */
             /* --------------------*/
-
             /* Fundamental (Delaunay) arguments from Simon et al. (1994) */
-
             /* Mean anomaly of the Moon. */
-            el = ((485868.249036 + (1717915923.2178) * t) % TURNAS) * DAS2R;
+            var el = ((485868.249036 + (1717915923.2178) * t) % TURNAS) * DAS2R;
 
             /* Mean anomaly of the Sun. */
-            elp = ((1287104.79305 + (129596581.0481) * t) % TURNAS) * DAS2R;
+            var elp = ((1287104.79305 + (129596581.0481) * t) % TURNAS) * DAS2R;
 
             /* Mean argument of the latitude of the Moon. */
-            f = ((335779.526232 + (1739527262.8478) * t) % TURNAS) * DAS2R;
+            var f = ((335779.526232 + (1739527262.8478) * t) % TURNAS) * DAS2R;
 
             /* Mean elongation of the Moon from the Sun. */
-            d = ((1072260.70369 + (1602961601.2090) * t) % TURNAS) * DAS2R;
+            var d = ((1072260.70369 + (1602961601.2090) * t) % TURNAS) * DAS2R;
 
             /* Mean longitude of the ascending node of the Moon. */
-            om = ((450160.398036 + (-6962890.5431) * t) % TURNAS) * DAS2R;
+            var om = ((450160.398036 + (-6962890.5431) * t) % TURNAS) * DAS2R;
 
             /* Initialize the nutation values. */
-            dp = 0.0;
-            de = 0.0;
+            var dp = 0.0;
+            var de = 0.0;
 
             /* Summation of luni-solar nutation series (smallest terms first). */
             for (i = NLS - 1; i >= 0; i--)
@@ -259,21 +255,17 @@ namespace AstroRoutines
             }
 
             /* Convert from 0.1 microarcsec units to radians. */
-            dpsils = dp * U2R;
-            depsls = de * U2R;
-
+            var dpsils = dp * U2R;
+            var depsls = de * U2R;
             /* ------------------------------*/
             /* IN LIEU OF PLANETARY NUTATION */
             /* ------------------------------*/
-
             /* Fixed offset to correct for missing terms in truncated series. */
-            dpsipl = DPPLAN;
-            depspl = DEPLAN;
-
+            var dpsipl = DPPLAN;
+            var depspl = DEPLAN;
             /* --------*/
             /* RESULTS */
             /* --------*/
-
             /* Add luni-solar and planetary components. */
             dpsi = dpsils + dpsipl;
             deps = depsls + depspl;

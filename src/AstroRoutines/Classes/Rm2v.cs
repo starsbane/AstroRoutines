@@ -11,12 +11,12 @@ namespace AstroRoutines
         /// <param name="w">Rotation vector</param>
         public static void Rm2v(double[,] r, ref double[] w)
         {
-            double x, y, z, s2, c2, phi, f;
+            double c2, phi, f;
 
-            x = r[1, 2] - r[2, 1];
-            y = r[2, 0] - r[0, 2];
-            z = r[0, 1] - r[1, 0];
-            s2 = Sqrt(x * x + y * y + z * z);
+            var x = r[1, 2] - r[2, 1];
+            var y = r[2, 0] - r[0, 2];
+            var z = r[0, 1] - r[1, 0];
+            var s2 = Sqrt(x * x + y * y + z * z);
             if (s2 > 0)
             {
                 c2 = r[0, 0] + r[1, 1] + r[2, 2] - 1.0;

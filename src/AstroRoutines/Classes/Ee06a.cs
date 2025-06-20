@@ -13,14 +13,12 @@ namespace AstroRoutines
         /// <returns>equation of the equinoxes (Note 2)</returns>
         public static double Ee06a(double date1, double date2)
         {
-            double gst06a, gmst06, ee;
-
             /* Apparent and mean sidereal times. */
-            gst06a = Gst06a(0.0, 0.0, date1, date2);
-            gmst06 = Gmst06(0.0, 0.0, date1, date2);
+            var gst06a = Gst06a(0.0, 0.0, date1, date2);
+            var gmst06 = Gmst06(0.0, 0.0, date1, date2);
 
             /* Equation of the equinoxes. */
-            ee = Anpm(gst06a - gmst06);
+            var ee = Anpm(gst06a - gmst06);
 
             return ee;
 

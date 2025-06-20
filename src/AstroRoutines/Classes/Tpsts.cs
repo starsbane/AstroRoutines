@@ -18,11 +18,9 @@ namespace AstroRoutines
         public static void Tpsts(double xi, double eta, double a0, double b0, 
                                  ref double a, ref double b)
         {
-            double sb0, cb0, d;
-
-            sb0 = Sin(b0);
-            cb0 = Cos(b0);
-            d = cb0 - eta * sb0;
+            var sb0 = Sin(b0);
+            var cb0 = Cos(b0);
+            var d = cb0 - eta * sb0;
             a = Anp(Atan2(xi, d) + a0);
             b = Atan2(sb0 + eta * cb0, Sqrt(xi * xi + d * d));
         }

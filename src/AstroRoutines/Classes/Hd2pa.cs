@@ -13,11 +13,9 @@ namespace AstroRoutines
         /// <returns>parallactic angle</returns>
         public static double Hd2pa(double ha, double dec, double phi)
         {
-            double cp, cqsz, sqsz;
-
-            cp = Cos(phi);
-            sqsz = cp * Sin(ha);
-            cqsz = Sin(phi) * Cos(dec) - cp * Sin(dec) * Cos(ha);
+            var cp = Cos(phi);
+            var sqsz = cp * Sin(ha);
+            var cqsz = Sin(phi) * Cos(dec) - cp * Sin(dec) * Cos(ha);
             return ((sqsz != 0.0 || cqsz != 0.0) ? Atan2(sqsz, cqsz) : 0.0);
 
             /* Finished. */

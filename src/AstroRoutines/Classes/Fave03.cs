@@ -11,10 +11,9 @@ namespace AstroRoutines
         /// <returns>Mean longitude of Venus, radians</returns>
         public static double Fave03(double t)
         {
-            double a;
-
-            /* Mean longitude of Venus (IERS Conventions 2003). */
-            a = (3.176146697 + 1021.3285546211 * t) % D2PI;
+            var a =
+                /* Mean longitude of Venus (IERS Conventions 2003). */
+                (3.176146697 + 1021.3285546211 * t) % D2PI;
 
             return a;
         }

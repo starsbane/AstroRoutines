@@ -18,14 +18,13 @@ namespace AstroRoutines
                                out double bzeta, out double bz, out double btheta)
         {
             var r = new double[3, 3];
-            double y, x;
 
             /* Precession matrix via Fukushima-Williams angles. */
             Pmat06(date1, date2, ref r);
 
             /* Solve for z, choosing the +/- pi alternative. */
-            y = r[1, 2];
-            x = -r[0, 2];
+            var y = r[1, 2];
+            var x = -r[0, 2];
             if (x < 0.0)
             {
                 y = -y;

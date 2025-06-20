@@ -11,10 +11,9 @@ namespace AstroRoutines
         /// <returns>Mean longitude of Jupiter, radians</returns>
         public static double Faju03(double t)
         {
-            double a;
-
-            /* Mean longitude of Jupiter (IERS Conventions 2003). */
-            a = (0.599546497 + 52.9690962641 * t) % D2PI;
+            var a =
+                /* Mean longitude of Jupiter (IERS Conventions 2003). */
+                (0.599546497 + 52.9690962641 * t) % D2PI;
 
             return a;
         }

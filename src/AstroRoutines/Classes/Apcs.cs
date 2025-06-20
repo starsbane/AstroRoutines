@@ -24,7 +24,7 @@ namespace AstroRoutines
             const double CR = AULT / DAYSEC;
 
             int i;
-            double dp, dv, v2, w;
+            double dp, dv, w;
             var pb = new double[3];
             var vb = new double[3];
             var ph = new double[3];
@@ -49,7 +49,7 @@ namespace AstroRoutines
             Pn(ph, out astrom.em,out astrom.eh);
 
             /* Barycentric vel. in units of c, and reciprocal of Lorenz factor. */
-            v2 = 0.0;
+            var v2 = 0.0;
             for (i = 0; i < 3; i++)
             {
                 w = vb[i] * CR;

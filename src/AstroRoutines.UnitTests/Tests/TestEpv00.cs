@@ -12,9 +12,8 @@ namespace AstroRoutines.UnitTests
 
             var pvh = new double[2, 3];
             var pvb = new double[2, 3];
-            int j;
 
-            j = Epv00(2400000.5, 53411.52501161, ref pvh, ref pvb);
+            var j = Epv00(2400000.5, 53411.52501161, ref pvh, ref pvb);
 
             Vvd(pvh[0, 0], -0.7757238809297706813, 1e-14, "Epv00", "ph(x)", ref status);
             Vvd(pvh[0, 1], 0.5598052241363340596, 1e-14, "Epv00", "ph(y)", ref status);

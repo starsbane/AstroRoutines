@@ -11,10 +11,9 @@ namespace AstroRoutines
         /// <returns>Mean longitude of Mars, radians</returns>
         public static double Fama03(double t)
         {
-            double a;
-
-            /* Mean longitude of Mars (IERS Conventions 2003). */
-            a = (6.203480913 + 334.0612426700 * t) % D2PI;
+            var a =
+                /* Mean longitude of Mars (IERS Conventions 2003). */
+                (6.203480913 + 334.0612426700 * t) % D2PI;
 
             return a;
         }

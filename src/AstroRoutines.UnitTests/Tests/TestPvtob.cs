@@ -10,16 +10,15 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
 
-            double elong, phi, hm, xp, yp, sp, theta;
             var pv = new double[2, 3];
 
-            elong = 2.0;
-            phi = 0.5;
-            hm = 3000.0;
-            xp = 1e-6;
-            yp = -0.5e-6;
-            sp = 1e-8;
-            theta = 5.0;
+            var elong = 2.0;
+            var phi = 0.5;
+            var hm = 3000.0;
+            var xp = 1e-6;
+            var yp = -0.5e-6;
+            var sp = 1e-8;
+            var theta = 5.0;
 
             Pvtob(elong, phi, hm, xp, yp, sp, theta, ref pv);
 

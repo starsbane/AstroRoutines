@@ -32,13 +32,11 @@ namespace AstroRoutines
                                out double thetaa, out double pa,
                                out double gam, out double phi, out double psi)
         {
-            double t;
-
-            /* Interval between fundamental date J2000.0 and given date (JC). */
-            t = ((date1 - DJ00) + date2) / DJC;
+            var t =
+                /* Interval between fundamental date J2000.0 and given date (JC). */
+                ((date1 - DJ00) + date2) / DJC;
 
             /* Obliquity at J2000.0. */
-
             eps0 = 84381.406 * DAS2R;
 
             /* Luni-solar precession. */

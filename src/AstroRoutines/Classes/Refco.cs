@@ -16,20 +16,19 @@ namespace AstroRoutines
         public static void Refco(double phpa, double tc, double rh, double wl,
             out double refa, out double refb)
         {
-            int optic;
-            double p, t, r, w, ps, pw, tk, wlsq, gamma, beta;
+            double ps, pw, wlsq, gamma;
 
             // Decide whether optical/IR or radio case: switch at 100 microns
-            optic = (wl <= 100.0) ? 1 : 0;
+            var optic = (wl <= 100.0) ? 1 : 0;
 
             // Restrict parameters to safe values
-            t = Max(tc, -150.0);
+            var t = Max(tc, -150.0);
             t = Min(t, 200.0);
-            p = Max(phpa, 0.0);
+            var p = Max(phpa, 0.0);
             p = Min(p, 10000.0);
-            r = Max(rh, 0.0);
+            var r = Max(rh, 0.0);
             r = Min(r, 1.0);
-            w = Max(wl, 0.1);
+            var w = Max(wl, 0.1);
             w = Min(w, 1e6);
 
             // Water vapour pressure at the observer
@@ -45,7 +44,7 @@ namespace AstroRoutines
             }
 
             // Refractive index minus 1 at the observer
-            tk = t + 273.15;
+            var tk = t + 273.15;
             if (optic == 1)
             {
                 wlsq = w * w;
@@ -59,7 +58,7 @@ namespace AstroRoutines
             }
 
             // Formula for beta from Stone, with empirical adjustments
-            beta = 4.4474e-6 * tk;
+            var beta = 4.4474e-6 * tk;
             if (optic == 0) beta -= 0.0074 * pw * beta;
 
             // Refraction constants from Green

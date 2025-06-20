@@ -20,10 +20,9 @@ namespace AstroRoutines
         public static int Ttut1(double tt1, double tt2, double dt, 
                                 ref double ut11, ref double ut12)
         {
-            double dtd;
-
-            // Result, safeguarding precision
-            dtd = dt / DAYSEC;
+            var dtd =
+                // Result, safeguarding precision
+                dt / DAYSEC;
             if (Abs(tt1) > Abs(tt2))
             {
                 ut11 = tt1;

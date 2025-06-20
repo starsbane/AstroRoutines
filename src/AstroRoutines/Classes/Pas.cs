@@ -14,12 +14,10 @@ namespace AstroRoutines
 		/// <returns>position angle of B with respect to A</returns>
         public static double Pas(double al, double ap, double bl, double bp)
         {
-            double dl, x, y, pa;
-
-            dl = bl - al;
-            y = Sin(dl) * Cos(bp);
-            x = Sin(bp) * Cos(ap) - Cos(bp) * Sin(ap) * Cos(dl);
-            pa = ((x != 0.0) || (y != 0.0)) ? Atan2(y, x) : 0.0;
+            var dl = bl - al;
+            var y = Sin(dl) * Cos(bp);
+            var x = Sin(bp) * Cos(ap) - Cos(bp) * Sin(ap) * Cos(dl);
+            var pa = ((x != 0.0) || (y != 0.0)) ? Atan2(y, x) : 0.0;
 
             return pa;
 

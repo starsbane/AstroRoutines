@@ -27,27 +27,26 @@ namespace AstroRoutines
             /* Light time for 1 au, Julian years */
             const double AULTY = AULT / DAYSEC / DJY;
 
-            double sr, cr, sd, cd, x, y, z;
+            double x, y, z;
             var p = new double[3];
-            double dt, pxr, w, pdz;
             var pm = new double[3];
 
             /* Spherical coordinates to unit vector (and useful functions). */
-            sr = Sin(rc);
-            cr = Cos(rc);
-            sd = Sin(dc);
-            cd = Cos(dc);
+            var sr = Sin(rc);
+            var cr = Cos(rc);
+            var sd = Sin(dc);
+            var cd = Cos(dc);
             p[0] = x = cr * cd;
             p[1] = y = sr * cd;
             p[2] = z = sd;
 
             /* Proper motion time interval (y) including Roemer effect. */
-            dt = pmt + Pdp(p, pob) * AULTY;
+            var dt = pmt + Pdp(p, pob) * AULTY;
 
             /* Space motion (radians per year). */
-            pxr = px * DAS2R;
-            w = VF * rv * pxr;
-            pdz = pd * z;
+            var pxr = px * DAS2R;
+            var w = VF * rv * pxr;
+            var pdz = pd * z;
             pm[0] = -pr * y - pdz * cr + w * x;
             pm[1] = pr * x - pdz * sr + w * y;
             pm[2] = pd * cd + w * z;

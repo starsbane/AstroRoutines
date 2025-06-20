@@ -9,10 +9,9 @@ namespace AstroRoutines.UnitTests
         public void TestLtpequ()
         {
             var status = 0;
-            double epj;
             var veq = new double[3];
 			
-			epj = -2500.0;
+			var epj = -2500.0;
 			
             Ltpequ(epj, ref veq);
 

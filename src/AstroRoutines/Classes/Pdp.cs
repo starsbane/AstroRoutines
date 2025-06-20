@@ -10,11 +10,9 @@ namespace AstroRoutines
 		/// <returns>a . b</returns>
         public static double Pdp(double[] a, double[] b)
         {
-            double w;
-
-            w = a[0] * b[0]
-              + a[1] * b[1]
-              + a[2] * b[2];
+            var w = a[0] * b[0]
+                    + a[1] * b[1]
+                    + a[2] * b[2];
 
             return w;
 

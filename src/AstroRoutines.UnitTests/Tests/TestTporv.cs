@@ -10,20 +10,18 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
 
-            double xi, eta, ra, dec;
             var v = new double[3];
             var vz1 = new double[3];
             var vz2 = new double[3];
-            int n;
 
-            xi = -0.03;
-            eta = 0.07;
-            ra = 1.3;
-            dec = 1.5;
+            var xi = -0.03;
+            var eta = 0.07;
+            var ra = 1.3;
+            var dec = 1.5;
 
             S2c(ra, dec, ref v);
 
-            n = Tporv(xi, eta, v, ref vz1, ref vz2);
+            var n = Tporv(xi, eta, v, ref vz1, ref vz2);
 
             Vvd(vz1[0], -0.02206252822366888610, 1e-15, "Tporv", "x1", ref status);
             Vvd(vz1[1], 0.1318251060359645016, 1e-14, "Tporv", "y1", ref status);

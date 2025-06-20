@@ -14,9 +14,7 @@ namespace AstroRoutines
         /// <returns>Julian Epoch</returns>
         public static double Epj(double dj1, double dj2)
         {
-            double epj;
-
-            epj = 2000.0 + ((dj1 - DJ00) + dj2) / DJY;
+            var epj = 2000.0 + ((dj1 - DJ00) + dj2) / DJY;
 
             return epj;
 

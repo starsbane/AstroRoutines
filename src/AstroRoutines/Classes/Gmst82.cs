@@ -21,7 +21,7 @@ namespace AstroRoutines
             /* The first constant, A, has to be adjusted by 12 hours because the */
             /* UT1 is supplied as a Julian date, which begins at noon.           */
 
-            double d1, d2, t, f, gmst;
+            double d1, d2;
 
             /* Julian centuries since fundamental epoch. */
             if (dj1 < dj2)
@@ -34,13 +34,13 @@ namespace AstroRoutines
                 d1 = dj2;
                 d2 = dj1;
             }
-            t = (d1 + (d2 - DJ00)) / DJC;
+            var t = (d1 + (d2 - DJ00)) / DJC;
 
             /* Fractional part of JD(UT1), in seconds. */
-            f = DAYSEC * (d1 % 1.0 + d2 % 1.0);
+            var f = DAYSEC * (d1 % 1.0 + d2 % 1.0);
 
             /* GMST at this UT1. */
-            gmst = Anp(DS2R * ((A + (B + (C + D * t) * t) * t) + f));
+            var gmst = Anp(DS2R * ((A + (B + (C + D * t) * t) * t) + f));
 
             return gmst;
 

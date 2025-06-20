@@ -15,19 +15,17 @@ namespace AstroRoutines
         /// <returns>Greenwich mean sidereal time (radians)</returns>
         public static double Gmst00(double uta, double utb, double tta, double ttb)
         {
-            double t, gmst;
-
             /* TT Julian centuries since J2000.0. */
-            t = ((tta - DJ00) + ttb) / DJC;
+            var t = ((tta - DJ00) + ttb) / DJC;
 
             /* Greenwich Mean Sidereal Time, IAU 2000. */
-            gmst = Anp(Era00(uta, utb) +
-                          (0.014506 +
-                          (4612.15739966 +
-                          (1.39667721 +
-                          (-0.00009344 +
-                          (0.00001882)
-                 * t) * t) * t) * t) * DAS2R);
+            var gmst = Anp(Era00(uta, utb) +
+                           (0.014506 +
+                            (4612.15739966 +
+                             (1.39667721 +
+                              (-0.00009344 +
+                               (0.00001882)
+                               * t) * t) * t) * t) * DAS2R);
 
             return gmst;
 

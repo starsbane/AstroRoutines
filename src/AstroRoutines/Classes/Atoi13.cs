@@ -29,11 +29,10 @@ namespace AstroRoutines
             double phpa, double tc, double rh, double wl,
             out double ri, out double di)
         {
-            int j;
             var astrom = new ASTROM();
 
             /* Star-independent astrometry parameters for CIRS->observed. */
-            j = Apio13(utc1, utc2, dut1, elong, phi, hm, xp, yp,
+            var j = Apio13(utc1, utc2, dut1, elong, phi, hm, xp, yp,
                 phpa, tc, rh, wl, ref astrom);
 
             /* Abort if bad UTC. */

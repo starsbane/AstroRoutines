@@ -11,10 +11,9 @@ namespace AstroRoutines
         /// <returns>Mean longitude of Uranus, radians</returns>
         public static double Faur03(double t)
         {
-            double a;
-
-            /* Mean longitude of Uranus (IERS Conventions 2003). */
-            a = (5.481293872 + 7.4781598567 * t) % D2PI;
+            var a =
+                /* Mean longitude of Uranus (IERS Conventions 2003). */
+                (5.481293872 + 7.4781598567 * t) % D2PI;
 
             return a;
         }

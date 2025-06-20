@@ -17,13 +17,13 @@ namespace AstroRoutines
         public static void D2tf(int ndp, double days, out char sign, ref int[] ihmsf)
         {
             int nrs, n;
-            double rs, rm, rh, a, w, ah, am, _as, af;
+            double rs, w;
 
             /* Handle sign. */
             sign = (days >= 0.0) ? '+' : '-';
 
             /* Interval in seconds. */
-            a = DAYSEC * Math.Abs(days);
+            var a = DAYSEC * Math.Abs(days);
 
             /* Pre-round if resolution coarser than 1s (then pretend ndp=1). */
             if (ndp < 0)
@@ -45,22 +45,22 @@ namespace AstroRoutines
                 nrs *= 10;
             }
             rs = (double)nrs;
-            rm = rs * 60.0;
-            rh = rm * 60.0;
+            var rm = rs * 60.0;
+            var rh = rm * 60.0;
 
             /* Round the interval and express in resolution units. */
             a = Math.Round(rs * a);
 
             /* Break into fields. */
-            ah = a / rh;
+            var ah = a / rh;
             ah = Math.Truncate(ah);
             a -= ah * rh;
-            am = a / rm;
+            var am = a / rm;
             am = Math.Truncate(am);
             a -= am * rm;
-            _as = a / rs;
+            var _as = a / rs;
             _as = Math.Truncate(_as);
-            af = a - _as * rs;
+            var af = a - _as * rs;
 
             /* Return results. */
             ihmsf[0] = (int)ah;

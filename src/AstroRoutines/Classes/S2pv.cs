@@ -18,17 +18,15 @@ namespace AstroRoutines
                                 double td, double pd, double rd,
                                 ref double[,] pv)
         {
-            double st, ct, sp, cp, rcp, x, y, rpd, w;
-
-            st = Sin(theta);
-            ct = Cos(theta);
-            sp = Sin(phi);
-            cp = Cos(phi);
-            rcp = r * cp;
-            x = rcp * ct;
-            y = rcp * st;
-            rpd = r * pd;
-            w = rpd * sp - cp * rd;
+            var st = Sin(theta);
+            var ct = Cos(theta);
+            var sp = Sin(phi);
+            var cp = Cos(phi);
+            var rcp = r * cp;
+            var x = rcp * ct;
+            var y = rcp * st;
+            var rpd = r * pd;
+            var w = rpd * sp - cp * rd;
 
             pv[0, 0] = x;
             pv[0, 1] = y;

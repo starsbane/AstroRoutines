@@ -14,14 +14,13 @@ namespace AstroRoutines
         {
             var ac = new double[3];
             var bc = new double[3];
-            double s;
 
             /* Spherical to Cartesian. */
             S2c(al, ap, ref ac);
             S2c(bl, bp, ref bc);
 
             /* Angle between the vectors. */
-            s = Sepp(ac, bc);
+            var s = Sepp(ac, bc);
 
             return s;
         }

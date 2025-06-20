@@ -13,26 +13,24 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
 
-            double utc1, utc2, dut1, elong, phi, hm, xp, yp,
-                phpa, tc, rh, wl, eo = 0;
+            double eo = 0;
             var astrom = new ASTROM();
-            int j;
 
-            utc1 = 2456384.5;
-            utc2 = 0.969254051;
-            dut1 = 0.1550675;
-            elong = -0.527800806;
-            phi = -1.2345856;
-            hm = 2738.0;
-            xp = 2.47230737e-7;
-            yp = 1.82640464e-6;
-            phpa = 731.0;
-            tc = 12.8;
-            rh = 0.59;
-            wl = 0.55;
+            var utc1 = 2456384.5;
+            var utc2 = 0.969254051;
+            var dut1 = 0.1550675;
+            var elong = -0.527800806;
+            var phi = -1.2345856;
+            var hm = 2738.0;
+            var xp = 2.47230737e-7;
+            var yp = 1.82640464e-6;
+            var phpa = 731.0;
+            var tc = 12.8;
+            var rh = 0.59;
+            var wl = 0.55;
 
-            j = Apco13(utc1, utc2, dut1, elong, phi, hm, xp, yp,
-                           phpa, tc, rh, wl, ref astrom, ref eo);
+            var j = Apco13(utc1, utc2, dut1, elong, phi, hm, xp, yp,
+                phpa, tc, rh, wl, ref astrom, ref eo);
 
             Vvd(astrom.pmt, 13.25248468622475727, 1e-11, "Apco13", "pmt", ref status);
             Vvd(astrom.eb[0], -0.9741827107320875162, 1e-12, "Apco13", "eb(1)", ref status);

@@ -27,13 +27,12 @@ namespace AstroRoutines
 
             /* Miscellaneous */
             int i, j;
-            double a, w0, w1, w2, w3, w4, w5;
+            double a;
 
             /* Fundamental arguments */
             var fa = new double[8];
 
             /* Returned value */
-            double s;
 
             /* Polynomial coefficients */
             double[] sp = {
@@ -158,12 +157,12 @@ namespace AstroRoutines
             fa[7] = Fapa03(t);
 
             /* Evaluate s. */
-            w0 = sp[0];
-            w1 = sp[1];
-            w2 = sp[2];
-            w3 = sp[3];
-            w4 = sp[4];
-            w5 = sp[5];
+            var w0 = sp[0];
+            var w1 = sp[1];
+            var w2 = sp[2];
+            var w3 = sp[3];
+            var w4 = sp[4];
+            var w5 = sp[5];
 
             for (i = s0.Length - 1; i >= 0; i--) {
                 a = 0.0;
@@ -205,12 +204,12 @@ namespace AstroRoutines
                 w4 += s4[i].S * Sin(a) + s4[i].C * Cos(a);
             }
 
-            s = (w0 +
-                (w1 +
-                (w2 +
-                (w3 +
-                (w4 +
-                 w5 * t) * t) * t) * t) * t) * DAS2R - x*y/2.0;
+            var s = (w0 +
+                     (w1 +
+                      (w2 +
+                       (w3 +
+                        (w4 +
+                         w5 * t) * t) * t) * t) * t) * DAS2R - x*y/2.0;
 
             return s;
         }

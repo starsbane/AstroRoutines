@@ -21,7 +21,6 @@ namespace AstroRoutines
         {
             int i;
             var qpe = new double[3];
-            double qdqpe, w;
             var eq = new double[3];
             var peq = new double[3];
 
@@ -30,10 +29,10 @@ namespace AstroRoutines
             {
                 qpe[i] = q[i] + e[i];
             }
-            qdqpe = Pdp(q, qpe);
+            var qdqpe = Pdp(q, qpe);
 
             /* 2 x G x bm / ( em x c^2 x ( q . (q + e) ) ). */
-            w = bm * SRS / em / Max(qdqpe, dlim);
+            var w = bm * SRS / em / Max(qdqpe, dlim);
 
             /* p x (e x q). */
             Pxp(e, q, ref eq);

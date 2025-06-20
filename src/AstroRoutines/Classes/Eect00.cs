@@ -30,17 +30,15 @@ namespace AstroRoutines
         public static double Eect00(double date1, double date2)
         {
             /* Time since J2000.0, in Julian centuries */
-            double t;
 
             /* Miscellaneous */
             int i, j;
-            double a, s0, s1;
+            double a;
 
             /* Fundamental arguments */
             var fa = new double[14];
 
             /* Returned value. */
-            double eect;
 
             /* ----------------------------------------- */
             /* The series for the EE complementary terms */
@@ -100,14 +98,10 @@ namespace AstroRoutines
             /* Number of terms in the series */
             var NE0 = e0.Length;
             var NE1 = e1.Length;
-
             /* ------------------------------------------------------------------ */
-
             /* Interval between fundamental epoch J2000.0 and current date (JC). */
-            t = ((date1 - DJ00) + date2) / DJC;
-
+            var t = ((date1 - DJ00) + date2) / DJC;
             /* Fundamental Arguments (from IERS Conventions 2003) */
-
             /* Mean anomaly of the Moon. */
             fa[0] = Fal03(t);
 
@@ -133,8 +127,8 @@ namespace AstroRoutines
             fa[7] = Fapa03(t);
 
             /* Evaluate the EE complementary terms. */
-            s0 = 0.0;
-            s1 = 0.0;
+            var s0 = 0.0;
+            var s1 = 0.0;
 
             for (i = NE0 - 1; i >= 0; i--)
             {
@@ -156,7 +150,7 @@ namespace AstroRoutines
                 s1 += e1[i].s * Sin(a) + e1[i].c * Cos(a);
             }
 
-            eect = (s0 + s1 * t) * DAS2R;
+            var eect = (s0 + s1 * t) * DAS2R;
 
             return eect;
 

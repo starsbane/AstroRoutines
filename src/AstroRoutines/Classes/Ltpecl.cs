@@ -43,17 +43,17 @@ namespace AstroRoutines
 
             /* Miscellaneous */
             int i;
-            double t, p, q, w, a, s, c;
+            double a, s, c;
 
             /* Centuries since J2000. */
-            t = (epj - 2000.0) / 100.0;
+            var t = (epj - 2000.0) / 100.0;
 
             /* Initialize P_A and Q_A accumulators. */
-            p = 0.0;
-            q = 0.0;
+            var p = 0.0;
+            var q = 0.0;
 
             /* Periodic terms. */
-            w = D2PI * t;
+            var w = D2PI * t;
             for (i = 0; i < NPER; i++)
             {
                 a = w / pqper[i, 0];

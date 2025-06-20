@@ -12,14 +12,13 @@ namespace AstroRoutines.UnitTests
         public void TestApco()
         {
             var status = 0;
-            
-            double date1, date2, x, y, s, theta, elong, phi, hm, xp, yp, sp, refa, refb;
+
             var ehp = new double[3];
             var ebpv = new double[2, 3];
             var astrom = new ASTROM();
 
-            date1 = 2456384.5;
-            date2 = 0.970031644;
+            var date1 = 2456384.5;
+            var date2 = 0.970031644;
             ebpv[0, 0] = -0.974170438;
             ebpv[0, 1] = -0.211520082;
             ebpv[0, 2] = -0.0917583024;
@@ -29,18 +28,18 @@ namespace AstroRoutines.UnitTests
             ehp[0] = -0.973458265;
             ehp[1] = -0.209215307;
             ehp[2] = -0.0906996477;
-            x = 0.0013122272;
-            y = -2.92808623e-5;
-            s = 3.05749468e-8;
-            theta = 3.14540971;
-            elong = -0.527800806;
-            phi = -1.2345856;
-            hm = 2738.0;
-            xp = 2.47230737e-7;
-            yp = 1.82640464e-6;
-            sp = -3.01974337e-11;
-            refa = 0.000201418779;
-            refb = -2.36140831e-7;
+            var x = 0.0013122272;
+            var y = -2.92808623e-5;
+            var s = 3.05749468e-8;
+            var theta = 3.14540971;
+            var elong = -0.527800806;
+            var phi = -1.2345856;
+            var hm = 2738.0;
+            var xp = 2.47230737e-7;
+            var yp = 1.82640464e-6;
+            var sp = -3.01974337e-11;
+            var refa = 0.000201418779;
+            var refb = -2.36140831e-7;
 
             Apco(date1, date2, ebpv, ehp, x, y, s, theta, elong, phi, hm, xp, yp, sp, refa, refb, ref astrom);
 

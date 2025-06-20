@@ -13,12 +13,10 @@ namespace AstroRoutines
         /// <param name="rc2i">celestial-to-intermediate matrix</param>
         public static void C2ixys(double x, double y, double s, ref double[,] rc2i)
         {
-            double r2, e, d;
-
             /* Obtain the spherical angles E and d. */
-            r2 = x * x + y * y;
-            e = (r2 > 0.0) ? Atan2(y, x) : 0.0;
-            d = Atan(Sqrt(r2 / (1.0 - r2)));
+            var r2 = x * x + y * y;
+            var e = (r2 > 0.0) ? Atan2(y, x) : 0.0;
+            var d = Atan(Sqrt(r2 / (1.0 - r2)));
 
             /* Form the matrix. */
             Ir(ref rc2i);

@@ -10,12 +10,12 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
 
-            double xi, eta, raz, decz, ra = 0, dec = 0;
+            double ra = 0, dec = 0;
 
-            xi = -0.03;
-            eta = 0.07;
-            raz = 2.3;
-            decz = 1.5;
+            var xi = -0.03;
+            var eta = 0.07;
+            var raz = 2.3;
+            var decz = 1.5;
 
             Tpsts(xi, eta, raz, decz, ref ra, ref dec);
 
