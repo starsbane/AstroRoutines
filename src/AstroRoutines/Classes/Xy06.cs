@@ -821,7 +821,7 @@ namespace AstroRoutines
             };
 
             // Number of frequencies: luni-solar
-            var NFLS = mfals.Length;
+            var NFLS = mfals.GetLength(0);
 
             // Fundamental-argument multipliers: planetary terms
             int[,] mfapl = {
@@ -1614,7 +1614,7 @@ namespace AstroRoutines
             };
 
             // Number of frequencies: planetary
-            var NFPL = mfapl.Length; // Actual count from original source
+            var NFPL = mfapl.GetLength(0);
 
             // Pointers into amplitudes array, one pointer per frequency
             int[] nc = {
@@ -2458,7 +2458,7 @@ namespace AstroRoutines
             };
 
             /* Number of amplitude coefficients */
-            var NA = a.Length;
+            var NA = a.GetLength(0);
 
             /* Amplitude usage: X or Y, sin or cos, power of T. */
             int[] jaxy = { 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1 };

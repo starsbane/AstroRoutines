@@ -6,7 +6,7 @@ namespace AstroRoutines
         /// Initialize an r-matrix to the null matrix.
         /// </summary>
         /// <param name="r">R-matrix to be zeroed</param>
-        public static void Zr(double[,] r)
+        public static void Zr(ref double[,] r)
         {
             r[0,0] = 0.0;
             r[0,1] = 0.0;
