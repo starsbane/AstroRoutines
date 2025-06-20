@@ -1,6 +1,6 @@
 namespace AstroRoutines.UnitTests
 {
-    public partial class SofaTests
+    public partial class RATests
     {
         /// <summary>
         /// Test Pnm00b function.

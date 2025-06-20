@@ -2,11 +2,11 @@ using Xunit.Abstractions;
 
 namespace AstroRoutines.UnitTests
 {
-    public partial class SofaTests
+    public partial class RATests
     {
         private readonly ITestOutputHelper output;
 
-        public SofaTests(ITestOutputHelper output)
+        public RATests(ITestOutputHelper output)
         {
             this.output = output;
         }

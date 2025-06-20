@@ -2,7 +2,7 @@ using Xunit;
 
 namespace AstroRoutines.UnitTests
 {
-    public partial class SofaTests
+    public partial class RATests
     {
         /// <summary>
         /// Test H2fk5 function.

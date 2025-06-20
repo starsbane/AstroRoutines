@@ -3,7 +3,7 @@ using Xunit;
 
 namespace AstroRoutines.UnitTests
 {
-    public partial class SofaTests
+    public partial class RATests
     {
         /// <summary>
         /// Test Apcg13 function.
