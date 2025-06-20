@@ -1,25 +1,97 @@
+// ReSharper disable InconsistentNaming
+// ReSharper disable IdentifierTypo
 namespace AstroRoutines.Structs
 {
-    /* Star-independent astrometry parameters */
+    /// <summary>
+    /// Star-independent astrometry parameters
+    /// </summary>
+
     public class ASTROM
     {
-        public double pmt;        /* PM time interval (SSB, Julian years) */
-        public double[] eb;       /* SSB to observer (vector, au) */
-        public double[] eh;       /* Sun to observer (unit vector) */
-        public double em;         /* distance from Sun to observer (au) */
-        public double[] v;        /* barycentric observer velocity (vector, c) */
-        public double bm1;        /* sqrt(1-|v|^2): reciprocal of Lorenz factor */
-        public double[,] bpn;     /* bias-precession-nutation matrix */
-        public double along;      /* longitude + s' + dERA(DUT) (radians) */
-        public double phi;        /* geodetic latitude (radians) */
-        public double xpl;        /* polar motion xp wrt local meridian (radians) */
-        public double ypl;        /* polar motion yp wrt local meridian (radians) */
-        public double sphi;       /* sine of geodetic latitude */
-        public double cphi;       /* cosine of geodetic latitude */
-        public double diurab;     /* magnitude of diurnal aberration vector */
-        public double eral;       /* "local" Earth rotation angle (radians) */
-        public double refa;       /* refraction constant A (radians) */
-        public double refb;       /* refraction constant B (radians) */
+        /// <summary>
+        /// PM time interval (SSB, Julian years)
+        /// </summary>
+        public double pmt;
+
+        /// <summary>
+        /// SSB to observer (vector, au)
+        /// </summary>
+        public double[] eb;
+
+        /// <summary>
+        /// Sun to observer (unit vector)
+        /// </summary>
+        public double[] eh;
+
+        /// <summary>
+        /// distance from Sun to observer (au)
+        /// </summary>
+        public double em;
+
+        /// <summary>
+        /// barycentric observer velocity (vector, c)
+        /// </summary>
+        public double[] v;
+
+        /// <summary>
+        /// sqrt(1-|v|^2): reciprocal of Lorenz factor
+        /// </summary>
+        public double bm1;
+
+        /// <summary>
+        /// bias-precession-nutation matrix
+        /// </summary>
+        public double[,] bpn;
+
+        /// <summary>
+        /// longitude + s' + dERA(DUT) (radians)
+        /// </summary>
+        public double along;
+
+        /// <summary>
+        /// geodetic latitude (radians)
+        /// </summary>
+        public double phi;
+
+        /// <summary>
+        /// polar motion xp wrt local meridian (radians)
+        /// </summary>
+        public double xpl;
+
+        /// <summary>
+        /// polar motion yp wrt local meridian (radians)
+        /// </summary>
+        public double ypl;
+
+        /// <summary>
+        /// sine of geodetic latitude
+        /// </summary>
+        public double sphi;
+
+        /// <summary>
+        /// cosine of geodetic latitude
+        /// </summary>
+        public double cphi;
+
+        /// <summary>
+        /// magnitude of diurnal aberration vector
+        /// </summary>
+        public double diurab;
+
+        /// <summary>
+        /// "local" Earth rotation angle (radians)
+        /// </summary>
+        public double eral;
+
+        /// <summary>
+        /// refraction constant A (radians)
+        /// </summary>
+        public double refa;
+
+        /// <summary>
+        /// refraction constant B (radians)
+        /// </summary>
+        public double refb;
 
         public ASTROM()
         {
@@ -43,12 +115,25 @@ namespace AstroRoutines.Structs
         }
     }
 
-    /* Body parameters for light deflection */
+    /// <summary>
+    /// Body parameters for light deflection
+    /// </summary>
     public class LDBODY
     {
-        public double bm;         /* mass of the body (solar masses) */
-        public double dl;         /* deflection limiter (radians^2/2) */
-        public double[,] pv;      /* barycentric PV of the body (au, au/day) */
+        /// <summary>
+        /// mass of the body (solar masses)
+        /// </summary>
+        public double bm;
+
+        /// <summary>
+        /// deflection limiter (radians^2/2)
+        /// </summary>
+        public double dl;
+
+        /// <summary>
+        /// barycentric PV of the body (au, au/day)
+        /// </summary>
+        public double[,] pv;
 
         public LDBODY()
         {

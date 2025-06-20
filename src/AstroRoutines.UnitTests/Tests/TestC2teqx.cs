@@ -3,7 +3,7 @@ namespace AstroRoutines.UnitTests
     public partial class RATests
     {
         /// <summary>
-        /// Test iauC2teqx function.
+        /// Test C2teqx function.
         /// </summary>
         [Fact]
         public void TestC2teqx()

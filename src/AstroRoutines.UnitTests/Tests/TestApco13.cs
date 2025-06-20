@@ -3,7 +3,7 @@ namespace AstroRoutines.UnitTests
     public partial class RATests
     {
         /// <summary>
-        /// Test iauApco13 function.
+        /// Test Apco13 function.
         /// </summary>
         /// <remarks>
         /// Prepare for CIRS to observed transformation, using internal routine.
