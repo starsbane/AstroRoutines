@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AstroRoutines\AstroRoutines.csproj" />
-    <ProjectReference Include="..\IAU.SOFA\AstroRoutines.csproj" />
+    <ProjectReference Include="..\AstroRoutines\AstroRoutines.csproj" />
   </ItemGroup>
 
   <ItemGroup>
