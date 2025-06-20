@@ -1,7 +1,7 @@
 # AstroRoutines
 An unoffical .NET Core clone of C Library of the Standards of Fundamental Astronomy (SOFA) software libraries from International Astronomical Union (IAU), provides a collection of subroutines that implement official IAU algorithms for astronomical computations.
 
-This package is based on SOFA ANSI C Release 19 (2023-10-11) and distributed under Apache-2.0 license and SOFA . 
+This package is based on SOFA ANSI C Release 19 (2023-10-11) and distributed under Apache-2.0 license and SOFA. 
 Please refer to https://www.iausofa.org/ for details regarding the SOFA releases.
 
 ## Features
@@ -21,14 +21,14 @@ Explained as requested by SOFA Software License.
 
 ### AstroRoutines
 - Rewritten from C to C# 10.0 (.NET 6.0)
--- Converts unmanaged features such as pointers to managed C# equivlaent
--- Applied some C# syntax candy
--- Remaining things such as logic, constants, dataset (as gigantic arrays) are otherwise identical to the original software
+    - Converts unmanaged features such as pointers to managed C# equivlaent
+    - Applied some C# syntax candy
+- Remaining things such as logic, constants, dataset (as gigantic arrays) are otherwise identical to the original software
 
 ### AstroRoutines.UnitTests
 - Envolved from console test program to xUnit test project
--- Each t_XXX function is converted to a test method TestXXX
--- Instead of writing result to console, message is written to ITestOutputHelper
+    - Each t_XXX function is converted to a test method TestXXX
+    - Instead of writing result to console, message is written to ITestOutputHelper
 - Rewritten from C to C# 12.0 (.NET 8.0)
 - Testing data and logic are otherwise identical to the original software
 
