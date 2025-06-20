@@ -12,7 +12,7 @@ namespace AstroRoutines
 		/// <returns>position angle of b with respect to a (radians)</returns>
         public static double Pap(double[] a, double[] b)
         {
-            double am, au0, au1, au2, bm, st, ct, xa, ya, za, eta0, eta1, eta2, xi0, xi1, xi2, a2b0, a2b1, a2b2, pa;
+            double am, bm, st, ct, xa, ya, za, pa;
             var au = new double[3];
             var eta = new double[3];
             var xi = new double[3];
