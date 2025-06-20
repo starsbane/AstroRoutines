@@ -15,12 +15,12 @@ namespace AstroRoutines
         /// <summary>
         /// No. of the base SOFA ANSI C release.
         /// </summary>
-        public const int RELEASE_NO = 19;
+        public const int SOFAReleaseNo = 19;
 
         /// <summary>
         /// Release date of the base SOFA ANSI C release.
         /// </summary>
-        public static readonly DateTime RELEASE_DATE = new DateTime(2023, 10, 11, 0, 0, 0, DateTimeKind.Utc);
+        public static readonly DateTime SOFAReleaseDate = new DateTime(2023, 10, 11, 0, 0, 0, DateTimeKind.Utc);
 
         /// <summary>
         /// The text of the SOFA license found in the end of each file in original software (SOFA C Library).
@@ -32,7 +32,7 @@ namespace AstroRoutines
         /// of local variants under the same name. This measure allows other SOFA routines to call the local variant, which may be file or network based, or otherwise equipped to pick up
         /// IERS leap second updates with no need to download new SOFA code.
         /// </remarks>
-        public const string SOFA_LICENSE_TEXT = @"
+        public const string SOFALicenseText = @"
 /*----------------------------------------------------------------------
 **
 **  Copyright (C) 2023
