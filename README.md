@@ -13,6 +13,7 @@ This package is also available in NuGet: (https://www.nuget.org/packages/AstroRo
 
 ## Requirements
 .NET Standard 2.0 (.NET Framework 4.6.1 - .NET Framework 4.8.1, .NET Core 2.0 - 9.0) for using the library (AstroRoutines)
+
 .NET 8.0+ for running unit tests (AstroRoutines.UnitTests)
 
 Please check (https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0) for details of .NET Standard 2.0.
