@@ -10,8 +10,10 @@ Please refer to https://www.iausofa.org/ for details regarding the SOFA releases
 - Method signatures are close to original C library, all you need is to remove iau prefix from method name and add ref or out keyword in Returned parameters (if any)
 
 ## Requirements
-.NET 6.0+ for using the library (AstroRoutines)
+.NET Standard 2.0 (.NET Framework 4.6.1 - .NET Framework 4.8.1, .NET Core 2.0 - 9.0) for using the library (AstroRoutines)
 .NET 8.0+ for running unit tests (AstroRoutines.UnitTests)
+
+Please check (https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0) for details of .NET Standard 2.0.
 
 ## Criteria of package release
 Each release version passed all tests in AstroRoutines.UnitTests (247 as of 2025-06-20).
