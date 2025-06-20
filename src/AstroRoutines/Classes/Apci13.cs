@@ -23,7 +23,7 @@ namespace AstroRoutines
             Bpn2xy(r, out x, out y);
             s = S06(date1, date2, x, y);
 
-            var ehp = new double[3] { ehpv[0, 0], ehpv[0, 1], ehpv[0, 2] };
+            var ehp = ehpv.GetRow(0);
             Apci(date1, date2, ebpv, ehp, x, y, s, ref astrom);
 
             eo = Eors(r, s);

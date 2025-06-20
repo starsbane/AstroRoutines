@@ -63,7 +63,7 @@ namespace AstroRoutines
             Refco(phpa, tc, rh, wl, out refa, out refb);
 
             /* Compute the star-independent astrometry parameters. */
-            var ehp = new double[3] { ehpv[0, 0], ehpv[0, 1], ehpv[0, 2] };
+            var ehp = ehpv.GetRow(0);
             Apco(tt1, tt2, ebpv, ehp, x, y, s, theta,
                  elong, phi, hm, xp, yp, sp, refa, refb, ref astrom);
 

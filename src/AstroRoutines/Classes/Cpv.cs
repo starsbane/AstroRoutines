@@ -11,9 +11,9 @@ namespace AstroRoutines
         /// <param name="c">copy</param>
         public static void Cpv(double[,] pv, double[,] c)
         {
-            var p0 = new double[3] { pv[0, 0], pv[0, 1], pv[0, 2] };
+            var p0 = pv.GetRow(0);
             var c0 = new double[3];
-            var p1 = new double[3] { pv[1, 0], pv[1, 1], pv[1, 2] };
+            var p1 = pv.GetRow(1);
             var c1 = new double[3];
             
             Cp(p0, ref c0);

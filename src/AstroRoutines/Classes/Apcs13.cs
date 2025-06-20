@@ -20,7 +20,7 @@ namespace AstroRoutines
             Epv00(date1, date2, ref ehpv, ref ebpv);
 
             /* Compute the star-independent astrometry parameters. */
-            var ehp = new double[3] { ehpv[0, 0], ehpv[0, 1], ehpv[0, 2] };
+            var ehp = ehpv.GetRow(0);
             Apcs(date1, date2, pv, ebpv, ehp, ref astrom);
 
             /* Finished. */
