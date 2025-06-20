@@ -27,7 +27,7 @@ Each release version passed all tests in AstroRoutines.UnitTests (247 as of 2025
 Explained as requested by SOFA Software License.
 
 ### AstroRoutines
-- Rewritten from C to C# 10.0 (.NET 6.0)
+- Rewritten from C to C# 7.3 (.NET Standard 2.0)
     - Converts unmanaged features such as pointers to managed C# equivlaent
     - Applied some C# syntax candy
 - Remaining things such as logic, constants, dataset (as gigantic arrays) are otherwise identical to the original software
@@ -59,6 +59,8 @@ Star Catalog Conversion
 Source: (https://www.iausofa.org/background.html)
 
 # Copyright
+This project is distributed under Apache-2.0 license, please check LICENSE file for details.
+
 Software Routines from the IAU SOFA Collection were used. Copyright © International Astronomical Union Standards of Fundamental Astronomy (http://www.iausofa.org).
 
 Using SOFA software is free of charge under the terms and conditions of the SOFA licence, whose text is stated in:
@@ -66,7 +68,6 @@ Using SOFA software is free of charge under the terms and conditions of the SOFA
 - COnstant SOFA_LICENSE_TEXT in library AstroRoutines
 - https://www.iausofa.org/tandc.html.
 
-Please obey the SOFA 
 
 # Alternatives to this package
 Attila Abrudán's World Wide Astronomy (https://github.com/abrudana/wwa/)

@@ -5,20 +5,39 @@
 		<Nullable>disable</Nullable>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Authors>Alex Man</Authors>
-		<Description>An unofficial C# translation of the International Astronomical Union's C SOFA software library, provides a collection of subroutines, helper methods and constants that implement official IAU algorithms for astronomical computations.</Description>
+		<Description>An unoffical .NET Standard 2.0 port of the International Astronomical Union's C SOFA software library, provides a collection of subroutines, helper methods and constants that implement official IAU algorithms for astronomical computations.</Description>
 		<Copyright>Software Routines from the IAU SOFA Collection were used. Copyright © International Astronomical Union Standards of Fundamental Astronomy (http://www.iausofa.org).</Copyright>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<RepositoryUrl>https://github.com/starsbane/AstroRoutines/</RepositoryUrl>
-		<RepositoryType>GitHub</RepositoryType>
-		<PackageReleaseNotes>Initial release</PackageReleaseNotes>
-		<PackageTags>astronomy;routines;SOFA;julian date</PackageTags>
+		<RepositoryUrl>https://github.com/starsbane/AstroRoutines.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReleaseNotes>v1.0.2
+- Add documentation comments
+- Flatten namespace AstroRoutines.Structs into AstroRoutines
+- Rename some public constants in AR class
+ 
+v1.0.1
+- Set target framework as netstandard2.0 for better compatibility
+
+v1.0.0
+- Initial release</PackageReleaseNotes>
+		<PackageTags>astronomy;routines;calcuation;earth;space;planet;universe;sofa</PackageTags>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<IncludeSymbols>True</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<Title>AstroRoutines</Title>
 		<SignAssembly>False</SignAssembly>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
+		<EnableNETAnalyzers>True</EnableNETAnalyzers>
+		<AnalysisLevel>6.0-recommended</AnalysisLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+	  <NoWarn>1701;1702;CA1051</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+	  <NoWarn>1701;1702;CA1051</NoWarn>
 	</PropertyGroup>
 
 	<ItemGroup>
