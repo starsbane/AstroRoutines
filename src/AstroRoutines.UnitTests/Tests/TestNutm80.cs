@@ -21,7 +21,7 @@ namespace AstroRoutines.UnitTests
 
             Vvd(rmatn[1, 0], -0.8847780042583435924e-5, 1e-12, "Nutm80", "21", ref status);
             Vvd(rmatn[1, 1], 0.9999999991366569963, 1e-12, "Nutm80", "22", ref status);
-            Vvd(rmatn[1, 2], -0.4060052702727130809e-12, 1e-12, "Nutm80", "23", ref status);
+            Vvd(rmatn[1, 2], -0.4060052702727130809e-4, 1e-12, "Nutm80", "23", ref status);
 
             Vvd(rmatn[2, 0], -0.3836265729708478796e-5, 1e-12, "Nutm80", "31", ref status);
             Vvd(rmatn[2, 1], 0.4060049308612638555e-4, 1e-12, "Nutm80", "32", ref status);

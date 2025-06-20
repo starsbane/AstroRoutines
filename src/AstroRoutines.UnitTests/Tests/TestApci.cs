@@ -15,26 +15,26 @@ namespace AstroRoutines.UnitTests
         public void TestApci()
         {
             var status = 0;
-            var date1 = 2456165.5;
-            var date2 = 0.401182685;
 
+            double date1, date2, x, y, s;
             var ebpv = new double[2, 3];
+            var ehp = new double[3];
+            var astrom = new ASTROM();
+
+            date1 = 2456165.5;
+            date2 = 0.401182685;
             ebpv[0, 0] = 0.901310875;
             ebpv[0, 1] = -0.417402664;
             ebpv[0, 2] = -0.180982288;
             ebpv[1, 0] = 0.00742727954;
             ebpv[1, 1] = 0.0140507459;
             ebpv[1, 2] = 0.00609045792;
-
-            var ehp = new double[3];
             ehp[0] = 0.903358544;
             ehp[1] = -0.415395237;
             ehp[2] = -0.180084014;
-
-            var x = 0.0013122272;
-            var y = -2.92808623e-5;
-            var s = 3.05749468e-8;
-            var astrom = new ASTROM();
+            x = 0.0013122272;
+            y = -2.92808623e-5;
+            s = 3.05749468e-8;
 
             Apci(date1, date2, ebpv, ehp, x, y, s, ref astrom);
 
@@ -50,14 +50,12 @@ namespace AstroRoutines.UnitTests
             Vvd(astrom.v[1], 0.8115034051581320575e-4, 1e-16, "Apci", "v(2)", ref status);
             Vvd(astrom.v[2], 0.3517555136380563427e-4, 1e-16, "Apci", "v(3)", ref status);
             Vvd(astrom.bm1, 0.9999999951686012981, 1e-12, "Apci", "bm1", ref status);
-            
-            // Checking BPN matrix
             Vvd(astrom.bpn[0, 0], 0.9999991390295159156, 1e-12, "Apci", "bpn(1,1)", ref status);
-            Vvd(astrom.bpn[0, 1], 0.4978650072505016932e-7, 1e-12, "Apci", "bpn(1,2)", ref status);
-            Vvd(astrom.bpn[0, 2], 0.1312227200000000000e-2, 1e-12, "Apci", "bpn(1,3)", ref status);
-            Vvd(astrom.bpn[1, 0], -0.1136336653771609630e-7, 1e-12, "Apci", "bpn(2,1)", ref status);
+            Vvd(astrom.bpn[1, 0], 0.4978650072505016932e-7, 1e-12, "Apci", "bpn(2,1)", ref status);
+            Vvd(astrom.bpn[2, 0], 0.1312227200000000000e-2, 1e-12, "Apci", "bpn(3,1)", ref status);
+            Vvd(astrom.bpn[0, 1], -0.1136336653771609630e-7, 1e-12, "Apci", "bpn(1,2)", ref status);
             Vvd(astrom.bpn[1, 1], 0.9999999995713154868, 1e-12, "Apci", "bpn(2,2)", ref status);
-            Vvd(astrom.bpn[1, 2], -0.2928086230000000000e-4, 1e-12, "Apci", "bpn(2,3)", ref status);
+            Vvd(astrom.bpn[2, 1], -0.2928086230000000000e-4, 1e-12, "Apci", "bpn(3,2)", ref status);
             Vvd(astrom.bpn[0, 2], -0.1312227200895260194e-2, 1e-12, "Apci", "bpn(1,3)", ref status);
             Vvd(astrom.bpn[1, 2], 0.2928082217872315680e-4, 1e-12, "Apci", "bpn(2,3)", ref status);
             Vvd(astrom.bpn[2, 2], 0.9999991386008323373, 1e-12, "Apci", "bpn(3,3)", ref status);

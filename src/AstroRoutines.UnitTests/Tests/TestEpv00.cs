@@ -11,8 +11,9 @@ namespace AstroRoutines.UnitTests
         public void TestEpv00()
         {
             var status = 0;
-            double[,] pvh = new double[2, 3];
-            double[,] pvb = new double[2, 3];
+
+            var pvh = new double[2, 3];
+            var pvb = new double[2, 3];
             int j;
 
             j = Epv00(2400000.5, 53411.52501161, ref pvh, ref pvb);
@@ -23,7 +24,7 @@ namespace AstroRoutines.UnitTests
 
             Vvd(pvh[1, 0], -0.1091891824147313846e-1, 1e-15, "Epv00", "vh(x)", ref status);
             Vvd(pvh[1, 1], -0.1247187268440845008e-1, 1e-15, "Epv00", "vh(y)", ref status);
-            Vvd(pvh[1, 2], -0.5407569418065039061e-15, 1e-15, "Epv00", "vh(z)", ref status);
+            Vvd(pvh[1, 2], -0.5407569418065039061e-2, 1e-15, "Epv00", "vh(z)", ref status);
 
             Vvd(pvb[0, 0], -0.7714104440491111971, 1e-14, "Epv00", "pb(x)", ref status);
             Vvd(pvb[0, 1], 0.5598412061824171323, 1e-14, "Epv00", "pb(y)", ref status);
@@ -31,7 +32,7 @@ namespace AstroRoutines.UnitTests
 
             Vvd(pvb[1, 0], -0.1091874268116823295e-1, 1e-15, "Epv00", "vb(x)", ref status);
             Vvd(pvb[1, 1], -0.1246525461732861538e-1, 1e-15, "Epv00", "vb(y)", ref status);
-            Vvd(pvb[1, 2], -0.5404773180966231279e-15, 1e-15, "Epv00", "vb(z)", ref status);
+            Vvd(pvb[1, 2], -0.5404773180966231279e-2, 1e-15, "Epv00", "vb(z)", ref status);
 
             Viv(j, 0, "Epv00", "j", ref status);
 

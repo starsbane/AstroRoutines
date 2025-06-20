@@ -8,30 +8,32 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestPn00()
         {
-            var dpsi = 0.0;
-            var deps = 0.0;
-            var epsa = 0.0;
+            var status = 0;
+
+            double dpsi, deps, epsa;
             var rb = new double[3, 3];
             var rp = new double[3, 3];
             var rbp = new double[3, 3];
             var rn = new double[3, 3];
             var rbpn = new double[3, 3];
-            var status = 0;
+
+            dpsi = -0.9632552291149335877e-5;
+            deps = 0.4063197106621141414e-4;
 
             Pn00(2400000.5, 53736.0, dpsi, deps, out epsa, out rb, out rp, out rbp, out rn, out rbpn);
 
             Vvd(epsa, 0.4090791789404229916, 1e-12, "Pn00", "epsa", ref status);
 
             Vvd(rb[0, 0], 0.9999999999999942498, 1e-12, "Pn00", "rb11", ref status);
-            Vvd(rb[0, 1], -0.7078279744199196626e-7, 1e-16, "Pn00", "rb12", ref status);
-            Vvd(rb[0, 2], 0.8056217146976134152e-7, 1e-16, "Pn00", "rb13", ref status);
+            Vvd(rb[0, 1], -0.7078279744199196626e-7, 1e-18, "Pn00", "rb12", ref status);
+            Vvd(rb[0, 2], 0.8056217146976134152e-7, 1e-18, "Pn00", "rb13", ref status);
 
-            Vvd(rb[1, 0], 0.7078279477857337206e-7, 1e-16, "Pn00", "rb21", ref status);
+            Vvd(rb[1, 0], 0.7078279477857337206e-7, 1e-18, "Pn00", "rb21", ref status);
             Vvd(rb[1, 1], 0.9999999999999969484, 1e-12, "Pn00", "rb22", ref status);
-            Vvd(rb[1, 2], 0.3306041454222136517e-7, 1e-16, "Pn00", "rb23", ref status);
+            Vvd(rb[1, 2], 0.3306041454222136517e-7, 1e-18, "Pn00", "rb23", ref status);
 
-            Vvd(rb[2, 0], -0.8056217380986972157e-7, 1e-16, "Pn00", "rb31", ref status);
-            Vvd(rb[2, 1], -0.3306040883980552500e-7, 1e-16, "Pn00", "rb32", ref status);
+            Vvd(rb[2, 0], -0.8056217380986972157e-7, 1e-18, "Pn00", "rb31", ref status);
+            Vvd(rb[2, 1], -0.3306040883980552500e-7, 1e-18, "Pn00", "rb32", ref status);
             Vvd(rb[2, 2], 0.9999999999999962084, 1e-12, "Pn00", "rb33", ref status);
 
             Vvd(rp[0, 0], 0.9999989300532289018, 1e-12, "Pn00", "rp11", ref status);
@@ -64,7 +66,7 @@ namespace AstroRoutines.UnitTests
 
             Vvd(rn[1, 0], -0.8837590456633197506e-5, 1e-16, "Pn00", "rn21", ref status);
             Vvd(rn[1, 1], 0.9999999991354692733, 1e-12, "Pn00", "rn22", ref status);
-            Vvd(rn[1, 2], -0.4063198798559573702e-16, 1e-16, "Pn00", "rn23", ref status);
+            Vvd(rn[1, 2], -0.4063198798559573702e-4, 1e-16, "Pn00", "rn23", ref status);
 
             Vvd(rn[2, 0], -0.3831847930135328368e-5, 1e-16, "Pn00", "rn31", ref status);
             Vvd(rn[2, 1], 0.4063195412258150427e-4, 1e-16, "Pn00", "rn32", ref status);
@@ -72,7 +74,7 @@ namespace AstroRoutines.UnitTests
 
             Vvd(rbpn[0, 0], 0.9999989440499982806, 1e-12, "Pn00", "rbpn11", ref status);
             Vvd(rbpn[0, 1], -0.1332880253640848301e-2, 1e-14, "Pn00", "rbpn12", ref status);
-            Vvd(rbpn[0, 2], -0.5790760898731091166e-3, 1e-14, "Pn00", "rbpn13", ref status);
+            Vvd(rbpn[0, 2], -0.5790760898731087295e-3, 1e-14, "Pn00", "rbpn13", ref status);
 
             Vvd(rbpn[1, 0], 0.1332856746979948745e-2, 1e-14, "Pn00", "rbpn21", ref status);
             Vvd(rbpn[1, 1], 0.9999991109064768883, 1e-12, "Pn00", "rbpn22", ref status);
