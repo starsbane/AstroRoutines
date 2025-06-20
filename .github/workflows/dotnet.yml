@@ -5,10 +5,14 @@ name: .NET
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+      - 'releases/**'
+    paths: ['src/**']
   pull_request:
-    branches: [ "main" ]
-
+    branches:
+      - 'releases/**'
+    paths: ['src/**']
 jobs:
   build:
 
@@ -21,8 +25,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore "src/AstroRoutines.sln"
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore "src/AstroRoutines.sln"
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal "src/AstroRoutines.sln"
