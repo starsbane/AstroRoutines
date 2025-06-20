@@ -12,11 +12,8 @@ namespace AstroRoutines.UnitTests
         public void TestBp06()
         {
             var status = 0;
-            var rb = new double[3, 3];
-            var rp = new double[3, 3];
-            var rbp = new double[3, 3];
 
-            Bp06(2400000.5, 50123.9999, out rb, out rp, out rbp);
+            Bp06(2400000.5, 50123.9999, out var rb, out var rp, out var rbp);
 
             Vvd(rb[0, 0], 0.9999999999999942497, 1e-12, "Bp06", "rb11", ref status);
             Vvd(rb[0, 1], -0.7078368960971557145e-7, 1e-14, "Bp06", "rb12", ref status);

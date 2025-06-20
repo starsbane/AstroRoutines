@@ -20,7 +20,6 @@ namespace AstroRoutines
             var z = new double[3];
             var w = new double[3];
             double s;
-            var x = new double[3];
             var y = new double[3];
 
             /* Equator pole. */
@@ -31,7 +30,7 @@ namespace AstroRoutines
 
             /* Equinox (top row of matrix). */
             Pxp(p, z, ref w);
-            Pn(w, out s, out x);
+            Pn(w, out s, out var x);
 
             /* Middle row of matrix. */
             Pxp(z, x, ref y);

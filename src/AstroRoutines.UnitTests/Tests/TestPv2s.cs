@@ -11,7 +11,6 @@ namespace AstroRoutines.UnitTests
             var status = 0;
 
             var pv = new double[2, 3];
-            double theta, phi, r, td, pd, rd;
 
             pv[0, 0] = -0.4514964673880165;
             pv[0, 1] = 0.03093394277342585;
@@ -21,7 +20,7 @@ namespace AstroRoutines.UnitTests
             pv[1, 1] = 2.652814182060692e-6;
             pv[1, 2] = 2.568431853930293e-6;
 
-            Pv2s(pv, out theta, out phi, out r, out td, out pd, out rd);
+            Pv2s(pv, out var theta, out var phi, out var r, out var td, out var pd, out var rd);
 
             Vvd(theta, 3.073185307179586515, 1e-12, "Pv2s", "theta", ref status);
             Vvd(phi, 0.1229999999999999992, 1e-12, "Pv2s", "phi", ref status);

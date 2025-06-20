@@ -11,16 +11,15 @@ namespace AstroRoutines
         public static void C2i06a(double date1, double date2, ref double[,] rc2i)
         {
             var rbpn = new double[3, 3];
-            double x, y, s;
 
             /* Obtain the celestial-to-true matrix (IAU 2006/2000A). */
             Pnm06a(date1, date2, ref rbpn);
 
             /* Extract the X,Y coordinates. */
-            Bpn2xy(rbpn, out x, out y);
+            Bpn2xy(rbpn, out var x, out var y);
 
             /* Obtain the CIO locator. */
-            s = S06(date1, date2, x, y);
+            var s = S06(date1, date2, x, y);
 
             /* Form the celestial-to-intermediate matrix. */
             C2ixys(x, y, s, ref rc2i);

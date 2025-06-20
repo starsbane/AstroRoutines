@@ -10,15 +10,12 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
 
-            double xi, eta, ra, dec, az1, bz1, az2, bz2;
-            int n;
+            var xi = -0.03;
+            var eta = 0.07;
+            var ra = 1.3;
+            var dec = 1.5;
 
-            xi = -0.03;
-            eta = 0.07;
-            ra = 1.3;
-            dec = 1.5;
-
-            n = Tpors(xi, eta, ra, dec, out az1, out bz1, out az2, out bz2);
+            var n = Tpors(xi, eta, ra, dec, out var az1, out var bz1, out var az2, out var bz2);
 
             Vvd(az1, 1.736621577783208748, 1e-13, "Tpors", "az1", ref status);
             Vvd(bz1, 1.436736561844090323, 1e-13, "Tpors", "bz1", ref status);

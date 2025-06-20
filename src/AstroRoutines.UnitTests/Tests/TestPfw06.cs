@@ -8,13 +8,9 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestPfw06()
         {
-            double gamb;
-            double phib;
-            double psib;
-            double epsa;
             var status = 0;
 
-            Pfw06(2400000.5, 50123.9999, out gamb, out phib, out psib, out epsa);
+            Pfw06(2400000.5, 50123.9999, out var gamb, out var phib, out var psib, out var epsa);
 
             Vvd(gamb, -0.2243387670997995690e-5, 1e-16, "Pfw06", "gamb", ref status);
             Vvd(phib, 0.4091014602391312808, 1e-12, "Pfw06", "phib", ref status);

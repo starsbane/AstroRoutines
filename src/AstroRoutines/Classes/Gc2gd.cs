@@ -14,14 +14,12 @@ namespace AstroRoutines
         /// <returns>status: 0 = OK, -1 = illegal identifier, -2 = internal error</returns>
         public static int Gc2gd(int n, double[] xyz, out double elong, out double phi, out double height)
         {
-            int j;
-            double a, f;
             phi = 0;
             height = 0;
             elong = 0;
 
             /* Obtain reference ellipsoid parameters. */
-            j = Eform(n, out a, out f);
+            var j = Eform(n, out var a, out var f);
 
             /* If OK, transform x,y,z to longitude, geodetic latitude, height. */
             if (j == 0)

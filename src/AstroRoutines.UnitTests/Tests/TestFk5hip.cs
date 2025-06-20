@@ -9,10 +9,8 @@ namespace AstroRoutines.UnitTests
         public void TestFk5hip()
         {
             var status = 0;
-            var r5h = new double[3, 3];
-            var s5h = new double[3];
 
-            Fk5hip(out r5h, out s5h);
+            Fk5hip(out var r5h, out var s5h);
 
             Vvd(r5h[0, 0], 0.9999999999999928638, 1e-14, "Fk5hip", "11", ref status);
             Vvd(r5h[0, 1], 0.1110223351022919694e-6, 1e-17, "Fk5hip", "12", ref status);

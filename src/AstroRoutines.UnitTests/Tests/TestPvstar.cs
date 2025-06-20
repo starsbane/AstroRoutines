@@ -11,8 +11,6 @@ namespace AstroRoutines.UnitTests
             var status = 0;
 
             var pv = new double[2, 3];
-            double ra, dec, pmr, pmd, px, rv;
-            int j;
 
             pv[0, 0] = 126668.5912743160601;
             pv[0, 1] = 2136.792716839935195;
@@ -22,7 +20,7 @@ namespace AstroRoutines.UnitTests
             pv[1, 1] = -0.6253919754866173866e-2;
             pv[1, 2] = 0.1189353719774107189e-1;
 
-            j = Pvstar(pv, out ra, out dec, out pmr, out pmd, out px, out rv);
+            var j = Pvstar(pv, out var ra, out var dec, out var pmr, out var pmd, out var px, out var rv);
 
             Vvd(ra, 0.1686756e-1, 1e-12, "Pvstar", "ra", ref status);
             Vvd(dec, -1.093989828, 1e-12, "Pvstar", "dec", ref status);

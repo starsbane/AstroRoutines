@@ -23,24 +23,22 @@ namespace AstroRoutines
             // Earth rotation rate in radians per UT1 second
             const double OM = 1.00273781191135448 * D2PI / DAYSEC;
 
-            var xyzm = new double[3];
             var rpm = new double[3,3];
             var xyz = new double[3];
-            double x, y, z, s, c;
 
             // Geodetic to geocentric transformation (WGS84)
-            Gd2gc(1, elong, phi, hm, out xyzm);
+            Gd2gc(1, elong, phi, hm, out var xyzm);
 
             // Polar motion and TIO position
             Pom00(xp, yp, sp, ref rpm);
             Trxp(rpm, xyzm, ref xyz);
-            x = xyz[0];
-            y = xyz[1];
-            z = xyz[2];
+            var x = xyz[0];
+            var y = xyz[1];
+            var z = xyz[2];
 
             // Functions of ERA
-            s = Sin(theta);
-            c = Cos(theta);
+            var s = Sin(theta);
+            var c = Cos(theta);
 
             // Position
             pv[0, 0] = c * x - s * y;

@@ -9,9 +9,9 @@ namespace AstroRoutines.UnitTests
         public void TestEpb2jd()
         {
             var status = 0;
-            double epb = 1957.3, djm0, djm;
+            var epb = 1957.3;
 
-            Epb2jd(epb, out djm0, out djm);
+            Epb2jd(epb, out var djm0, out var djm);
 
             Vvd(djm0, 2400000.5, 1e-9, "Epb2jd", "djm0", ref status);
             Vvd(djm, 35948.1915101513, 1e-9, "Epb2jd", "mjd", ref status);

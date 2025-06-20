@@ -29,12 +29,11 @@ namespace AstroRoutines
             double phpa, double tc, double rh, double wl,
             out double rc, out double dc)
         {
-            int j;
             var astrom = new ASTROM();
-            double eo = 0, ri, di;
+            double eo = 0;
 
             /* Star-independent astrometry parameters. */
-            j = Apco13(utc1, utc2, dut1, elong, phi, hm, xp, yp,
+            var j = Apco13(utc1, utc2, dut1, elong, phi, hm, xp, yp,
                 phpa, tc, rh, wl, ref astrom, ref eo);
 
             /* Abort if bad UTC. */
@@ -45,7 +44,7 @@ namespace AstroRoutines
             }
 
             /* Transform observed to CIRS. */
-            Atoiq(type, ob1, ob2, ref astrom, out ri, out di);
+            Atoiq(type, ob1, ob2, ref astrom, out var ri, out var di);
 
             /* Transform CIRS to ICRS. */
             Aticq(ri, di, ref astrom, out rc, out dc);

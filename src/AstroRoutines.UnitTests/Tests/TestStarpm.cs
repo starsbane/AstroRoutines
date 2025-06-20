@@ -17,11 +17,9 @@ namespace AstroRoutines.UnitTests
             var px1 = 0.74723;
             var rv1 = -21.6;
 
-            double ra2, dec2, pmr2, pmd2, px2, rv2;
-
             var j = Starpm(ra1, dec1, pmr1, pmd1, px1, rv1,
                            2400000.5, 50083.0, 2400000.5, 53736.0,
-                           out ra2, out dec2, out pmr2, out pmd2, out px2, out rv2);
+                           out var ra2, out var dec2, out var pmr2, out var pmd2, out var px2, out var rv2);
 
             Vvd(ra2, 0.01668919069414256149, 1e-13, "Starpm", "ra", ref status);
             Vvd(dec2, -1.093966454217127897, 1e-13, "Starpm", "dec", ref status);

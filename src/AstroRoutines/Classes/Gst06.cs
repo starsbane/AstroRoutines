@@ -13,18 +13,16 @@ namespace AstroRoutines
         /// <returns>Greenwich apparent sidereal time (radians)</returns>
         public static double Gst06(double uta, double utb, double tta, double ttb, double[,] rnpb)
         {
-            double x, y, s, era, eors, gst;
-
             /* Extract CIP coordinates. */
-            Bpn2xy(rnpb, out x, out y);
+            Bpn2xy(rnpb, out var x, out var y);
 
             /* The CIO locator, s. */
-            s = S06(tta, ttb, x, y);
+            var s = S06(tta, ttb, x, y);
 
             /* Greenwich apparent sidereal time. */
-            era = Era00(uta, utb);
-            eors = Eors(rnpb, s);
-            gst = Anp(era - eors);
+            var era = Era00(uta, utb);
+            var eors = Eors(rnpb, s);
+            var gst = Anp(era - eors);
 
             return gst;
 

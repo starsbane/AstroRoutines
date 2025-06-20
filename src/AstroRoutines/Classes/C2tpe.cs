@@ -18,26 +18,23 @@ namespace AstroRoutines
             double dpsi, double deps, double xp, double yp,
             out double[,] rc2t)
         {
-            double epsa;
             var rb = new double[3, 3];
             var rp = new double[3, 3];
             var rbp = new double[3, 3];
             var rn = new double[3, 3];
-            var rbpn = new double[3, 3];
-            double gmst, ee, sp;
             var rpom = new double[3, 3];
 
             /* Form the celestial-to-true matrix for this TT. */
-            Pn00(tta, ttb, dpsi, deps, out epsa, out rb, out rp, out rbp, out rn, out rbpn);
+            Pn00(tta, ttb, dpsi, deps, out var epsa, out rb, out rp, out rbp, out rn, out var rbpn);
 
             /* Predict the Greenwich Mean Sidereal Time for this UT1 and TT. */
-            gmst = Gmst00(uta, utb, tta, ttb);
+            var gmst = Gmst00(uta, utb, tta, ttb);
 
             /* Predict the equation of the equinoxes given TT and nutation. */
-            ee = Ee00(tta, ttb, epsa, dpsi);
+            var ee = Ee00(tta, ttb, epsa, dpsi);
 
             /* Estimate s'. */
-            sp = Sp00(tta, ttb);
+            var sp = Sp00(tta, ttb);
 
             /* Form the polar motion matrix. */
             Pom00(xp, yp, sp, ref rpom);

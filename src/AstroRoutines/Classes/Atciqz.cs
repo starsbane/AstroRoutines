@@ -17,7 +17,6 @@ namespace AstroRoutines
             var pnat = new double[3];
             var ppr = new double[3];
             var pi = new double[3];
-            double w;
 
             /* BCRS coordinate direction (unit vector). */
             S2c(rc, dc, ref pco);
@@ -32,7 +31,7 @@ namespace AstroRoutines
             Rxp(astrom.bpn, ppr, ref pi);
 
             /* CIRS RA,Dec. */
-            C2s(pi, out w, out di);
+            C2s(pi, out var w, out di);
             ri = Anp(w);
         }
     }

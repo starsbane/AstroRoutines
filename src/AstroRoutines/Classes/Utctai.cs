@@ -21,13 +21,11 @@ namespace AstroRoutines
         public static int Utctai(double utc1, double utc2, 
                                  out double tai1, out double tai2)
         {
-            bool big1;
-            int iy, im, id, j, iyt, imt, idt;
-            double u1, u2, fd, dat0, dat12, w, dat24, dlod, dleap, z1 = 0, z2 = 0, a2;
+            double u1, u2, w;
             tai1 = tai2 = 0;
 
             // Put the two parts of the UTC into big-first order
-            big1 = (Abs(utc1) >= Abs(utc2));
+            var big1 = (Abs(utc1) >= Abs(utc2));
             if (big1)
             {
                 u1 = utc1;
@@ -40,24 +38,24 @@ namespace AstroRoutines
             }
 
             // Get TAI-UTC at 0h today
-            j = Jd2cal(u1, u2, out iy, out im, out id, out fd);
+            var j = Jd2cal(u1, u2, out var iy, out var im, out var id, out var fd);
             if (j != 0) return j;
-            j = Dat(iy, im, id, 0.0, out dat0);
+            j = Dat(iy, im, id, 0.0, out var dat0);
             if (j < 0) return j;
 
             // Get TAI-UTC at 12h today (to detect drift)
-            j = Dat(iy, im, id, 0.5, out dat12);
+            j = Dat(iy, im, id, 0.5, out var dat12);
             if (j < 0) return j;
 
             // Get TAI-UTC at 0h tomorrow (to detect jumps)
-            j = Jd2cal(u1 + 1.5, u2 - fd, out iyt, out imt, out idt, out w);
+            j = Jd2cal(u1 + 1.5, u2 - fd, out var iyt, out var imt, out var idt, out w);
             if (j != 0) return j;
-            j = Dat(iyt, imt, idt, 0.0, out dat24);
+            j = Dat(iyt, imt, idt, 0.0, out var dat24);
             if (j < 0) return j;
 
             // Separate TAI-UTC change into per-day (DLOD) and any jump (DLEAP)
-            dlod = 2.0 * (dat12 - dat0);
-            dleap = dat24 - (dat0 + dlod);
+            var dlod = 2.0 * (dat12 - dat0);
+            var dleap = dat24 - (dat0 + dlod);
 
             // Remove any scaling applied to spread leap into preceding day
             fd *= (DAYSEC + dleap) / DAYSEC;
@@ -66,10 +64,10 @@ namespace AstroRoutines
             fd *= (DAYSEC + dlod) / DAYSEC;
 
             // Today's calendar date to 2-part JD
-            if (Cal2jd(iy, im, id, out z1, out z2) != 0) return -1;
+            if (Cal2jd(iy, im, id, out var z1, out var z2) != 0) return -1;
 
             // Assemble the TAI result, preserving the UTC split and order
-            a2 = z1 - u1;
+            var a2 = z1 - u1;
             a2 += z2;
             a2 += fd + dat0 / DAYSEC;
             if (big1)

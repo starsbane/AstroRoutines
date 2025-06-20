@@ -11,10 +11,8 @@ namespace AstroRoutines
 		/// <param name="rbp">bias-precession matrix (Note 2)</param>
         public static void Pmat06(double date1, double date2, ref double[,] rbp)
         {
-            double gamb, phib, psib, epsa;
-
             /* Bias-precession Fukushima-Williams angles. */
-            Pfw06(date1, date2, out gamb, out phib, out psib, out epsa);
+            Pfw06(date1, date2, out var gamb, out var phib, out var psib, out var epsa);
 
             /* Form the matrix. */
             Fw2m(gamb, phib, psib, epsa, ref rbp);

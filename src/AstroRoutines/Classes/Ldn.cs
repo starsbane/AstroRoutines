@@ -22,9 +22,6 @@ namespace AstroRoutines
             int i;
             var v = new double[3];
             double dt;
-            var ev = new double[3];
-            double em;
-            var e = new double[3];
 
             /* Star direction prior to deflection. */
             Cp(sc, ref sn);
@@ -42,10 +39,10 @@ namespace AstroRoutines
                 dt = Min(dt, 0.0);
 
                 /* Backtrack the body to the time the light was passing the body. */
-                Ppsp(v, -dt, b[i].pv.GetRow(1), out ev);
+                Ppsp(v, -dt, b[i].pv.GetRow(1), out var ev);
 
                 /* Body to observer vector as magnitude and direction. */
-                Pn(ev, out em, out e);
+                Pn(ev, out var em, out var e);
 
                 /* Apply light deflection for this body. */
                 Ld(b[i].bm, sn, sn, e, em, b[i].dl, ref sn);

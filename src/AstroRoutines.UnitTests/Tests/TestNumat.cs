@@ -12,9 +12,8 @@ namespace AstroRoutines.UnitTests
             var epsa = 0.4090789763356509900;
             var dpsi = -0.9630909107115582393e-5;
             var deps = 0.4063239174001678826e-4;
-            var rmatn = new double[3, 3];
 
-            Numat(epsa, dpsi, deps, out rmatn);
+            Numat(epsa, dpsi, deps, out var rmatn);
 
             Vvd(rmatn[0, 0], 0.9999999999536227949, 1e-12, "Numat", "11", ref status);
             Vvd(rmatn[0, 1], 0.8836239320236250577e-5, 1e-12, "Numat", "12", ref status);

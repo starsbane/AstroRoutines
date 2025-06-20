@@ -13,7 +13,6 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
             var rbpn = new double[3, 3];
-            double x, y;
 
             rbpn[0, 0] =  9.999962358680738e-1;
             rbpn[0, 1] = -2.516417057665452e-3;
@@ -27,7 +26,7 @@ namespace AstroRoutines.UnitTests
             rbpn[2, 1] = -4.281337229063151e-5;
             rbpn[2, 2] =  9.999994012499173e-1;
 
-            Bpn2xy(rbpn, out x, out y);
+            Bpn2xy(rbpn, out var x, out var y);
 
             Vvd(x,  1.093465510215479e-3, 1e-12, "Bpn2xy", "x", ref status);
             Vvd(y, -4.281337229063151e-5, 1e-12, "Bpn2xy", "y", ref status);

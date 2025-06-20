@@ -11,16 +11,15 @@ namespace AstroRoutines
         public static double S06a(double date1, double date2)
         {
             var rnpb = new double[3, 3];
-            double x, y, s;
 
             /* Bias-precession-nutation-matrix, IAU 2006/2000A. */
             Pnm06a(date1, date2, ref rnpb);
 
             /* Extract the CIP coordinates. */
-            Bpn2xy(rnpb, out x, out y);
+            Bpn2xy(rnpb, out var x, out var y);
 
             /* Compute the CIO locator s, given the CIP coordinates. */
-            s = S06(date1, date2, x, y);
+            var s = S06(date1, date2, x, y);
 
             return s;
         }

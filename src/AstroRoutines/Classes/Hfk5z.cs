@@ -19,26 +19,23 @@ namespace AstroRoutines
         public static void Hfk5z(double rh, double dh, double date1, double date2,
                                 out double r5, out double d5, out double dr5, out double dd5)
         {
-            double t;
             var ph = new double[3];
-            var r5h = new double[3, 3];
-            var s5h = new double[3];
             var sh = new double[3];
             var vst = new double[3];
             var rst = new double[3, 3];
             var r5ht = new double[3, 3];
             var pv5e = new double[2, 3];
             var vv = new double[3];
-            double w, r, v;
+            double r, v;
 
             /* Time interval from fundamental epoch J2000.0 to given date (JY). */
-            t = ((date1 - DJ00) + date2) / DJY;
+            var t = ((date1 - DJ00) + date2) / DJY;
 
             /* Hipparcos barycentric position vector (normalized). */
             S2c(rh, dh, ref ph);
 
             /* FK5 to Hipparcos orientation matrix and spin vector. */
-            Fk5hip(out r5h, out s5h);
+            Fk5hip(out var r5h, out var s5h);
 
             /* Rotate the spin into the Hipparcos system. */
             Rxp(r5h, s5h, ref sh);
@@ -66,7 +63,7 @@ namespace AstroRoutines
             pv5e.SetRow(1, pv5eRow1);
 
             /* FK5 position/velocity pv-vector to spherical. */
-            Pv2s(pv5e, out w, out d5, out r, out dr5, out dd5, out v);
+            Pv2s(pv5e, out var w, out d5, out r, out dr5, out dd5, out v);
             r5 = Anp(w);
 
             /* Finished. */

@@ -12,13 +12,12 @@ namespace AstroRoutines
         public static void Pnm80(double date1, double date2, out double[,] rmatpn)
         {
             var rmatp = new double[3, 3];
-            var rmatn = new double[3, 3];
 
             // Precession matrix, J2000.0 to date
             Pmat76(date1, date2, ref rmatp);
 
             // Nutation matrix
-            Nutm80(date1, date2, out rmatn);
+            Nutm80(date1, date2, out var rmatn);
 
             // Combine the matrices: PN = N x P
             rmatpn = new double[3, 3];

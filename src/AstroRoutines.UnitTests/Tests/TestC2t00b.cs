@@ -8,7 +8,6 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestC2t00b()
         {
-            var rc2t = new double[3, 3];
             var status = 0;
 
             var tta = 2400000.5;
@@ -18,7 +17,7 @@ namespace AstroRoutines.UnitTests
             var xp = 2.55060238e-7;
             var yp = 1.860359247e-6;
 
-            C2t00b(tta, ttb, uta, utb, xp, yp, out rc2t);
+            C2t00b(tta, ttb, uta, utb, xp, yp, out var rc2t);
 
             Vvd(rc2t[0, 0], -0.1810332128439678965, 1e-12, "C2t00b", "11", ref status);
             Vvd(rc2t[0, 1], 0.9834769806913872359, 1e-12, "C2t00b", "12", ref status);

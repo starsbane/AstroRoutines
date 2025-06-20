@@ -23,13 +23,11 @@ namespace AstroRoutines
         /// <param name="rnpb">Bias-precession-nutation matrix (output)</param>
         public static void Pnm06a(double date1, double date2, ref double[,] rbpn)
         {
-			double gamb, phib, psib, epsa, dp, de;
-
-			/* Fukushima-Williams angles for frame bias and precession. */
-			Pfw06(date1, date2, out gamb, out phib, out psib, out epsa);
+            /* Fukushima-Williams angles for frame bias and precession. */
+			Pfw06(date1, date2, out var gamb, out var phib, out var psib, out var epsa);
 
 			/* Nutation components. */
-			Nut06a(date1, date2, out dp, out de);
+			Nut06a(date1, date2, out var dp, out var de);
 
 			/* Equinox based nutation x precession x bias matrix. */
 			Fw2m(gamb, phib, psib + dp, epsa + de, ref rbpn);

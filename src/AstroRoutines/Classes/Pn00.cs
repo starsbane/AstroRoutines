@@ -33,24 +33,22 @@ namespace AstroRoutines
                                 out double[,] rb, out double[,] rp, out double[,] rbp,
                                 out double[,] rn, out double[,] rbpn)
         {
-            double dpsipr, depspr;
-            var rbpw = new double[3, 3];
-            var rnw = new double[3, 3];
+            double dpsipr;
             rbp = new double[3, 3];
             rn = new double[3, 3];
 
             /* IAU 2000 precession-rate adjustments. */
-            Pr00(date1, date2, out dpsipr, out depspr);
+            Pr00(date1, date2, out dpsipr, out var depspr);
 
             /* Mean obliquity, consistent with IAU 2000 precession-nutation. */
             epsa = Obl80(date1, date2) + depspr;
 
             /* Frame bias and precession matrices and their product. */
-            Bp00(date1, date2, out rb, out rp, out rbpw);
+            Bp00(date1, date2, out rb, out rp, out var rbpw);
             Cr(rbpw, ref rbp);
 
             /* Nutation matrix. */
-            Numat(epsa, dpsi, deps, out rnw);
+            Numat(epsa, dpsi, deps, out var rnw);
             Cr(rnw, ref rn);
 
             rbpn = new double[3, 3];

@@ -27,12 +27,11 @@ namespace AstroRoutines.UnitTests
             var ri = 2.710121572969038991;
             var di = 0.1729371367218230438;
             var astrom = new ASTROM();
-            double aob, zob, hob, dob, rob;
 
             Apio13(utc1, utc2, dut1, elong, phi, hm, xp, yp,
                    phpa, tc, rh, wl, ref astrom);
 
-            Atioq(ri, di, ref astrom, out aob, out zob, out hob, out dob, out rob);
+            Atioq(ri, di, ref astrom, out var aob, out var zob, out var hob, out var dob, out var rob);
 
             Vvd(aob, 0.9233952224895122499e-1, 1e-12, "Atioq", "aob", ref status);
             Vvd(zob, 1.407758704513549991, 1e-12, "Atioq", "zob", ref status);

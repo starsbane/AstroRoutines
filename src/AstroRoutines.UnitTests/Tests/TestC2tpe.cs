@@ -17,9 +17,8 @@ namespace AstroRoutines.UnitTests
             var dpsi = -0.9630909107115582393e-5;
             var xp = 2.55060238e-7;
             var yp = 1.860359247e-6;
-            var rc2t = new double[3, 3];
 
-            C2tpe(tta, ttb, uta, utb, dpsi, deps, xp, yp, out rc2t);
+            C2tpe(tta, ttb, uta, utb, dpsi, deps, xp, yp, out var rc2t);
 
             Vvd(rc2t[0, 0], -0.1813677995763029394, 1e-12, "C2tpe", "11", ref status);
             Vvd(rc2t[0, 1], 0.9023482206891683275, 1e-12, "C2tpe", "12", ref status);

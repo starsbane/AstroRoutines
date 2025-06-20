@@ -22,15 +22,14 @@ namespace AstroRoutines
         public static int Ut1utc(double ut11, double ut12, double dut1, 
                                  ref double utc1, ref double utc2)
         {
-            bool big1;
-            int i, iy, im, id, js = 0;
-            double duts, u1, u2, d1, dats1, d2, fd, dats2, ddats, us1, us2, du;
+            int i, js = 0;
+            double u1, u2, d2, ddats, us1, us2, du;
 
             // UT1-UTC in seconds
-            duts = dut1;
+            var duts = dut1;
 
             // Put the two parts of the UT1 into big-first order
-            big1 = (Abs(ut11) >= Abs(ut12));
+            var big1 = (Abs(ut11) >= Abs(ut12));
             if (big1)
             {
                 u1 = ut11;
@@ -43,13 +42,13 @@ namespace AstroRoutines
             }
 
             // See if the UT1 can possibly be in a leap-second day
-            d1 = u1;
-            dats1 = 0;
+            var d1 = u1;
+            double dats1 = 0;
             for (i = -1; i <= 3; i++)
             {
                 d2 = u2 + (double)i;
-                if (Jd2cal(d1, d2, out iy, out im, out id, out fd) != 0) return -1;
-                js = Dat(iy, im, id, 0.0, out dats2);
+                if (Jd2cal(d1, d2, out var iy, out var im, out var id, out var fd) != 0) return -1;
+                js = Dat(iy, im, id, 0.0, out var dats2);
                 if (js < 0) return -1;
                 if (i == -1) dats1 = dats2;
                 ddats = dats2 - dats1;

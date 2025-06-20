@@ -15,12 +15,11 @@ namespace AstroRoutines
         public static void Bp06(double date1, double date2,
             out double[,] rb, out double[,] rp, out double[,] rbp)
         {
-            double gamb, phib, psib, epsa;
             var rbpw = new double[3, 3];
             var rbt = new double[3, 3];
             rb = new double[3,3];
             /* B matrix. */
-            Pfw06(DJM0, DJM00, out gamb, out phib, out psib, out epsa);
+            Pfw06(DJM0, DJM00, out var gamb, out var phib, out var psib, out var epsa);
             Fw2m(gamb, phib, psib, epsa, ref rb);
 
             /* PxB matrix (temporary). */

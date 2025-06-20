@@ -9,12 +9,10 @@ namespace AstroRoutines.UnitTests
         public void TestP06e()
         {
             var status = 0;
-            double eps0, psia, oma, bpa, bqa, pia, bpia,
-                   epsa, chia, za, zetaa, thetaa, pa, gam, phi, psi;
 
-            P06e(2400000.5, 52541.0, out eps0, out psia, out oma, out bpa,
-                out bqa, out pia, out bpia, out epsa, out chia, out za,
-                out zetaa, out thetaa, out pa, out gam, out phi, out psi);
+            P06e(2400000.5, 52541.0, out var eps0, out var psia, out var oma, out var bpa,
+                out var bqa, out var pia, out var bpia, out var epsa, out var chia, out var za,
+                out var zetaa, out var thetaa, out var pa, out var gam, out var phi, out var psi);
 
             Vvd(eps0, 0.4090926006005828715, 1e-14, "P06e", "eps0", ref status);
             Vvd(psia, 0.6664369630191613431e-3, 1e-14, "P06e", "psia", ref status);

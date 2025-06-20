@@ -11,7 +11,6 @@ namespace AstroRoutines.UnitTests
             var rbpn = new double[3, 3];
             var gst = 1.754166138040730516;
             var rpom = new double[3, 3];
-            var rc2t = new double[3, 3];
             var status = 0;
 
             rbpn[0, 0] = 0.9999989440476103608;
@@ -38,7 +37,7 @@ namespace AstroRoutines.UnitTests
             rpom[2, 1] = 0.1860359247002413923e-5;
             rpom[2, 2] = 0.9999999999982369658;
 
-            C2teqx(rbpn, gst, rpom, out rc2t);
+            C2teqx(rbpn, gst, rpom, out var rc2t);
 
             Vvd(rc2t[0, 0], -0.1810332128528685730, 1e-12, "C2teqx", "11", ref status);
             Vvd(rc2t[0, 1], 0.9834769806897685071, 1e-12, "C2teqx", "12", ref status);

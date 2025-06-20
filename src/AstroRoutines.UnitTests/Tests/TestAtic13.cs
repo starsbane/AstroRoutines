@@ -16,9 +16,8 @@ namespace AstroRoutines.UnitTests
             var di = 0.1729371367218230438;
             var date1 = 2456165.5;
             var date2 = 0.401182685;
-            double rc, dc, eo;
 
-            Atic13(ri, di, date1, date2, out rc, out dc, out eo);
+            Atic13(ri, di, date1, date2, out var rc, out var dc, out var eo);
 
             Vvd(rc, 2.710126504531716819, 1e-12, "Atic13", "rc", ref status);
             Vvd(dc, 0.1740632537627034482, 1e-12, "Atic13", "dc", ref status);

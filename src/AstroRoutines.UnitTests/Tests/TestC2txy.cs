@@ -17,9 +17,8 @@ namespace AstroRoutines.UnitTests
             var y = 0.4020579816732961219e-4;
             var xp = 2.55060238e-7;
             var yp = 1.860359247e-6;
-            var rc2t = new double[3, 3];
 
-            C2txy(tta, ttb, uta, utb, x, y, xp, yp, out rc2t);
+            C2txy(tta, ttb, uta, utb, x, y, xp, yp, out var rc2t);
 
             Vvd(rc2t[0, 0], -0.1810332128306279253, 1e-12, "C2txy", "11", ref status);
             Vvd(rc2t[0, 1], 0.9834769806938520084, 1e-12, "C2txy", "12", ref status);

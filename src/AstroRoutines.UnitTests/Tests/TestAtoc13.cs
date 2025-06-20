@@ -24,11 +24,10 @@ namespace AstroRoutines.UnitTests
             var tc = 12.8;
             var rh = 0.59;
             var wl = 0.55;
-            double rc, dc;
 
             var j = Atoc13("R", 2.710085107986886201, 0.1717653435758265198, 
                            utc1, utc2, dut1, elong, phi, hm, xp, yp, 
-                           phpa, tc, rh, wl, out rc, out dc);
+                           phpa, tc, rh, wl, out var rc, out var dc);
 
             Vvd(rc, 2.709956744659136129, 1e-12, "Atoc13", "R/rc", ref status);
             Vvd(dc, 0.1741696500898471362, 1e-12, "Atoc13", "R/dc", ref status);

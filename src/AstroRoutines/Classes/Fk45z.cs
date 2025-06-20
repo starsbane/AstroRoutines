@@ -19,11 +19,9 @@ namespace AstroRoutines
 
             /* Position and position+velocity vectors */
             var r0 = new double[3];
-            var p = new double[3];
             var pv = new double[2, 3];
 
             /* Miscellaneous */
-            double w, djm0, djm;
             int i, j, k;
 
             /*
@@ -48,8 +46,8 @@ namespace AstroRoutines
             S2c(r1950, d1950, ref r0);
 
             /* Adjust p-vector A to give zero proper motion in FK5. */
-            w  = (bepoch - 1950) / PMF;
-            Ppsp(a, w, ad, out p);
+            var w = (bepoch - 1950) / PMF;
+            Ppsp(a, w, ad, out var p);
 
             /* Remove E-terms. */
             Ppsp(p, -Pdp(r0,p), r0, out p);
@@ -67,7 +65,7 @@ namespace AstroRoutines
             }
 
             /* Allow for fictitious proper motion. */
-            Epb2jd(bepoch, out djm0, out djm);
+            Epb2jd(bepoch, out var djm0, out var djm);
             w = (Epj(djm0,djm)-2000.0) / PMF;
             Pvu(w, pv, ref pv);
 

@@ -10,11 +10,10 @@ namespace AstroRoutines.UnitTests
         {
             var date1 = 2456165.5;
             var date2 = 0.401182685;
-            double eo;
             var astrom = new ASTROM();
             var status = 0;
 
-            Apci13(date1, date2, ref astrom, out eo);
+            Apci13(date1, date2, ref astrom, out var eo);
 
             Vvd(astrom.pmt, 12.65133794027378508, 1e-11, "Apci13", "pmt", ref status);
             

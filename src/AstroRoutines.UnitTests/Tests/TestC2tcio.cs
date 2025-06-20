@@ -11,7 +11,6 @@ namespace AstroRoutines.UnitTests
             var rc2i = new double[3, 3];
             var era = 1.75283325530307;
             var rpom = new double[3, 3];
-            var rc2t = new double[3, 3];
             var status = 0;
 
             rc2i[0, 0] = 0.9999998323037164738;
@@ -40,7 +39,7 @@ namespace AstroRoutines.UnitTests
             rpom[2, 1] = 0.1860359247002413923e-5;
             rpom[2, 2] = 0.9999999999982369658;
 
-            C2tcio(rc2i, era, rpom, out rc2t);
+            C2tcio(rc2i, era, rpom, out var rc2t);
 
             Vvd(rc2t[0, 0], -0.1810332128307110439, 1e-12, "C2tcio", "11", ref status);
             Vvd(rc2t[0, 1], 0.9834769806938470149, 1e-12, "C2tcio", "12", ref status);

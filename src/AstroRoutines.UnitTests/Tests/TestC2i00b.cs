@@ -12,8 +12,7 @@ namespace AstroRoutines.UnitTests
         public void TestC2i00b()
         {
             var status = 0;
-            var rc2i = new double[3, 3];
-			C2i00b(2400000.5, 53736.0, out rc2i);
+            C2i00b(2400000.5, 53736.0, out var rc2i);
 
 			Vvd(rc2i[0, 0], 0.9999998323040954356, 1e-12, "C2i00b", "11", ref status);
 			Vvd(rc2i[0, 1], 0.5581526349131823372e-9, 1e-12, "C2i00b", "12", ref status);

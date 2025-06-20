@@ -24,8 +24,6 @@ namespace AstroRoutines
         {
             int i;
             var pvh = new double[2, 3];
-            var r5h = new double[3, 3];
-            var s5h = new double[3];
             var sh = new double[3];
             var wxp = new double[3];
             var vv = new double[3];
@@ -35,7 +33,7 @@ namespace AstroRoutines
             Starpv(rh, dh, drh, ddh, pxh, rvh, ref pvh);
 
             /* FK5 to Hipparcos orientation matrix and spin vector. */
-            Fk5hip(out r5h, out s5h);
+            Fk5hip(out var r5h, out var s5h);
 
             /* Make spin units per day instead of per year. */
             for (i = 0; i < 3; s5h[i++] /= 365.25) ;

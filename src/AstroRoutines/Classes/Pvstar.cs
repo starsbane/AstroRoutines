@@ -26,34 +26,29 @@ namespace AstroRoutines
             px = 0;
             rv = 0;
 
-            double r;
-            var pu = new double[3];
-            double vr, vt;
             var ur = new double[3];
             var ut = new double[3];
-            double bett, betr, d, w, del;
             var usr = new double[3];
             var ust = new double[3];
-            double a, rad, decd, rd;
 
             // Isolate the radial component of the velocity (au/day, inertial)
-            Pn(pv.GetRow(0), out r, out pu);
-            vr = Pdp(pu, pv.GetRow(1));
+            Pn(pv.GetRow(0), out var r, out var pu);
+            var vr = Pdp(pu, pv.GetRow(1));
             Sxp(vr, pu, ref ur);
 
             // Isolate the transverse component of the velocity (au/day, inertial)
             Pmp(pv.GetRow(1), ur, ref ut);
-            vt = Pm(ut);
+            var vt = Pm(ut);
 
             // Special-relativity dimensionless parameters
-            bett = vt / DC;
-            betr = vr / DC;
+            var bett = vt / DC;
+            var betr = vr / DC;
 
             // The observed-to-inertial correction terms
-            d = 1.0 + betr;
-            w = betr * betr + bett * bett;
+            var d = 1.0 + betr;
+            var w = betr * betr + bett * bett;
             if (d == 0.0 || w > 1.0) return -1;
-            del = -w / (Sqrt(1.0 - w) + 1.0);
+            var del = -w / (Sqrt(1.0 - w) + 1.0);
 
             // Scale inertial tangential velocity vector into observed (au/d)
             Sxp(1.0 / d, ut, ref ust);
@@ -67,7 +62,7 @@ namespace AstroRoutines
             pv.SetRow(1, pvRow1);
 
             // Cartesian to spherical
-            Pv2s(pv, out a, out dec, out r, out rad, out decd, out rd);
+            Pv2s(pv, out var a, out dec, out r, out var rad, out var decd, out var rd);
             if (r == 0.0) return -2;
 
             // Return RA in range 0 to 2pi

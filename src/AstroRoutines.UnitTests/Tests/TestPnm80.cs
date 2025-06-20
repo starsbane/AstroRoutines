@@ -8,10 +8,9 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestPnm80()
         {
-            var rmatpn = new double[3, 3];
             var status = 0;
 
-            Pnm80(2400000.5, 50123.9999, out rmatpn);
+            Pnm80(2400000.5, 50123.9999, out var rmatpn);
 
             Vvd(rmatpn[0, 0], 0.9999995831934611169, 1e-12, "Pnm80", "11", ref status);
             Vvd(rmatpn[0, 1], 0.8373654045728124011e-3, 1e-14, "Pnm80", "12", ref status);

@@ -24,25 +24,23 @@ namespace AstroRoutines
                                 double phpa, double tc, double rh, double wl,
                                 ref ASTROM astrom)
         {
-            int j;
-            double tai1 = 0, tai2 = 0, tt1 = 0, tt2 = 0, ut11 = 0, ut12 = 0;
-            double sp, theta, refa = 0, refb = 0;
+            double ut11 = 0, ut12 = 0;
 
             /* UTC to other time scales. */
-            j = Utctai(utc1, utc2, out tai1, out tai2);
+            var j = Utctai(utc1, utc2, out var tai1, out var tai2);
             if (j < 0) return -1;
-            j = Taitt(tai1, tai2, out tt1, out tt2);
+            j = Taitt(tai1, tai2, out var tt1, out var tt2);
             j = Utcut1(utc1, utc2, dut1, ref ut11, ref ut12);
             if (j < 0) return -1;
 
             /* TIO locator s'. */
-            sp = Sp00(tt1, tt2);
+            var sp = Sp00(tt1, tt2);
 
             /* Earth rotation angle. */
-            theta = Era00(ut11, ut12);
+            var theta = Era00(ut11, ut12);
 
             /* Refraction constants A and B. */
-            Refco(phpa, tc, rh, wl, out refa, out refb);
+            Refco(phpa, tc, rh, wl, out var refa, out var refb);
 
             /* CIRS <-> observed astrometry parameters. */
             Apio(sp, theta, elong, phi, hm, xp, yp, refa, refb, ref astrom);

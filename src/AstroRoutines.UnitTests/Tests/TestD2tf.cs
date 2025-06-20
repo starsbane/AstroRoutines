@@ -10,9 +10,8 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
             var ihmsf = new int[4];
-            var s = ' ';
 
-            D2tf(4, -0.987654321, out s, ref ihmsf);
+            D2tf(4, -0.987654321, out var s, ref ihmsf);
 
             Viv((int)s, '-', "D2tf", "s", ref status);
             Viv(ihmsf[0], 23, "D2tf", "0", ref status);

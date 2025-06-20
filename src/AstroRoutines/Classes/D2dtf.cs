@@ -25,37 +25,36 @@ namespace AstroRoutines
         public static int D2dtf(string scale, int ndp, double d1, double d2,
                      ref int iy, ref int im, ref int id, ref int[] ihmsf)
         {
-            int leap;
             char s;
-            int iy1, im1, id1, js, iy2, im2, id2;
+            int iy2, im2, id2;
             var ihmsf1 = new int[4];
             int i;
-            double a1, b1, fd, dat0, dat12, w, dat24, dleap;
+            double w, dleap;
 
             /* The two-part JD. */
-            a1 = d1;
-            b1 = d2;
+            var a1 = d1;
+            var b1 = d2;
 
             /* Provisional calendar date. */
-            js = Jd2cal(a1, b1, out iy1, out im1, out id1, out fd);
+            var js = Jd2cal(a1, b1, out var iy1, out var im1, out var id1, out var fd);
             if (js != 0) return -1;
 
             /* Is this a leap second day? */
-            leap = 0;
+            var leap = 0;
             if (scale == "UTC")
             {
                 /* TAI-UTC at 0h today. */
-                js = Dat(iy1, im1, id1, 0.0, out dat0);
+                js = Dat(iy1, im1, id1, 0.0, out var dat0);
                 if (js < 0) return -1;
 
                 /* TAI-UTC at 12h today (to detect drift). */
-                js = Dat(iy1, im1, id1, 0.5, out dat12);
+                js = Dat(iy1, im1, id1, 0.5, out var dat12);
                 if (js < 0) return -1;
 
                 /* TAI-UTC at 0h tomorrow (to detect jumps). */
                 js = Jd2cal(a1 + 1.5, b1 - fd, out iy2, out im2, out id2, out w);
                 if (js != 0) return -1;
-                js = Dat(iy2, im2, id2, 0.0, out dat24);
+                js = Dat(iy2, im2, id2, 0.0, out var dat24);
                 if (js < 0) return -1;
 
                 /* Any sudden change in TAI-UTC (seconds). */

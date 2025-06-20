@@ -26,11 +26,10 @@ namespace AstroRoutines.UnitTests
             var tc = 12.8;
             var rh = 0.59;
             var wl = 0.55;
-            double aob, zob, hob, dob, rob;
 
             var j = Atio13(ri, di, utc1, utc2, dut1, elong, phi, hm,
                            xp, yp, phpa, tc, rh, wl,
-                           out aob, out zob, out hob, out dob, out rob);
+                           out var aob, out var zob, out var hob, out var dob, out var rob);
 
             Vvd(aob, 0.9233952224895122499e-1, 1e-12, "Atio13", "aob", ref status);
             Vvd(zob, 1.407758704513549991, 1e-12, "Atio13", "zob", ref status);

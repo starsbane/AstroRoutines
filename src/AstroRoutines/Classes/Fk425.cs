@@ -33,7 +33,6 @@ namespace AstroRoutines
             const double TINY = 1e-30;
 
             /* Miscellaneous */
-            double r, d, ur, ud, px, rv, pxvf, w, rd;
             int i, j, k, l;
 
             /* Pv-vectors */
@@ -79,16 +78,16 @@ namespace AstroRoutines
             };
 
             /* Pick up the input arguments. */
-            r = r1950;
-            d = d1950;
-            ur = dr1950 * PMF;
-            ud = dd1950 * PMF;
-            px = p1950;
-            rv = v1950;
+            var r = r1950;
+            var d = d1950;
+            var ur = dr1950 * PMF;
+            var ud = dd1950 * PMF;
+            var px = p1950;
+            var rv = v1950;
 
             /* Convert to pv-vector (normalized). */
-            pxvf = px * VF;
-            w = rv * pxvf;
+            var pxvf = px * VF;
+            var w = rv * pxvf;
             S2pv(r, d, 1.0, ur, ud, w, ref r0);
 
             /* Allow for E-terms (cf. Seidelmann 3.591-2). */
@@ -121,7 +120,7 @@ namespace AstroRoutines
             }
 
             /* Revert to catalog form. */
-            Pv2s(pv2, out r, out d, out w, out ur, out ud, out rd);
+            Pv2s(pv2, out r, out d, out w, out ur, out ud, out var rd);
             if ( px > TINY ) {
                 rv = rd/pxvf;
                 px = px/w;

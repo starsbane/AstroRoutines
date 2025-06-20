@@ -12,19 +12,19 @@ namespace AstroRoutines
         /// <returns>equation of the equinoxes (Note 2)</returns>
         public static double Ee00a(double date1, double date2)
         {
-            double dpsipr, depspr, epsa, dpsi, deps, ee;
+            double dpsipr, deps;
 
             /* IAU 2000 precession-rate adjustments. */
-            Pr00(date1, date2, out dpsipr, out depspr);
+            Pr00(date1, date2, out dpsipr, out var depspr);
 
             /* Mean obliquity, consistent with IAU 2000 precession-nutation. */
-            epsa = Obl80(date1, date2) + depspr;
+            var epsa = Obl80(date1, date2) + depspr;
 
             /* Nutation in longitude. */
-            Nut00a(date1, date2, out dpsi, out deps);
+            Nut00a(date1, date2, out var dpsi, out deps);
 
             /* Equation of the equinoxes. */
-            ee = Ee00(date1, date2, epsa, dpsi);
+            var ee = Ee00(date1, date2, epsa, dpsi);
 
             return ee;
 

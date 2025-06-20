@@ -12,17 +12,16 @@ namespace AstroRoutines
 		/// <returns>position angle of b with respect to a (radians)</returns>
         public static double Pap(double[] a, double[] b)
         {
-            double am, bm, st, ct, xa, ya, za, pa;
-            var au = new double[3];
+            double st, ct, xa, ya, za;
             var eta = new double[3];
             var xi = new double[3];
             var a2b = new double[3];
 
             /* Modulus and direction of the a vector. */
-            Pn(a, out am, out au);
+            Pn(a, out var am, out var au);
 
             /* Modulus of the b vector. */
-            bm = Pm(b);
+            var bm = Pm(b);
 
             /* Deal with the case of a null vector. */
             if ((am == 0.0) || (bm == 0.0))
@@ -55,7 +54,7 @@ namespace AstroRoutines
             }
 
             /* Position angle. */
-            pa = Atan2(st, ct);
+            var pa = Atan2(st, ct);
 
             return pa;
 

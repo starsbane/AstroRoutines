@@ -9,13 +9,11 @@ namespace AstroRoutines.UnitTests
         public void TestJd2cal()
         {
             var status = 0;
-			double dj1, dj2, fd;
-			int iy, im, id, j;
 
-			dj1 = 2400000.5;
-			dj2 = 50123.9999;
+            var dj1 = 2400000.5;
+			var dj2 = 50123.9999;
 
-            j = Jd2cal(dj1, dj2, out iy, out im, out id, out fd);
+            var j = Jd2cal(dj1, dj2, out var iy, out var im, out var id, out var fd);
 
             Viv(iy, 1996, "Jd2cal", "y", ref status);
             Viv(im, 2, "Jd2cal", "m", ref status);

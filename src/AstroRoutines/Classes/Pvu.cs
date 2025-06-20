@@ -10,8 +10,7 @@ namespace AstroRoutines
         /// <param name="upv">Updated PV-vector</param>
         public static void Pvu(double dt, double[,] pv, ref double[,] upv)
         {
-            var upvRow0 = new double[3];
-            Ppsp(pv.GetRow(0), dt, pv.GetRow(1), out upvRow0);
+            Ppsp(pv.GetRow(0), dt, pv.GetRow(1), out var upvRow0);
             upv.SetRow(0, upvRow0);
 
             var upvRow1 = new double[3];

@@ -19,19 +19,18 @@ namespace AstroRoutines
         public static int Utcut1(double utc1, double utc2, double dut1, 
                                  ref double ut11, ref double ut12)
         {
-            int iy, im, id, js, jw;
-            double w, dat, dta, tai1, tai2;
+            double w;
 
             // Look up TAI-UTC
-            if (Jd2cal(utc1, utc2, out iy, out im, out id, out w) != 0) return -1;
-            js = Dat(iy, im, id, 0.0, out dat);
+            if (Jd2cal(utc1, utc2, out var iy, out var im, out var id, out w) != 0) return -1;
+            var js = Dat(iy, im, id, 0.0, out var dat);
             if (js < 0) return -1;
 
             // Form UT1-TAI
-            dta = dut1 - dat;
+            var dta = dut1 - dat;
 
             // UTC to TAI to UT1
-            jw = Utctai(utc1, utc2, out tai1, out tai2);
+            var jw = Utctai(utc1, utc2, out var tai1, out var tai2);
             if (jw < 0)
             {
                 return -1;

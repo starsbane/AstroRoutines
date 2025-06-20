@@ -94,8 +94,8 @@ namespace AstroRoutines
             const int NDAT = 42;
 
             /* Miscellaneous local variables */
-            int j, i, m;
-            double da, djm0 , djm;
+            int i;
+            double da, djm0;
 
             /* Initialize the result to zero. */
             deltat = da = 0.0;
@@ -104,7 +104,7 @@ namespace AstroRoutines
             if (fd < 0.0 || fd > 1.0) return -4;
 
             /* Convert the date into an MJD. */
-            j = Cal2jd(iy, im, id, out djm0, out djm);
+            var j = Cal2jd(iy, im, id, out djm0, out var djm);
 
             /* If invalid year, month, or day, give up. */
             if (j < 0) return j;
@@ -116,7 +116,7 @@ namespace AstroRoutines
             if (iy > IYV + 5) j = 1;
 
             /* Combine year and month to form a date-ordered integer... */
-            m = 12 * iy + im;
+            var m = 12 * iy + im;
 
             /* ...and use it to find the preceding table entry. */
             for (i = NDAT - 1; i >= 0; i--)

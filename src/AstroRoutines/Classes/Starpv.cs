@@ -20,12 +20,11 @@ namespace AstroRoutines
                                  double pmr, double pmd, double px, double rv,
                                  ref double[,] pv)
         {
-            double[] pu = new double[3], usr = new double[3], 
+            double[] usr = new double[3], 
                 ust = new double[3], ur = new double[3], ut = new double[3];
             int i, iwarn;
-            double w, r, rd, rad, decd, v ,
-            vsr, vst, betst, betsr, bett, betr,
-            dd, ddel, 
+            double w,
+                dd, ddel, 
             d = 0.0, del = 0.0,       /* to prevent */
             odd = 0.0, oddel = 0.0,   /* compiler   */
             od = 0.0, odel = 0.0;     /* warnings   */
@@ -52,20 +51,20 @@ namespace AstroRoutines
                 w = PXMIN;
                 iwarn = 1;
             }
-            r = DR2AS / w;
+            var r = DR2AS / w;
 
             /* Radial speed (au/day). */
-            rd = DAYSEC * rv * 1e3 / DAU;
+            var rd = DAYSEC * rv * 1e3 / DAU;
 
             /* Proper motion (radian/day). */
-            rad = pmr / DJY;
-            decd = pmd / DJY;
+            var rad = pmr / DJY;
+            var decd = pmd / DJY;
 
             /* To pv-vector (au,au/day). */
             S2pv(ra, dec, r, rad, decd, rd, ref pv);
 
             /* If excessive velocity, arbitrarily set it to zero. */
-            v = Pm(pv.GetRow(1));
+            var v = Pm(pv.GetRow(1));
             if (v / DC > VMAX)
             {
                 pvRow1 = pv.GetRow(1);
@@ -76,21 +75,21 @@ namespace AstroRoutines
             }
 
             /* Isolate the radial component of the velocity (au/day). */
-            Pn(pv.GetRow(0), out w, out pu);
-            vsr = Pdp(pu, pv.GetRow(1));
+            Pn(pv.GetRow(0), out w, out var pu);
+            var vsr = Pdp(pu, pv.GetRow(1));
             Sxp(vsr, pu, ref usr);
 
             /* Isolate the transverse component of the velocity (au/day). */
             Pmp(pv.GetRow(1), usr, ref ust);
-            vst = Pm(ust);
+            var vst = Pm(ust);
 
             /* Special-relativity dimensionless parameters. */
-            betsr = vsr / DC;
-            betst = vst / DC;
+            var betsr = vsr / DC;
+            var betst = vst / DC;
 
             /* Determine the observed-to-inertial correction terms. */
-            bett = betst;
-            betr = betsr;
+            var bett = betst;
+            var betr = betsr;
             for (i = 0; i < IMAX; i++)
             {
                 d = 1.0 + betr;

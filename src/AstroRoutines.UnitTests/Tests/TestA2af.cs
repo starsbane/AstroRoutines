@@ -13,9 +13,8 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
             var idmsf = new int[4];
-            var s = '\0';
 
-            A2af(4, 2.345, out s, ref idmsf);
+            A2af(4, 2.345, out var s, ref idmsf);
 
             Viv((int)s, '+', "A2af", "s", ref status);
 

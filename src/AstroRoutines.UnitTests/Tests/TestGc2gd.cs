@@ -10,10 +10,8 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
             double[] xyz = { 2e6, 3e6, 5.244e6 };
-            double e, p, h;
-            int j;
 
-            j = Gc2gd(0, xyz, out e, out p, out h);
+            var j = Gc2gd(0, xyz, out var e, out var p, out var h);
             Viv(j, -1, "Gc2gd", "j0", ref status);
 
             j = Gc2gd(WGS84, xyz, out e, out p, out h);

@@ -12,10 +12,8 @@ namespace AstroRoutines.UnitTests
         public void TestAf2a()
         {
             var status = 0;
-            double a;
-            int j;
 
-            j = Af2a('-', 45, 13, 27.2, out a);
+            var j = Af2a('-', 45, 13, 27.2, out var a);
 
             Vvd(a, -0.7893115794313644842, 1e-12, "Af2a", "a", ref status);
             Viv(j, 0, "Af2a", "j", ref status);

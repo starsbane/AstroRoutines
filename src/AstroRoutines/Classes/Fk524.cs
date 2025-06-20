@@ -33,7 +33,6 @@ namespace AstroRoutines
             const double TINY = 1e-30;
 
             /* Miscellaneous */
-            double r, d, ur, ud, px, rv, pxvf, w, rd;
             int i, j, k, l;
 
             /* Vectors, p and pv */
@@ -81,16 +80,16 @@ namespace AstroRoutines
             };
 
             /* Pick up J2000 data (units of radians and arcsec/JC). */
-            r = r2000;
-            d = d2000;
-            ur = dr2000 * PMF;
-            ud = dd2000 * PMF;
-            px = p2000;
-            rv = v2000;
+            var r = r2000;
+            var d = d2000;
+            var ur = dr2000 * PMF;
+            var ud = dd2000 * PMF;
+            var px = p2000;
+            var rv = v2000;
 
             /* Convert to pv-vector (normalized). */
-            pxvf = px * VF;
-            w = rv * pxvf;
+            var pxvf = px * VF;
+            var w = rv * pxvf;
             S2pv(r, d, 1.0, ur, ud, w, ref r0);
 
             /* Convert pv-vector to Bessel-Newcomb system (cf. Seidelmann 3.592-1). */
@@ -140,7 +139,7 @@ namespace AstroRoutines
             pv.SetRow(1, pvRow1);
 
             /* Revert to catalog form. */
-            Pv2s(pv, out r, out d, out w, out ur, out ud, out rd);
+            Pv2s(pv, out r, out d, out w, out ur, out ud, out var rd);
             if ( px > TINY ) {
                 rv = rd/pxvf;
                 px = px/w;

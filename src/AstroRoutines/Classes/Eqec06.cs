@@ -21,7 +21,6 @@ namespace AstroRoutines
             var rm = new double[3, 3];
             var v1 = new double[3];
             var v2 = new double[3];
-            double a, b;
 
             /* Spherical to Cartesian. */
             S2c(dr, dd, ref v1);
@@ -33,7 +32,7 @@ namespace AstroRoutines
             Rxp(rm, v1, ref v2);
 
             /* Cartesian to spherical. */
-            C2s(v2, out a, out b);
+            C2s(v2, out var a, out var b);
 
             /* Express in conventional ranges. */
             dl = Anp(a);

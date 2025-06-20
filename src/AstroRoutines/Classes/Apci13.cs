@@ -14,12 +14,11 @@ namespace AstroRoutines
             var ehpv = new double[2, 3];
             var ebpv = new double[2, 3];
             var r = new double[3, 3];
-            double x = 0, y = 0, s;
 
             Epv00(date1, date2, ref ehpv, ref ebpv);
             Pnm06a(date1, date2, ref r);
-            Bpn2xy(r, out x, out y);
-            s = S06(date1, date2, x, y);
+            Bpn2xy(r, out var x, out var y);
+            var s = S06(date1, date2, x, y);
 
             var ehp = ehpv.GetRow(0);
             Apci(date1, date2, ebpv, ehp, x, y, s, ref astrom);

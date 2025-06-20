@@ -18,13 +18,12 @@ namespace AstroRoutines
                                 ref ASTROM astrom, ref double ra, ref double da)
         {
             var pco = new double[3];
-            double w;
 
             /* Proper motion and parallax, giving BCRS coordinate direction. */
             Pmpx(rc, dc, pr, pd, px, rv, astrom.pmt, astrom.eb, ref pco);
 
             /* ICRS astrometric RA,Dec to spherical coordinates. */
-            C2s(pco, out w, out da);
+            C2s(pco, out var w, out da);
             ra = Anp(w);
         }
     }

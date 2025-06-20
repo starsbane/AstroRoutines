@@ -15,15 +15,13 @@ namespace AstroRoutines
         public static void C2t00b(double tta, double ttb, double uta, double utb,
             double xp, double yp, out double[,] rc2t)
         {
-            var rc2i = new double[3, 3];
-            double era;
             var rpom = new double[3, 3];
 
             /* Form the celestial-to-intermediate matrix for this TT (IAU 2000B). */
-            C2i00b(tta, ttb, out rc2i);
+            C2i00b(tta, ttb, out var rc2i);
 
             /* Predict the Earth rotation angle for this UT1. */
-            era = Era00(uta, utb);
+            var era = Era00(uta, utb);
 
             /* Form the polar motion matrix (neglecting s'). */
             Pom00(xp, yp, 0.0, ref rpom);

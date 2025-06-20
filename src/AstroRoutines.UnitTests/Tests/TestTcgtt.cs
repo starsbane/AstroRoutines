@@ -10,10 +10,7 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
 
-            double t1, t2;
-            int j;
-
-            j = Tcgtt(2453750.5, 0.892862531, out t1, out t2);
+            var j = Tcgtt(2453750.5, 0.892862531, out var t1, out var t2);
 
             Vvd(t1, 2453750.5, 1e-6, "Tcgtt", "t1", ref status);
             Vvd(t2, 0.8928551387488816828, 1e-12, "Tcgtt", "t2", ref status);

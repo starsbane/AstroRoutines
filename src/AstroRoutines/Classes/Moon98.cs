@@ -26,7 +26,6 @@ namespace AstroRoutines
             const double elp2 = -0.0015786;
             const double elp3 = 1.0 / 538841.0;
             const double elp4 = -1.0 / 65194000.0;
-            double elp, delp;
 
             /* Moon's mean elongation */
             const double d0 = 297.8501921;
@@ -34,7 +33,6 @@ namespace AstroRoutines
             const double d2 = -0.0018819;
             const double d3 = 1.0 / 545868.0;
             const double d4 = 1.0 / 113065000.0;
-            double d, dd;
 
             /* Sun's mean anomaly */
             const double em0 = 357.5291092;
@@ -42,7 +40,6 @@ namespace AstroRoutines
             const double em2 = -0.0001536;
             const double em3 = 1.0 / 24490000.0;
             const double em4 = 0.0;
-            double em, dem;
 
             /* Moon's mean anomaly */
             const double emp0 = 134.9633964;
@@ -50,7 +47,6 @@ namespace AstroRoutines
             const double emp2 = 0.0087414;
             const double emp3 = 1.0 / 69699.0;
             const double emp4 = -1.0 / 14712000.0;
-            double emp, demp;
 
             /* Mean distance of the Moon from its ascending node */
             const double f0 = 93.2720950;
@@ -58,7 +54,6 @@ namespace AstroRoutines
             const double f2 = -0.0036539;
             const double f3 = 1.0 / 3526000.0;
             const double f4 = 1.0 / 863310000.0;
-            double f, df;
 
             /*
             ** Other arguments
@@ -67,17 +62,14 @@ namespace AstroRoutines
             /* Meeus A_1, due to Venus (deg) */
             const double a10 = 119.75;
             const double a11 = 131.849;
-            double a1, da1;
 
             /* Meeus A_2, due to Jupiter (deg) */
             const double a20 = 53.09;
             const double a21 = 479264.290;
-            double a2, da2;
 
             /* Meeus A_3, due to sidereal motion of the Moon in longitude (deg) */
             const double a30 = 313.45;
             const double a31 = 481266.484;
-            double a3, da3;
 
             /* Coefficients for Meeus "additive terms" (deg) */
             const double al1 = 0.003958;
@@ -96,7 +88,6 @@ namespace AstroRoutines
             /* Coefficients for (dimensionless) E factor */
             const double e1 = -0.002516;
             const double e2 = -0.0000074;
-            double e, de, esq, desq;
 
             /*
             ** Coefficients for Moon longitude and distance series
@@ -238,129 +229,122 @@ namespace AstroRoutines
 
             /* Miscellaneous */
             int n, i;
-            double t, elpmf, delpmf, vel, vdel, vr, vdr, a1mf, da1mf, a1pf,
-                   da1pf, dlpmp, slpmp, vb, vdb, v, dv, emn, empn, dn, fn, en,
-                   den, arg, darg, farg, coeff, el, del, r, dr, b, db, gamb = 0,
-                   phib = 0, psib = 0, epsa = 0;
+            double v, dv, emn, empn, dn, fn, en,
+                   den, arg, darg, farg, coeff,
+                   epsa = 0;
             var rm = new double[3, 3];
-
             /* ------------------------------------------------------------------ */
-
             /* Centuries since J2000.0 */
-            t = ((date1 - DJ00) + date2) / DJC;
+            var t = ((date1 - DJ00) + date2) / DJC;
 
             /* --------------------- */
             /* Fundamental arguments */
             /* --------------------- */
-
             /* Arguments (radians) and derivatives (radians per Julian century)
                for the current date. */
-
             /* Moon's mean longitude. */
-            elp = DD2R * (elp0
-                        + (elp1
-                        + (elp2
-                        + (elp3
-                        + elp4 * t) * t) * t) * t % 360.0);
-            delp = DD2R * (elp1
-                        + (elp2 * 2.0
-                        + (elp3 * 3.0
-                        + elp4 * 4.0 * t) * t) * t);
+            var elp = DD2R * (elp0
+                              + (elp1
+                                 + (elp2
+                                    + (elp3
+                                       + elp4 * t) * t) * t) * t % 360.0);
+            var delp = DD2R * (elp1
+                               + (elp2 * 2.0
+                                  + (elp3 * 3.0
+                                     + elp4 * 4.0 * t) * t) * t);
 
             /* Moon's mean elongation. */
-            d = DD2R * (d0
-                      + (d1
-                      + (d2
-                      + (d3
-                      + d4 * t) * t) * t) * t % 360.0);
-            dd = DD2R * (d1
-                      + (d2 * 2.0
-                      + (d3 * 3.0
-                      + d4 * 4.0 * t) * t) * t);
+            var d = DD2R * (d0
+                            + (d1
+                               + (d2
+                                  + (d3
+                                     + d4 * t) * t) * t) * t % 360.0);
+            var dd = DD2R * (d1
+                             + (d2 * 2.0
+                                + (d3 * 3.0
+                                   + d4 * 4.0 * t) * t) * t);
 
             /* Sun's mean anomaly. */
-            em = DD2R * (em0
-                       + (em1
-                       + (em2
-                       + (em3
-                       + em4 * t) * t) * t) * t % 360.0);
-            dem = DD2R * (em1
-                       + (em2 * 2.0
-                       + (em3 * 3.0
-                       + em4 * 4.0 * t) * t) * t);
+            var em = DD2R * (em0
+                             + (em1
+                                + (em2
+                                   + (em3
+                                      + em4 * t) * t) * t) * t % 360.0);
+            var dem = DD2R * (em1
+                              + (em2 * 2.0
+                                 + (em3 * 3.0
+                                    + em4 * 4.0 * t) * t) * t);
 
             /* Moon's mean anomaly. */
-            emp = DD2R * (emp0
-                        + (emp1
-                        + (emp2
-                        + (emp3
-                        + emp4 * t) * t) * t) * t % 360.0);
-            demp = DD2R * (emp1
-                        + (emp2 * 2.0
-                        + (emp3 * 3.0
-                        + emp4 * 4.0 * t) * t) * t);
+            var emp = DD2R * (emp0
+                              + (emp1
+                                 + (emp2
+                                    + (emp3
+                                       + emp4 * t) * t) * t) * t % 360.0);
+            var demp = DD2R * (emp1
+                               + (emp2 * 2.0
+                                  + (emp3 * 3.0
+                                     + emp4 * 4.0 * t) * t) * t);
 
             /* Mean distance of the Moon from its ascending node. */
-            f = DD2R * (f0
-                      + (f1
-                      + (f2
-                      + (f3
-                      + f4 * t) * t) * t) * t % 360.0);
-            df = DD2R * (f1
-                      + (f2 * 2.0
-                      + (f3 * 3.0
-                      + f4 * 4.0 * t) * t) * t);
+            var f = DD2R * (f0
+                            + (f1
+                               + (f2
+                                  + (f3
+                                     + f4 * t) * t) * t) * t % 360.0);
+            var df = DD2R * (f1
+                             + (f2 * 2.0
+                                + (f3 * 3.0
+                                   + f4 * 4.0 * t) * t) * t);
 
             /* Meeus further arguments. */
-            a1 = DD2R * (a10 + a11 * t);
-            da1 = DD2R * a11;
-            a2 = DD2R * (a20 + a21 * t);
-            da2 = DD2R * a21;
-            a3 = DD2R * (a30 + a31 * t);
-            da3 = DD2R * a31;
+            var a1 = DD2R * (a10 + a11 * t);
+            var da1 = DD2R * a11;
+            var a2 = DD2R * (a20 + a21 * t);
+            var da2 = DD2R * a21;
+            var a3 = DD2R * (a30 + a31 * t);
+            var da3 = DD2R * a31;
 
             /* E-factor, and square. */
-            e = 1.0 + (e1 + e2 * t) * t;
-            de = e1 + 2.0 * e2 * t;
-            esq = e * e;
-            desq = 2.0 * e * de;
+            var e = 1.0 + (e1 + e2 * t) * t;
+            var de = e1 + 2.0 * e2 * t;
+            var esq = e * e;
+            var desq = 2.0 * e * de;
 
             /* Use the Meeus additive terms (deg) to start off the summations. */
-            elpmf = elp - f;
-            delpmf = delp - df;
-            vel = al1 * Sin(a1)
-                + al2 * Sin(elpmf)
-                + al3 * Sin(a2);
-            vdel = al1 * Cos(a1) * da1
-                 + al2 * Cos(elpmf) * delpmf
-                 + al3 * Cos(a2) * da2;
+            var elpmf = elp - f;
+            var delpmf = delp - df;
+            var vel = al1 * Sin(a1)
+                      + al2 * Sin(elpmf)
+                      + al3 * Sin(a2);
+            var vdel = al1 * Cos(a1) * da1
+                       + al2 * Cos(elpmf) * delpmf
+                       + al3 * Cos(a2) * da2;
 
-            vr = 0.0;
-            vdr = 0.0;
+            var vr = 0.0;
+            var vdr = 0.0;
 
-            a1mf = a1 - f;
-            da1mf = da1 - df;
-            a1pf = a1 + f;
-            da1pf = da1 + df;
-            dlpmp = elp - emp;
-            slpmp = elp + emp;
-            vb = ab1 * Sin(elp)
-               + ab2 * Sin(a3)
-               + ab3 * Sin(a1mf)
-               + ab4 * Sin(a1pf)
-               + ab5 * Sin(dlpmp)
-               + ab6 * Sin(slpmp);
-            vdb = ab1 * Cos(elp) * delp
-                + ab2 * Cos(a3) * da3
-                + ab3 * Cos(a1mf) * da1mf
-                + ab4 * Cos(a1pf) * da1pf
-                + ab5 * Cos(dlpmp) * (delp - demp)
-                + ab6 * Cos(slpmp) * (delp + demp);
-
+            var a1mf = a1 - f;
+            var da1mf = da1 - df;
+            var a1pf = a1 + f;
+            var da1pf = da1 + df;
+            var dlpmp = elp - emp;
+            var slpmp = elp + emp;
+            var vb = ab1 * Sin(elp)
+                     + ab2 * Sin(a3)
+                     + ab3 * Sin(a1mf)
+                     + ab4 * Sin(a1pf)
+                     + ab5 * Sin(dlpmp)
+                     + ab6 * Sin(slpmp);
+            var vdb = ab1 * Cos(elp) * delp
+                      + ab2 * Cos(a3) * da3
+                      + ab3 * Cos(a1mf) * da1mf
+                      + ab4 * Cos(a1pf) * da1pf
+                      + ab5 * Cos(dlpmp) * (delp - demp)
+                      + ab6 * Cos(slpmp) * (delp + demp);
             /* ----------------- */
             /* Series expansions */
             /* ----------------- */
-
             /* Longitude and distance plus derivatives. */
             for (n = NLR - 1; n >= 0; n--)
             {
@@ -398,10 +382,10 @@ namespace AstroRoutines
                 vr += coeff * v;
                 vdr += coeff * dv;
             }
-            el = elp + DD2R * vel;
-            del = (delp + DD2R * vdel) / DJC;
-            r = (vr + r0) / DAU;
-            dr = vdr / DAU / DJC;
+            var el = elp + DD2R * vel;
+            var del = (delp + DD2R * vdel) / DJC;
+            var r = (vr + r0) / DAU;
+            var dr = vdr / DAU / DJC;
 
             /* Latitude plus derivative. */
             for (n = NB - 1; n >= 0; n--)
@@ -434,18 +418,16 @@ namespace AstroRoutines
                 vb += coeff * v;
                 vdb += coeff * dv;
             }
-            b = vb * DD2R;
-            db = vdb * DD2R / DJC;
-
+            var b = vb * DD2R;
+            var db = vdb * DD2R / DJC;
             /* ------------------------------ */
             /* Transformation into final form */
             /* ------------------------------ */
-
             /* Longitude, latitude to x, y, z (au). */
             S2pv(el, b, r, del, db, dr, ref pv);
 
             /* IAU 2006 Fukushima-Williams bias+precession angles. */
-            Pfw06(date1, date2, out gamb, out phib, out psib, out epsa);
+            Pfw06(date1, date2, out var gamb, out var phib, out var psib, out epsa);
 
             /* Mean ecliptic coordinates to GCRS rotation matrix. */
             Ir(ref rm);

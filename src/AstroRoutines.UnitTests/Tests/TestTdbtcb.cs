@@ -10,10 +10,7 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
 
-            double b1, b2;
-            int j;
-
-            j = Tdbtcb(2453750.5, 0.892855137, out b1, out b2);
+            var j = Tdbtcb(2453750.5, 0.892855137, out var b1, out var b2);
 
             Vvd(b1, 2453750.5, 1e-6, "Tdbtcb", "b1", ref status);
             Vvd(b2, 0.8930195997253656716, 1e-12, "Tdbtcb", "b2", ref status);

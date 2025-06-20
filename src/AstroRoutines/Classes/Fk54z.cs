@@ -18,15 +18,14 @@ namespace AstroRoutines
             out double r1950, out double d1950,
             out double dr1950, out double dd1950)
         {
-            double r, d, pr, pd, px, rv;
+            double px, rv;
             var p = new double[3];
-            double w;
             var v = new double[3];
             int i;
 
             /* FK5 equinox J2000.0 to FK4 equinox B1950.0. */
             Fk524(r2000, d2000, 0.0, 0.0, 0.0, 0.0,
-                out r, out d, out pr, out pd, out px, out rv);
+                out var r, out var d, out var pr, out var pd, out px, out rv);
 
             /* Spherical to Cartesian. */
             S2c(r, d, ref p);
@@ -37,7 +36,7 @@ namespace AstroRoutines
             v[2] = pd * Math.Cos(d);
 
             /* Apply the motion. */
-            w = bepoch - 1950.0;
+            var w = bepoch - 1950.0;
             for (i = 0; i < 3; i++)
             {
                 p[i] += w * v[i];

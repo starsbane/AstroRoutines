@@ -14,7 +14,6 @@ namespace AstroRoutines
             var pecl = new double[3];
             var v = new double[3];
             double w;
-            var eqx = new double[3];
 
             /* Equator pole (bottom row of matrix). */
             Ltpequ(epj, ref peqr);
@@ -24,7 +23,7 @@ namespace AstroRoutines
 
             /* Equinox (top row of matrix). */
             Pxp(peqr, pecl, ref v);
-            Pn(v, out w, out eqx);
+            Pn(v, out w, out var eqx);
 
             /* Middle row of matrix. */
             Pxp(peqr, eqx, ref v);

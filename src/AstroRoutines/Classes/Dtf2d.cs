@@ -33,33 +33,32 @@ namespace AstroRoutines
         public static int Dtf2d(string scale, int iy, int im, int id,
                                int ihr, int imn, double sec, ref double d1, ref double d2)
         {
-            int js, iy2, im2, id2;
-            double dj, w, day, seclim, dat0 = 0, dat12 = 0, dat24 = 0, dleap, time;
+            double dleap;
 
             /* Today's Julian Day Number. */
-            js = Cal2jd(iy, im, id, out dj, out w);
+            var js = Cal2jd(iy, im, id, out var dj, out var w);
             if (js != 0) return js;
             dj += w;
 
             /* Day length and final minute length in seconds (provisional). */
-            day = DAYSEC;
-            seclim = 60.0;
+            var day = DAYSEC;
+            var seclim = 60.0;
 
             /* Deal with the UTC leap second case. */
             if (scale == "UTC")
             {
                 /* TAI-UTC at 0h today. */
-                js = Dat(iy, im, id, 0.0, out dat0);
+                js = Dat(iy, im, id, 0.0, out var dat0);
                 if (js < 0) return js;
 
                 /* TAI-UTC at 12h today (to detect drift). */
-                js = Dat(iy, im, id, 0.5, out dat12);
+                js = Dat(iy, im, id, 0.5, out var dat12);
                 if (js < 0) return js;
 
                 /* TAI-UTC at 0h tomorrow (to detect jumps). */
-                js = Jd2cal(dj, 1.5, out iy2, out im2, out id2, out w);
+                js = Jd2cal(dj, 1.5, out var iy2, out var im2, out var id2, out w);
                 if (js != 0) return js;
-                js = Dat(iy2, im2, id2, 0.0, out dat24);
+                js = Dat(iy2, im2, id2, 0.0, out var dat24);
                 if (js < 0) return js;
 
                 /* Any sudden change in TAI-UTC between today and tomorrow. */
@@ -101,7 +100,7 @@ namespace AstroRoutines
             if (js < 0) return js;
 
             /* The time in days. */
-            time = (60.0 * ((double)(60 * ihr + imn)) + sec) / day;
+            var time = (60.0 * ((double)(60 * ihr + imn)) + sec) / day;
 
             /* Return the date and time. */
             d1 = dj;

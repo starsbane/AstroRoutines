@@ -10,10 +10,8 @@ namespace AstroRoutines
         /// <param name="rc2i">celestial-to-intermediate matrix</param>
         public static void C2i00a(double date1, double date2, ref double[,] rc2i)
         {
-            var rbpn = new double[3, 3];
-
             /* Obtain the celestial-to-true matrix (IAU 2000A). */
-            Pnm00a(date1, date2, out rbpn);
+            Pnm00a(date1, date2, out var rbpn);
 
             /* Form the celestial-to-intermediate matrix. */
             C2ibpn(date1, date2, rbpn, ref rc2i);

@@ -11,19 +11,18 @@ namespace AstroRoutines
         public static double Eo06a(double date1, double date2)
         {
             var r = new double[3, 3];
-            double x, y, s, eo;
 
             /* Classical nutation x precession x bias matrix. */
             Pnm06a(date1, date2, ref r);
 
             /* Extract CIP coordinates. */
-            Bpn2xy(r, out x, out y);
+            Bpn2xy(r, out var x, out var y);
 
             /* The CIO locator, s. */
-            s = S06(date1, date2, x, y);
+            var s = S06(date1, date2, x, y);
 
             /* Solve for the EO. */
-            eo = Eors(r, s);
+            var eo = Eors(r, s);
 
             return eo;
 

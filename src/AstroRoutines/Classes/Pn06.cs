@@ -34,7 +34,6 @@ namespace AstroRoutines
                                 out double[,] rb, out double[,] rp, out double[,] rbp,
                                 out double[,] rn, out double[,] rbpn)
         {
-            double gamb, phib, psib, eps;
             var r1 = new double[3, 3];
             var r2 = new double[3, 3];
             var rt = new double[3, 3];
@@ -43,7 +42,7 @@ namespace AstroRoutines
             rbpn = new double[3, 3];
 
             /* Bias-precession Fukushima-Williams angles of J2000.0 = frame bias. */
-            Pfw06(DJM0, DJM00, out gamb, out phib, out psib, out eps);
+            Pfw06(DJM0, DJM00, out var gamb, out var phib, out var psib, out var eps);
 
             /* B matrix. */
             Fw2m(gamb, phib, psib, eps, ref r1);

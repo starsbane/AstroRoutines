@@ -20,23 +20,20 @@ namespace AstroRoutines
             /* Minimum sin(alt) for refraction purposes */
             const double SELMIN = 0.05;
 
-            int c;
-            double c1, c2, sphi, cphi, ce, xaeo, yaeo, zaeo;
+            double ce, xaeo, yaeo, zaeo;
             var v = new double[3];
-            double xmhdo, ymhdo, zmhdo, az, sz, zdo, refa, refb, tz, dref,
-                   zdt, xaet, yaet, zaet, xmhda, ymhda, zmhda,
-                   f, xhd, yhd, zhd, sx, cx, sy, cy, hma;
+            double xmhdo, ymhdo, zmhdo;
 
             /* Coordinate type. */
-            c = type[0];
+            int c = type[0];
 
             /* Coordinates. */
-            c1 = ob1;
-            c2 = ob2;
+            var c1 = ob1;
+            var c2 = ob2;
 
             /* Sin, cos of latitude. */
-            sphi = astrom.sphi;
-            cphi = astrom.cphi;
+            var sphi = astrom.sphi;
+            var cphi = astrom.cphi;
 
             /* Standardize coordinate type. */
             if (c == 'r' || c == 'R')
@@ -81,52 +78,50 @@ namespace AstroRoutines
             }
 
             /* Azimuth (S=0,E=90). */
-            az = (xaeo != 0.0 || yaeo != 0.0) ? Atan2(yaeo, xaeo) : 0.0;
+            var az = (xaeo != 0.0 || yaeo != 0.0) ? Atan2(yaeo, xaeo) : 0.0;
 
             /* Sine of observed ZD, and observed ZD. */
-            sz = Sqrt(xaeo * xaeo + yaeo * yaeo);
-            zdo = Atan2(sz, zaeo);
-
+            var sz = Sqrt(xaeo * xaeo + yaeo * yaeo);
+            var zdo = Atan2(sz, zaeo);
             /*
             ** Refraction
             ** ----------
             */
-
             /* Fast algorithm using two constant model. */
-            refa = astrom.refa;
-            refb = astrom.refb;
-            tz = sz / (zaeo > SELMIN ? zaeo : SELMIN);
-            dref = (refa + refb * tz * tz) * tz;
-            zdt = zdo + dref;
+            var refa = astrom.refa;
+            var refb = astrom.refb;
+            var tz = sz / (zaeo > SELMIN ? zaeo : SELMIN);
+            var dref = (refa + refb * tz * tz) * tz;
+            var zdt = zdo + dref;
 
             /* To Cartesian Az,ZD. */
             ce = Sin(zdt);
-            xaet = Cos(az) * ce;
-            yaet = Sin(az) * ce;
-            zaet = Cos(zdt);
+            var xaet = Cos(az) * ce;
+            var yaet = Sin(az) * ce;
+            var zaet = Cos(zdt);
 
             /* Cartesian Az,ZD to Cartesian -HA,Dec. */
-            xmhda = sphi * xaet + cphi * zaet;
-            ymhda = yaet;
-            zmhda = -cphi * xaet + sphi * zaet;
+            var xmhda = sphi * xaet + cphi * zaet;
+            var ymhda = yaet;
+            var zmhda = -cphi * xaet + sphi * zaet;
 
             /* Diurnal aberration. */
-            f = (1.0 + astrom.diurab * ymhda);
-            xhd = f * xmhda;
-            yhd = f * (ymhda - astrom.diurab);
-            zhd = f * zmhda;
+            var f = (1.0 + astrom.diurab * ymhda);
+            var xhd = f * xmhda;
+            var yhd = f * (ymhda - astrom.diurab);
+            var zhd = f * zmhda;
 
             /* Polar motion. */
-            sx = Sin(astrom.xpl);
-            cx = Cos(astrom.xpl);
-            sy = Sin(astrom.ypl);
-            cy = Cos(astrom.ypl);
+            var sx = Sin(astrom.xpl);
+            var cx = Cos(astrom.xpl);
+            var sy = Sin(astrom.ypl);
+            var cy = Cos(astrom.ypl);
             v[0] = cx * xhd + sx * sy * yhd - sx * cy * zhd;
             v[1] = cy * yhd + sy * zhd;
             v[2] = sx * xhd - cx * sy * yhd + cx * cy * zhd;
 
             /* To spherical -HA,Dec. */
-            C2s(v, out hma, out di);
+            C2s(v, out var hma, out di);
 
             /* Right ascension. */
             ri = Anp(astrom.eral + hma);

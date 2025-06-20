@@ -12,10 +12,8 @@ namespace AstroRoutines
         public static void C2ibpn(double date1, double date2, double[,] rbpn,
             ref double[,] rc2i)
         {
-            double x, y;
-
             /* Extract the X,Y coordinates. */
-            Bpn2xy(rbpn, out x, out y);
+            Bpn2xy(rbpn, out var x, out var y);
 
             /* Form the celestial-to-intermediate matrix (n.b. IAU 2000 specific). */
             C2ixy(date1, date2, x, y, ref rc2i);

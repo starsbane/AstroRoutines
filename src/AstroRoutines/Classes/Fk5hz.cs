@@ -15,24 +15,20 @@ namespace AstroRoutines
         /// <param name="dh">Hipparcos Dec</param>
         public static void Fk5hz(double r5, double d5, double date1, double date2, out double rh, out double dh)
         {
-            double t;
             var p5e = new double[3];
-            var r5h = new double[3, 3];
-            var s5h = new double[3];
             var vst = new double[3];
             var rst = new double[3, 3];
             var p5 = new double[3];
             var ph = new double[3];
-            double w;
 
             /* Interval from given date to fundamental epoch J2000.0 (JY). */
-            t = -((date1 - DJ00) + date2) / DJY;
+            var t = -((date1 - DJ00) + date2) / DJY;
 
             /* FK5 barycentric position vector. */
             S2c(r5, d5, ref p5e);
 
             /* FK5 to Hipparcos orientation matrix and spin vector. */
-            Fk5hip(out r5h, out s5h);
+            Fk5hip(out var r5h, out var s5h);
 
             /* Accumulated Hipparcos wrt FK5 spin over that interval. */
             Sxp(t, s5h, ref vst);
@@ -47,7 +43,7 @@ namespace AstroRoutines
             Rxp(r5h, p5, ref ph);
 
             /* Hipparcos vector to spherical. */
-            C2s(ph, out w, out dh);
+            C2s(ph, out var w, out dh);
             rh = Anp(w);
         }
     }

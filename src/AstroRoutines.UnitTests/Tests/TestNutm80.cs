@@ -9,9 +9,8 @@ namespace AstroRoutines.UnitTests
         public void TestNutm80()
         {
             var status = 0;
-            var rmatn = new double[3, 3];
 
-            Nutm80(2400000.5, 53736.0, out rmatn);
+            Nutm80(2400000.5, 53736.0, out var rmatn);
 
             Vvd(rmatn[0, 0], 0.9999999999534999268, 1e-12, "Nutm80", "11", ref status);
             Vvd(rmatn[0, 1], 0.8847935789636432161e-5, 1e-12, "Nutm80", "12", ref status);

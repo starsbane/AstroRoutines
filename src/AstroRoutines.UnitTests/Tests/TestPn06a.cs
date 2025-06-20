@@ -8,17 +8,9 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestPn06a()
         {
-            double dpsi;
-            double deps;
-            double epsa;
-            var rb = new double[3, 3];
-            var rp = new double[3, 3];
-            var rbp = new double[3, 3];
-            var rn = new double[3, 3];
-            var rbpn = new double[3, 3];
             var status = 0;
 
-            Pn06a(2400000.5, 53736.0, out dpsi, out deps, out epsa, out rb, out rp, out rbp, out rn, out rbpn);
+            Pn06a(2400000.5, 53736.0, out var dpsi, out var deps, out var epsa, out var rb, out var rp, out var rbp, out var rn, out var rbpn);
 
             Vvd(dpsi, -0.9630912025820308797e-5, 1e-12, "Pn06a", "dpsi", ref status);
             Vvd(deps, 0.4063238496887249798e-4, 1e-12, "Pn06a", "deps", ref status);

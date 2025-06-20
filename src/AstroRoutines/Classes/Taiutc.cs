@@ -15,11 +15,10 @@ namespace AstroRoutines
         public static int Taiutc(double tai1, double tai2, out double utc1, out double utc2)
         {
             utc1 = 0; utc2 = 0;
-            int big1;
             int i, j = 0;
-            double a1, a2, u1, u2, g1, g2;
+            double a1, a2;
 
-            big1 = (Abs(tai1) >= Abs(tai2)) ? 1 : 0;
+            var big1 = (Abs(tai1) >= Abs(tai2)) ? 1 : 0;
             if (big1 != 0)
             {
                 a1 = tai1;
@@ -31,12 +30,12 @@ namespace AstroRoutines
                 a2 = tai1;
             }
 
-            u1 = a1;
-            u2 = a2;
+            var u1 = a1;
+            var u2 = a2;
 
             for (i = 0; i < 3; i++)
             {
-                j = Utctai(u1, u2, out g1, out g2);
+                j = Utctai(u1, u2, out var g1, out var g2);
                 if (j < 0) 
                     return j;
 

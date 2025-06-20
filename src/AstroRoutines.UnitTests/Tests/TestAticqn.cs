@@ -19,7 +19,6 @@ namespace AstroRoutines.UnitTests
             var di = 0.1728740720983623469;
             var astrom = new ASTROM();
             var b = new LDBODY[3];
-            double rc, dc;
 
             Apci13(date1, date2, ref astrom, out eo);
 
@@ -57,7 +56,7 @@ namespace AstroRoutines.UnitTests
             b[2].pv[1, 1] = -3.30888387e-7;
             b[2].pv[1, 2] = -2.96486623e-7;
 
-            Aticqn(ri, di, ref astrom, 3, b, out rc, out dc);
+            Aticqn(ri, di, ref astrom, 3, b, out var rc, out var dc);
 
             Vvd(rc, 2.709999575033027333, 1e-12, "Aticqn", "rc", ref status);
             Vvd(dc, 0.1739999656316469990, 1e-12, "Aticqn", "dc", ref status);

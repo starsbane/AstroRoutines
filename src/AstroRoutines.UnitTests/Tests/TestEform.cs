@@ -9,9 +9,8 @@ namespace AstroRoutines.UnitTests
         public void TestEform()
         {
             var status = 0;
-            double a, f;
 
-            var j = Eform(0, out a, out f);
+            var j = Eform(0, out var a, out var f);
             Viv(j, -1, "Eform", "j0", ref status);
 
             j = Eform(WGS84, out a, out f);

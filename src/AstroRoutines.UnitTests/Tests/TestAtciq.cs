@@ -22,11 +22,10 @@ namespace AstroRoutines.UnitTests
             var px = 0.1;
             var rv = 55.0;
             var astrom = new ASTROM();
-            double ri, di;
 
             Apci13(date1, date2, ref astrom, out eo);
 
-            Atciq(rc, dc, pr, pd, px, rv, ref astrom, out ri, out di);
+            Atciq(rc, dc, pr, pd, px, rv, ref astrom, out var ri, out var di);
 
             Vvd(ri, 2.710121572968696744, 1e-12, "Atciq", "ri", ref status);
             Vvd(di, 0.1729371367219539137, 1e-12, "Atciq", "di", ref status);

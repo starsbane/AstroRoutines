@@ -10,17 +10,10 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
 
-            double dpsi, deps, epsa;
-            var rb = new double[3, 3];
-            var rp = new double[3, 3];
-            var rbp = new double[3, 3];
-            var rn = new double[3, 3];
-            var rbpn = new double[3, 3];
+            var dpsi = -0.9632552291149335877e-5;
+            var deps = 0.4063197106621141414e-4;
 
-            dpsi = -0.9632552291149335877e-5;
-            deps = 0.4063197106621141414e-4;
-
-            Pn00(2400000.5, 53736.0, dpsi, deps, out epsa, out rb, out rp, out rbp, out rn, out rbpn);
+            Pn00(2400000.5, 53736.0, dpsi, deps, out var epsa, out var rb, out var rp, out var rbp, out var rn, out var rbpn);
 
             Vvd(epsa, 0.4090791789404229916, 1e-12, "Pn00", "epsa", ref status);
 

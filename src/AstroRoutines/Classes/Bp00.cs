@@ -19,25 +19,23 @@ namespace AstroRoutines
             /* J2000.0 obliquity (Lieske et al. 1977) */
             const double EPS0 = 84381.448 * DAS2R;
 
-            double t, dpsibi, depsbi, dra0, psia77, oma77, chia,
-                   dpsipr, depspr, psia, oma;
             var rbw = new double[3, 3];
 
             /* Interval between fundamental epoch J2000.0 and current date (JC). */
-            t = ((date1 - DJ00) + date2) / DJC;
+            var t = ((date1 - DJ00) + date2) / DJC;
 
             /* Frame bias. */
-            Bi00(out dpsibi, out depsbi, out dra0);
+            Bi00(out var dpsibi, out var depsbi, out var dra0);
 
             /* Precession angles (Lieske et al. 1977) */
-            psia77 = (5038.7784 + (-1.07259 + (-0.001147) * t) * t) * t * DAS2R;
-            oma77 = EPS0 + ((0.05127 + (-0.007726) * t) * t) * t * DAS2R;
-            chia = (10.5526 + (-2.38064 + (-0.001125) * t) * t) * t * DAS2R;
+            var psia77 = (5038.7784 + (-1.07259 + (-0.001147) * t) * t) * t * DAS2R;
+            var oma77 = EPS0 + ((0.05127 + (-0.007726) * t) * t) * t * DAS2R;
+            var chia = (10.5526 + (-2.38064 + (-0.001125) * t) * t) * t * DAS2R;
 
             /* Apply IAU 2000 precession corrections. */
-            Pr00(date1, date2, out dpsipr, out depspr);
-            psia = psia77 + dpsipr;
-            oma = oma77 + depspr;
+            Pr00(date1, date2, out var dpsipr, out var depspr);
+            var psia = psia77 + dpsipr;
+            var oma = oma77 + depspr;
 
             /* Frame bias matrix: GCRS to J2000.0. */
             Ir(ref rbw);

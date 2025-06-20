@@ -25,13 +25,12 @@ namespace AstroRoutines.UnitTests
             var rh = 0.59;
             var wl = 0.55;
             var astrom = new ASTROM();
-            double ri, di;
 
             Apio13(utc1, utc2, dut1, elong, phi, hm, xp, yp,
                    phpa, tc, rh, wl, ref astrom);
 
             Atoiq("R", 2.710085107986886201, 0.1717653435758265198, 
-                  ref astrom, out ri, out di);
+                  ref astrom, out var ri, out var di);
 
             Vvd(ri, 2.710121574447540810, 1e-12, "Atoiq", "R/ri", ref status);
             Vvd(di, 0.17293718391166087785, 1e-12, "Atoiq", "R/di", ref status);

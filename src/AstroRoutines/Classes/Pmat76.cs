@@ -12,11 +12,10 @@ namespace AstroRoutines
 		/// <param name="rmatp">precession matrix, J2000.0 -> date1+date2</param>
         public static void Pmat76(double date1, double date2, ref double[,] rmatp)
         {
-            double zeta = 0, z = 0, theta = 0;
             var wmat = new double[3, 3];
 
             /* Precession Euler angles, J2000.0 to specified date. */
-            Prec76(DJ00, 0.0, date1, date2, out zeta, out z, out theta);
+            Prec76(DJ00, 0.0, date1, date2, out var zeta, out var z, out var theta);
 
             /* Form the rotation matrix. */
             Ir(ref wmat);
