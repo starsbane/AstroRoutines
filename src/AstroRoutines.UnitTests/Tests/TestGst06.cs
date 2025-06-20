@@ -11,7 +11,7 @@ namespace AstroRoutines.UnitTests
         public void TestGst06()
         { 
             var status = 0;
-            double[,] rnpb = new double[3,3];
+            var rnpb = new double[3,3];
             double theta;
             rnpb[0, 0] =  0.9999989440476103608;
             rnpb[0, 1] = -0.1332881761240011518e-2;

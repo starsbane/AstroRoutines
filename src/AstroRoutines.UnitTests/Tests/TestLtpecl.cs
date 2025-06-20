@@ -12,7 +12,7 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
             double epj;
-            double[] vec = new double[3];
+            var vec = new double[3];
 			
 			epj = -1500.0;
 			

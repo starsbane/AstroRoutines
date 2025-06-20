@@ -14,7 +14,7 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestAnp()
         {
-            int status = 0;
+            var status = 0;
 
             Vvd(Anp(-0.1), 6.183185307179586477, 1e-12, "Anp", "", ref status);
 

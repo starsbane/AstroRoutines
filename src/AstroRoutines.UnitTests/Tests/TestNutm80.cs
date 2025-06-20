@@ -11,7 +11,7 @@ namespace AstroRoutines.UnitTests
         public void TestNutm80()
         {
             var status = 0;
-            double[,] rmatn = new double[3, 3];
+            var rmatn = new double[3, 3];
 
             Nutm80(2400000.5, 53736.0, out rmatn);
 

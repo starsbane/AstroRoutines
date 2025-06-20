@@ -19,7 +19,7 @@ namespace AstroRoutines.UnitTests
             double date1, date2, x, y, s, theta, elong, phi, hm, xp, yp, sp, refa, refb;
             var ehp = new double[3];
             var ebpv = new double[2, 3];
-            ASTROM astrom = new ASTROM();
+            var astrom = new ASTROM();
 
             date1 = 2456384.5;
             date2 = 0.970031644;

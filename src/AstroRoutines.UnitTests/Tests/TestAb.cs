@@ -14,11 +14,11 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestAb()
         {
-            int status = 0;
-            double[] pnat = new double[3];
-            double[] v = new double[3];
+            var status = 0;
+            var pnat = new double[3];
+            var v = new double[3];
             double s, bm1;
-            double[] ppr = new double[3];
+            var ppr = new double[3];
 
             pnat[0] = -0.76321968546737951;
             pnat[1] = -0.60869453983060384;

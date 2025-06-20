@@ -11,7 +11,7 @@ namespace AstroRoutines.UnitTests
         public void TestNum00a()
         {
             var status = 0;
-            double[,] rmatn = new double[3, 3];
+            var rmatn = new double[3, 3];
 
             Num00a(2400000.5, 53736.0, ref rmatn);
 

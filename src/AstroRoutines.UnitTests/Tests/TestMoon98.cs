@@ -11,7 +11,7 @@ namespace AstroRoutines.UnitTests
         public void TestMoon98()
         {
             var status = 0;
-            double[,] pv = new double[2, 3];
+            var pv = new double[2, 3];
 
             Moon98(2400000.5, 43999.9, ref pv);
 

@@ -11,8 +11,8 @@ namespace AstroRoutines.UnitTests
         public void TestP2pv()
         {
             var status = 0;
-            double[] p = new double[3];
-            double[,] pv = new double[2, 3];
+            var p = new double[3];
+            var pv = new double[2, 3];
 
             p[0] = 0.25;
             p[1] = 1.2;

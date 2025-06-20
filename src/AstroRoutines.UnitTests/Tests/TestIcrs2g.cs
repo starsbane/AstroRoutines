@@ -11,8 +11,8 @@ namespace AstroRoutines.UnitTests
         public void TestIcrs2g()
         {
             var status = 0;
-            double dr = 5.9338074302227188048671;
-            double dd = -1.1784870613579944551541;
+            var dr = 5.9338074302227188048671;
+            var dd = -1.1784870613579944551541;
             double dl, db;
 
             Icrs2g(dr, dd, out dl, out db);

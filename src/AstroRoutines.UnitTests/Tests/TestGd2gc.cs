@@ -12,7 +12,7 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
             double e = 3.1, p = -0.5, h = 2500.0;
-            double[] xyz = new double[3];
+            var xyz = new double[3];
             int j;
 
             j = Gd2gc(0, e, p, h, out xyz);

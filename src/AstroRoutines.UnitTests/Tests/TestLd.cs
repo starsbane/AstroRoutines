@@ -12,12 +12,12 @@ namespace AstroRoutines.UnitTests
         {
             var status = 0;
             double bm;
-            double[] p = new double[3];
-            double[] q = new double[3];
-            double[] e = new double[3];
+            var p = new double[3];
+            var q = new double[3];
+            var e = new double[3];
             double em;
             double dlim;
-            double[] p1 = new double[3];
+            var p1 = new double[3];
 			
 			bm = 0.00028574;
 			p[0] = -0.763276255;

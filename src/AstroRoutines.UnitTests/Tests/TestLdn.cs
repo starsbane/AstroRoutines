@@ -11,11 +11,11 @@ namespace AstroRoutines.UnitTests
         public void TestLdn()
         {
             var status = 0;
-            int n = 3;
-            LDBODY[] b = new LDBODY[n];
-            double[] ob = new double[3];
-            double[] sc = new double[3];
-            double[] sn = new double[3];
+            var n = 3;
+            var b = new LDBODY[n];
+            var ob = new double[3];
+            var sc = new double[3];
+            var sn = new double[3];
 
             // Initialize bodies
             b[0] = new LDBODY();

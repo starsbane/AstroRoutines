@@ -14,7 +14,7 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestAf2a()
         {
-            int status = 0;
+            var status = 0;
             double a;
             int j;
 

@@ -14,9 +14,9 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestA2tf()
         {
-            int status = 0;
-            int[] ihmsf = new int[4];
-            char s = '\0';
+            var status = 0;
+            var ihmsf = new int[4];
+            var s = '\0';
 
             A2tf(4, -3.01234, out s, ref ihmsf);
 

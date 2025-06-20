@@ -11,8 +11,8 @@ namespace AstroRoutines.UnitTests
         public void TestPap()
         {
             var status = 0;
-            double[] a = new double[3];
-            double[] b = new double[3];
+            var a = new double[3];
+            var b = new double[3];
             double theta;
 			
 			a[0] =  1.0;

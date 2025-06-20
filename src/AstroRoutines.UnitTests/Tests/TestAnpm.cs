@@ -14,7 +14,7 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestAnpm()
         {
-            int status = 0;
+            var status = 0;
 
             Vvd(Anpm(-4.0), 2.283185307179586477, 1e-12, "Anpm", "", ref status);
 

@@ -11,8 +11,8 @@ namespace AstroRoutines.UnitTests
         public void TestPdp()
         {
             var status = 0;
-			double[] a = new double[3];
-			double[] b = new double[3];
+			var a = new double[3];
+			var b = new double[3];
 			double adb;
 			
 			a[0] = 2.0;

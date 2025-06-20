@@ -11,10 +11,10 @@ namespace AstroRoutines.UnitTests
         public void TestLdsun()
         {
             var status = 0;
-            double[] p = new double[3];
-            double[] e = new double[3];
+            var p = new double[3];
+            var e = new double[3];
 			double em;
-            double[] p1 = new double[3];
+            var p1 = new double[3];
 
 			p[0] = -0.763276255;
 			p[1] = -0.608633767;

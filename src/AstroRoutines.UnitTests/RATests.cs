@@ -32,10 +32,10 @@ namespace AstroRoutines.UnitTests
         /// </summary>
         private void Vvd(double val, double valok, double dval, string func, string test, ref int status)
         {
-            double a = val - valok;
+            var a = val - valok;
             if (a != 0.0 && Abs(a) > Abs(dval))
             {
-                double f = Abs(valok / a);
+                var f = Abs(valok / a);
                 status = 1;
                 output.WriteLine($"{func} failed: {test} want {valok:G20} got {val:G20} (1/{f:G3})");
             }

@@ -11,7 +11,7 @@ namespace AstroRoutines.UnitTests
         public void TestGmst06()
         {
             var status = 0;
-            double theta = Gmst06(2400000.5, 53736.0, 2400000.5, 53736.0);
+            var theta = Gmst06(2400000.5, 53736.0, 2400000.5, 53736.0);
 
             Vvd(theta, 1.754174971870091203, 1e-12, "Gmst06", "", ref status);
 

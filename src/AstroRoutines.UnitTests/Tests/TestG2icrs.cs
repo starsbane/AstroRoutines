@@ -11,8 +11,8 @@ namespace AstroRoutines.UnitTests
         public void TestG2icrs()
         {
             var status = 0;
-            double dl = 5.5850536063818546461558105;
-            double db = -0.7853981633974483096156608;
+            var dl = 5.5850536063818546461558105;
+            var db = -0.7853981633974483096156608;
             double dr, dd;
 
             G2icrs(dl, db, out dr, out dd);

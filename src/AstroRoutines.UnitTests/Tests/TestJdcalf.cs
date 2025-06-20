@@ -11,7 +11,7 @@ namespace AstroRoutines.UnitTests
         public void TestJdcalf()
         {
             var status = 0;
-            int[] iydmf = new int[4];
+            var iydmf = new int[4];
             int j;
 			double dj1 = 2400000.5, dj2 = 50123.9999;
 

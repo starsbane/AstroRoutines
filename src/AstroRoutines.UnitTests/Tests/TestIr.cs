@@ -11,7 +11,7 @@ namespace AstroRoutines.UnitTests
         public void TestIr()
         {
             var status = 0;
-            double[,] r = new double[3, 3];
+            var r = new double[3, 3];
 
             r[0, 0] = 2.0;
             r[0, 1] = 3.0;

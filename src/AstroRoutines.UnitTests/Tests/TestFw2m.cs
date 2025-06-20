@@ -11,10 +11,10 @@ namespace AstroRoutines.UnitTests
         public void TestFw2m()
         {
             var status = 0;
-            double gamb = -0.2243387670997992368e-5;
-            double phib = 0.4091014602391312982;
-            double psi = -0.9501954178013015092e-3;
-            double eps = 0.4091014316587367472;
+            var gamb = -0.2243387670997992368e-5;
+            var phib = 0.4091014602391312982;
+            var psi = -0.9501954178013015092e-3;
+            var eps = 0.4091014316587367472;
             var r = new double[3, 3];
 
             Fw2m(gamb, phib, psi, eps, ref r);

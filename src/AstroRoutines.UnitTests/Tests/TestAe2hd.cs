@@ -14,7 +14,7 @@ namespace AstroRoutines.UnitTests
         [Fact]
         public void TestAe2hd()
         {
-            int status = 0;
+            var status = 0;
             double a, e, p, h, d;
 
             a = 5.5;

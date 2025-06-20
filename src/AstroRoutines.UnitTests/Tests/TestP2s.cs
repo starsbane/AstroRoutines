@@ -11,7 +11,7 @@ namespace AstroRoutines.UnitTests
         public void TestP2s()
         {
             var status = 0;
-            double[] p = new double[3];
+            var p = new double[3];
             double theta, phi, r;
 			
 			p[0] = 100.0;
