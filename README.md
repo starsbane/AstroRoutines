@@ -1,3 +1,6 @@
+![GitHub License](https://img.shields.io/github/license/starsbane/AstroRoutines?style=flat) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/starsbane/AstroRoutines/total?style=flat) ![GitHub Repo stars](https://img.shields.io/github/stars/starsbane/AstroRoutines?style=flat)
+
+
 # AstroRoutines
 An unofficial .NET Standard 2.0 port of the International Astronomical Union's C SOFA software library, provides a collection of subroutines, helper methods and constants that implement official IAU algorithms for astronomical computations.
 
@@ -5,7 +8,7 @@ This package is based on SOFA ANSI C Release 19 (2023-10-11) and distributed und
 Please refer to https://www.iausofa.org/ for details regarding the SOFA releases.
 
 ## Packages
-[![Static Badge](https://img.shields.io/nuget/v/AstroRoutines.svg)](https://www.nuget.org/packages/AstroRoutines/)
+[![Static Badge](https://img.shields.io/nuget/v/AstroRoutines.svg)](https://www.nuget.org/packages/AstroRoutines/) [![NuGet Downloads](https://img.shields.io/nuget/dt/AstroRoutines)](https://www.nuget.org/packages/AstroRoutines/) 
 
 ## Features
 - Native managed C# implementation
