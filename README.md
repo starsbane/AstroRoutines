@@ -128,7 +128,7 @@ class YourClass
         var era = new int[4];
         AR.A2tf(5, era0, out char sign, ref era);
 
-        Console.WriteLine($" {nameof(era)} = {sign}{era[0]:D} {era[1]:D} {era[2]:D} {era[3]:D}");
+        Console.WriteLine($"{nameof(era)} = {sign}{era[0]:D} {era[1]:D} {era[2]:D} {era[3]:D}");
     }
 }
 ```
