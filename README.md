@@ -62,7 +62,7 @@ static void tx_pn()
     double dpsi;
     double deps;
     double epsa;
-	double rb[3][3];
+    double rb[3][3];
     double rp[3][3];
     double rbp[3][3];
     double rn[3][3];
@@ -72,7 +72,7 @@ static void tx_pn()
     double x = 0, y = 0, s = 0;
     iauXys06a(date1, date2, &x, &y, &s);
 
-	double cio[3][3];
+    double cio[3][3];
     iauC2ixys(x, y, s, cio);
 
     double era0 = iauEra00(date1, date2);
