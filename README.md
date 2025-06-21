@@ -69,7 +69,7 @@ Using SOFA software is free of charge under the terms and conditions of the SOFA
 - https://www.iausofa.org/tandc.html.
 
 # Alternatives to this package
-- SHES2023's PyMsOfa: (https://github.com/CHES2023/PyMsOfa): a Python package for the Standards of Fundamental Astronomy (SOFA) service
+- CHES2023's PyMsOfa: (https://github.com/CHES2023/PyMsOfa): a Python package for the Standards of Fundamental Astronomy (SOFA) service
 - Attila Abrudán's World Wide Astronomy (https://github.com/abrudana/wwa/): World Wide Astronomy - SOFA - for Linux, mac OS, Windows
 
 # FAQ
