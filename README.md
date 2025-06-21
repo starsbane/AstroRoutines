@@ -43,7 +43,7 @@ Explained as requested by SOFA Software License.
 
 # Example
 When using vanilla IAU SOFA C Lbrary, you wrote:
-```
+```c
 #include <stdio.h>
 #include <sofa.h>
 
@@ -89,7 +89,7 @@ static void tx_pn()
 }
 ```
 Now you wrote when using this library:
-```
+```c#
 using System;
 using AstroRoutines;
 
