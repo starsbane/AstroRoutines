@@ -42,7 +42,7 @@ Explained as requested by SOFA Software License.
 - Testing data and logic are otherwise identical to the original software
 
 # Example
-When using vanilla IAU SOFA C Lbrary, you wrote:
+When using vanilla IAU SOFA C Lbrary, you call the library like below:
 ```c
 #include <stdio.h>
 #include <sofa.h>
@@ -88,7 +88,7 @@ static void tx_pn()
     printf("era = %c %d %d %d %d\n", sign, era[0], era[1], era[2], era[3]);
 }
 ```
-Now you wrote when using this library:
+Now you write C# code like below when using this library:
 ```c#
 using System;
 using AstroRoutines;
