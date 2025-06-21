@@ -7,7 +7,6 @@ Please refer to https://www.iausofa.org/ for details regarding the SOFA releases
 ## Packages
 [![Static Badge](https://img.shields.io/nuget/v/AstroRoutines.svg)](https://www.nuget.org/packages/AstroRoutines/)
 
-
 ## Features
 - Native managed C# implementation
 - Cross-platform
@@ -38,6 +37,102 @@ Explained as requested by SOFA Software License.
     - Instead of writing result to console, message is written to ITestOutputHelper
 - Rewritten from C to C# 12.0 (.NET 8.0)
 - Testing data and logic are otherwise identical to the original software
+
+# Example
+When using vanilla IAU SOFA C Lbrary, you wrote:
+```
+#include <stdio.h>
+#include <sofa.h>
+
+static void tx_pn()
+{
+    double utc1, utc2;
+    iauCal2jd(2025, 6, 20, &utc1, &utc2);
+
+    double days;
+    iauTf2d('+', 21, 24, 37.5, &days);
+
+    utc2 += days;
+
+    double dut1 = 0.3341;
+    double date1;
+    double date2;
+    iauUtcut1(utc1, utc2, dut1, &date1, &date2);
+
+    double dpsi;
+    double deps;
+    double epsa;
+	double rb[3][3];
+    double rp[3][3];
+    double rbp[3][3];
+    double rn[3][3];
+    double rbpn[3][3];
+    iauPn06a(date1, date2, &dpsi, &deps, &epsa, rb, rp, rbp, rn, rbpn);
+
+    double x = 0, y = 0, s = 0;
+    iauXys06a(date1, date2, &x, &y, &s);
+
+	double cio[3][3];
+    iauC2ixys(x, y, s, cio);
+
+    double era0 = iauEra00(date1, date2);
+    iauRz(era0, cio);
+
+    char sign = ' ';
+    int era[4];
+    iauA2tf(5, era0, &sign, &era);
+
+    printf("era = %c %d %d %d %d\n", sign, era[0], era[1], era[2], era[3]);
+}
+```
+Now you wrote when using this library:
+```
+using System;
+using AstroRoutines;
+
+class YourClass
+{
+    public static void tx_pn()
+    {
+        double utc1, utc2;
+        AR.Cal2jd(2025, 6, 20, out utc1, out utc2);
+
+        AR.Tf2d('+', 21, 24, 37.5, out var days);
+
+        utc2 += days;
+
+        var dut1 = 0.3341;
+        var date1 = 0.0;
+        var date2 = 0.0;
+        AR.Utcut1(utc1, utc2, dut1, ref date1, ref date2);
+
+        double dpsi;
+        double deps;
+        double epsa;
+        var rb = new double[3, 3];
+        var rp = new double[3, 3];
+        var rbp = new double[3, 3];
+        var rn = new double[3, 3];
+        var rbpn = new double[3, 3];
+        AR.Pn06a(date1, date2, out dpsi, out deps, out epsa, out rb, out rp, out rbp, out rn, out rbpn);
+
+        double x = 0, y = 0, s = 0;
+        AR.Xys06a(date1, date2, ref x, ref y, ref s);
+
+        var cio = new double[3, 3];
+        AR.C2ixys(x, y, s, ref cio);
+
+        var era0 = AR.Era00(date1, date2);
+        AR.Rz(era0, ref cio);
+
+        var era = new int[4];
+        AR.A2tf(5, era0, out char sign, ref era);
+
+        Console.WriteLine($" {nameof(era)} = {sign}{era[0]:D} {era[1]:D} {era[2]:D} {era[3]:D}");
+    }
+}
+```
+This example is just for show case only.
 
 # What is SOFA?
 SOFA operates under the auspices of the International Astronomical Union (IAU) to provide algorithms and software for use in astronomical computing. The initiative is managed by an international panel, the SOFA Board, appointed through IAU Division A. The Board obtains the latest IAU-approved models and theories from the fundamental-astronomy community, implements them as computer code and checks them for accuracy. SOFA works closely with all the Commissions of the Division and with the International Earth Rotation and Reference Systems Service (IERS).
