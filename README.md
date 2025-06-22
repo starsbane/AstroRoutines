@@ -41,6 +41,12 @@ Explained as requested by SOFA Software License.
 - Rewritten from C to C# 12.0 (.NET 8.0)
 - Testing data and logic are otherwise identical to the original software
 
+# Installation
+Install it via NuGet in a .NET standard 2.0 (.NET Framework 4.6.1+) project:
+
+```console
+dotnet add package AstroRoutines
+```
 # Example
 When using vanilla IAU SOFA C Lbrary, if you call the library like below:
 ```c
