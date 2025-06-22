@@ -1,4 +1,4 @@
-[![C#](https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&style=flat)](#) [![.NET](https://img.shields.io/badge/.NET%20Standard%202.0+-blue?style=flat&logo=dotnet)](#) ![GitHub License](https://img.shields.io/github/license/starsbane/AstroRoutines?style=flat) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/starsbane/AstroRoutines/total?style=flat) ![GitHub Repo stars](https://img.shields.io/github/stars/starsbane/AstroRoutines?style=flat)
+![C#](https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&style=flat) ![.NET Standard 2.0+](https://img.shields.io/badge/.NET%20Standard%202.0+-blue?style=flat&logo=dotnet) ![GitHub License](https://img.shields.io/github/license/starsbane/AstroRoutines?style=flat) [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/starsbane/AstroRoutines/total?style=flat)](https://github.com/starsbane/AstroRoutines/releases) [![GitHub Repo stars](https://img.shields.io/github/stars/starsbane/AstroRoutines?style=flat)](https://github.com/starsbane/AstroRoutines/edit/main/README.md)
 
 
 # AstroRoutines
