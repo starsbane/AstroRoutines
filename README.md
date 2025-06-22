@@ -42,7 +42,7 @@ Explained as requested by SOFA Software License.
 - Testing data and logic are otherwise identical to the original software
 
 # Installation
-Install it via NuGet in a .NET standard 2.0 (.NET Framework 4.6.1+) project:
+Install it from NuGet in a .NET standard 2.0 (.NET Framework 4.6.1+) project:
 
 ```console
 dotnet add package AstroRoutines
