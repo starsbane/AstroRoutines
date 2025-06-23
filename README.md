@@ -143,6 +143,8 @@ class YourClass
 ```
 This example is just for show case only.
 
+For more information please read the SOFA Documentation: http://www.iausofa.org/cookbooks.html
+
 # What is SOFA?
 SOFA operates under the auspices of the International Astronomical Union (IAU) to provide algorithms and software for use in astronomical computing. The initiative is managed by an international panel, the SOFA Board, appointed through IAU Division A. The Board obtains the latest IAU-approved models and theories from the fundamental-astronomy community, implements them as computer code and checks them for accuracy. SOFA works closely with all the Commissions of the Division and with the International Earth Rotation and Reference Systems Service (IERS).
 
